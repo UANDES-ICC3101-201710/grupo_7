@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace EntregaFinalPOOO
 {
     class weapon : carta
     {
@@ -52,14 +52,15 @@ namespace ConsoleApp2
                 }
                 return nombre.vida;
             }
-            else { Console.WriteLine("No se puede atacar"); Console.ReadLine(); return 0; }
+            else { Consola.WriteOutput("No se puede atacar"); Console.ReadLine(); return 0; }
         }
 
         public override void Describir()
         {
-            Console.WriteLine("Weapon " + nombre);
+            Consola.WriteOutput("Weapon " + nombre);
         }
     }
 }
+
 
 

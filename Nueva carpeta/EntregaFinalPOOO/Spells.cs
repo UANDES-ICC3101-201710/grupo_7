@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace EntregaFinalPOOO
 {
 
     class spells : carta
@@ -18,7 +18,7 @@ namespace ConsoleApp2
         }
         public override void Describir()
         {
-            Console.WriteLine("Spells: " + nombre + "\nCosto de mana: " + mana + "\n");
+            Consola.WriteOutput("Spells: " + nombre + "\nCosto de mana: " + mana + "\n");
 
         }
 
@@ -33,4 +33,3 @@ namespace ConsoleApp2
     }
 
 }
-

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace EntregaFinalPOOO
 {
     public abstract class Jugador
     {
@@ -19,17 +19,29 @@ namespace ConsoleApp2
         }
         public void darcarta()
         {
-            (mazo.Peek()).cambiarVisibilidad();
-            mano.Add(mazo.Pop());
+            if (this.mano.Count() < 10)
+            {
+                (this.mazo.Peek()).cambiarVisibilidad();
+                this.mano.Add(mazo.Pop());
+            }
 
         }
         public void QuemarMano()
         {
-            if (mano.Count > 10)
+            if (this.mano.Count > 10)
             {
                 mazo.Pop();
 
             }
+        }
+
+        public virtual void ingresarmazo(Stack<carta> mazo)
+        {
+            this.mazo = mazo;
+        }
+        public virtual void ingresarmano(List<carta> mano)
+        {
+            this.mano = mano;
         }
         public void devolvercarta(int a)
         {
@@ -49,17 +61,18 @@ namespace ConsoleApp2
 
         public virtual void Comunicarse(string a)
         {
-            if (a == "1") { Console.WriteLine("Rayos y centellas"); }
-            if (a == "2") { Console.WriteLine("MUEEEERE!!!"); }
-            if (a == "3") { Console.WriteLine("Hola nena"); }
-            if (a == "4") { Console.WriteLine(" :(  "); }
-            if (a == "5") { Console.WriteLine("PASANDO EL RAMO"); }
+            if (a == "1") { Consola.ReadInput("Rayos y centellas"); }
+            if (a == "2") { Consola.ReadInput("MUEEEERE!!!"); }
+            if (a == "3") { Consola.ReadInput("Hola nena"); }
+            if (a == "4") { Consola.ReadInput(" :(  "); }
+            if (a == "5") { Consola.ReadInput("PASANDO EL RAMO"); }
 
         }
         public virtual void Rendirse(int vida)
         {
             vida = 0;
-            Console.WriteLine("¡HAS PERDIDO ESTA PARTIDA! Por favor cierra el programa e inicialo para jugar nuevamente.");
+            Consola.WriteOutput("¡HAS PERDIDO ESTA PARTIDA! Por favor cierra el programa e inicialo para jugar nuevamente.");
+            
         }
 
 
