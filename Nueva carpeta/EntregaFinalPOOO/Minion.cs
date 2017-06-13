@@ -75,6 +75,7 @@ namespace EntregaFinalPOOO
                     nombre.vida = nombre.vida - this.ataque;
                     this.vida = this.vida - nombre.ataque;
                     this.turno = false;
+                    
 
                     if (nombre.vida <= 0)
                     {

@@ -56,6 +56,14 @@ namespace EntregaFinalPOOO
         minion CH1 = new minion("Core Hound", 9, 5, false, false, 7);
         minion CH2 = new minion("Core Hound", 9, 5, false, false, 7);
 
+        minion paladin1 = new minion("Recruit", 1, 1, true, true, 0);
+
+
+
+
+
+
+
         minion w5 = new minion("wisp", 1, 1, false, false, 0);
         minion w15 = new minion("wisp", 1, 1, false, false, 0);
         minion w25 = new minion("wisp", 1, 1, false, false, 0);
@@ -88,6 +96,7 @@ namespace EntregaFinalPOOO
         minion CH25 = new minion("Core Hound", 9, 5, false, false, 7);
 
 
+
         List<carta> mazos = new List<carta>();
         List<carta> mazos2 = new List<carta>();
 
@@ -102,14 +111,21 @@ namespace EntregaFinalPOOO
 
         List<minion> cartascancha = new List<minion>();
         List<minion> cartascancha2 = new List<minion>();
+        List<minion> shaman = new List<minion>();
+        List<minion> shaman2 = new List<minion>();
 
-        Heroe j1 = new Heroe(null, null, null, null, 1, 1);
-        Heroe j2 = new Heroe(null, null, null, null, 1, 1);
+        Heroe j1 = new Heroe(null, null, null, null, 1, 1,true);
+        Heroe j2 = new Heroe(null, null, null, null, 1, 1,false);
+
+        minion atacar;
+        minion atacado;
 
 
         public MainWindow()
         {
             InitializeComponent();
+
+
             foreach (Button b in stackpanel_Copy.Children)
             {
                 a2.Add(b);
@@ -118,6 +134,8 @@ namespace EntregaFinalPOOO
             {
                 xx.Add(b);
             }
+
+
             mazos.Add(w);
             mazos.Add(w1);
             mazos.Add(w2);
@@ -242,14 +260,14 @@ namespace EntregaFinalPOOO
             FinTurno_Copy.Visibility = Visibility.Hidden;
             Listbox_Copy.Visibility = Visibility.Hidden;
             combobox3.Visibility = Visibility.Hidden;
-           
-           
+
+
             Datosj1.Visibility = Visibility.Hidden;
             datosj2.Visibility = Visibility.Hidden;
             vida1.Visibility = Visibility.Hidden;
             Vida2.Visibility = Visibility.Hidden;
             manatot1.Visibility = Visibility.Hidden;
-            
+
             manatott.Visibility = Visibility.Hidden;
             manadisp.Visibility = Visibility.Hidden;
             manadisponible2.Visibility = Visibility.Hidden;
@@ -259,6 +277,8 @@ namespace EntregaFinalPOOO
             combobox4.Visibility = Visibility.Hidden;
             habilidad.Visibility = Visibility.Hidden;
             habilidad2.Visibility = Visibility.Hidden;
+
+            atacar2.Visibility = Visibility.Hidden;
             vida1.Content = j1.vida.ToString();
             Vida2.Content = j2.vida.ToString();
             manatot1.Content = j1.manatotal.ToString();
@@ -391,7 +411,7 @@ namespace EntregaFinalPOOO
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             a1 = text2.Text;
-            
+
             comboBox2.Visibility = Visibility.Visible;
             text2.Visibility = Visibility.Hidden;
             boton2.Visibility = Visibility.Hidden;
@@ -406,13 +426,13 @@ namespace EntregaFinalPOOO
 
             if (comboBox1.SelectedItem == "Warrior")
             {
- 
+
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
                 pic17.Visibility = Visibility.Visible;
                 j1.ingresartipo("Warrior");
-                 
+
             }
 
             if (comboBox1.SelectedItem == "Hunter")
@@ -422,180 +442,180 @@ namespace EntregaFinalPOOO
                 boton2.Visibility = Visibility.Visible;
                 pic1.Visibility = Visibility.Visible;
                 j1.ingresartipo("Hunter");
-                 
+
             }
 
             if (comboBox1.SelectedItem == "Mage")
             {
-              
+
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
                 pic5.Visibility = Visibility.Visible;
                 j1.ingresartipo("Mage");
-                 
+
             }
 
             if (comboBox1.SelectedItem == "Paladin")
             {
-              
+
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
                 pic7.Visibility = Visibility.Visible;
-                j1.ingresartipo("paladin");
-                 
+                j1.ingresartipo("Paladin");
+
             }
 
             if (comboBox1.SelectedItem == "Priest")
             {
-               
+
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
                 pic9.Visibility = Visibility.Visible;
                 j1.ingresartipo("Priest");
-                 
+
             }
 
             if (comboBox1.SelectedItem == "Druid")
             {
-                
+
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
                 pic3.Visibility = Visibility.Visible;
                 j1.ingresartipo("Druid");
-                 
+
             }
 
             if (comboBox1.SelectedItem == "Rogue")
             {
-               
+
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
                 pic11.Visibility = Visibility.Visible;
                 j1.ingresartipo("Rogue");
-                 
+
             }
 
             if (comboBox1.SelectedItem == "Shaman")
             {
-               
+
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
                 pic13.Visibility = Visibility.Visible;
                 j1.ingresartipo("Shaman");
-                 
+
             }
 
             if (comboBox1.SelectedItem == "Warlock")
             {
-                
+
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
                 pic15.Visibility = Visibility.Visible;
                 j1.ingresartipo("Warlock");
-                 
+
             }
             Datosj1.Visibility = Visibility.Visible;
 
-        
+
         }
 
         private void ComboBox_SelectionChanged_2(object sender, SelectionChangedEventArgs e)
         {
             if (comboBox2.SelectedItem == "Warrior")
             {
-              
+
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 pic18.Visibility = Visibility.Visible;
                 j2.ingresartipo("Warrior");
-                 
+
             }
 
             if (comboBox2.SelectedItem == "Hunter")
             {
-                
+
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 pic2.Visibility = Visibility.Visible;
                 j2.ingresartipo("Hunter");
-                 
+
             }
 
             if (comboBox2.SelectedItem == "Mage")
             {
-               
+
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 pic6.Visibility = Visibility.Visible;
                 j2.ingresartipo("Mage");
-                 
+
             }
 
             if (comboBox2.SelectedItem == "Paladin")
             {
-               
+
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 pic8.Visibility = Visibility.Visible;
                 j2.ingresartipo("Paladin");
-                 
+
             }
 
             if (comboBox2.SelectedItem == "Priest")
             {
-               
+
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 pic10.Visibility = Visibility.Visible;
                 j2.ingresartipo("Priest");
-                 
+
             }
 
             if (comboBox2.SelectedItem == "Druid")
             {
-                
+
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 pic4.Visibility = Visibility.Visible;
                 j2.ingresartipo("Druid");
-                 
+
             }
 
             if (comboBox2.SelectedItem == "Rogue")
             {
-               
+
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 pic12.Visibility = Visibility.Visible;
                 j2.ingresartipo("Rogue");
-                 
+
             }
 
             if (comboBox2.SelectedItem == "Shaman")
             {
-               
+
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 pic14.Visibility = Visibility.Visible;
                 j2.ingresartipo("Shaman");
-                 
+
             }
 
             if (comboBox2.SelectedItem == "Warlock")
             {
-                
+
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 pic16.Visibility = Visibility.Visible;
                 j2.ingresartipo("Warlock");
-                 
+
             }
             datosj2.Visibility = Visibility.Visible;
 
@@ -604,8 +624,8 @@ namespace EntregaFinalPOOO
         private void boton3_Click(object sender, RoutedEventArgs e)
         {
             boton3.Visibility = Visibility.Hidden;
-            
-           
+
+
 
             Listbox.Items.Add("Tus cartas son las siguientes:");
             foreach (minion i in manos)
@@ -619,11 +639,11 @@ namespace EntregaFinalPOOO
             }
             Listbox.Visibility = Visibility.Visible;
             FinTurno.Visibility = Visibility.Visible;
-            
+
             FinTurno_Copy.Visibility = Visibility.Visible;
             Listbox_Copy.Visibility = Visibility.Visible;
             manatot1.Visibility = Visibility.Visible;
-           
+
             vida1.Visibility = Visibility.Visible;
             Vida2.Visibility = Visibility.Visible;
             manatot1.Visibility = Visibility.Visible;
@@ -637,46 +657,16 @@ namespace EntregaFinalPOOO
             combobox4.Visibility = Visibility.Visible;
             habilidad.Visibility = Visibility.Visible;
             habilidad2.Visibility = Visibility.Visible;
+
+            atacar2.Visibility = Visibility.Visible;
         }
 
         private void Listbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (Listbox.SelectedIndex == 0)
-            {
 
-            }
-            if (Listbox.SelectedIndex > 0)
-            {
-                if (j1.mano[Listbox.SelectedIndex-1].mana <= j1.mana)
-                {
-                    j1.jugarcarta(Listbox.SelectedIndex, cartascancha);
-                    manadisp.Content = j1.mana;
-
-                    Listbox.Items.Remove(Listbox.SelectedItem);
-                }
-            }
-
-            
-            
-            for (int i = 0; i < cartascancha.Count; i++)
-            {
-
-                {
-                    xx[i].Content = cartascancha[i].nombre+ "                \n ocupa mana: " + cartascancha[i].mana + "\n ataca  " + cartascancha[i].ataque + "\n  tiene vida  " + cartascancha[i].vida;
-                    xx[i].Visibility = Visibility.Visible;
-
-
-
-
-
-
-
-                }
-
-            }
         }
 
-    
+
 
 
 
@@ -689,6 +679,8 @@ namespace EntregaFinalPOOO
             manatot1.Content = String.Empty;
             manatot1.Content = j1.manatotal.ToString();
             manadisp.Content = manatot1.Content;
+            j1.pasarturno(j2);
+            
             foreach (minion n in mazos)
             {
                 n.terminarturnominion();
@@ -701,6 +693,7 @@ namespace EntregaFinalPOOO
                 Listbox.Items.Add(i.nombre + " oucpa mana: " + i.mana + "    " + " ataca  " + i.ataque + "  tiene vida  " + i.vida);
             }
             j1.QuemarMano();
+
             rendirse1.IsEnabled = false;
             rendirse2.IsEnabled = true;
             Listbox.IsEnabled = false;
@@ -709,6 +702,45 @@ namespace EntregaFinalPOOO
             Listbox_Copy.IsEnabled = true;
             habilidad2.IsEnabled = true;
             habilidad.IsEnabled = false;
+            for (int i = 0; i < cartascancha.Count; i++)
+            {
+
+                
+                    xx[i].Content = cartascancha[i].nombre + "                \n ocupa mana: " + cartascancha[i].mana + "\n ataca  " + cartascancha[i].ataque + "\n  tiene vida  " + cartascancha[i].vida;
+                    if (cartascancha[i].turno == false)
+                    {
+                        xx[i].IsEnabled = false;
+                    }
+                    if (cartascancha[i].turno == true)
+                    {
+                        xx[i].IsEnabled = true;
+                    }
+                    xx[i].Visibility = Visibility.Visible;
+
+
+                }
+                for (int o = 0; o < cartascancha2.Count; o++)
+                {
+
+                    {
+                        a2[o].Content = cartascancha2[o].nombre + "                \n ocupa mana: " + cartascancha2[o].mana + "\n ataca  " + cartascancha2[o].ataque + "\n  tiene vida  " + cartascancha2[o].vida;
+                        if (cartascancha2[o].turno == false)
+                        {
+                            a2[o].IsEnabled = false;
+                        }
+                        if (cartascancha2[o].turno == true)
+                        {
+                            a2[o].IsEnabled = true;
+                        }
+                        a2[o].Visibility = Visibility.Visible;
+                    }
+
+
+                }
+            
+
+
+
 
 
         }
@@ -723,26 +755,42 @@ namespace EntregaFinalPOOO
         {
 
         }
-        minion atacar;
-        minion atacado;
+       
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             atacar = cartascancha[0];
+            if (atacar != null && atacado != null)
+            {
+                
+                atacar2.IsEnabled = true;
+
+
+            }
+            
         }
 
         private void boton17_Click(object sender, RoutedEventArgs e)
         {
+            atacado = cartascancha2[6];
+            if (atacar != null && atacado != null)
+            {
+               
+                atacar2.IsEnabled = true;
 
+
+            }
         }
 
         private void FinTurno_Copy_Click(object sender, RoutedEventArgs e)
         {
             Listbox_Copy.Items.Clear();
             j2.terminarturnomana();
-            
+
             manatott.Content = j2.manatotal.ToString();
             manadisponible2.Content = manatott.Content;
             j2.darcarta();
+            j2.pasarturno(j1);
+            
             foreach (minion n in mazos2)
             {
                 n.terminarturnominion();
@@ -761,43 +809,50 @@ namespace EntregaFinalPOOO
             Listbox_Copy.IsEnabled = false;
             habilidad.IsEnabled = true;
             habilidad2.IsEnabled = false;
+            
+            atacar2.IsEnabled = false;
+
+            for (int i = 0; i < cartascancha.Count; i++)
+            {
+
+                
+                    xx[i].Content = cartascancha[i].nombre + "                \n ocupa mana: " + cartascancha[i].mana + "\n ataca  " + cartascancha[i].ataque + "\n  tiene vida  " + cartascancha[i].vida;
+                    if (cartascancha[i].turno == false)
+                    {
+                        xx[i].IsEnabled = false;
+                    }
+                    if (cartascancha[i].turno == true)
+                    {
+                        xx[i].IsEnabled = true;
+                    }
+                    xx[i].Visibility = Visibility.Visible;
+
+
+                }
+                for (int o = 0; o < cartascancha2.Count; o++)
+                {
+
+                    {
+                        a2[o].Content = cartascancha2[o].nombre + "                \n ocupa mana: " + cartascancha2[o].mana + "\n ataca  " + cartascancha2[o].ataque + "\n  tiene vida  " + cartascancha2[o].vida;
+                        if (cartascancha2[o].turno == false)
+                        {
+                            a2[o].IsEnabled = false;
+                        }
+                        if (cartascancha2[o].turno == true)
+                        {
+                            a2[o].IsEnabled = true;
+                        }
+                        a2[o].Visibility = Visibility.Visible;
+                    }
+
+
+                }
+            
         }
 
-        private void Listbox_Copy_SelectionChanged(object sender, SelectionChangedEventArgs e)
+                private void Listbox_Copy_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (Listbox_Copy.SelectedIndex == 0)
-            {
-
-            }
-            if (Listbox_Copy.SelectedIndex > 0)
-            {
-                if (j2.mano[Listbox_Copy.SelectedIndex - 1].mana <= j2.mana)
-                {
-                    j2.jugarcarta(Listbox_Copy.SelectedIndex, cartascancha2);
-                    manadisponible2.Content = j2.mana;
-
-                    Listbox_Copy.Items.Remove(Listbox_Copy.SelectedItem);
-                }
-            }
-
-            
-            
-            for (int i = 0; i < cartascancha2.Count; i++)
-            {
-
-                {
-                    a2[i].Content = cartascancha2[i].nombre + "    " + cartascancha2[i].mana + cartascancha2[i].vida + cartascancha2[i].ataque;
-                    a2[i].Visibility = Visibility.Visible;
-
-
-
-
-
-
-
-                }
-
-            }
+           
         }
 
         private void boton4_IsMouseDirectlyOverChanged(object sender, DependencyPropertyChangedEventArgs e)
@@ -808,6 +863,13 @@ namespace EntregaFinalPOOO
         private void boton11_Click(object sender, RoutedEventArgs e)
         {
             atacado = cartascancha2[0];
+            if (atacar != null && atacado != null)
+            {
+                
+                atacar2.IsEnabled = true;
+
+
+            }
         }
 
         private void popo_MouseEnter(object sender, MouseEventArgs e)
@@ -828,7 +890,14 @@ namespace EntregaFinalPOOO
 
         private void boton5_Click(object sender, RoutedEventArgs e)
         {
+            atacar = cartascancha[1];
+            if (atacar != null && atacado != null)
+            {
+               
+                atacar2.IsEnabled = true;
 
+
+            }
         }
 
         private void boton5_MouseEnter(object sender, MouseEventArgs e)
@@ -865,7 +934,14 @@ namespace EntregaFinalPOOO
 
         private void boton8_Click(object sender, RoutedEventArgs e)
         {
-            
+            atacar = cartascancha[4];
+            if (atacar != null && atacado != null)
+            {
+                
+                atacar2.IsEnabled = true;
+
+
+            }
         }
 
         private void boton8_MouseEnter(object sender, MouseEventArgs e)
@@ -893,7 +969,14 @@ namespace EntregaFinalPOOO
 
         private void boton10_Click(object sender, RoutedEventArgs e)
         {
+            atacar = cartascancha[6];
+            if (atacar != null && atacado != null)
+            {
+                
+                atacar2.IsEnabled = true;
 
+
+            }
         }
 
         private void boton10_MouseEnter(object sender, MouseEventArgs e)
@@ -1046,41 +1129,28 @@ namespace EntregaFinalPOOO
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
+            j1.invocar(paladin1, cartascancha);
+            j1.invocar(paladin1, cartascancha);
             j1.habilidad(j2);
+            
             vida1.Content = j1.vida;
             Vida2.Content = j2.vida;
             manadisp.Content = j1.mana;
             habilidad.IsEnabled = false;
-        }
-
-        private void habilidad2_Click(object sender, RoutedEventArgs e)
-        {
-            j2.habilidad(j1);
-            vida1.Content = j1.vida;
-            Vida2.Content = j2.vida;
-            manadisponible2.Content = j2.mana;
-            habilidad2.IsEnabled = false;
-        }
-
-        private void Button_Click_5(object sender, RoutedEventArgs e)
-        {
-            atacar.attack(atacado, null, cartascancha, cartascancha2);
-            /*MessageBox.Show(atacar.vida.ToString() + atacado.vida.ToString());*/
-            if (atacar.vida <= 0)
-            {
-                boton4.Content = "";
-                boton4.Visibility = Visibility.Hidden;
-
-            }
-
-
-            
+            MessageBox.Show(cartascancha.Count.ToString());
             for (int i = 0; i < cartascancha.Count; i++)
             {
 
                 {
                     xx[i].Content = cartascancha[i].nombre + "                \n ocupa mana: " + cartascancha[i].mana + "\n ataca  " + cartascancha[i].ataque + "\n  tiene vida  " + cartascancha[i].vida;
-                 
+                    if (cartascancha[i].turno == false)
+                    {
+                        xx[i].IsEnabled = false;
+                    }
+                    if (cartascancha[i].turno == true)
+                    {
+                        xx[i].IsEnabled = true;
+                    }
                     xx[i].Visibility = Visibility.Visible;
 
 
@@ -1092,10 +1162,337 @@ namespace EntregaFinalPOOO
                 }
 
             }
-            MessageBox.Show(xx.Count().ToString());
+
+
+
+        }
+
+        private void habilidad2_Click(object sender, RoutedEventArgs e)
+        {
+            j2.invocar(paladin1, cartascancha2);
+            j2.invocar(paladin1, cartascancha2);
+            j2.habilidad(j1);
+            vida1.Content = j1.vida;
+            Vida2.Content = j2.vida;
+            manadisponible2.Content = j2.mana;
+            habilidad2.IsEnabled = false;
+
+        }
+
+        
+
+        private void Listbox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (Listbox.SelectedIndex == 0)
+            {
+
+            }
+            if (Listbox.SelectedIndex > 0)
+            {
+                if (j1.mano[Listbox.SelectedIndex - 1].mana <= j1.mana)
+                {
+                    j1.jugarcarta(Listbox.SelectedIndex, cartascancha);
+                    manadisp.Content = j1.mana;
+
+                    Listbox.Items.Remove(Listbox.SelectedItem);
+                }
+            }
+
+
+
+            for (int i = 0; i < cartascancha.Count; i++)
+            {
+
+                {
+                    xx[i].Content = cartascancha[i].nombre + "                \n ocupa mana: " + cartascancha[i].mana + "\n ataca  " + cartascancha[i].ataque + "\n  tiene vida  " + cartascancha[i].vida;
+                    if (cartascancha[i].turno == false)
+                    {
+                        xx[i].IsEnabled = false;
+                    }
+                    if (cartascancha[i].turno == true)
+                    {
+                        xx[i].IsEnabled = true;
+                    }
+                    xx[i].Visibility = Visibility.Visible;
+                    
+
+
+
+
+
+
+
+                }
+
+
+
+
+            }
+        }
+
+        private void Listbox_Copy_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (Listbox_Copy.SelectedIndex == 0)
+            {
+
+            }
+            if (Listbox_Copy.SelectedIndex > 0)
+            {
+                if (j2.mano[Listbox_Copy.SelectedIndex - 1].mana <= j2.mana)
+                {
+                    j2.jugarcarta(Listbox_Copy.SelectedIndex, cartascancha2);
+                    manadisponible2.Content = j2.mana;
+
+                    Listbox_Copy.Items.Remove(Listbox_Copy.SelectedItem);
+                }
+            }
+
+
+
+            for (int i = 0; i < cartascancha2.Count; i++)
+            {
+
+                {
+                    a2[i].Content = cartascancha2[i].nombre + "    " + cartascancha2[i].mana + cartascancha2[i].vida + cartascancha2[i].ataque;
+                    if (cartascancha2[i].turno == false)
+                    {
+                        a2[i].IsEnabled = false;
+                    }
+
+                    a2[i].Visibility = Visibility.Visible;
+
+
+
+
+
+
+
+                }
+
+            }
+        }
+
+        private void Listbox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void boton6_Click(object sender, RoutedEventArgs e)
+        {
+            atacar = cartascancha[2];
+            if (atacar != null && atacado != null)
+            {
+               
+                atacar2.IsEnabled = true;
+
+
+            }
+        }
+
+        private void boton7_Click(object sender, RoutedEventArgs e)
+        {
+            atacar = cartascancha[3];
+            if (atacar != null && atacado != null)
+            {
+               
+                atacar2.IsEnabled = true;
+
+
+            }
+        }
+
+        private void boton9_Click(object sender, RoutedEventArgs e)
+        {
+            atacar = cartascancha[5];
+            if (atacar != null && atacado != null)
+            {
+               
+                atacar2.IsEnabled = true;
+
+
+            }
+        }
+
+        private void boton12_Click(object sender, RoutedEventArgs e)
+        {
+            atacado = cartascancha2[1];
+             if(atacar!=null && atacado !=null)
+            {
+               
+                atacar2.IsEnabled = true;
+
+
+            }
+        }
+
+        private void boton13_Click(object sender, RoutedEventArgs e)
+        {
+            atacado = cartascancha2[2];
+            if (atacar != null && atacado != null)
+            {
+               
+                atacar2.IsEnabled = true;
+
+
+            }
+        }
+
+        private void boton14_Click(object sender, RoutedEventArgs e)
+        {
+            atacado = cartascancha2[3];
+            if (atacar != null && atacado != null)
+            {
+           
+                atacar2.IsEnabled = true;
+
+
+            }
+        }
+
+        private void boton15_Click(object sender, RoutedEventArgs e)
+        {
+            atacado = cartascancha2[4];
+            if (atacar != null && atacado != null)
+            {
+                
+                atacar2.IsEnabled = true;
+
+
+            }
+        }
+
+        private void boton16_Click(object sender, RoutedEventArgs e)
+        {
+            atacado = cartascancha2[5];
+            if (atacar != null && atacado != null)
+            {
+             
+                atacar2.IsEnabled = true;
+
+
+            }
+        }
+
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            if (heroeatacado != null && atacado != null && j2.activo==true)
+            {
+                atacado.attack(null, heroeatacado, cartascancha2, cartascancha);
+                
+                heroeatacado = null;
+               ;
+            }
+            
+            if (heroeatacado != null && atacar != null && j1.activo==true)
+            {
+                atacar.attack(null, heroeatacado, cartascancha, cartascancha2);
+                
+                heroeatacado = null;
+               
+            }
+            
+            if (atacado != null && atacar != null&& j1.activo==true) { 
+            atacar.attack(atacado, null, cartascancha, cartascancha2);
+                
+                atacado = null;
+            atacar = null;
+                
+            }
+            if (atacado != null && atacar != null && j2.activo == true)
+            {
+                atacado.attack(atacar, null, cartascancha2, cartascancha);
+
+                atacado = null;
+                atacar = null;
+
+            }
+
+            vida1.Content = j1.vida;
+            Vida2.Content = j2.vida;
+            
+            
+
+            /*MessageBox.Show(atacar.vida.ToString() + atacado.vida.ToString());*/
+            /*if (atacar.vida <= 0)
+            {
+                boton4.Content = "";
+                boton4.Visibility = Visibility.Hidden;
+
+            }
+            if (atacado.vida <= 0)
+            {
+                boton11.Content = "";
+                boton11.Visibility = Visibility.Hidden;
+            }*/
+
+
+
+            for (int i = 0; i < cartascancha.Count; i++)
+            {
+
+                
+                    xx[i].Content = cartascancha[i].nombre + "                \n ocupa mana: " + cartascancha[i].mana + "\n ataca  " + cartascancha[i].ataque + "\n  tiene vida  " + cartascancha[i].vida;
+                    if (cartascancha[i].turno == false)
+                    {
+                        xx[i].IsEnabled = false;
+                    }
+                    if (cartascancha[i].turno == true)
+                    {
+                        xx[i].IsEnabled = true;
+                    }
+                    xx[i].Visibility = Visibility.Visible;
+
+
+                }
+                for (int o = 0; o < cartascancha2.Count; o++)
+                {
+
+                    {
+                        a2[o].Content = cartascancha2[o].nombre + "                \n ocupa mana: " + cartascancha2[o].mana + "\n ataca  " + cartascancha2[o].ataque + "\n  tiene vida  " + cartascancha2[o].vida;
+                        if (cartascancha2[o].turno == false)
+                        {
+                            a2[o].IsEnabled = false;
+                        }
+                        if (cartascancha2[o].turno == true)
+                        {
+                            a2[o].IsEnabled = true;
+                        }
+                        a2[o].Visibility = Visibility.Visible;
+                    }
+
+                }
+
+            
+
             xx[cartascancha.Count()].Content = "";
             xx[cartascancha.Count()].Visibility = Visibility.Hidden;
+            a2[cartascancha2.Count()].Content = "";
+            a2[cartascancha2.Count()].Visibility = Visibility.Hidden;
+        }
+        Heroe heroeatacado;
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            heroeatacado = j2;
+            if ((atacar != null && heroeatacado != null) || (atacado != null && heroeatacado != null))
+            {
 
+                atacar2.IsEnabled = true;
+
+
+            }
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            heroeatacado = j1;
+            if ((atacar != null && heroeatacado != null) || (atacado != null && heroeatacado != null))
+            {
+
+                atacar2.IsEnabled = true;
+
+
+            }
         }
     }
 }

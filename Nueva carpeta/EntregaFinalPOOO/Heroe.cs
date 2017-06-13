@@ -13,6 +13,7 @@ namespace EntregaFinalPOOO
         public int escudo = 0;
         public int mana = 0;
         public int manatotal = 0;
+        public bool activo;
 
         public void InfoTurno(Heroe a)
         {
@@ -61,10 +62,35 @@ namespace EntregaFinalPOOO
                 }
             }
         }
+
+        public void invocar(minion n, List<minion> lista)
+        {
+            if (this.mana >= 2)
+            {
+
+                if (this.tipo == "Paladin")
+                {
+
+
+
+                    lista.Add(n);
+                }
+                if (this.tipo == "Shaman")
+                {
+
+
+
+                    lista.Add(n);
+                }
+            }
         
 
+                           
+        }
         public void jugarcarta(int a, List<minion> lista)
         {
+           
+
             if (this.mano[a -1].mana <= this.mana)
             {
                 this.gastarmana(this.mano[a -1]);
@@ -102,7 +128,7 @@ namespace EntregaFinalPOOO
                 vida = value;
             }
         }
-        public Heroe(string tipo, string nombre, List<carta> mano, Stack<carta> mazo, int mana, int manatotal)
+        public Heroe(string tipo, string nombre, List<carta> mano, Stack<carta> mazo, int mana, int manatotal,bool activo)
         {
             this.tipo = tipo;
             this.nombre = nombre;
@@ -110,10 +136,15 @@ namespace EntregaFinalPOOO
             this.mazo = mazo;
             this.mana = mana;
             this.manatotal = manatotal;
+            this.activo = activo;
         }
 
 
-
+        public void pasarturno(Heroe j)
+        {
+            this.activo = false;
+            j.activo = true;
+        }
         public override void Comunicarse(string a)
         {
             base.Comunicarse(a);
@@ -239,12 +270,7 @@ namespace EntregaFinalPOOO
                     }
                 }
 
-                if (this.tipo == "Paladin")
-                {
-                    minion m = new minion("Reinforce", 1, 1, false, true, 0);
-
-
-                }
+                
                 if (this.tipo == "Priest")
                 {
                     this.vida = this.vida + 2;
