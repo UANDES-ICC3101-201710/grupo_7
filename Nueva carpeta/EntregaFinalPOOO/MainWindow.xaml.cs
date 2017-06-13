@@ -31,7 +31,7 @@ namespace EntregaFinalPOOO
         minion m = new minion("Murloc Raider", 2, 1, false, false, 1);
         minion m1 = new minion("Murloc Raider", 2, 1, false, false, 1);
         minion m2 = new minion("Murloc Raider", 2, 1, false, false, 1);
-        minion b = new minion("Bloodfen Raptor", 3, 2, false, false, 2);
+        minion b9 = new minion("Bloodfen Raptor", 3, 2, false, false, 2);
         minion b1 = new minion("Bloodfen Raptor", 3, 2, false, false, 2);
         minion b2 = new minion("Bloodfen Raptor", 3, 2, false, false, 2);
         minion Rv = new minion("River Crocolisk", 2, 3, false, false, 2);
@@ -55,14 +55,6 @@ namespace EntregaFinalPOOO
         minion CH = new minion("Core Hound", 9, 5, false, false, 7);
         minion CH1 = new minion("Core Hound", 9, 5, false, false, 7);
         minion CH2 = new minion("Core Hound", 9, 5, false, false, 7);
-
-        minion paladin1 = new minion("Recruit", 1, 1, true, true, 0);
-
-
-
-
-
-
 
         minion w5 = new minion("wisp", 1, 1, false, false, 0);
         minion w15 = new minion("wisp", 1, 1, false, false, 0);
@@ -142,7 +134,7 @@ namespace EntregaFinalPOOO
             mazos.Add(m);
             mazos.Add(m1);
             mazos.Add(m2);
-            mazos.Add(b);
+            mazos.Add(b9);
             mazos.Add(b1);
             mazos.Add(b2);
             mazos.Add(Rv);
@@ -217,7 +209,8 @@ namespace EntregaFinalPOOO
                 j2.darcarta();
             }
 
-
+            atacarheroe1.Visibility = Visibility.Hidden;
+            atacarheroe2.Visibility = Visibility.Hidden;
             boton2.Visibility = Visibility.Hidden;
             boton3.Visibility = Visibility.Hidden;
             comboBox1.Visibility = Visibility.Hidden;
@@ -260,14 +253,11 @@ namespace EntregaFinalPOOO
             FinTurno_Copy.Visibility = Visibility.Hidden;
             Listbox_Copy.Visibility = Visibility.Hidden;
             combobox3.Visibility = Visibility.Hidden;
-
-
             Datosj1.Visibility = Visibility.Hidden;
             datosj2.Visibility = Visibility.Hidden;
             vida1.Visibility = Visibility.Hidden;
             Vida2.Visibility = Visibility.Hidden;
             manatot1.Visibility = Visibility.Hidden;
-
             manatott.Visibility = Visibility.Hidden;
             manadisp.Visibility = Visibility.Hidden;
             manadisponible2.Visibility = Visibility.Hidden;
@@ -277,8 +267,12 @@ namespace EntregaFinalPOOO
             combobox4.Visibility = Visibility.Hidden;
             habilidad.Visibility = Visibility.Hidden;
             habilidad2.Visibility = Visibility.Hidden;
-
             atacar2.Visibility = Visibility.Hidden;
+            eheroe1.Visibility = Visibility.Hidden;
+            eheroe2.Visibility = Visibility.Hidden;
+            decir1.Visibility = Visibility.Hidden;
+            decir2.Visibility = Visibility.Hidden;  
+
             vida1.Content = j1.vida.ToString();
             Vida2.Content = j2.vida.ToString();
             manatot1.Content = j1.manatotal.ToString();
@@ -321,6 +315,10 @@ namespace EntregaFinalPOOO
             combobox4.Items.Add("Llorar");
             combobox4.Items.Add("Celebrar");
 
+        }
+        public static void Rendirese() 
+        {
+            Application.Current.Shutdown();
         }
 
         public static void DescribirHeroe(Heroe t)
@@ -396,6 +394,7 @@ namespace EntregaFinalPOOO
         {
             a = text1.Text;
             comboBox1.Visibility = Visibility.Visible;
+            eheroe1.Visibility = Visibility.Visible;
             text1.Visibility = Visibility.Hidden;
             boton1.Visibility = Visibility.Hidden;
             j1.ingresarnombre(a);
@@ -411,11 +410,12 @@ namespace EntregaFinalPOOO
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             a1 = text2.Text;
-
+            eheroe2.Visibility = Visibility.Visible;
             comboBox2.Visibility = Visibility.Visible;
             text2.Visibility = Visibility.Hidden;
             boton2.Visibility = Visibility.Hidden;
             j2.ingresarnombre(a1);
+
 
 
         }
@@ -423,7 +423,7 @@ namespace EntregaFinalPOOO
 
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
-
+            eheroe1.Visibility = Visibility.Hidden;
             if (comboBox1.SelectedItem == "Warrior")
             {
 
@@ -521,13 +521,14 @@ namespace EntregaFinalPOOO
                 j1.ingresartipo("Warlock");
 
             }
-            Datosj1.Visibility = Visibility.Visible;
+            
 
 
         }
 
         private void ComboBox_SelectionChanged_2(object sender, SelectionChangedEventArgs e)
         {
+            eheroe2.Visibility = Visibility.Hidden;
             if (comboBox2.SelectedItem == "Warrior")
             {
 
@@ -617,7 +618,7 @@ namespace EntregaFinalPOOO
                 j2.ingresartipo("Warlock");
 
             }
-            datosj2.Visibility = Visibility.Visible;
+           
 
         }
 
@@ -657,6 +658,12 @@ namespace EntregaFinalPOOO
             combobox4.Visibility = Visibility.Visible;
             habilidad.Visibility = Visibility.Visible;
             habilidad2.Visibility = Visibility.Visible;
+            atacarheroe1.Visibility = Visibility.Visible;
+            atacarheroe2.Visibility = Visibility.Visible;
+            Datosj1.Visibility = Visibility.Visible;
+            datosj2.Visibility = Visibility.Visible;
+            decir1.Visibility = Visibility.Visible;
+            decir2.Visibility = Visibility.Visible; 
 
             atacar2.Visibility = Visibility.Visible;
         }
@@ -737,6 +744,8 @@ namespace EntregaFinalPOOO
 
 
                 }
+            
+            
             
 
 
@@ -1129,10 +1138,46 @@ namespace EntregaFinalPOOO
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            j1.invocar(paladin1, cartascancha);
-            j1.invocar(paladin1, cartascancha);
+            if (j1.tipo == "Paladin")
+            {
+                minion paladin1 = new minion("Recruit", 1, 1, false, false, 0);
+                mazos.Add(paladin1);
+                j1.invocar(paladin1, cartascancha);                
+            }
+            Random rnd = new Random();
+            if (j1.tipo == "Shaman")
+            {
+                int ppp = rnd.Next(4);
+                if (ppp == 0)
+                {
+                    minion shaman1 = new minion("Heilin Totem", 2, 0, true, true, 0);
+                    mazos.Add(shaman1);
+                    j1.invocar(shaman1, cartascancha);
+                }
+                if (ppp == 1)
+                {
+                    
+                    minion shaman5 = new minion("Seiring Totem", 1, 1, true, true, 0);
+                    mazos.Add(shaman5);
+                    j1.invocar(shaman5, cartascancha);
+                }
+                if (ppp == 2)
+                {
+
+                    minion shaman3 = new minion("Stoneclaw Totem", 2, 0, true, true, 0);
+                    mazos.Add(shaman3);
+                    j1.invocar(shaman3, cartascancha);
+                }
+                if (ppp == 3)
+                {
+                    minion shaman4 = new minion("Warth of air Totem", 2, 0, true, true, 0);
+                    mazos.Add(shaman4);
+                    j1.invocar(shaman4, cartascancha);
+                }
+            }
+
+
             j1.habilidad(j2);
-            
             vida1.Content = j1.vida;
             Vida2.Content = j2.vida;
             manadisp.Content = j1.mana;
@@ -1143,14 +1188,7 @@ namespace EntregaFinalPOOO
 
                 {
                     xx[i].Content = cartascancha[i].nombre + "                \n ocupa mana: " + cartascancha[i].mana + "\n ataca  " + cartascancha[i].ataque + "\n  tiene vida  " + cartascancha[i].vida;
-                    if (cartascancha[i].turno == false)
-                    {
-                        xx[i].IsEnabled = false;
-                    }
-                    if (cartascancha[i].turno == true)
-                    {
-                        xx[i].IsEnabled = true;
-                    }
+
                     xx[i].Visibility = Visibility.Visible;
 
 
@@ -1165,17 +1203,70 @@ namespace EntregaFinalPOOO
 
 
 
+
         }
 
         private void habilidad2_Click(object sender, RoutedEventArgs e)
         {
-            j2.invocar(paladin1, cartascancha2);
-            j2.invocar(paladin1, cartascancha2);
+
+            if (j2.tipo == "Paladin")
+            {
+                minion paladin1 = new minion("Recruit", 1, 1, true, true, 0);
+                mazos.Add(paladin1);
+                j2.invocar(paladin1, cartascancha2);
+            }
+            Random rnd = new Random();
+            if (j2.tipo == "Shaman")
+            {
+                int ppp = rnd.Next(4);
+                if (ppp == 0)
+                {
+                    minion shaman1 = new minion("Heilin Totem", 2, 0, true, true, 0);
+                    mazos.Add(shaman1);
+                    j2.invocar(shaman1, cartascancha2);
+                }
+                if (ppp == 1)
+                {
+                    minion shaman5 = new minion("Seiring Totem", 1, 1, true, true, 0);
+                    mazos.Add(shaman5);
+                    j2.invocar(shaman5, cartascancha2);
+                }
+                if (ppp == 2)
+                {
+                    minion shaman3 = new minion("Stoneclaw Totem", 2, 0, true, true, 0);
+                    mazos.Add(shaman3);
+                    j2.invocar(shaman3, cartascancha2);
+                }
+                if (ppp == 3)
+                {
+                    minion shaman4 = new minion("Warth of air Totem", 2, 0, true, true, 0);
+                    mazos.Add(shaman4);
+                    j2.invocar(shaman4, cartascancha2);
+                }
+            }
             j2.habilidad(j1);
             vida1.Content = j1.vida;
             Vida2.Content = j2.vida;
             manadisponible2.Content = j2.mana;
             habilidad2.IsEnabled = false;
+            for (int o = 0; o < cartascancha2.Count; o++)
+            {
+
+                {
+                    a2[o].Content = cartascancha2[o].nombre + "                \n ocupa mana: " + cartascancha2[o].mana + "\n ataca  " + cartascancha2[o].ataque + "\n  tiene vida  " + cartascancha2[o].vida;
+
+                    a2[o].Visibility = Visibility.Visible;
+
+
+
+
+
+
+
+                }
+
+            }
+
 
         }
 
@@ -1410,6 +1501,18 @@ namespace EntregaFinalPOOO
 
             vida1.Content = j1.vida;
             Vida2.Content = j2.vida;
+            if (j1.vida <= 0)
+            {
+                MessageBox.Show(j2.nombre + " GANASTE LA PARTIDA");
+                Application.Current.Shutdown();
+            }
+            if (j2.vida <= 0)
+            {
+                MessageBox.Show(j1.nombre + " GANASTE LA PARTIDA");
+                Application.Current.Shutdown();
+            }
+
+
             
             
 
@@ -1481,6 +1584,8 @@ namespace EntregaFinalPOOO
 
 
             }
+           
+
         }
 
         private void Button_Click_7(object sender, RoutedEventArgs e)
@@ -1493,6 +1598,8 @@ namespace EntregaFinalPOOO
 
 
             }
+         
+
         }
     }
 }
