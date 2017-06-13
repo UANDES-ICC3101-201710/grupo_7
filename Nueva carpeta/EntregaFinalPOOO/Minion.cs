@@ -94,13 +94,13 @@ namespace EntregaFinalPOOO
             }
             if (jugador != null)
             {
-                if (jugador.tipo == "Hunter")
+                if (jugador.tipo == "Hunter" || jugador.tipo == "Shaman" || jugador.tipo == "Mage" || jugador.tipo == "Paladin" || jugador.tipo == "Priest" || jugador.tipo == "Rogue" || jugador.tipo == "Warlock")
                 {
                     jugador.vida = jugador.vida - this.ataque;
                     this.turno = false;
                     return jugador.vida;
                 }
-                if (jugador.tipo == "Warrior")
+                if (jugador.tipo == "Warrior" || jugador.tipo == "Druid")
                 {
                     if (jugador.escudo == 0)
                     {
