@@ -1092,23 +1092,23 @@ namespace EntregaFinalPOOO
         {
             if (combobox3.SelectedItem == "OOPS")
             {
-                MessageBox.Show("Rayos y centellas");
+                MessageBox.Show(j1.nombre +" dice:\nRayos y centellas");
             }
             if (combobox3.SelectedItem == "Amenaza")
             {
-                MessageBox.Show("MUEEEERE!!!");
+                MessageBox.Show(j1.nombre + " dice:\nMUEEEERE!!!");
             }
             if (combobox3.SelectedItem == "Saludar")
             {
-                MessageBox.Show("Hola nena");
+                MessageBox.Show(j1.nombre + " dice:\nHola ");
             }
             if (combobox3.SelectedItem == "Llorar")
             {
-                MessageBox.Show("😞 ");
+                MessageBox.Show(j1.nombre + " dice:\n😞 ");
             }
             if (combobox3.SelectedItem == "Celebrar")
             {
-                MessageBox.Show("PASANDO EL RAMO");
+                MessageBox.Show(j1.nombre + " dice:\nohhhhh si ");
             }
         }
 
@@ -1116,23 +1116,23 @@ namespace EntregaFinalPOOO
         {
             if (combobox4.SelectedItem == "OOPS")
             {
-                MessageBox.Show("Rayos y centellas");
+                MessageBox.Show(j2.nombre + " dice:\nRayos y centellas");
             }
             if (combobox4.SelectedItem == "Amenaza")
             {
-                MessageBox.Show("MUEEEERE!!!");
+                MessageBox.Show(j2.nombre + " dice:\nMUEEEERE!!!");
             }
             if (combobox4.SelectedItem == "Saludar")
             {
-                MessageBox.Show("Hola nena");
+                MessageBox.Show(j2.nombre + " dice:\nHola ");
             }
             if (combobox4.SelectedItem == "Llorar")
             {
-                MessageBox.Show("😞 ");
+                MessageBox.Show(j2.nombre + " dice:\n😞 ");
             }
             if (combobox4.SelectedItem == "Celebrar")
             {
-                MessageBox.Show("PASANDO EL RAMO");
+                MessageBox.Show(j2.nombre + " dice:\nOHHHHHHHH SIIII!!!!");
             }
         }
 
