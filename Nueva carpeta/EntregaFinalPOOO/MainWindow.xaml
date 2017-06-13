@@ -62,7 +62,7 @@
             <Button x:Name="boton17"  Content="Button" Width="50" Click="boton17_Click" MouseEnter="boton17_MouseEnter" MouseLeave="boton17_MouseLeave"/>
         </StackPanel>
         <Button x:Name="FinTurno_Copy" Content="Terminar Turno" HorizontalAlignment="Left" Margin="467,154,0,0" VerticalAlignment="Top" Width="103" IsEnabled="False" Click="FinTurno_Copy_Click"/>
-        <ListBox x:Name="Listbox_Copy" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="570" IsEnabled="False" MouseDoubleClick="Listbox_Copy_MouseDoubleClick" />
+        <ListBox x:Name="Listbox_Copy" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="570" IsEnabled="False" MouseDoubleClick="Listbox_Copy_MouseDoubleClick" SelectionChanged="Listbox_Copy_SelectionChanged_1" Margin="0,19,0,0" />
         <GroupBox x:Name="datos" Header="Informacion de la carta&#xD;&#xA;" HorizontalAlignment="Left" Height="126" Margin="580,164,0,0" VerticalAlignment="Top" Width="209">
             <Label x:Name="popo" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="85" Width="181" MouseEnter="popo_MouseEnter" MouseLeave="popo_MouseLeave" />
         </GroupBox>
@@ -96,7 +96,16 @@
         <Label x:Name="eheroe2" Content="Elegir heroe" HorizontalAlignment="Left" Margin="702,98,0,0" VerticalAlignment="Top"/>
         <Label x:Name="decir1" Content="Decir algo" HorizontalAlignment="Left" Margin="727,311,0,0" VerticalAlignment="Top"/>
         <Label x:Name="decir2" Content="Decir algo" HorizontalAlignment="Left" Margin="725,63,0,0" VerticalAlignment="Top"/>
-
+        <DockPanel>
+            <Menu DockPanel.Dock="Top" Margin="0,0,-35,0">
+                <MenuItem Header="_Archivo">
+                    <MenuItem Header="_Cargar"/>
+                    <MenuItem Header="_Guardar"/>
+                    <MenuItem Header="_Cerrar"/>
+                </MenuItem>
+            </Menu>
+            <StackPanel></StackPanel>
+        </DockPanel>
 
 
 

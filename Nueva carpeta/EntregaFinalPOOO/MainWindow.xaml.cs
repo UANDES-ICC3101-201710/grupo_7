@@ -1601,6 +1601,11 @@ namespace EntregaFinalPOOO
          
 
         }
+
+        private void Listbox_Copy_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
 
