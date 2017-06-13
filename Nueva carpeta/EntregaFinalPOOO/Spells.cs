@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntregaFinalPOOO
 {
-
+    [Serializable]
     class spells : carta
     {
         public spells(string nombre, int mana, bool actividad, bool visibilidad)

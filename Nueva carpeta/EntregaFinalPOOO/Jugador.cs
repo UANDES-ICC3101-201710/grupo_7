@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntregaFinalPOOO
 {
+    [Serializable]
     public abstract class Jugador
     {
         public string nombre { get; set; }

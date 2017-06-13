@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntregaFinalPOOO
 {
+    [Serializable]
     class weapon : carta
     {
         private int ataque;

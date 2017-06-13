@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace EntregaFinalPOOO
-{
+{   [Serializable]
     public class Heroe : Jugador
     {
         public string tipo { get; set; }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntregaFinalPOOO
 {
+    [Serializable]
     public class minion : carta, Interfaceatacar
     {
         public int vida { get; set; }

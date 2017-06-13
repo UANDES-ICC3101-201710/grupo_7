@@ -1144,6 +1144,18 @@ namespace EntregaFinalPOOO
                 mazos.Add(paladin1);
                 j1.invocar(paladin1, cartascancha);                
             }
+            if (j1.tipo == "Rogue")
+            {
+                minion rogue = new minion("Dagger Mastery", 2, 1, false, false, 0);
+                mazos.Add(rogue);
+                j1.invocar(rogue, cartascancha);
+            }
+            if (j1.tipo == "Druid")
+            {
+                minion druid = new minion("Shapeshift", 2, 0, false, false, 0);
+                mazos.Add(druid);
+                j1.invocar(druid, cartascancha);
+            }
             Random rnd = new Random();
             if (j1.tipo == "Shaman")
             {
@@ -1214,6 +1226,18 @@ namespace EntregaFinalPOOO
                 minion paladin1 = new minion("Recruit", 1, 1, true, true, 0);
                 mazos.Add(paladin1);
                 j2.invocar(paladin1, cartascancha2);
+            }
+            if (j2.tipo == "Rogue")
+            {
+                minion rogue = new minion("Dagger Mastery", 2, 1, false, false, 0);
+                mazos2.Add(rogue);
+                j2.invocar(rogue, cartascancha2);
+            }
+            if (j2.tipo == "Druid")
+            {
+                minion druid = new minion("Shapeshift", 2, 0, false, false, 0);
+                mazos2.Add(druid);
+                j2.invocar(druid, cartascancha2);
             }
             Random rnd = new Random();
             if (j2.tipo == "Shaman")
