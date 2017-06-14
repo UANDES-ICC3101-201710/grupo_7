@@ -745,8 +745,6 @@ namespace EntregaFinalPOOO
             for (int i = 0; i < cartascancha.Count; i++)
             {
 
-                
-                    xx[i].Content = cartascancha[i].nombre + "                \n ocupa mana: " + cartascancha[i].mana + "\n ataca  " + cartascancha[i].ataque + "\n  tiene vida  " + cartascancha[i].vida;
                     if (cartascancha[i].turno == false)
                     {
                         xx[i].IsEnabled = false;
@@ -803,7 +801,6 @@ namespace EntregaFinalPOOO
                 {
 
                     {
-                        a2[o].Content = cartascancha2[o].nombre + "                \n ocupa mana: " + cartascancha2[o].mana + "\n ataca  " + cartascancha2[o].ataque + "\n  tiene vida  " + cartascancha2[o].vida;
                         if (cartascancha2[o].turno == false)
                         {
                             a2[o].IsEnabled = false;
@@ -941,9 +938,7 @@ namespace EntregaFinalPOOO
             for (int i = 0; i < cartascancha.Count; i++)
             {
 
-                
-                    xx[i].Content = cartascancha[i].nombre + "                \n ocupa mana: " + cartascancha[i].mana + "\n ataca  " + cartascancha[i].ataque + "\n  tiene vida  " + cartascancha[i].vida;
-                    if (cartascancha[i].turno == false)
+                   if (cartascancha[i].turno == false)
                     {
                         xx[i].IsEnabled = false;
                     }
@@ -999,7 +994,6 @@ namespace EntregaFinalPOOO
                 {
 
                     {
-                        a2[o].Content = cartascancha2[o].nombre + "                \n ocupa mana: " + cartascancha2[o].mana + "\n ataca  " + cartascancha2[o].ataque + "\n  tiene vida  " + cartascancha2[o].vida;
                         if (cartascancha2[o].turno == false)
                         {
                             a2[o].IsEnabled = false;
@@ -1085,7 +1079,9 @@ namespace EntregaFinalPOOO
 
         private void boton4_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = boton4.Content;
+            popo.Content = cartascancha[0].nombre + "                \n ocupa mana: " + cartascancha[0].mana + "\n ataca  " + cartascancha[0].ataque + "\n  tiene vida  " + cartascancha[0].vida;
+                    
+                    
 
         }
 
@@ -1108,7 +1104,8 @@ namespace EntregaFinalPOOO
 
         private void boton5_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = boton5.Content;
+            popo.Content = cartascancha[1].nombre + "                \n ocupa mana: " + cartascancha[1].mana + "\n ataca  " + cartascancha[1].ataque + "\n  tiene vida  " + cartascancha[1].vida;
+                    
         }
 
         private void boton5_MouseLeave(object sender, MouseEventArgs e)
@@ -1119,7 +1116,8 @@ namespace EntregaFinalPOOO
 
         private void boton6_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = boton6.Content;
+            popo.Content = cartascancha[2].nombre + "                \n ocupa mana: " + cartascancha[2].mana + "\n ataca  " + cartascancha[2].ataque + "\n  tiene vida  " + cartascancha[2].vida;
+                    
 
         }
 
@@ -1130,7 +1128,8 @@ namespace EntregaFinalPOOO
 
         private void boton7_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = boton7.Content;
+            popo.Content = cartascancha[3].nombre + "                \n ocupa mana: " + cartascancha[3].mana + "\n ataca  " + cartascancha[3].ataque + "\n  tiene vida  " + cartascancha[3].vida;
+                    
         }
 
         private void boton7_MouseLeave(object sender, MouseEventArgs e)
@@ -1153,7 +1152,8 @@ namespace EntregaFinalPOOO
         private void boton8_MouseEnter(object sender, MouseEventArgs e)
         {
 
-            popo.Content = boton8.Content;
+            popo.Content = cartascancha[4].nombre + "                \n ocupa mana: " + cartascancha[4].mana + "\n ataca  " + cartascancha[4].ataque + "\n  tiene vida  " + cartascancha[4].vida;
+                    
 
         }
 
@@ -1164,7 +1164,8 @@ namespace EntregaFinalPOOO
 
         private void boton9_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = boton9.Content;
+            popo.Content = cartascancha[5].nombre + "                \n ocupa mana: " + cartascancha[5].mana + "\n ataca  " + cartascancha[5].ataque + "\n  tiene vida  " + cartascancha[5].vida;
+                    
 
         }
 
@@ -1187,7 +1188,8 @@ namespace EntregaFinalPOOO
 
         private void boton10_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = boton10.Content;
+            popo.Content = cartascancha[6].nombre + "                \n ocupa mana: " + cartascancha[6].mana + "\n ataca  " + cartascancha[6].ataque + "\n  tiene vida  " + cartascancha[6].vida;
+                    
         }
 
         private void boton10_MouseLeave(object sender, MouseEventArgs e)
@@ -1202,8 +1204,10 @@ namespace EntregaFinalPOOO
 
         private void boton11_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = boton11.Content;
-
+            popo.Content = cartascancha2[0].nombre + "                \n ocupa mana: " + cartascancha2[0].mana + "\n ataca  " + cartascancha2[0].ataque + "\n  tiene vida  " + cartascancha2[0].vida;
+              
+            //a2[o].Content = cartascancha2[o].nombre + "                \n ocupa mana: " + cartascancha2[o].mana + "\n ataca  " + cartascancha2[o].ataque + "\n  tiene vida  " + cartascancha2[o].vida;
+                       
         }
 
         private void boton11_MouseLeave(object sender, MouseEventArgs e)
@@ -1213,7 +1217,8 @@ namespace EntregaFinalPOOO
 
         private void boton12_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = boton12.Content;
+            popo.Content = cartascancha2[1].nombre + "                \n ocupa mana: " + cartascancha2[1].mana + "\n ataca  " + cartascancha2[1].ataque + "\n  tiene vida  " + cartascancha2[1].vida;
+              
 
         }
 
@@ -1224,7 +1229,8 @@ namespace EntregaFinalPOOO
 
         private void boton13_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = boton13.Content;
+            popo.Content = cartascancha2[2].nombre + "                \n ocupa mana: " + cartascancha2[2].mana + "\n ataca  " + cartascancha2[2].ataque + "\n  tiene vida  " + cartascancha2[2].vida;
+              
         }
 
         private void boton13_MouseLeave(object sender, MouseEventArgs e)
@@ -1234,7 +1240,8 @@ namespace EntregaFinalPOOO
 
         private void boton14_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = boton14.Content;
+            popo.Content = cartascancha2[3].nombre + "                \n ocupa mana: " + cartascancha2[3].mana + "\n ataca  " + cartascancha2[3].ataque + "\n  tiene vida  " + cartascancha2[3].vida;
+              
         }
 
         private void boton14_MouseLeave(object sender, MouseEventArgs e)
@@ -1244,7 +1251,8 @@ namespace EntregaFinalPOOO
 
         private void boton15_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = boton15.Content;
+            popo.Content = cartascancha2[4].nombre + "                \n ocupa mana: " + cartascancha2[4].mana + "\n ataca  " + cartascancha2[4].ataque + "\n  tiene vida  " + cartascancha2[4].vida;
+              
         }
 
         private void boton15_MouseLeave(object sender, MouseEventArgs e)
@@ -1254,7 +1262,8 @@ namespace EntregaFinalPOOO
 
         private void boton16_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = boton16.Content;
+            popo.Content = cartascancha2[5].nombre + "                \n ocupa mana: " + cartascancha2[5].mana + "\n ataca  " + cartascancha2[5].ataque + "\n  tiene vida  " + cartascancha2[5].vida;
+              
         }
 
         private void boton16_MouseLeave(object sender, MouseEventArgs e)
@@ -1264,7 +1273,8 @@ namespace EntregaFinalPOOO
 
         private void boton17_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = boton17.Content;
+            popo.Content = cartascancha2[6].nombre + "                \n ocupa mana: " + cartascancha2[6].mana + "\n ataca  " + cartascancha2[6].ataque + "\n  tiene vida  " + cartascancha2[6].vida;
+              
         }
 
         private void boton17_MouseLeave(object sender, MouseEventArgs e)
@@ -1516,7 +1526,6 @@ namespace EntregaFinalPOOO
             {
 
                 {
-                    xx[i].Content = cartascancha[i].nombre + "                \n ocupa mana: " + cartascancha[i].mana + "\n ataca  " + cartascancha[i].ataque + "\n  tiene vida  " + cartascancha[i].vida;
                     if (cartascancha[i].turno == false)
                     {
                         xx[i].IsEnabled = false;
@@ -1605,7 +1614,6 @@ namespace EntregaFinalPOOO
             {
 
                 {
-                    a2[i].Content = cartascancha2[i].nombre + "    " + cartascancha2[i].mana + cartascancha2[i].vida + cartascancha2[i].ataque;
                     if (cartascancha2[i].turno == false)
                     {
                         a2[i].IsEnabled = false;
@@ -1836,7 +1844,6 @@ namespace EntregaFinalPOOO
             {
 
                 
-                    xx[i].Content = cartascancha[i].nombre + "                \n ocupa mana: " + cartascancha[i].mana + "\n ataca  " + cartascancha[i].ataque + "\n  tiene vida  " + cartascancha[i].vida;
                     if (cartascancha[i].turno == false)
                     {
                         xx[i].IsEnabled = false;
@@ -1854,7 +1861,7 @@ namespace EntregaFinalPOOO
                 {
 
                     {
-                        a2[o].Content = cartascancha2[o].nombre + "                \n ocupa mana: " + cartascancha2[o].mana + "\n ataca  " + cartascancha2[o].ataque + "\n  tiene vida  " + cartascancha2[o].vida;
+                     //   a2[o].Content = cartascancha2[o].nombre + "                \n ocupa mana: " + cartascancha2[o].mana + "\n ataca  " + cartascancha2[o].ataque + "\n  tiene vida  " + cartascancha2[o].vida;
                         if (cartascancha2[o].turno == false)
                         {
                             a2[o].IsEnabled = false;
@@ -1871,9 +1878,9 @@ namespace EntregaFinalPOOO
 
             
 
-            xx[cartascancha.Count()].Content = "";
+           /*xx[cartascancha.Count()].Content = "";*/
             xx[cartascancha.Count()].Visibility = Visibility.Hidden;
-            a2[cartascancha2.Count()].Content = "";
+          //  a2[cartascancha2.Count()].Content = "";
             a2[cartascancha2.Count()].Visibility = Visibility.Hidden;
         }
         Heroe heroeatacado;
