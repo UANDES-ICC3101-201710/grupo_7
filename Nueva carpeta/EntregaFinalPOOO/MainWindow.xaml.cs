@@ -86,7 +86,18 @@ namespace EntregaFinalPOOO
         minion CH5 = new minion("Core Hound", 9, 5, false, false, 7);
         minion CH15 = new minion("Core Hound", 9, 5, false, false, 7);
         minion CH25 = new minion("Core Hound", 9, 5, false, false, 7);
-
+        
+        
+        ImageBrush wisp = new ImageBrush();
+        ImageBrush MurlocRaider = new ImageBrush();
+        ImageBrush BloodfenRaptor = new ImageBrush();
+        ImageBrush RiverCrocolisk = new ImageBrush();
+        ImageBrush MagmaRager = new ImageBrush();
+        ImageBrush ChillwindYeti = new ImageBrush();
+        ImageBrush OasisSnapjaw = new ImageBrush();
+        ImageBrush BoulderfistOgre = new ImageBrush();
+        ImageBrush WarGolem = new ImageBrush();
+        ImageBrush CoreHound = new ImageBrush();
 
 
         List<carta> mazos = new List<carta>();
@@ -116,6 +127,28 @@ namespace EntregaFinalPOOO
         public MainWindow()
         {
             InitializeComponent();
+            
+            BitmapImage image = new BitmapImage(new Uri("http://media-hearth.cursecdn.com/avatars/147/699/273.png"));
+            wisp.ImageSource = image;
+            BitmapImage image1 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/1/1f/Murloc_Raider%2855%29_Gold.png/200px-Murloc_Raider%2855%29_Gold.png?version=883f02d505c570b0ea5c8b4b5e13f3b8"));
+            MurlocRaider.ImageSource = image1;
+            BitmapImage image2 = new BitmapImage(new Uri("http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_172.png"));
+            BloodfenRaptor.ImageSource = image2;
+            BitmapImage image3 = new BitmapImage(new Uri("https://media-hearth.cursecdn.com/avatars/147/580/535.png"));
+            RiverCrocolisk.ImageSource = image3;
+            BitmapImage image4 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/e/e3/Magma_Rager%28362%29_Gold.png/200px-Magma_Rager%28362%29_Gold.png?version=2f74b68dc2a909f90ec5c1b281403cc4"));
+            MagmaRager.ImageSource = image4;
+            BitmapImage image5 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/1/11/Chillwind_Yeti%2831%29_Gold.png/200px-Chillwind_Yeti%2831%29_Gold.png?version=d51f12af8fc503b7aadd3775cdb4b3c4"));
+            ChillwindYeti.ImageSource = image5;
+            BitmapImage image6 = new BitmapImage(new Uri("http://media-hearth.cursecdn.com/avatars/147/579/15.png"));
+            OasisSnapjaw.ImageSource = image6;
+            BitmapImage image7 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/f/fd/Boulderfist_Ogre%2860%29.png/200px-Boulderfist_Ogre%2860%29.png?version=7413c2a7a083d1e07079b5a064ba544d"));
+            BoulderfistOgre.ImageSource = image7;
+            BitmapImage image8 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/5/59/War_Golem%28323%29_Gold.png/200px-War_Golem%28323%29_Gold.png?version=dadc0de413eb02f718d3073d75b23cfd"));
+            WarGolem.ImageSource = image8;
+            BitmapImage image9 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/9/9e/Core_Hound%28173%29.png/200px-Core_Hound%28173%29.png?version=61fadbe5ac356dd87a804be87e6ea538"));
+            CoreHound.ImageSource = image9;
+
 
 
             foreach (Button b in stackpanel_Copy.Children)
@@ -723,6 +756,46 @@ namespace EntregaFinalPOOO
                         xx[i].IsEnabled = true;
                     }
                     xx[i].Visibility = Visibility.Visible;
+                    if (cartascancha[i].nombre == "wisp")
+                    {
+                        xx[i].Background = wisp;
+                    }
+                    if (cartascancha[i].nombre == "Murloc Raider")
+                    {
+                        xx[i].Background = MurlocRaider;
+                    }
+                    if (cartascancha[i].nombre == "Bloodfen Raptor")
+                    {
+                        xx[i].Background = BloodfenRaptor;
+                    }
+                    if (cartascancha[i].nombre == "River Crocolisk")
+                    {
+                        xx[i].Background = RiverCrocolisk;
+                    }
+                    if (cartascancha[i].nombre == "Magma Rager")
+                    {
+                        xx[i].Background = MagmaRager;
+                    }
+                    if (cartascancha[i].nombre == "Chillwind Yeti")
+                    {
+                        xx[i].Background = ChillwindYeti;
+                    }
+                    if (cartascancha[i].nombre == "Oasis Snapjaw")
+                    {
+                        xx[i].Background = OasisSnapjaw;
+                    }
+                    if (cartascancha[i].nombre == "Boulderfist Ogre")
+                    {
+                        xx[i].Background = BoulderfistOgre;
+                    }
+                    if (cartascancha[i].nombre == "War Golem")
+                    {
+                        xx[i].Background = WarGolem;
+                    }
+                    if (cartascancha[i].nombre == "Core Hound")
+                    {
+                        xx[i].Background = CoreHound;
+                    }
 
 
                 }
@@ -739,6 +812,50 @@ namespace EntregaFinalPOOO
                         {
                             a2[o].IsEnabled = true;
                         }
+                        if (cartascancha2[o].nombre == "wisp")
+                        {
+                            a2[o].Background = wisp;
+                        }
+                        if (cartascancha2[o].nombre == "Murloc Raider")
+                        {
+                            a2[o].Background = MurlocRaider;
+                        }
+                        if (cartascancha2[o].nombre == "Bloodfen Raptor")
+                        {
+                            a2[o].Background = BloodfenRaptor;
+                        }
+                        if (cartascancha2[o].nombre == "River Crocolisk")
+                        {
+                            a2[o].Background = RiverCrocolisk;
+                        }
+                        if (cartascancha2[o].nombre == "Magma Rager")
+                        {
+                            a2[o].Background = MagmaRager;
+                        }
+                        if (cartascancha2[o].nombre == "Chillwind Yeti")
+                        {
+                            a2[o].Background = ChillwindYeti;
+                        }
+                        if (cartascancha2[o].nombre == "Oasis Snapjaw")
+                        {
+                            a2[o].Background = OasisSnapjaw;
+                        }
+                        if (cartascancha2[o].nombre == "Boulderfist Ogre")
+                        {
+                            a2[o].Background = BoulderfistOgre;
+                        }
+                        if (cartascancha2[o].nombre == "War Golem")
+                        {
+                            a2[o].Background = WarGolem;
+                        }
+                        if (cartascancha2[o].nombre == "Core Hound")
+                        {
+                            a2[o].Background = CoreHound;
+                        }
+
+
+
+
                         a2[o].Visibility = Visibility.Visible;
                     }
 
@@ -834,6 +951,46 @@ namespace EntregaFinalPOOO
                     {
                         xx[i].IsEnabled = true;
                     }
+                    if (cartascancha[i].nombre == "wisp")
+                    {
+                        xx[i].Background = wisp;
+                    }
+                    if (cartascancha[i].nombre == "Murloc Raider")
+                    {
+                        xx[i].Background = MurlocRaider;
+                    }
+                    if (cartascancha[i].nombre == "Bloodfen Raptor")
+                    {
+                        xx[i].Background = BloodfenRaptor;
+                    }
+                    if (cartascancha[i].nombre == "River Crocolisk")
+                    {
+                        xx[i].Background = RiverCrocolisk;
+                    }
+                    if (cartascancha[i].nombre == "Magma Rager")
+                    {
+                        xx[i].Background = MagmaRager;
+                    }
+                    if (cartascancha[i].nombre == "Chillwind Yeti")
+                    {
+                        xx[i].Background = ChillwindYeti;
+                    }
+                    if (cartascancha[i].nombre == "Oasis Snapjaw")
+                    {
+                        xx[i].Background = OasisSnapjaw;
+                    }
+                    if (cartascancha[i].nombre == "Boulderfist Ogre")
+                    {
+                        xx[i].Background = BoulderfistOgre;
+                    }
+                    if (cartascancha[i].nombre == "War Golem")
+                    {
+                        xx[i].Background = WarGolem;
+                    }
+                    if (cartascancha[i].nombre == "Core Hound")
+                    {
+                        xx[i].Background = CoreHound;
+                    }
                     xx[i].Visibility = Visibility.Visible;
 
 
@@ -850,6 +1007,46 @@ namespace EntregaFinalPOOO
                         if (cartascancha2[o].turno == true)
                         {
                             a2[o].IsEnabled = true;
+                        }
+                        if (cartascancha2[o].nombre == "wisp")
+                        {
+                            a2[o].Background = wisp;
+                        }
+                        if (cartascancha2[o].nombre == "Murloc Raider")
+                        {
+                            a2[o].Background = MurlocRaider;
+                        }
+                        if (cartascancha2[o].nombre == "Bloodfen Raptor")
+                        {
+                            a2[o].Background = BloodfenRaptor;
+                        }
+                        if (cartascancha2[o].nombre == "River Crocolisk")
+                        {
+                            a2[o].Background = RiverCrocolisk;
+                        }
+                        if (cartascancha2[o].nombre == "Magma Rager")
+                        {
+                            a2[o].Background = MagmaRager;
+                        }
+                        if (cartascancha2[o].nombre == "Chillwind Yeti")
+                        {
+                            a2[o].Background = ChillwindYeti;
+                        }
+                        if (cartascancha2[o].nombre == "Oasis Snapjaw")
+                        {
+                            a2[o].Background = OasisSnapjaw;
+                        }
+                        if (cartascancha2[o].nombre == "Boulderfist Ogre")
+                        {
+                            a2[o].Background = BoulderfistOgre;
+                        }
+                        if (cartascancha2[o].nombre == "War Golem")
+                        {
+                            a2[o].Background = WarGolem;
+                        }
+                        if (cartascancha2[o].nombre == "Core Hound")
+                        {
+                            a2[o].Background = CoreHound;
                         }
                         a2[o].Visibility = Visibility.Visible;
                     }
@@ -1328,6 +1525,46 @@ namespace EntregaFinalPOOO
                     {
                         xx[i].IsEnabled = true;
                     }
+                    if (cartascancha[i].nombre == "wisp")
+                    {
+                        xx[i].Background = wisp;
+                    }
+                    if (cartascancha[i].nombre == "Murloc Raider")
+                    {
+                        xx[i].Background = MurlocRaider;
+                    }
+                    if (cartascancha[i].nombre == "Bloodfen Raptor")
+                    {
+                        xx[i].Background = BloodfenRaptor;
+                    }
+                    if (cartascancha[i].nombre == "River Crocolisk")
+                    {
+                        xx[i].Background = RiverCrocolisk;
+                    }
+                    if (cartascancha[i].nombre == "Magma Rager")
+                    {
+                        xx[i].Background = MagmaRager;
+                    }
+                    if (cartascancha[i].nombre == "Chillwind Yeti")
+                    {
+                        xx[i].Background = ChillwindYeti;
+                    }
+                    if (cartascancha[i].nombre == "Oasis Snapjaw")
+                    {
+                        xx[i].Background = OasisSnapjaw;
+                    }
+                    if (cartascancha[i].nombre == "Boulderfist Ogre")
+                    {
+                        xx[i].Background = BoulderfistOgre;
+                    }
+                    if (cartascancha[i].nombre == "War Golem")
+                    {
+                        xx[i].Background = WarGolem;
+                    }
+                    if (cartascancha[i].nombre == "Core Hound")
+                    {
+                        xx[i].Background = CoreHound;
+                    }
                     xx[i].Visibility = Visibility.Visible;
                     
 
@@ -1372,6 +1609,46 @@ namespace EntregaFinalPOOO
                     if (cartascancha2[i].turno == false)
                     {
                         a2[i].IsEnabled = false;
+                    }
+                    if (cartascancha2[i].nombre == "wisp")
+                    {
+                        a2[i].Background = wisp;
+                    }
+                    if (cartascancha2[i].nombre == "Murloc Raider")
+                    {
+                        a2[i].Background = MurlocRaider;
+                    }
+                    if (cartascancha2[i].nombre == "Bloodfen Raptor")
+                    {
+                        a2[i].Background = BloodfenRaptor;
+                    }
+                    if (cartascancha2[i].nombre == "River Crocolisk")
+                    {
+                        a2[i].Background = RiverCrocolisk;
+                    }
+                    if (cartascancha2[i].nombre == "Magma Rager")
+                    {
+                        a2[i].Background = MagmaRager;
+                    }
+                    if (cartascancha2[i].nombre == "Chillwind Yeti")
+                    {
+                        a2[i].Background = ChillwindYeti;
+                    }
+                    if (cartascancha2[i].nombre == "Oasis Snapjaw")
+                    {
+                        a2[i].Background = OasisSnapjaw;
+                    }
+                    if (cartascancha2[i].nombre == "Boulderfist Ogre")
+                    {
+                        a2[i].Background = BoulderfistOgre;
+                    }
+                    if (cartascancha2[i].nombre == "War Golem")
+                    {
+                        a2[i].Background = WarGolem;
+                    }
+                    if (cartascancha2[i].nombre == "Core Hound")
+                    {
+                        a2[i].Background = CoreHound;
                     }
 
                     a2[i].Visibility = Visibility.Visible;
@@ -1568,6 +1845,7 @@ namespace EntregaFinalPOOO
                     {
                         xx[i].IsEnabled = true;
                     }
+                   
                     xx[i].Visibility = Visibility.Visible;
 
 
@@ -1585,6 +1863,7 @@ namespace EntregaFinalPOOO
                         {
                             a2[o].IsEnabled = true;
                         }
+                        
                         a2[o].Visibility = Visibility.Visible;
                     }
 
