@@ -261,7 +261,7 @@ namespace EntregaFinalPOOO
                     }
                     else
                     {
-
+                        
                         tipo.vida = tipo.vida - 2;
                         if (tipo.vida <= 0)
                         {
