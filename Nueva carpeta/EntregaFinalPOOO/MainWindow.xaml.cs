@@ -98,6 +98,7 @@ namespace EntregaFinalPOOO
         ImageBrush BoulderfistOgre = new ImageBrush();
         ImageBrush WarGolem = new ImageBrush();
         ImageBrush CoreHound = new ImageBrush();
+        ImageBrush Recruit = new ImageBrush();
 
 
         List<carta> mazos = new List<carta>();
@@ -152,6 +153,8 @@ namespace EntregaFinalPOOO
             WarGolem.ImageSource = image8;
             BitmapImage image9 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/9/9e/Core_Hound%28173%29.png/200px-Core_Hound%28173%29.png?version=61fadbe5ac356dd87a804be87e6ea538"));
             CoreHound.ImageSource = image9;
+            BitmapImage image10 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/9/9e/Core_Hound%28173%29.png/200px-Core_Hound%28173%29.png?version=61fadbe5ac356dd87a804be87e6ea538"));
+            Recruit.ImageSource = image10;
 
 
 
@@ -353,20 +356,20 @@ namespace EntregaFinalPOOO
             combobox4.Items.Add("Saludar");
             combobox4.Items.Add("Llorar");
             combobox4.Items.Add("Celebrar");
-
+            
         }
         public static void Rendirese() 
         {
             Application.Current.Shutdown();
         }
-
+        
        
 
       
        
       
 
-        public static void refreshh(List<minion> cartascancha, List<minion> cartascancha2, List<Button> xx, List<Button> a2, ImageBrush wisp, ImageBrush MurlocRaider, ImageBrush BloodfenRaptor, ImageBrush RiverCrocolisk,ImageBrush MagmaRager ,ImageBrush ChillwindYeti, ImageBrush OasisSnapjaw, ImageBrush BoulderfistOgre, ImageBrush WarGolem, ImageBrush CoreHound, Heroe j1, Heroe j2)
+        public static void refreshh(List<minion> cartascancha, List<minion> cartascancha2, List<Button> xx, List<Button> a2, ImageBrush wisp, ImageBrush MurlocRaider, ImageBrush BloodfenRaptor, ImageBrush RiverCrocolisk,ImageBrush MagmaRager ,ImageBrush ChillwindYeti, ImageBrush OasisSnapjaw, ImageBrush BoulderfistOgre, ImageBrush WarGolem, ImageBrush CoreHound,ImageBrush recruit, Heroe j1, Heroe j2)
         {
             for (int i = 0; i < cartascancha.Count; i++)
             {
@@ -420,6 +423,10 @@ namespace EntregaFinalPOOO
                 if (cartascancha[i].nombre == "Core Hound")
                 {
                     xx[i].Background = CoreHound;
+                }
+                if (cartascancha[i].nombre == "Recruit")
+                {
+                    xx[i].Background = recruit;
                 }
                 xx[i].Visibility = Visibility.Visible;
 
@@ -477,6 +484,7 @@ namespace EntregaFinalPOOO
                 {
                     a2[o].Background = CoreHound;
                 }
+                
                 a2[o].Visibility = Visibility.Visible;
 
 
@@ -843,7 +851,7 @@ namespace EntregaFinalPOOO
             Listbox_Copy.IsEnabled = true;
             habilidad2.IsEnabled = true;
             habilidad.IsEnabled = false;
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound,j1,j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit ,j1,j2);
            
 
 
@@ -930,7 +938,7 @@ namespace EntregaFinalPOOO
             
             atacar2.IsEnabled = false;
 
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound,j1,j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit,j1, j2);
 
         }
 
@@ -1306,7 +1314,7 @@ namespace EntregaFinalPOOO
             Vida2.Content = j2.vida;
             manadisp.Content = j1.mana;
             habilidad.IsEnabled = false;
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound,j1,j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit,j1, j2);
 
 
 
@@ -1378,7 +1386,7 @@ namespace EntregaFinalPOOO
             Vida2.Content = j2.vida;
             manadisponible2.Content = j2.mana;
             habilidad2.IsEnabled = false;
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound,j1,j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit,j1, j2);
 
 
 
@@ -1408,8 +1416,7 @@ namespace EntregaFinalPOOO
                 
                
             }
-            
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
         }
         /* Jugar carta J2*/
         private void Listbox_Copy_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -1430,7 +1437,7 @@ namespace EntregaFinalPOOO
                     }
                 }
             }
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound,j1,j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit,j1, j2);
 
 
 
@@ -1576,14 +1583,16 @@ namespace EntregaFinalPOOO
             vida1.Content = j1.vida;
             Vida2.Content = j2.vida;
           
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound,j1,j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit,j1, j2);
 
 
             
-                ;
-            xx[cartascancha.Count()].Visibility = Visibility.Hidden;
-         
-            a2[cartascancha2.Count()].Visibility = Visibility.Hidden;
+             
+                xx[cartascancha.Count()].Visibility = Visibility.Hidden;
+
+                a2[cartascancha2.Count()].Visibility = Visibility.Hidden;
+
+           
         }
         Heroe heroeatacado;
         private void Button_Click_5(object sender, RoutedEventArgs e)
