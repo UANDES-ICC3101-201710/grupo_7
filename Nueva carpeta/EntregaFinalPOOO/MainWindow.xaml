@@ -29,53 +29,53 @@
     </Window.Resources>
     <Grid Margin="0,0,37.4,0.4" RenderTransformOrigin="0.533,0.495">
         <Button x:Name="boton1" Content="Confirmar" HorizontalAlignment="Left" Margin="700,283,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" RenderTransformOrigin="0.754,-3.012" Height="23"/>
-            
+
         <TextBox x:Name="text1" HorizontalAlignment="Left" Height="23" Margin="575,283,0,0" TextWrapping="Wrap" Text="Ingrese su nombre" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
         <Button x:Name="boton2" Content="Confirmar" HorizontalAlignment="Left" Margin="700,124,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2" RenderTransformOrigin="1.676,0.866" Height="22"/>
         <TextBox x:Name="text2" HorizontalAlignment="Left" Height="23" Margin="575,124,0,0" TextWrapping="Wrap" Text="Ingrese su nombre" VerticalAlignment="Top" Width="120" TextChanged="text2_TextChanged"/>
         <Button x:Name="boton3" Content="Comenzar!!!!" HorizontalAlignment="Left" Margin="442,175,0,0" VerticalAlignment="Top" Width="196" Height="65" Click="boton3_Click" FontSize="24"/>
         <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="655,284,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_1" ToolTip="" Tag=""/>
         <ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Margin="655,124,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_2"/>
-            
-        <Image x:Name="pic1" Margin="919,306,1.6,-15.4" Source="Rexxar(484).png" Stretch="Fill"/>
-        <Image x:Name="pic2" Margin="917,19,-0.4,272.6" Source="Rexxar(484).png" Stretch="Fill"/>
-        <Image x:Name="pic3" Margin="917,306,1.6,-9.4" Source="druid-avatar.png" Stretch="Fill"/>
-        <Image x:Name="pic4" Margin="916,15,2.6,275.6" Source="druid-avatar.png" Stretch="Fill"/>
-        <Image x:Name="pic5" Margin="916,306,1.6,-15.4" Source="Jaina_Proudmoore(320).png" Stretch="Fill"/>
-        <Image x:Name="pic6" Margin="914,19,0.6,264.6" Source="Jaina_Proudmoore(320).png" Stretch="Fill"/>
-        <Image x:Name="pic7" Margin="917,306,1.6,-9.4" Source="uther.jpg" Stretch="Fill" RenderTransformOrigin="2.521,0.82"/>
-        <Image x:Name="pic8" Margin="916,15,-0.4,273.6" Source="uther.jpg" Stretch="Fill"/>
-        <Image x:Name="pic9" Margin="914,301,-0.4,-9.4" Source="priest.jpg" Stretch="Fill"/>
-        <Image x:Name="pic10" Margin="915,12,-0.4,270.6" Source="priest.jpg" Stretch="Fill"/>
-        <Image x:Name="pic11" Margin="915,301,1.6,-9.4" Source="Valeera_Sanguinar(2).png" Stretch="Fill"/>
-        <Image x:Name="pic12" Margin="915,13,1.6,271.6" Source="Valeera_Sanguinar(2).png" Stretch="Fill"/>
-        <Image x:Name="pic13" Margin="916,301,3.6,-5.4" Source="Thrall(319).png" Stretch="Fill"/>
-        <Image x:Name="pic14" Margin="916,15,1.6,276.6" Source="Thrall(319).png" Stretch="Fill" RenderTransformOrigin="-0.536,0.997"/>
-        <Image x:Name="pic15" Margin="915,301,-0.4,-5.4" Source="Guldan.jpg" Stretch="Fill"/>
-        <Image x:Name="pic16" Margin="916,13,-0.4,276.6" Source="Guldan.jpg" Stretch="Fill"/>
-        <Image x:Name="pic17" Margin="917,305,-0.4,-0.4" Source="Garrosh_Hellscream(635).png" Stretch="Fill"/>
-        <Image x:Name="pic18" Margin="915,12,-3.4,279.6" Source="Garrosh_Hellscream(635).png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+
+        <Image x:Name="pic1" Margin="944,253,-23.4,38" Source="Rexxar(484).png" Stretch="Fill"/>
+        <Image x:Name="pic2" Margin="917,15,-26.4,273" Source="Rexxar(484).png" Stretch="Fill"/>
+        <Image x:Name="pic3" Margin="951,253,-32.4,44" Source="druid-avatar.png" Stretch="Fill"/>
+        <Image x:Name="pic4" Margin="916,11,-23.4,276" Source="druid-avatar.png" Stretch="Fill"/>
+        <Image x:Name="pic5" Margin="952,265,-34.4,26" Source="Jaina_Proudmoore(320).png" Stretch="Fill"/>
+        <Image x:Name="pic6" Margin="914,15,-25.4,265" Source="Jaina_Proudmoore(320).png" Stretch="Fill"/>
+        <Image x:Name="pic7" Margin="953,265,-34.4,32" Source="uther.jpg" Stretch="Fill" RenderTransformOrigin="2.521,0.82"/>
+        <Image x:Name="pic8" Margin="916,11,-26.4,274" Source="uther.jpg" Stretch="Fill"/>
+        <Image x:Name="pic9" Margin="950,260,-36.4,32" Source="priest.jpg" Stretch="Fill"/>
+        <Image x:Name="pic10" Margin="915,8,-26.4,271" Source="priest.jpg" Stretch="Fill"/>
+        <Image x:Name="pic11" Margin="951,260,-34.4,32" Source="Valeera_Sanguinar(2).png" Stretch="Fill"/>
+        <Image x:Name="pic12" Margin="915,9,-24.4,272" Source="Valeera_Sanguinar(2).png" Stretch="Fill"/>
+        <Image x:Name="pic13" Margin="952,260,-32.4,36" Source="Thrall(319).png" Stretch="Fill"/>
+        <Image x:Name="pic14" Margin="916,11,-24.4,277" Source="Thrall(319).png" Stretch="Fill" RenderTransformOrigin="-0.536,0.997"/>
+        <Image x:Name="pic15" Margin="951,260,-36.4,36" Source="Guldan.jpg" Stretch="Fill"/>
+        <Image x:Name="pic16" Margin="916,9,-26.4,277" Source="Guldan.jpg" Stretch="Fill"/>
+        <Image x:Name="pic17" Margin="949,269,-32.4,36" Source="Garrosh_Hellscream(635).png" Stretch="Fill"/>
+        <Image x:Name="pic18" Margin="915,19,-28.4,268" Source="Garrosh_Hellscream(635).png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.933"/>
+                    <SkewTransform AngleX="0.133"/>
+                    <RotateTransform Angle="-0.869"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
         <ListBox x:Name="Listbox" HorizontalAlignment="Left" Height="110" Margin="0,309,0,-0.4" VerticalAlignment="Top" Width="570"  IsSynchronizedWithCurrentItem="False" MouseDoubleClick="Listbox_MouseDoubleClick" />
         <Button x:Name="FinTurno" Content="Terminar Turno " HorizontalAlignment="Left" Margin="467,269,0,0" VerticalAlignment="Top" Width="103" Click="FinTurno_Click" Background="#FF59B650"/>
-        <StackPanel x:Name="stackpanel" HorizontalAlignment="Left" Height="65" Margin="4,224,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal">
-            <Button x:Name="boton4" Margin="0 0 10 0 " Content="" Click="Button_Click_3" Width="50"  MouseEnter="boton4_MouseEnter" MouseLeave="boton4_MouseLeave" Height="65" VerticalAlignment="Bottom" Style="{StaticResource MyButton}"    />
+        <StackPanel x:Name="stackpanel" HorizontalAlignment="Left" Height="80" Margin="4,224,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal">
+            <Button x:Name="boton4" Margin="0 0 10 0 " Content="" Click="Button_Click_3" Width="55"  MouseEnter="boton4_MouseEnter" MouseLeave="boton4_MouseLeave" Height="80" VerticalAlignment="Bottom" Style="{StaticResource MyButton}"    />
 
 
-            <Button x:Name="boton5" Margin="0,0,10,-0.2" Content="" Width="50" Click="boton5_Click" MouseEnter="boton5_MouseEnter" MouseLeave="boton5_MouseLeave" Height="65" VerticalAlignment="Bottom" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton6" Margin="0,0,10,-0.2" Content="" Width="50" MouseEnter="boton6_MouseEnter" MouseLeave="boton6_MouseLeave" Height="65" VerticalAlignment="Top" Click="boton6_Click" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton7" Margin="0,0,10,-0.2" Content="" Width="50" MouseEnter="boton7_MouseEnter" MouseLeave="boton7_MouseLeave" Click="boton7_Click" Style="{StaticResource MyButton}" />
-            <Button x:Name="boton8" Margin="0 0 10 0 " Content="" Width="50" Click="boton8_Click" MouseEnter="boton8_MouseEnter" MouseLeave="boton8_MouseLeave" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton9" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton9_MouseEnter" MouseLeave="boton9_MouseLeave" Click="boton9_Click " Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton10"  Content="" Width="50" Click="boton10_Click" MouseEnter="boton10_MouseEnter" MouseLeave="boton10_MouseLeave" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton5" Margin="0,0,10,0" Content="" Width="55" Click="boton5_Click" MouseEnter="boton5_MouseEnter" MouseLeave="boton5_MouseLeave" Height="80" VerticalAlignment="Bottom" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton6" Margin="0,0,10,0" Content="" Width="55" MouseEnter="boton6_MouseEnter" MouseLeave="boton6_MouseLeave" Height="80" VerticalAlignment="Top" Click="boton6_Click" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton7" Margin="0,0,10,0" Content="" Width="55" MouseEnter="boton7_MouseEnter" MouseLeave="boton7_MouseLeave" Click="boton7_Click" Style="{StaticResource MyButton}" />
+            <Button x:Name="boton8" Margin="0 0 10 0 " Content="" Width="55" Click="boton8_Click" MouseEnter="boton8_MouseEnter" MouseLeave="boton8_MouseLeave" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton9" Margin="0 0 10 0 " Content="" Width="55" MouseEnter="boton9_MouseEnter" MouseLeave="boton9_MouseLeave" Click="boton9_Click " Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton10"  Content="" Width="55" Click="boton10_Click" MouseEnter="boton10_MouseEnter" MouseLeave="boton10_MouseLeave" Style="{StaticResource MyButton}"/>
         </StackPanel>
         <StackPanel x:Name="stackpanel_Copy" HorizontalAlignment="Left" Height="65" Margin="4,150,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal">
             <Button x:Name="boton11" Margin="0,0,10,-0.2" Content=""  Width="50" Click="boton11_Click" MouseEnter="boton11_MouseEnter" MouseLeave="boton11_MouseLeave" Height="65" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
@@ -121,7 +121,7 @@
         <Label x:Name="eheroe2" Content="Elegir heroe" HorizontalAlignment="Left" Margin="702,98,0,0" VerticalAlignment="Top"/>
         <Label x:Name="decir1" Content="Decir algo" HorizontalAlignment="Left" Margin="727,311,0,0" VerticalAlignment="Top"/>
         <Label x:Name="decir2" Content="Decir algo" HorizontalAlignment="Left" Margin="725,63,0,0" VerticalAlignment="Top"/>
-        <DockPanel>
+        <DockPanel Margin="-1237,-52,1236.6,52">
             <Menu DockPanel.Dock="Top" Margin="0,0,985,0" Height="20">
                 <MenuItem Header="_Archivo">
                     <MenuItem Header="_Cargar"/>

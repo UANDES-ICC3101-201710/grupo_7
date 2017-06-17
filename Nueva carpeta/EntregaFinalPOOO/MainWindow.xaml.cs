@@ -496,22 +496,23 @@ namespace EntregaFinalPOOO
        
 
         public static void jugarcarta(int a, List<minion> lista, Heroe h)
-        {
-            if (h.mano[a].mana <= h.mana)
+        {   if (lista.Count < 6)
             {
-                h.gastarmana(h.mano[a]);
-                
-                (h.mano[a]).cambiarActividad();
-                carta cc = h.mano[a];
-                if (cc.GetType().Equals(typeof(minion)))
+                if (h.mano[a].mana <= h.mana)
                 {
-                    minion p = (minion)h.mano[a];
-                    lista.Add(p);
+                    h.gastarmana(h.mano[a]);
+
+                    (h.mano[a]).cambiarActividad();
+                    carta cc = h.mano[a];
+                    if (cc.GetType().Equals(typeof(minion)))
+                    {
+                        minion p = (minion)h.mano[a];
+                        lista.Add(p);
+                    }
+                    h.mano.RemoveAt(a);
+
                 }
-                h.mano.RemoveAt(a);
-
             }
-
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
@@ -753,6 +754,7 @@ namespace EntregaFinalPOOO
         /*Comenzar*/
         private void boton3_Click(object sender, RoutedEventArgs e)
         {
+            
             boton3.Visibility = Visibility.Hidden;
             Listbox.Items.Add("Tus cartas son las siguientes:");
             foreach (minion i in manos)
@@ -1386,43 +1388,48 @@ namespace EntregaFinalPOOO
         /*Jugar carta j1*/
         private void Listbox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            if (Listbox.SelectedIndex == 0)
+            
+            if (cartascancha.Count() < 7)
             {
-
-            }
-            if (Listbox.SelectedIndex > 0)
-            {
-                if (j1.mano[Listbox.SelectedIndex - 1].mana <= j1.mana)
+                if (Listbox.SelectedIndex == 0)
                 {
-                    j1.jugarcarta(Listbox.SelectedIndex, cartascancha);
-                    manadisp.Content = j1.mana;
 
-                    Listbox.Items.Remove(Listbox.SelectedItem);
                 }
+                if (Listbox.SelectedIndex > 0)
+                {
+                    if (j1.mano[Listbox.SelectedIndex - 1].mana <= j1.mana)
+                    {
+                        j1.jugarcarta(Listbox.SelectedIndex, cartascancha);
+                        manadisp.Content = j1.mana;
+
+                        Listbox.Items.Remove(Listbox.SelectedItem);
+                    }
+                }
+                
+               
             }
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound,j1,j2);
-
-
-
+            
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, j1, j2);
         }
         /* Jugar carta J2*/
         private void Listbox_Copy_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            if (Listbox_Copy.SelectedIndex == 0)
+        {   if (cartascancha2.Count() < 7)
             {
-
-            }
-            if (Listbox_Copy.SelectedIndex > 0)
-            {
-                if (j2.mano[Listbox_Copy.SelectedIndex - 1].mana <= j2.mana)
+                if (Listbox_Copy.SelectedIndex == 0)
                 {
-                    j2.jugarcarta(Listbox_Copy.SelectedIndex, cartascancha2);
-                    manadisponible2.Content = j2.mana;
 
-                    Listbox_Copy.Items.Remove(Listbox_Copy.SelectedItem);
+                }
+                if (Listbox_Copy.SelectedIndex > 0)
+                {
+                    if (j2.mano[Listbox_Copy.SelectedIndex - 1].mana <= j2.mana)
+                    {
+                        j2.jugarcarta(Listbox_Copy.SelectedIndex, cartascancha2);
+                        manadisponible2.Content = j2.mana;
+
+                        Listbox_Copy.Items.Remove(Listbox_Copy.SelectedItem);
+                    }
                 }
             }
-
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound,j1,j2);
 
 
@@ -1573,6 +1580,7 @@ namespace EntregaFinalPOOO
 
 
             
+                ;
             xx[cartascancha.Count()].Visibility = Visibility.Hidden;
          
             a2[cartascancha2.Count()].Visibility = Visibility.Hidden;
