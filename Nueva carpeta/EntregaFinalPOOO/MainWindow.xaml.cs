@@ -158,10 +158,12 @@ namespace EntregaFinalPOOO
             foreach (Button b in stackpanel_Copy.Children)
             {
                 a2.Add(b);
+                
             }
             foreach (Button b in stackpanel.Children)
             {
                 xx.Add(b);
+                
             }
 
 
@@ -371,15 +373,17 @@ namespace EntregaFinalPOOO
 
                 if (cartascancha[i].turno == false)
                 {
-                    xx[i].IsEnabled = false;
+                    xx[i].Opacity = 0.3;
                 }
                 if (cartascancha[i].turno == true)
                 {
-                    xx[i].IsEnabled = true;
+                    xx[i].Opacity = 1;
+
                 }
                 if (cartascancha[i].nombre == "wisp")
                 {
                     xx[i].Background = wisp;
+                    
                 }
                 if (cartascancha[i].nombre == "Murloc Raider")
                 {
@@ -427,11 +431,11 @@ namespace EntregaFinalPOOO
 
                 if (cartascancha2[o].turno == false)
                 {
-                    a2[o].IsEnabled = false;
+                    a2[o].Opacity = 0.3;
                 }
                 if (cartascancha2[o].turno == true)
                 {
-                    a2[o].IsEnabled = true;
+                    a2[o].Opacity=1;
                 }
                 if (cartascancha2[o].nombre == "wisp")
                 {
@@ -958,6 +962,7 @@ namespace EntregaFinalPOOO
         private void boton4_MouseEnter(object sender, MouseEventArgs e)
         {
             popo.Content = cartascancha[0].nombre + "                \n ocupa mana: " + cartascancha[0].mana + "\n ataca  " + cartascancha[0].ataque + "\n  tiene vida  " + cartascancha[0].vida;
+            
                     
                     
 
