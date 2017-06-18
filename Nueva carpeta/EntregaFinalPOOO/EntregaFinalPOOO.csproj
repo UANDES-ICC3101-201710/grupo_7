@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="SaveLoad.cs" />
     <Compile Include="Spells.cs" />
     <Compile Include="weapon.cs" />
     <Page Include="MainWindow.xaml">

@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EntregaFinalPOOO"
         mc:Ignorable="d"
-        Title="MainWindow" Height="441.659" Width="1200.88">
+        Title="MainWindow" Height="441.659" Width="1200.88" Background="White">
     <Window.Resources>
         <Style x:Key="MyButton" TargetType="Button">
             <Setter Property="OverridesDefaultStyle" Value="True" />
@@ -66,16 +66,15 @@
         </Image>
         <ListBox x:Name="Listbox" HorizontalAlignment="Left" Height="110" Margin="0,309,0,-0.4" VerticalAlignment="Top" Width="570"  IsSynchronizedWithCurrentItem="False" MouseDoubleClick="Listbox_MouseDoubleClick" />
         <Button x:Name="FinTurno" Content="Terminar Turno " HorizontalAlignment="Left" Margin="467,269,0,0" VerticalAlignment="Top" Width="103" Click="FinTurno_Click" Background="#FF59B650"/>
-        <StackPanel x:Name="stackpanel" HorizontalAlignment="Left" Height="80" Margin="4,224,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal">
-            <Button x:Name="boton4" Margin="0 0 10 0 " Content="" Click="Button_Click_3" Width="55"  MouseEnter="boton4_MouseEnter" MouseLeave="boton4_MouseLeave" Height="80" VerticalAlignment="Bottom" Style="{StaticResource MyButton}"    />
-
-
-            <Button x:Name="boton5" Margin="0,0,10,0" Content="" Width="55" Click="boton5_Click" MouseEnter="boton5_MouseEnter" MouseLeave="boton5_MouseLeave" Height="80" VerticalAlignment="Bottom" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton6" Margin="0,0,10,0" Content="" Width="55" MouseEnter="boton6_MouseEnter" MouseLeave="boton6_MouseLeave" Height="80" VerticalAlignment="Top" Click="boton6_Click" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton7" Margin="0,0,10,0" Content="" Width="55" MouseEnter="boton7_MouseEnter" MouseLeave="boton7_MouseLeave" Click="boton7_Click" Style="{StaticResource MyButton}" />
-            <Button x:Name="boton8" Margin="0 0 10 0 " Content="" Width="55" Click="boton8_Click" MouseEnter="boton8_MouseEnter" MouseLeave="boton8_MouseLeave" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton9" Margin="0 0 10 0 " Content="" Width="55" MouseEnter="boton9_MouseEnter" MouseLeave="boton9_MouseLeave" Click="boton9_Click " Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton10"  Content="" Width="55" Click="boton10_Click" MouseEnter="boton10_MouseEnter" MouseLeave="boton10_MouseLeave" Style="{StaticResource MyButton}"/>
+        <StackPanel x:Name="stackpanel" HorizontalAlignment="Left" Height="65" Margin="4,224,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal">
+            <Button x:Name="boton4" Margin="0 0 10 0 " Content="" Click="Button_Click_3" Width="50"  MouseEnter="boton4_MouseEnter" MouseLeave="boton4_MouseLeave" Height="80" VerticalAlignment="Bottom" Style="{StaticResource MyButton}"    />
+            <Button x:Name="boton5" Margin="0,0,10,0" Content="" Width="50" Click="boton5_Click" MouseEnter="boton5_MouseEnter" MouseLeave="boton5_MouseLeave" Height="80" VerticalAlignment="Bottom" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton6" Margin="0,0,10,0" Content="" Width="50" MouseEnter="boton6_MouseEnter" MouseLeave="boton6_MouseLeave" Height="80" VerticalAlignment="Top" Click="boton6_Click" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton7" Margin="0,0,10,0" Content="" Width="50" MouseEnter="boton7_MouseEnter" MouseLeave="boton7_MouseLeave" Click="boton7_Click" Style="{StaticResource MyButton}" />
+            <Button x:Name="boton8" Margin="0 0 10 0 " Content="" Width="50" Click="boton8_Click" MouseEnter="boton8_MouseEnter" MouseLeave="boton8_MouseLeave" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton9" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton9_MouseEnter" MouseLeave="boton9_MouseLeave" Click="boton9_Click " Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton10"  Content="" Width="50" Click="boton10_Click" MouseEnter="boton10_MouseEnter" MouseLeave="boton10_MouseLeave" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton10_Copy"  Content="" Width="50" Click="boton10_Click" MouseEnter="boton10_MouseEnter" MouseLeave="boton10_MouseLeave" Style="{StaticResource MyButton}"/>
         </StackPanel>
         <StackPanel x:Name="stackpanel_Copy" HorizontalAlignment="Left" Height="65" Margin="4,150,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal">
             <Button x:Name="boton11" Margin="0,0,10,-0.2" Content=""  Width="50" Click="boton11_Click" MouseEnter="boton11_MouseEnter" MouseLeave="boton11_MouseLeave" Height="65" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
@@ -85,6 +84,7 @@
             <Button x:Name="boton15" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton15_MouseEnter" MouseLeave="boton15_MouseLeave" Click="boton15_Click" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton16" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton16_MouseEnter" MouseLeave="boton16_MouseLeave" Click="boton16_Click" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton17"  Content="" Width="50" Click="boton17_Click" MouseEnter="boton17_MouseEnter" MouseLeave="boton17_MouseLeave" Height="65" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton17_Copy"  Content="" Width="50" Click="boton17_Click" MouseEnter="boton17_MouseEnter" MouseLeave="boton17_MouseLeave" Height="65" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
         </StackPanel>
         <Button x:Name="FinTurno_Copy" Content="Terminar Turno" HorizontalAlignment="Left" Margin="467,154,0,0" VerticalAlignment="Top" Width="103" IsEnabled="False" Click="FinTurno_Copy_Click" Background="#FF59B650"/>
         <ListBox x:Name="Listbox_Copy" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="570" IsEnabled="False" MouseDoubleClick="Listbox_Copy_MouseDoubleClick" SelectionChanged="Listbox_Copy_SelectionChanged_1" Margin="0,19,0,0" />
