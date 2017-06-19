@@ -99,6 +99,7 @@ namespace EntregaFinalPOOO
         ImageBrush WarGolem = new ImageBrush();
         ImageBrush CoreHound = new ImageBrush();
         ImageBrush Recruit = new ImageBrush();
+        ImageBrush vacio = new ImageBrush();
 
 
         List<carta> mazos = new List<carta>();
@@ -1242,6 +1243,7 @@ namespace EntregaFinalPOOO
 
         private void boton5_MouseLeave(object sender, MouseEventArgs e)
         {
+            popo.Background = vacio;
             popo.Content = "";
 
         }
@@ -1965,6 +1967,52 @@ namespace EntregaFinalPOOO
 
                 
             }
+            for (int i = 0; i < manos.Count; i++)
+            {
+                if (manos[i].nombre == "wisp")
+                {
+                    manobot[i].Background = wisp;
+
+                }
+                if (manos[i].nombre == "Murloc Raider")
+                {
+                    manobot[i].Background = MurlocRaider;
+                }
+                if (manos[i].nombre == "Bloodfen Raptor")
+                {
+                    manobot[i].Background = BloodfenRaptor;
+                }
+                if (manos[i].nombre == "River Crocolisk")
+                {
+                    manobot[i].Background = RiverCrocolisk;
+                }
+                if (manos[i].nombre == "Magma Rager")
+                {
+                    manobot[i].Background = MagmaRager;
+                }
+                if (manos[i].nombre == "Chillwind Yeti")
+                {
+                    manobot[i].Background = ChillwindYeti;
+                }
+                if (manos[i].nombre == "Oasis Snapjaw")
+                {
+                    manobot[i].Background = OasisSnapjaw;
+                }
+                if (manos[i].nombre == "Boulderfist Ogre")
+                {
+                    manobot[i].Background = BoulderfistOgre;
+                }
+                if (manos[i].nombre == "War Golem")
+                {
+                    manobot[i].Background = WarGolem;
+                }
+                if (manos[i].nombre == "Core Hound")
+                {
+                    manobot[i].Background = CoreHound;
+                }
+                manobot[i].Visibility = Visibility.Visible;
+            }
+            manobot[manos.Count()].Visibility = Visibility.Hidden;
             /*for (int i = 0; i < manos.Count; i++)
             {
                 if (manos[i].nombre == "wisp")

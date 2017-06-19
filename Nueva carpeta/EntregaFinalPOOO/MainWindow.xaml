@@ -130,16 +130,16 @@
             </Menu>
             <StackPanel></StackPanel>
         </DockPanel>
-        <StackPanel x:Name="stackpanel_Copy1" HorizontalAlignment="Left" Height="65" Margin="10,340,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5">
+        <StackPanel x:Name="stackpanel_Copy1" HorizontalAlignment="Left" Height="94" Margin="10,311,0,0" VerticalAlignment="Top" Width="556" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5">
 
-            <Button x:Name="boton18" Margin="0,0,10,-15.2" Content="" Style="{StaticResource MyButton}" Width="50" Click="boton18_Click"   />
-            <Button x:Name="boton19" Margin="0,0,10,0" Content="" Width="50"  Height="80" VerticalAlignment="Bottom" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton20" Margin="0,0,10,0" Content="" Width="50"  Height="80" VerticalAlignment="Top"  Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton21" Margin="0,0,10,0" Content="" Width="50"  Style="{StaticResource MyButton}" />
-            <Button x:Name="boton22" Margin="0 0 10 0 " Content="" Width="50"  Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton23" Margin="0 0 10 0 " Content="" Width="50"  Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton24"  Content="" Width="50"  Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton25"  Content="" Width="50"  Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton18" Margin="0,0,10,0" Content="" Style="{StaticResource MyButton}" Width="50" Click="boton18_Click"   />
+            <Button x:Name="boton19" Margin="0,0,10,0" Content="" Width="51"  Height="94" VerticalAlignment="Bottom" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton20" Margin="0,0,10,0" Content="" Width="49"  Height="94" VerticalAlignment="Top"  Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton21" Margin="0,0,10,0" Content="" Width="50"  Height="94" Style="{StaticResource MyButton}" />
+            <Button x:Name="boton22" Margin="0 0 10 0 " Content="" Width="50" Height="94" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton23" Margin="0 0 10 0 " Content="" Width="50" Height="94" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton24"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton25"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}"/>
         </StackPanel>
 
 
