@@ -2072,6 +2072,51 @@ namespace EntregaFinalPOOO
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
 
         }
+
+        private void boton18_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (manos[0].nombre == "Murloc Raider")
+            {
+                popo.Background = MurlocRaider;
+            }
+            if (manos[0].nombre == "Bloodfen Raptor")
+            {
+                popo.Background = BloodfenRaptor;
+            }
+            if (manos[0].nombre == "River Crocolisk")
+            {
+                popo.Background = RiverCrocolisk;
+            }
+            if (manos[0].nombre == "Magma Rager")
+            {
+                popo.Background = MagmaRager;
+            }
+            if (manos[0].nombre == "Chillwind Yeti")
+            {
+                popo.Background = ChillwindYeti;
+            }
+            if (manos[0].nombre == "Oasis Snapjaw")
+            {
+                popo.Background = OasisSnapjaw;
+            }
+            if (manos[0].nombre == "Boulderfist Ogre")
+            {
+                popo.Background = BoulderfistOgre;
+            }
+            if (manos[0].nombre == "War Golem")
+            {
+                popo.Background = WarGolem;
+            }
+            if (manos[0].nombre == "Core Hound")
+            {
+                popo.Background = CoreHound;
+            }
+        }
+
+        private void boton18_MouseLeave(object sender, MouseEventArgs e)
+        {
+            popo.Background = vacio;
+        }
     }
 }
 
