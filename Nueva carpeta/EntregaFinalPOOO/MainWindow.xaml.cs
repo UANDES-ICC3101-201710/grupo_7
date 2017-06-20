@@ -1016,11 +1016,6 @@ namespace EntregaFinalPOOO
 
         }
 
-
-
-
-
-
         /*Fin Turno j1*/
         private void FinTurno_Click(object sender, RoutedEventArgs e)
         {
@@ -1102,27 +1097,10 @@ namespace EntregaFinalPOOO
             }
             manobot[manos.Count()].Visibility = Visibility.Hidden;
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit ,j1,j2);
-           
-
-
-
-
-
-
-
+        
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {   
-            
-            
-        }
-
-        private void CheckBox_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
        
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
@@ -1230,7 +1208,7 @@ namespace EntregaFinalPOOO
                 }
                 manobot1[i].Visibility = Visibility.Visible;
             }
-            manobot1[manos.Count()].Visibility = Visibility.Hidden;
+            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
 
 
@@ -2802,7 +2780,7 @@ namespace EntregaFinalPOOO
                 }
                 manobot1[i].Visibility = Visibility.Visible;
             }
-            manobot1[manos.Count()].Visibility = Visibility.Hidden;
+            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
@@ -2863,7 +2841,7 @@ namespace EntregaFinalPOOO
                 }
                 manobot1[i].Visibility = Visibility.Visible;
             }
-            manobot1[manos.Count()].Visibility = Visibility.Hidden;
+            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
@@ -2924,7 +2902,7 @@ namespace EntregaFinalPOOO
                 }
                 manobot1[i].Visibility = Visibility.Visible;
             }
-            manobot1[manos.Count()].Visibility = Visibility.Hidden;
+            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
@@ -2985,7 +2963,7 @@ namespace EntregaFinalPOOO
                 }
                 manobot1[i].Visibility = Visibility.Visible;
             }
-            manobot1[manos.Count()].Visibility = Visibility.Hidden;
+            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
@@ -3046,7 +3024,7 @@ namespace EntregaFinalPOOO
                 }
                 manobot1[i].Visibility = Visibility.Visible;
             }
-            manobot1[manos.Count()].Visibility = Visibility.Hidden;
+            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
@@ -3107,7 +3085,7 @@ namespace EntregaFinalPOOO
                 }
                 manobot1[i].Visibility = Visibility.Visible;
             }
-            manobot1[manos.Count()].Visibility = Visibility.Hidden;
+            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
@@ -3168,7 +3146,7 @@ namespace EntregaFinalPOOO
                 }
                 manobot1[i].Visibility = Visibility.Visible;
             }
-            manobot1[manos.Count()].Visibility = Visibility.Hidden;
+            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
@@ -3229,7 +3207,7 @@ namespace EntregaFinalPOOO
                 }
                 manobot1[i].Visibility = Visibility.Visible;
             }
-            manobot1[manos.Count()].Visibility = Visibility.Hidden;
+            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
@@ -3290,7 +3268,7 @@ namespace EntregaFinalPOOO
                 }
                 manobot1[i].Visibility = Visibility.Visible;
             }
-            manobot1[manos.Count()].Visibility = Visibility.Hidden;
+            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
@@ -3351,7 +3329,7 @@ namespace EntregaFinalPOOO
                 }
                 manobot1[i].Visibility = Visibility.Visible;
             }
-            manobot1[manos.Count()].Visibility = Visibility.Hidden;
+            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
