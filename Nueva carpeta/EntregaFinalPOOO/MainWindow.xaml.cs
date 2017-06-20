@@ -331,6 +331,7 @@ namespace EntregaFinalPOOO
             manatott.Content = j2.manatotal.ToString();
             manadisp.Content = j1.mana.ToString();
             manadisponible2.Content = j2.mana.ToString();
+            fondobatalla.Visibility = Visibility.Hidden;
 
 
 
@@ -880,7 +881,7 @@ namespace EntregaFinalPOOO
 
         private void boton3_Click(object sender, RoutedEventArgs e)
         {
-
+            fondobatalla.Visibility = Visibility.Visible;
             boton3.Visibility = Visibility.Hidden;
             for (int i = 0; i < manos.Count; i++)
             {

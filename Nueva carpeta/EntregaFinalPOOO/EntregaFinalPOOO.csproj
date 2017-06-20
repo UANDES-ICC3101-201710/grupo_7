@@ -131,5 +131,59 @@
   <ItemGroup>
     <Resource Include="Garrosh_Hellscream%28635%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fondo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="warrior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="warrior2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="warlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="warlock2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="shaman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="rogue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="rogue2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="priest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="paladin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="druid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="hunter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="priest2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="paladin2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mage2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="druid2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="hunter2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
