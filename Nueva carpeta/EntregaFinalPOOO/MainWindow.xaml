@@ -35,10 +35,7 @@
         <TextBox x:Name="text1" HorizontalAlignment="Left" Height="23" Margin="575,283,0,0" TextWrapping="Wrap" Text="Ingrese su nombre" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
         <Button x:Name="boton2" Content="Confirmar" HorizontalAlignment="Left" Margin="700,124,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2" RenderTransformOrigin="1.676,0.866" Height="22"/>
         <TextBox x:Name="text2" HorizontalAlignment="Left" Height="23" Margin="575,124,0,0" TextWrapping="Wrap" Text="Ingrese su nombre" VerticalAlignment="Top" Width="120" TextChanged="text2_TextChanged"/>
-<<<<<<< HEAD
-        <Button x:Name="boton3" Content="Comenzar!!!!" Margin="-15,223,977.6,0" VerticalAlignment="Top" Height="65" Click="boton3_Click" FontSize="24" HorizontalAlignment="Right" Width="196"/>
-=======
->>>>>>> da8a81fc7fc3bcbac7764f9e43a283979578409a
+
         <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="655,284,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_1" ToolTip="" Tag=""/>
         <ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Margin="655,124,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_2"/>
 
@@ -53,19 +50,7 @@
             <Button x:Name="boton17"  Content="" Width="50" Click="boton17_Click" MouseEnter="boton17_MouseEnter" MouseLeave="boton17_MouseLeave" Height="65" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton17_Copy"  Content="" Width="50" Click="boton17_Click" MouseEnter="boton17_MouseEnter" MouseLeave="boton17_MouseLeave" Height="65" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
         </StackPanel>
-<<<<<<< HEAD
-        <Button x:Name="FinTurno_Copy" Content="Terminar Turno" HorizontalAlignment="Left" Margin="463,109,0,0" VerticalAlignment="Top" Width="100" IsEnabled="False" Click="FinTurno_Copy_Click" Background="#FF59B650"/>
-        <GroupBox x:Name="datos" Header="Informacion de la carta&#xA;" HorizontalAlignment="Left" Height="161" Margin="22,139,0,0" VerticalAlignment="Top" Width="211">
-            <Label x:Name="popo" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="152" Width="201" MouseEnter="popo_MouseEnter" MouseLeave="popo_MouseLeave" Margin="0,-18,-2,-11" Foreground="White" />
-        </GroupBox>
-        <TextBlock x:Name="Datosj1" HorizontalAlignment="Left" Margin="1011,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="59" Width="103" Text="Vida:&#xA;Mana Total :&#xA;Mana Disponible:" Foreground="White"/>
-        <TextBlock x:Name="datosj2" HorizontalAlignment="Left" Margin="993,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="103" Foreground="White"><Run Text="Vida:"/><LineBreak/><Run Text="Mana Total:"/><LineBreak/><Run Text="Mana Disponible:"/></TextBlock>
-        <Label x:Name="Vida2" Content="Label" HorizontalAlignment="Left" Margin="1015,12,0,0" VerticalAlignment="Top" Height="24" Foreground="White"/>
-        <Label x:Name="manadisponible2" Content="Label" HorizontalAlignment="Left" Margin="1090,44,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label x:Name="vida1" Content="Label" HorizontalAlignment="Left" Margin="1038,338,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label x:Name="manatot1" Content="Label" HorizontalAlignment="Left" Margin="1071,356,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label x:Name="manadisp" Content="Label" HorizontalAlignment="Left" Margin="1108,369,0,0" VerticalAlignment="Top" Height="26" RenderTransformOrigin="0.5,0.5" Foreground="White">
-=======
+
         <Button x:Name="FinTurno_Copy" Content="Terminar Turno" HorizontalAlignment="Left" Margin="960,94,0,0" VerticalAlignment="Top" Width="121" IsEnabled="False" Click="FinTurno_Copy_Click" Background="#FF59B650"/>
         <GroupBox x:Name="datos" Header="Informacion de la carta&#xA;" HorizontalAlignment="Left" Height="161" Margin="-2,129,0,0" VerticalAlignment="Top" Width="212">
             <Label x:Name="popo" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="152" Width="201" MouseEnter="popo_MouseEnter" MouseLeave="popo_MouseLeave" Margin="0,-18,-2,-11" Foreground="White" />
@@ -77,7 +62,7 @@
         <Label x:Name="vida1" Content="Label" HorizontalAlignment="Left" Margin="936,309,0,0" VerticalAlignment="Top" Height="34" Width="47" FontSize="14" FontWeight="Bold" Foreground="#FFF9F4F4"/>
         <Label x:Name="manatot1" Content="Label" HorizontalAlignment="Left" Margin="983,325,0,0" VerticalAlignment="Top" Height="34" Width="47" FontSize="14" FontWeight="Bold" Foreground="#FFF9F4F4"/>
         <Label x:Name="manadisp" Content="Label" HorizontalAlignment="Left" Margin="1016,344,0,0" VerticalAlignment="Top" Height="34" RenderTransformOrigin="0.5,0.5" Width="47" FontSize="14" FontWeight="Bold" Foreground="#FFF7F4F4">
->>>>>>> da8a81fc7fc3bcbac7764f9e43a283979578409a
+
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -87,15 +72,11 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-<<<<<<< HEAD
-        <Label x:Name="manatott" Content="Label" HorizontalAlignment="Left" Margin="1056,26,-0.4,0" VerticalAlignment="Top" Width="100" Foreground="White"/>
-        <Button x:Name="rendirse1" Content="Rendirse" HorizontalAlignment="Left" Margin="655,383,0,0" VerticalAlignment="Top" Width="75" Background="Red" Click="rendirse1_Click"/>
-        <Button x:Name="rendirse2" Content="Rendirse" HorizontalAlignment="Left" Margin="655,10,0,0" VerticalAlignment="Top" Width="75" Background="#FFE61010" Click="rendirse2_Click" IsEnabled="False"/>
-=======
+
         <Label x:Name="manatott" Content="Label" HorizontalAlignment="Left" Margin="1018,31,0,0" VerticalAlignment="Top" Width="106" FontSize="14" FontWeight="Bold" Height="58" Foreground="#FFFBF6F6"/>
         <Button x:Name="rendirse1" Content="Rendirse" HorizontalAlignment="Left" Margin="1071,381,0,0" VerticalAlignment="Top" Width="75" Background="Red" Click="rendirse1_Click"/>
         <Button x:Name="rendirse2" Content="Rendirse" HorizontalAlignment="Left" Margin="1071,10,0,0" VerticalAlignment="Top" Width="75" Background="#FFE61010" Click="rendirse2_Click" IsEnabled="False"/>
->>>>>>> da8a81fc7fc3bcbac7764f9e43a283979578409a
+
         <ComboBox x:Name="combobox3" HorizontalAlignment="Left" Margin="671,339,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combobox3_SelectionChanged" Height="20"/>
         <ComboBox x:Name="combobox4" HorizontalAlignment="Left" Margin="671,89,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combobox4_SelectionChanged" Height="20"/>
         <Button x:Name="habilidad" Content="Habilidad" HorizontalAlignment="Left" Margin="655,381,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4" Background="#FF5EA4D0" MouseEnter="habilidad_MouseEnter" MouseLeave="habilidad_MouseLeave"/>
@@ -116,12 +97,9 @@
                 </MenuItem>
             </Menu>
         </DockPanel>
-<<<<<<< HEAD
-        <StackPanel x:Name="stackpanel_Copy1" HorizontalAlignment="Left" Height="94" Margin="0,307,0,0" VerticalAlignment="Top" Width="656" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5">
 
-=======
         <StackPanel x:Name="stackpanel_Copy1" HorizontalAlignment="Left" Height="94" Margin="10,304,0,0" VerticalAlignment="Top" Width="656" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5">
->>>>>>> da8a81fc7fc3bcbac7764f9e43a283979578409a
+
             <Button x:Name="boton18" Margin="0,0,10,0" Content="" Style="{StaticResource MyButton}" Width="50" Click="boton18_Click" MouseEnter="boton18_MouseEnter" MouseLeave="boton18_MouseLeave"   />
             <Button x:Name="boton19" Margin="0,0,10,0" Content="" Width="51"  Height="94" VerticalAlignment="Bottom" Style="{StaticResource MyButton}" Click="boton19_Click" MouseEnter="boton19_MouseEnter" MouseLeave="boton19_MouseLeave"/>
             <Button x:Name="boton20" Margin="0,0,10,0" Content="" Width="49"  Height="94" VerticalAlignment="Top"  Style="{StaticResource MyButton}" Click="boton20_Click" MouseEnter="boton20_MouseEnter" MouseLeave="boton20_MouseLeave"/>
