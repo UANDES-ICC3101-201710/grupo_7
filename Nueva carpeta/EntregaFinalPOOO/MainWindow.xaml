@@ -145,15 +145,15 @@
         </StackPanel>
         <StackPanel x:Name="stackpanel_Copy2" HorizontalAlignment="Left" Height="94" Margin="10,25,0,0" VerticalAlignment="Top" Width="656" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5">
             <Button x:Name="boton26" Margin="0,0,10,0" Content="" Style="{StaticResource MyButton}" Width="50" Click="boton26_Click"    />
-            <Button x:Name="boton27" Margin="0,0,10,0" Content="" Width="51"  Height="94" VerticalAlignment="Bottom" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton28" Margin="0,0,10,0" Content="" Width="49"  Height="94" VerticalAlignment="Top"  Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton29" Margin="0,0,10,0" Content="" Width="50"  Height="94" Style="{StaticResource MyButton}" />
-            <Button x:Name="boton30" Margin="0 0 10 0 " Content="" Width="50" Height="94" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton31" Margin="0 0 10 0 " Content="" Width="50" Height="94" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton32"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton33"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton24_Copy3"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton24_Copy4"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton27" Margin="0,0,10,0" Content="" Width="51"  Height="94" VerticalAlignment="Bottom" Style="{StaticResource MyButton}" Click="boton27_Click"/>
+            <Button x:Name="boton28" Margin="0,0,10,0" Content="" Width="49"  Height="94" VerticalAlignment="Top"  Style="{StaticResource MyButton}" Click="boton28_Click"/>
+            <Button x:Name="boton29" Margin="0,0,10,0" Content="" Width="50"  Height="94" Style="{StaticResource MyButton}" Click="boton29_Click" />
+            <Button x:Name="boton30" Margin="0 0 10 0 " Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton30_Click"/>
+            <Button x:Name="boton31" Margin="0 0 10 0 " Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton31_Click"/>
+            <Button x:Name="boton32"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton32_Click"/>
+            <Button x:Name="boton33"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton33_Click"/>
+            <Button x:Name="boton24_Copy3"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton24_Copy3_Click"/>
+            <Button x:Name="boton24_Copy4"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton24_Copy4_Click"/>
             <Button x:Name="boton24_Copy5"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}"/>
         </StackPanel>
 
