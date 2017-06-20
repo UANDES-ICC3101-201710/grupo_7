@@ -132,28 +132,28 @@
         <StackPanel x:Name="stackpanel_Copy1" HorizontalAlignment="Left" Height="94" Margin="10,307,0,0" VerticalAlignment="Top" Width="656" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5">
 
             <Button x:Name="boton18" Margin="0,0,10,0" Content="" Style="{StaticResource MyButton}" Width="50" Click="boton18_Click" MouseEnter="boton18_MouseEnter" MouseLeave="boton18_MouseLeave"   />
-            <Button x:Name="boton19" Margin="0,0,10,0" Content="" Width="51"  Height="94" VerticalAlignment="Bottom" Style="{StaticResource MyButton}" Click="boton19_Click"/>
-            <Button x:Name="boton20" Margin="0,0,10,0" Content="" Width="49"  Height="94" VerticalAlignment="Top"  Style="{StaticResource MyButton}" Click="boton20_Click"/>
-            <Button x:Name="boton21" Margin="0,0,10,0" Content="" Width="50"  Height="94" Style="{StaticResource MyButton}" Click="boton21_Click" />
-            <Button x:Name="boton22" Margin="0 0 10 0 " Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton22_Click"/>
-            <Button x:Name="boton23" Margin="0 0 10 0 " Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton23_Click"/>
-            <Button x:Name="boton24"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton24_Click"/>
-            <Button x:Name="boton25"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton25_Click"/>
-            <Button x:Name="boton24_Copy"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton24_Copy_Click"/>
-            <Button x:Name="boton24_Copy1"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton24_Copy1_Click"/>
+            <Button x:Name="boton19" Margin="0,0,10,0" Content="" Width="51"  Height="94" VerticalAlignment="Bottom" Style="{StaticResource MyButton}" Click="boton19_Click" MouseEnter="boton19_MouseEnter" MouseLeave="boton19_MouseLeave"/>
+            <Button x:Name="boton20" Margin="0,0,10,0" Content="" Width="49"  Height="94" VerticalAlignment="Top"  Style="{StaticResource MyButton}" Click="boton20_Click" MouseEnter="boton20_MouseEnter" MouseLeave="boton20_MouseLeave"/>
+            <Button x:Name="boton21" Margin="0,0,10,0" Content="" Width="50"  Height="94" Style="{StaticResource MyButton}" Click="boton21_Click"  MouseEnter="boton21_MouseEnter" MouseLeave="boton21_MouseLeave" />
+            <Button x:Name="boton22" Margin="0 0 10 0 " Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton22_Click" MouseEnter="boton22_MouseEnter" MouseLeave="boton22_MouseLeave"/>
+            <Button x:Name="boton23" Margin="0 0 10 0 " Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton23_Click" MouseEnter="boton23_MouseEnter" MouseLeave="boton23_MouseLeave"/>
+            <Button x:Name="boton24"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton24_Click" MouseEnter="boton24_MouseEnter" MouseLeave="boton24_MouseLeave"/>
+            <Button x:Name="boton25"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton25_Click" MouseEnter="boton25_MouseEnter" MouseLeave="boton25_MouseLeave"/>
+            <Button x:Name="boton24_Copy"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton24_Copy_Click"  MouseEnter="boton241_MouseEnter" MouseLeave="boton241_MouseLeave"/>
+            <Button x:Name="boton24_Copy1"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton24_Copy1_Click" MouseEnter="boton242_MouseEnter" MouseLeave="boton242_MouseLeave"/>
             <Button x:Name="boton24_Copy2"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}"/>
         </StackPanel>
         <StackPanel x:Name="stackpanel_Copy2" HorizontalAlignment="Left" Height="94" Margin="10,25,0,0" VerticalAlignment="Top" Width="656" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5">
-            <Button x:Name="boton26" Margin="0,0,10,0" Content="" Style="{StaticResource MyButton}" Width="50" Click="boton26_Click"    />
-            <Button x:Name="boton27" Margin="0,0,10,0" Content="" Width="51"  Height="94" VerticalAlignment="Bottom" Style="{StaticResource MyButton}" Click="boton27_Click"/>
-            <Button x:Name="boton28" Margin="0,0,10,0" Content="" Width="49"  Height="94" VerticalAlignment="Top"  Style="{StaticResource MyButton}" Click="boton28_Click"/>
-            <Button x:Name="boton29" Margin="0,0,10,0" Content="" Width="50"  Height="94" Style="{StaticResource MyButton}" Click="boton29_Click" />
-            <Button x:Name="boton30" Margin="0 0 10 0 " Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton30_Click"/>
-            <Button x:Name="boton31" Margin="0 0 10 0 " Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton31_Click"/>
-            <Button x:Name="boton32"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton32_Click"/>
-            <Button x:Name="boton33"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton33_Click"/>
-            <Button x:Name="boton24_Copy3"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton24_Copy3_Click"/>
-            <Button x:Name="boton24_Copy4"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton24_Copy4_Click"/>
+            <Button x:Name="boton26" Margin="0,0,10,0" Content="" Style="{StaticResource MyButton}" Width="50" Click="boton26_Click" MouseEnter="boton26_MouseEnter" MouseLeave="boton26_MouseLeave" />
+            <Button x:Name="boton27" Margin="0,0,10,0" Content="" Width="51"  Height="94" VerticalAlignment="Bottom" Style="{StaticResource MyButton}" Click="boton27_Click" MouseEnter="boton27_MouseEnter" MouseLeave="boton27_MouseLeave"/>
+            <Button x:Name="boton28" Margin="0,0,10,0" Content="" Width="49"  Height="94" VerticalAlignment="Top"  Style="{StaticResource MyButton}" Click="boton28_Click" MouseEnter="boton28_MouseEnter" MouseLeave="boton28_MouseLeave"/>
+            <Button x:Name="boton29" Margin="0,0,10,0" Content="" Width="50"  Height="94" Style="{StaticResource MyButton}" Click="boton29_Click" MouseEnter="boton29_MouseEnter" MouseLeave="boton29_MouseLeave"/>
+            <Button x:Name="boton30" Margin="0 0 10 0 " Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton30_Click" MouseEnter="boton30_MouseEnter" MouseLeave="boton30_MouseLeave"/>
+            <Button x:Name="boton31" Margin="0 0 10 0 " Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton31_Click" MouseEnter="boton31_MouseEnter" MouseLeave="boton31_MouseLeave"/>
+            <Button x:Name="boton32"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton32_Click" MouseEnter="boton32_MouseEnter" MouseLeave="boton32_MouseLeave"/>
+            <Button x:Name="boton33"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton33_Click" MouseEnter="boton33_MouseEnter" MouseLeave="boton33_MouseLeave"/>
+            <Button x:Name="boton24_Copy3"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton24_Copy3_Click" MouseEnter="boton243_MouseEnter" MouseLeave="boton243_MouseLeave"/>
+            <Button x:Name="boton24_Copy4"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton24_Copy4_Click" MouseEnter="boton244_MouseEnter" MouseLeave="boton244_MouseLeave"/>
             <Button x:Name="boton24_Copy5"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}"/>
         </StackPanel>
 
