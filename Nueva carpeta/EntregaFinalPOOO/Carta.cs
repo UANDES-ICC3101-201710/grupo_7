@@ -15,7 +15,7 @@ namespace EntregaFinalPOOO
         public string nombre { get; set; }
         public Boolean visibilidad { get; set; }
         public int mana { get; set; }
-        public Boolean turno { get; set; } // no sabemos ocupar//
+        public Boolean turno { get; set; } // no sabemos   ocupar//
 
 
         public virtual void CambiarTurno()
