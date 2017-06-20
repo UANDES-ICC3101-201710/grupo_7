@@ -1275,48 +1275,7 @@ namespace EntregaFinalPOOO
         private void boton5_MouseEnter(object sender, MouseEventArgs e)
         {
             popo.Content = cartascancha[1].nombre + "                \n ocupa mana: " + cartascancha[1].mana + "\n ataca  " + cartascancha[1].ataque + "\n  tiene vida  " + cartascancha[1].vida;
-            if (cartascancha[1].nombre == "wisp")
-            {  
-                popo.Background = wisp;
-
-            }
-            if (cartascancha[1].nombre == "Murloc Raider")
-            {
-                popo.Background = MurlocRaider;
-            }
-            if (cartascancha[1].nombre == "Bloodfen Raptor")
-            {
-                popo.Background = BloodfenRaptor;
-            }
-            if (cartascancha[1].nombre == "River Crocolisk")
-            {
-                popo.Background = RiverCrocolisk;
-            }
-            if (cartascancha[1].nombre == "Magma Rager")
-            {
-                popo.Background = MagmaRager;
-            }
-            if (cartascancha[1].nombre == "Chillwind Yeti")
-            {
-                popo.Background = ChillwindYeti;
-            }
-            if (cartascancha[1].nombre == "Oasis Snapjaw")
-            {
-                popo.Background = OasisSnapjaw;
-            }
-            if (cartascancha[1].nombre == "Boulderfist Ogre")
-            {
-                popo.Background = BoulderfistOgre;
-            }
-            if (cartascancha[1].nombre == "War Golem")
-            {
-                popo.Background = WarGolem;
-            }
-            if (cartascancha[1].nombre == "Core Hound")
-            {
-                popo.Background = CoreHound;
-            }
-
+            
 
         }
 
