@@ -34,12 +34,12 @@
         <TextBox x:Name="text1" HorizontalAlignment="Left" Height="23" Margin="575,283,0,0" TextWrapping="Wrap" Text="Ingrese su nombre" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
         <Button x:Name="boton2" Content="Confirmar" HorizontalAlignment="Left" Margin="700,124,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2" RenderTransformOrigin="1.676,0.866" Height="22"/>
         <TextBox x:Name="text2" HorizontalAlignment="Left" Height="23" Margin="575,124,0,0" TextWrapping="Wrap" Text="Ingrese su nombre" VerticalAlignment="Top" Width="120" TextChanged="text2_TextChanged"/>
-        <Button x:Name="boton3" Content="Comenzar!!!!" HorizontalAlignment="Left" Margin="-15,223,0,0" VerticalAlignment="Top" Width="196" Height="65" Click="boton3_Click" FontSize="24"/>
+        <Button x:Name="boton3" Content="Comenzar!!!!" HorizontalAlignment="Left" Margin="960,167,-0.4,0" VerticalAlignment="Top" Width="196" Height="65" Click="boton3_Click" FontSize="24"/>
         <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="655,284,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_1" ToolTip="" Tag=""/>
         <ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Margin="655,124,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_2"/>
 
-        <Button x:Name="FinTurno" Content="Terminar Turno " HorizontalAlignment="Left" Margin="463,279,0,0" VerticalAlignment="Top" Width="103" Click="FinTurno_Click" Background="#FF59B650"/>
-        <StackPanel x:Name="stackpanel_Copy" HorizontalAlignment="Left" Height="82" Margin="306,127,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal">
+        <Button x:Name="FinTurno" Content="Terminar Turno " HorizontalAlignment="Left" Margin="430,284,0,0" VerticalAlignment="Top" Width="103" Click="FinTurno_Click" Background="#FF59B650"/>
+        <StackPanel x:Name="stackpanel_Copy" HorizontalAlignment="Left" Height="82" Margin="339,134,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal">
             <Button x:Name="boton11" Margin="0,0,10,-0.2" Content=""  Width="50" Click="boton11_Click" MouseEnter="boton11_MouseEnter" MouseLeave="boton11_MouseLeave" Height="65" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton12" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton12_MouseEnter" MouseLeave="boton12_MouseLeave" Click="boton12_Click" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton13" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton13_MouseEnter" MouseLeave="boton13_MouseLeave" Click="boton13_Click" Style="{StaticResource MyButton}"/>
@@ -49,40 +49,40 @@
             <Button x:Name="boton17"  Content="" Width="50" Click="boton17_Click" MouseEnter="boton17_MouseEnter" MouseLeave="boton17_MouseLeave" Height="65" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton17_Copy"  Content="" Width="50" Click="boton17_Click" MouseEnter="boton17_MouseEnter" MouseLeave="boton17_MouseLeave" Height="65" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
         </StackPanel>
-        <Button x:Name="FinTurno_Copy" Content="Terminar Turno" HorizontalAlignment="Left" Margin="463,109,0,0" VerticalAlignment="Top" Width="100" IsEnabled="False" Click="FinTurno_Copy_Click" Background="#FF59B650"/>
-        <GroupBox x:Name="datos" Header="Informacion de la carta&#xA;" HorizontalAlignment="Left" Height="161" Margin="123,177,0,0" VerticalAlignment="Top" Width="211">
+        <Button x:Name="FinTurno_Copy" Content="Terminar Turno" HorizontalAlignment="Left" Margin="430,109,0,0" VerticalAlignment="Top" Width="100" IsEnabled="False" Click="FinTurno_Copy_Click" Background="#FF59B650"/>
+        <GroupBox x:Name="datos" Header="Informacion de la carta&#xA;" HorizontalAlignment="Left" Height="161" Margin="-2,129,0,0" VerticalAlignment="Top" Width="212">
             <Label x:Name="popo" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="152" Width="201" MouseEnter="popo_MouseEnter" MouseLeave="popo_MouseLeave" Margin="0,-18,-2,-11" />
         </GroupBox>
-        <TextBlock x:Name="Datosj1" HorizontalAlignment="Left" Margin="1011,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="59" Width="103" Text="Vida:&#xA;Mana Total :&#xA;Mana Disponible:"/>
-        <TextBlock x:Name="datosj2" HorizontalAlignment="Left" Margin="993,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="103"><Run Text="Vida:"/><LineBreak/><Run Text="Mana Total:"/><LineBreak/><Run Text="Mana Disponible:"/></TextBlock>
-        <Label x:Name="Vida2" Content="Label" HorizontalAlignment="Left" Margin="1015,12,0,0" VerticalAlignment="Top" Height="24"/>
-        <Label x:Name="manadisponible2" Content="Label" HorizontalAlignment="Left" Margin="1090,44,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="vida1" Content="Label" HorizontalAlignment="Left" Margin="1038,338,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="manatot1" Content="Label" HorizontalAlignment="Left" Margin="1071,356,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="manadisp" Content="Label" HorizontalAlignment="Left" Margin="1108,369,0,0" VerticalAlignment="Top" Height="26" RenderTransformOrigin="0.5,0.5">
+        <TextBlock x:Name="Datosj1" HorizontalAlignment="Left" Margin="902,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="77" Width="128" Text="Vida:&#xA;Mana Total :&#xA;Mana Disponible:" FontWeight="Bold" FontSize="14" Foreground="White"/>
+        <TextBlock x:Name="datosj2" HorizontalAlignment="Left" Margin="936,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="71" Width="120" FontSize="14" FontWeight="Bold" Foreground="#FFFDFBFB"><Run Text="Vida:"/><LineBreak/><Run Text="Mana Total:"/><LineBreak/><Run Text="Mana Disponible:"/></TextBlock>
+        <Label x:Name="Vida2" Content="Label" HorizontalAlignment="Left" Margin="985,13,0,0" VerticalAlignment="Top" Height="24" FontSize="14" FontWeight="Bold" Background="{x:Null}" Foreground="#FFFBFBFB"/>
+        <Label x:Name="manadisponible2" Content="Label" HorizontalAlignment="Left" Margin="1056,54,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Background="{x:Null}" Foreground="#FFFBF8F8"/>
+        <Label x:Name="vida1" Content="Label" HorizontalAlignment="Left" Margin="936,309,0,0" VerticalAlignment="Top" Height="34" Width="47" FontSize="14" FontWeight="Bold" Foreground="#FFF9F4F4"/>
+        <Label x:Name="manatot1" Content="Label" HorizontalAlignment="Left" Margin="983,325,0,0" VerticalAlignment="Top" Height="34" Width="47" FontSize="14" FontWeight="Bold" Foreground="#FFF9F4F4"/>
+        <Label x:Name="manadisp" Content="Label" HorizontalAlignment="Left" Margin="1016,344,0,0" VerticalAlignment="Top" Height="34" RenderTransformOrigin="0.5,0.5" Width="47" FontSize="14" FontWeight="Bold" Foreground="#FFF7F4F4">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.51"/>
+                    <SkewTransform AngleY="-0.055"/>
+                    <RotateTransform Angle="-0.483"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label x:Name="manatott" Content="Label" HorizontalAlignment="Left" Margin="1056,26,-0.4,0" VerticalAlignment="Top" Width="100"/>
-        <Button x:Name="rendirse1" Content="Rendirse" HorizontalAlignment="Left" Margin="655,383,0,0" VerticalAlignment="Top" Width="75" Background="Red" Click="rendirse1_Click"/>
-        <Button x:Name="rendirse2" Content="Rendirse" HorizontalAlignment="Left" Margin="655,10,0,0" VerticalAlignment="Top" Width="75" Background="#FFE61010" Click="rendirse2_Click" IsEnabled="False"/>
+        <Label x:Name="manatott" Content="Label" HorizontalAlignment="Left" Margin="1018,31,0,0" VerticalAlignment="Top" Width="106" FontSize="14" FontWeight="Bold" Height="58" Foreground="#FFFBF6F6"/>
+        <Button x:Name="rendirse1" Content="Rendirse" HorizontalAlignment="Left" Margin="1071,381,0,0" VerticalAlignment="Top" Width="75" Background="Red" Click="rendirse1_Click"/>
+        <Button x:Name="rendirse2" Content="Rendirse" HorizontalAlignment="Left" Margin="1071,10,0,0" VerticalAlignment="Top" Width="75" Background="#FFE61010" Click="rendirse2_Click" IsEnabled="False"/>
         <ComboBox x:Name="combobox3" HorizontalAlignment="Left" Margin="671,339,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combobox3_SelectionChanged" Height="20"/>
         <ComboBox x:Name="combobox4" HorizontalAlignment="Left" Margin="671,89,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combobox4_SelectionChanged" Height="20"/>
-        <Button x:Name="habilidad" Content="Habilidad" HorizontalAlignment="Left" Margin="735,383,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4" Background="#FF5EA4D0" MouseEnter="habilidad_MouseEnter" MouseLeave="habilidad_MouseLeave"/>
-        <Button x:Name="habilidad2" Content="Habilidad" HorizontalAlignment="Left" Margin="735,10,0,0" VerticalAlignment="Top" Width="75" Background="#FF2D9CB5" Click="habilidad2_Click" IsEnabled="False" MouseEnter="habilidad2_MouseEnter" MouseLeave="habilidad2_MouseLeave"/>
+        <Button x:Name="habilidad" Content="Habilidad" HorizontalAlignment="Left" Margin="655,381,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4" Background="#FF5EA4D0" MouseEnter="habilidad_MouseEnter" MouseLeave="habilidad_MouseLeave"/>
+        <Button x:Name="habilidad2" Content="Habilidad" HorizontalAlignment="Left" Margin="655,10,0,0" VerticalAlignment="Top" Width="75" Background="#FF2D9CB5" Click="habilidad2_Click" IsEnabled="False" MouseEnter="habilidad2_MouseEnter" MouseLeave="habilidad2_MouseLeave"/>
         <Button x:Name="atacar2" Content="Atacar!" HorizontalAlignment="Left" Margin="400,311,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click_6" IsEnabled="False"/>
         <Button x:Name="atacarheroe2" Content="Atacar heroe" HorizontalAlignment="Left" Margin="540,10,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click_5"/>
         <Button x:Name="atacarheroe1" Content="Atacar heroe" HorizontalAlignment="Left" Margin="540,383,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click_7"/>
         <Label x:Name="eheroe1" Content="Elegir heroe" HorizontalAlignment="Left" Margin="702,257,0,0" VerticalAlignment="Top"/>
         <Label x:Name="eheroe2" Content="Elegir heroe" HorizontalAlignment="Left" Margin="702,98,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="decir1" Content="Decir algo" HorizontalAlignment="Left" Margin="727,311,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="decir2" Content="Decir algo" HorizontalAlignment="Left" Margin="725,63,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="decir1" Content="Decir algo" HorizontalAlignment="Left" Margin="727,311,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFDFDFD"/>
+        <Label x:Name="decir2" Content="Decir algo" HorizontalAlignment="Left" Margin="725,63,0,0" VerticalAlignment="Top" Foreground="#FFFBF8F8" FontWeight="Bold"/>
         <DockPanel Margin="-1237,-52,1236.6,52">
             <Menu DockPanel.Dock="Top" Margin="0,0,985,0" Height="20">
                 <MenuItem Header="_Archivo">
@@ -93,7 +93,6 @@
             </Menu>
         </DockPanel>
         <StackPanel x:Name="stackpanel_Copy1" HorizontalAlignment="Left" Height="94" Margin="10,307,0,0" VerticalAlignment="Top" Width="656" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5">
-
             <Button x:Name="boton18" Margin="0,0,10,0" Content="" Style="{StaticResource MyButton}" Width="50" Click="boton18_Click" MouseEnter="boton18_MouseEnter" MouseLeave="boton18_MouseLeave"   />
             <Button x:Name="boton19" Margin="0,0,10,0" Content="" Width="51"  Height="94" VerticalAlignment="Bottom" Style="{StaticResource MyButton}" Click="boton19_Click" MouseEnter="boton19_MouseEnter" MouseLeave="boton19_MouseLeave"/>
             <Button x:Name="boton20" Margin="0,0,10,0" Content="" Width="49"  Height="94" VerticalAlignment="Top"  Style="{StaticResource MyButton}" Click="boton20_Click" MouseEnter="boton20_MouseEnter" MouseLeave="boton20_MouseLeave"/>
@@ -137,7 +136,7 @@
         <Image x:Name="pic6" Margin="533,44,484.6,254.6" Source="mage2.png" Stretch="Fill"/>
         <Image x:Name="pic4" Margin="533,44,484.6,256.6" Source="druid2.png" Stretch="Fill"/>
         <Image x:Name="pic2" Margin="533,44,484.6,256.6" Source="hunter2.png" Stretch="Fill"/>
-        <StackPanel x:Name="stackpanel" HorizontalAlignment="Left" Height="84" Margin="359,200,0,0" VerticalAlignment="Top" Width="487" Orientation="Horizontal">
+        <StackPanel x:Name="stackpanel" HorizontalAlignment="Left" Height="84" Margin="339,199,0,0" VerticalAlignment="Top" Width="487" Orientation="Horizontal">
             <Button x:Name="boton4" Margin="0,0,10,0" Content="" Click="Button_Click_3" Width="50"  MouseEnter="boton4_MouseEnter" MouseLeave="boton4_MouseLeave" Style="{StaticResource MyButton}" Height="80" VerticalAlignment="Top"    />
             <Button x:Name="boton5" Margin="0,0,10,0" Content="" Width="50" Click="boton5_Click" MouseEnter="boton5_MouseEnter" MouseLeave="boton5_MouseLeave" Height="80" VerticalAlignment="Bottom" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton6" Margin="0,0,10,0" Content="" Width="50" MouseEnter="boton6_MouseEnter" MouseLeave="boton6_MouseLeave" Height="80" VerticalAlignment="Top" Click="boton6_Click" Style="{StaticResource MyButton}"/>
