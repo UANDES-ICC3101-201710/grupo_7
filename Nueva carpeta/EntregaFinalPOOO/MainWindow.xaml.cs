@@ -622,8 +622,7 @@ namespace EntregaFinalPOOO
        
 
         public static void jugarcarta(int a, List<minion> lista, Heroe h)
-        {   if (lista.Count < 6)
-            {
+        {   
                 if (h.mano[a].mana <= h.mana)
                 {
                     h.gastarmana(h.mano[a]);
@@ -638,7 +637,7 @@ namespace EntregaFinalPOOO
                     h.mano.RemoveAt(a);
 
                 }
-            }
+            
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
@@ -2028,65 +2027,68 @@ namespace EntregaFinalPOOO
 
         private void boton18_Click(object sender, RoutedEventArgs e)
         {
-            if (j1.mano[0].mana <= j1.mana)
+            if (cartascancha.Count < 7) { 
+            if (j1.activo == true)
             {
-                j1.jugarcarta(1, cartascancha);
-                manadisp.Content = j1.mana;
+                if (j1.mano[0].mana <= j1.mana)
+                {
+                    j1.jugarcarta(1, cartascancha);
+                    manadisp.Content = j1.mana;
 
-                
+
+                }
+                for (int i = 0; i < manos.Count; i++)
+                {
+                    if (manos[i].nombre == "wisp")
+                    {
+                        manobot[i].Background = wisp;
+
+                    }
+                    if (manos[i].nombre == "Murloc Raider")
+                    {
+                        manobot[i].Background = MurlocRaider;
+                    }
+                    if (manos[i].nombre == "Bloodfen Raptor")
+                    {
+                        manobot[i].Background = BloodfenRaptor;
+                    }
+                    if (manos[i].nombre == "River Crocolisk")
+                    {
+                        manobot[i].Background = RiverCrocolisk;
+                    }
+                    if (manos[i].nombre == "Magma Rager")
+                    {
+                        manobot[i].Background = MagmaRager;
+                    }
+                    if (manos[i].nombre == "Chillwind Yeti")
+                    {
+                        manobot[i].Background = ChillwindYeti;
+                    }
+                    if (manos[i].nombre == "Oasis Snapjaw")
+                    {
+                        manobot[i].Background = OasisSnapjaw;
+                    }
+                    if (manos[i].nombre == "Boulderfist Ogre")
+                    {
+                        manobot[i].Background = BoulderfistOgre;
+                    }
+                    if (manos[i].nombre == "War Golem")
+                    {
+                        manobot[i].Background = WarGolem;
+                    }
+                    if (manos[i].nombre == "Core Hound")
+                    {
+                        manobot[i].Background = CoreHound;
+                    }
+                    manobot[i].Visibility = Visibility.Visible;
+                }
+                manobot[manos.Count()].Visibility = Visibility.Hidden;
+
+
+                refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
             }
-            for (int i = 0; i < manos.Count; i++)
-            {
-                if (manos[i].nombre == "wisp")
-                {
-                    manobot[i].Background = wisp;
-
-                }
-                if (manos[i].nombre == "Murloc Raider")
-                {
-                    manobot[i].Background = MurlocRaider;
-                }
-                if (manos[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot[i].Background = BloodfenRaptor;
-                }
-                if (manos[i].nombre == "River Crocolisk")
-                {
-                    manobot[i].Background = RiverCrocolisk;
-                }
-                if (manos[i].nombre == "Magma Rager")
-                {
-                    manobot[i].Background = MagmaRager;
-                }
-                if (manos[i].nombre == "Chillwind Yeti")
-                {
-                    manobot[i].Background = ChillwindYeti;
-                }
-                if (manos[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot[i].Background = OasisSnapjaw;
-                }
-                if (manos[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot[i].Background = BoulderfistOgre;
-                }
-                if (manos[i].nombre == "War Golem")
-                {
-                    manobot[i].Background = WarGolem;
-                }
-                if (manos[i].nombre == "Core Hound")
-                {
-                    manobot[i].Background = CoreHound;
-                }
-                manobot[i].Visibility = Visibility.Visible;
-            }
-            manobot[manos.Count()].Visibility = Visibility.Hidden;
-
-       
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-
-        }
+        }}
 
 
         private void boton18_MouseEnter(object sender, MouseEventArgs e)
@@ -2138,61 +2140,67 @@ namespace EntregaFinalPOOO
 
         private void boton19_Click(object sender, RoutedEventArgs e)
         {
-            if (j1.mano[1].mana <= j1.mana)
+            if (cartascancha.Count < 7)
             {
-                j1.jugarcarta(2, cartascancha);
-                manadisp.Content = j1.mana;
+                if (j1.activo == true)
+                {
+                    if (j1.mano[1].mana <= j1.mana)
+                    {
+                        j1.jugarcarta(2, cartascancha);
+                        manadisp.Content = j1.mana;
 
 
+                    }
+                    for (int i = 0; i < manos.Count; i++)
+                    {
+                        if (manos[i].nombre == "wisp")
+                        {
+                            manobot[i].Background = wisp;
+
+                        }
+                        if (manos[i].nombre == "Murloc Raider")
+                        {
+                            manobot[i].Background = MurlocRaider;
+                        }
+                        if (manos[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot[i].Background = BloodfenRaptor;
+                        }
+                        if (manos[i].nombre == "River Crocolisk")
+                        {
+                            manobot[i].Background = RiverCrocolisk;
+                        }
+                        if (manos[i].nombre == "Magma Rager")
+                        {
+                            manobot[i].Background = MagmaRager;
+                        }
+                        if (manos[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot[i].Background = ChillwindYeti;
+                        }
+                        if (manos[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot[i].Background = OasisSnapjaw;
+                        }
+                        if (manos[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot[i].Background = BoulderfistOgre;
+                        }
+                        if (manos[i].nombre == "War Golem")
+                        {
+                            manobot[i].Background = WarGolem;
+                        }
+                        if (manos[i].nombre == "Core Hound")
+                        {
+                            manobot[i].Background = CoreHound;
+                        }
+                        manobot[i].Visibility = Visibility.Visible;
+                    }
+                    manobot[manos.Count()].Visibility = Visibility.Hidden;
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos.Count; i++)
-            {
-                if (manos[i].nombre == "wisp")
-                {
-                    manobot[i].Background = wisp;
-
-                }
-                if (manos[i].nombre == "Murloc Raider")
-                {
-                    manobot[i].Background = MurlocRaider;
-                }
-                if (manos[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot[i].Background = BloodfenRaptor;
-                }
-                if (manos[i].nombre == "River Crocolisk")
-                {
-                    manobot[i].Background = RiverCrocolisk;
-                }
-                if (manos[i].nombre == "Magma Rager")
-                {
-                    manobot[i].Background = MagmaRager;
-                }
-                if (manos[i].nombre == "Chillwind Yeti")
-                {
-                    manobot[i].Background = ChillwindYeti;
-                }
-                if (manos[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot[i].Background = OasisSnapjaw;
-                }
-                if (manos[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot[i].Background = BoulderfistOgre;
-                }
-                if (manos[i].nombre == "War Golem")
-                {
-                    manobot[i].Background = WarGolem;
-                }
-                if (manos[i].nombre == "Core Hound")
-                {
-                    manobot[i].Background = CoreHound;
-                }
-                manobot[i].Visibility = Visibility.Visible;
-            }
-            manobot[manos.Count()].Visibility = Visibility.Hidden;
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
         }
         private void boton19_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -2242,62 +2250,68 @@ namespace EntregaFinalPOOO
 
         private void boton20_Click(object sender, RoutedEventArgs e)
         {
-            if (j1.mano[2].mana <= j1.mana)
+            if (cartascancha.Count < 7)
             {
-                j1.jugarcarta(3, cartascancha);
-                manadisp.Content = j1.mana;
+                if (j1.activo == true)
+                {
+                    if (j1.mano[2].mana <= j1.mana)
+                    {
+                        j1.jugarcarta(3, cartascancha);
+                        manadisp.Content = j1.mana;
 
 
+                    }
+                    for (int i = 0; i < manos.Count; i++)
+                    {
+                        if (manos[i].nombre == "wisp")
+                        {
+                            manobot[i].Background = wisp;
+
+                        }
+                        if (manos[i].nombre == "Murloc Raider")
+                        {
+                            manobot[i].Background = MurlocRaider;
+                        }
+                        if (manos[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot[i].Background = BloodfenRaptor;
+                        }
+                        if (manos[i].nombre == "River Crocolisk")
+                        {
+                            manobot[i].Background = RiverCrocolisk;
+                        }
+                        if (manos[i].nombre == "Magma Rager")
+                        {
+                            manobot[i].Background = MagmaRager;
+                        }
+                        if (manos[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot[i].Background = ChillwindYeti;
+                        }
+                        if (manos[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot[i].Background = OasisSnapjaw;
+                        }
+                        if (manos[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot[i].Background = BoulderfistOgre;
+                        }
+                        if (manos[i].nombre == "War Golem")
+                        {
+                            manobot[i].Background = WarGolem;
+                        }
+                        if (manos[i].nombre == "Core Hound")
+                        {
+                            manobot[i].Background = CoreHound;
+                        }
+                        manobot[i].Visibility = Visibility.Visible;
+                    }
+                    manobot[manos.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos.Count; i++)
-            {
-                if (manos[i].nombre == "wisp")
-                {
-                    manobot[i].Background = wisp;
-
-                }
-                if (manos[i].nombre == "Murloc Raider")
-                {
-                    manobot[i].Background = MurlocRaider;
-                }
-                if (manos[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot[i].Background = BloodfenRaptor;
-                }
-                if (manos[i].nombre == "River Crocolisk")
-                {
-                    manobot[i].Background = RiverCrocolisk;
-                }
-                if (manos[i].nombre == "Magma Rager")
-                {
-                    manobot[i].Background = MagmaRager;
-                }
-                if (manos[i].nombre == "Chillwind Yeti")
-                {
-                    manobot[i].Background = ChillwindYeti;
-                }
-                if (manos[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot[i].Background = OasisSnapjaw;
-                }
-                if (manos[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot[i].Background = BoulderfistOgre;
-                }
-                if (manos[i].nombre == "War Golem")
-                {
-                    manobot[i].Background = WarGolem;
-                }
-                if (manos[i].nombre == "Core Hound")
-                {
-                    manobot[i].Background = CoreHound;
-                }
-                manobot[i].Visibility = Visibility.Visible;
-            }
-            manobot[manos.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
         }
         private void boton20_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -2346,62 +2360,68 @@ namespace EntregaFinalPOOO
         }
         private void boton21_Click(object sender, RoutedEventArgs e)
         {
-            if (j1.mano[3].mana <= j1.mana)
+            if (cartascancha.Count < 7)
             {
-                j1.jugarcarta(4, cartascancha);
-                manadisp.Content = j1.mana;
+                if (j1.activo == true)
+                {
+                    if (j1.mano[3].mana <= j1.mana)
+                    {
+                        j1.jugarcarta(4, cartascancha);
+                        manadisp.Content = j1.mana;
 
 
+                    }
+                    for (int i = 0; i < manos.Count; i++)
+                    {
+                        if (manos[i].nombre == "wisp")
+                        {
+                            manobot[i].Background = wisp;
+
+                        }
+                        if (manos[i].nombre == "Murloc Raider")
+                        {
+                            manobot[i].Background = MurlocRaider;
+                        }
+                        if (manos[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot[i].Background = BloodfenRaptor;
+                        }
+                        if (manos[i].nombre == "River Crocolisk")
+                        {
+                            manobot[i].Background = RiverCrocolisk;
+                        }
+                        if (manos[i].nombre == "Magma Rager")
+                        {
+                            manobot[i].Background = MagmaRager;
+                        }
+                        if (manos[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot[i].Background = ChillwindYeti;
+                        }
+                        if (manos[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot[i].Background = OasisSnapjaw;
+                        }
+                        if (manos[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot[i].Background = BoulderfistOgre;
+                        }
+                        if (manos[i].nombre == "War Golem")
+                        {
+                            manobot[i].Background = WarGolem;
+                        }
+                        if (manos[i].nombre == "Core Hound")
+                        {
+                            manobot[i].Background = CoreHound;
+                        }
+                        manobot[i].Visibility = Visibility.Visible;
+                    }
+                    manobot[manos.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos.Count; i++)
-            {
-                if (manos[i].nombre == "wisp")
-                {
-                    manobot[i].Background = wisp;
-
-                }
-                if (manos[i].nombre == "Murloc Raider")
-                {
-                    manobot[i].Background = MurlocRaider;
-                }
-                if (manos[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot[i].Background = BloodfenRaptor;
-                }
-                if (manos[i].nombre == "River Crocolisk")
-                {
-                    manobot[i].Background = RiverCrocolisk;
-                }
-                if (manos[i].nombre == "Magma Rager")
-                {
-                    manobot[i].Background = MagmaRager;
-                }
-                if (manos[i].nombre == "Chillwind Yeti")
-                {
-                    manobot[i].Background = ChillwindYeti;
-                }
-                if (manos[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot[i].Background = OasisSnapjaw;
-                }
-                if (manos[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot[i].Background = BoulderfistOgre;
-                }
-                if (manos[i].nombre == "War Golem")
-                {
-                    manobot[i].Background = WarGolem;
-                }
-                if (manos[i].nombre == "Core Hound")
-                {
-                    manobot[i].Background = CoreHound;
-                }
-                manobot[i].Visibility = Visibility.Visible;
-            }
-            manobot[manos.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
         }
         private void boton21_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -2450,62 +2470,68 @@ namespace EntregaFinalPOOO
         }
         private void boton22_Click(object sender, RoutedEventArgs e)
         {
-            if (j1.mano[4].mana <= j1.mana)
+            if (cartascancha.Count < 7)
             {
-                j1.jugarcarta(5, cartascancha);
-                manadisp.Content = j1.mana;
+                if (j1.activo == true)
+                {
+                    if (j1.mano[4].mana <= j1.mana)
+                    {
+                        j1.jugarcarta(5, cartascancha);
+                        manadisp.Content = j1.mana;
 
 
+                    }
+                    for (int i = 0; i < manos.Count; i++)
+                    {
+                        if (manos[i].nombre == "wisp")
+                        {
+                            manobot[i].Background = wisp;
+
+                        }
+                        if (manos[i].nombre == "Murloc Raider")
+                        {
+                            manobot[i].Background = MurlocRaider;
+                        }
+                        if (manos[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot[i].Background = BloodfenRaptor;
+                        }
+                        if (manos[i].nombre == "River Crocolisk")
+                        {
+                            manobot[i].Background = RiverCrocolisk;
+                        }
+                        if (manos[i].nombre == "Magma Rager")
+                        {
+                            manobot[i].Background = MagmaRager;
+                        }
+                        if (manos[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot[i].Background = ChillwindYeti;
+                        }
+                        if (manos[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot[i].Background = OasisSnapjaw;
+                        }
+                        if (manos[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot[i].Background = BoulderfistOgre;
+                        }
+                        if (manos[i].nombre == "War Golem")
+                        {
+                            manobot[i].Background = WarGolem;
+                        }
+                        if (manos[i].nombre == "Core Hound")
+                        {
+                            manobot[i].Background = CoreHound;
+                        }
+                        manobot[i].Visibility = Visibility.Visible;
+                    }
+                    manobot[manos.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos.Count; i++)
-            {
-                if (manos[i].nombre == "wisp")
-                {
-                    manobot[i].Background = wisp;
-
-                }
-                if (manos[i].nombre == "Murloc Raider")
-                {
-                    manobot[i].Background = MurlocRaider;
-                }
-                if (manos[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot[i].Background = BloodfenRaptor;
-                }
-                if (manos[i].nombre == "River Crocolisk")
-                {
-                    manobot[i].Background = RiverCrocolisk;
-                }
-                if (manos[i].nombre == "Magma Rager")
-                {
-                    manobot[i].Background = MagmaRager;
-                }
-                if (manos[i].nombre == "Chillwind Yeti")
-                {
-                    manobot[i].Background = ChillwindYeti;
-                }
-                if (manos[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot[i].Background = OasisSnapjaw;
-                }
-                if (manos[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot[i].Background = BoulderfistOgre;
-                }
-                if (manos[i].nombre == "War Golem")
-                {
-                    manobot[i].Background = WarGolem;
-                }
-                if (manos[i].nombre == "Core Hound")
-                {
-                    manobot[i].Background = CoreHound;
-                }
-                manobot[i].Visibility = Visibility.Visible;
-            }
-            manobot[manos.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
         }
 
         private void boton22_MouseEnter(object sender, MouseEventArgs e)
@@ -2555,103 +2581,109 @@ namespace EntregaFinalPOOO
         }
         private void boton23_Click(object sender, RoutedEventArgs e)
         {
-            if (j1.mano[5].mana <= j1.mana)
+            if (cartascancha.Count < 7)
             {
-                j1.jugarcarta(6, cartascancha);
-                manadisp.Content = j1.mana;
+                if (j1.mano[5].mana <= j1.mana)
+                {
+                    j1.jugarcarta(6, cartascancha);
+                    manadisp.Content = j1.mana;
 
 
+                }
+                for (int i = 0; i < manos.Count; i++)
+                {
+                    if (manos[i].nombre == "wisp")
+                    {
+                        manobot[i].Background = wisp;
+
+                    }
+                    if (manos[i].nombre == "Murloc Raider")
+                    {
+                        manobot[i].Background = MurlocRaider;
+                    }
+                    if (manos[i].nombre == "Bloodfen Raptor")
+                    {
+                        manobot[i].Background = BloodfenRaptor;
+                    }
+                    if (manos[i].nombre == "River Crocolisk")
+                    {
+                        manobot[i].Background = RiverCrocolisk;
+                    }
+                    if (manos[i].nombre == "Magma Rager")
+                    {
+                        manobot[i].Background = MagmaRager;
+                    }
+                    if (manos[i].nombre == "Chillwind Yeti")
+                    {
+                        manobot[i].Background = ChillwindYeti;
+                    }
+                    if (manos[i].nombre == "Oasis Snapjaw")
+                    {
+                        manobot[i].Background = OasisSnapjaw;
+                    }
+                    if (manos[i].nombre == "Boulderfist Ogre")
+                    {
+                        manobot[i].Background = BoulderfistOgre;
+                    }
+                    if (manos[i].nombre == "War Golem")
+                    {
+                        manobot[i].Background = WarGolem;
+                    }
+                    if (manos[i].nombre == "Core Hound")
+                    {
+                        manobot[i].Background = CoreHound;
+                    }
+                    manobot[i].Visibility = Visibility.Visible;
+                }
+                manobot[manos.Count()].Visibility = Visibility.Hidden;
+
+                refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
             }
-            for (int i = 0; i < manos.Count; i++)
-            {
-                if (manos[i].nombre == "wisp")
-                {
-                    manobot[i].Background = wisp;
-
-                }
-                if (manos[i].nombre == "Murloc Raider")
-                {
-                    manobot[i].Background = MurlocRaider;
-                }
-                if (manos[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot[i].Background = BloodfenRaptor;
-                }
-                if (manos[i].nombre == "River Crocolisk")
-                {
-                    manobot[i].Background = RiverCrocolisk;
-                }
-                if (manos[i].nombre == "Magma Rager")
-                {
-                    manobot[i].Background = MagmaRager;
-                }
-                if (manos[i].nombre == "Chillwind Yeti")
-                {
-                    manobot[i].Background = ChillwindYeti;
-                }
-                if (manos[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot[i].Background = OasisSnapjaw;
-                }
-                if (manos[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot[i].Background = BoulderfistOgre;
-                }
-                if (manos[i].nombre == "War Golem")
-                {
-                    manobot[i].Background = WarGolem;
-                }
-                if (manos[i].nombre == "Core Hound")
-                {
-                    manobot[i].Background = CoreHound;
-                }
-                manobot[i].Visibility = Visibility.Visible;
-            }
-            manobot[manos.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
         }
         private void boton23_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (manos[5].nombre == "Murloc Raider")
+            if (j1.activo == true)
             {
-                popo.Background = MurlocRaider;
+                if (manos[5].nombre == "Murloc Raider")
+                {
+                    popo.Background = MurlocRaider;
+                }
+                if (manos[5].nombre == "Bloodfen Raptor")
+                {
+                    popo.Background = BloodfenRaptor;
+                }
+                if (manos[5].nombre == "River Crocolisk")
+                {
+                    popo.Background = RiverCrocolisk;
+                }
+                if (manos[5].nombre == "Magma Rager")
+                {
+                    popo.Background = MagmaRager;
+                }
+                if (manos[5].nombre == "Chillwind Yeti")
+                {
+                    popo.Background = ChillwindYeti;
+                }
+                if (manos[5].nombre == "Oasis Snapjaw")
+                {
+                    popo.Background = OasisSnapjaw;
+                }
+                if (manos[5].nombre == "Boulderfist Ogre")
+                {
+                    popo.Background = BoulderfistOgre;
+                }
+                if (manos[5].nombre == "War Golem")
+                {
+                    popo.Background = WarGolem;
+                }
+                if (manos[5].nombre == "Core Hound")
+                {
+                    popo.Background = CoreHound;
+                }
+                refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
             }
-            if (manos[5].nombre == "Bloodfen Raptor")
-            {
-                popo.Background = BloodfenRaptor;
-            }
-            if (manos[5].nombre == "River Crocolisk")
-            {
-                popo.Background = RiverCrocolisk;
-            }
-            if (manos[5].nombre == "Magma Rager")
-            {
-                popo.Background = MagmaRager;
-            }
-            if (manos[5].nombre == "Chillwind Yeti")
-            {
-                popo.Background = ChillwindYeti;
-            }
-            if (manos[5].nombre == "Oasis Snapjaw")
-            {
-                popo.Background = OasisSnapjaw;
-            }
-            if (manos[5].nombre == "Boulderfist Ogre")
-            {
-                popo.Background = BoulderfistOgre;
-            }
-            if (manos[5].nombre == "War Golem")
-            {
-                popo.Background = WarGolem;
-            }
-            if (manos[5].nombre == "Core Hound")
-            {
-                popo.Background = CoreHound;
-            }
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
         }
         private void boton23_MouseLeave(object sender, MouseEventArgs e)
         {
@@ -2659,62 +2691,68 @@ namespace EntregaFinalPOOO
         }
         private void boton24_Click(object sender, RoutedEventArgs e)
         {
-            if (j1.mano[6].mana <= j1.mana)
+            if (cartascancha.Count < 7)
             {
-                j1.jugarcarta(7, cartascancha);
-                manadisp.Content = j1.mana;
+                if (j1.activo == true)
+                {
+                    if (j1.mano[6].mana <= j1.mana)
+                    {
+                        j1.jugarcarta(7, cartascancha);
+                        manadisp.Content = j1.mana;
 
 
+                    }
+                    for (int i = 0; i < manos.Count; i++)
+                    {
+                        if (manos[i].nombre == "wisp")
+                        {
+                            manobot[i].Background = wisp;
+
+                        }
+                        if (manos[i].nombre == "Murloc Raider")
+                        {
+                            manobot[i].Background = MurlocRaider;
+                        }
+                        if (manos[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot[i].Background = BloodfenRaptor;
+                        }
+                        if (manos[i].nombre == "River Crocolisk")
+                        {
+                            manobot[i].Background = RiverCrocolisk;
+                        }
+                        if (manos[i].nombre == "Magma Rager")
+                        {
+                            manobot[i].Background = MagmaRager;
+                        }
+                        if (manos[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot[i].Background = ChillwindYeti;
+                        }
+                        if (manos[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot[i].Background = OasisSnapjaw;
+                        }
+                        if (manos[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot[i].Background = BoulderfistOgre;
+                        }
+                        if (manos[i].nombre == "War Golem")
+                        {
+                            manobot[i].Background = WarGolem;
+                        }
+                        if (manos[i].nombre == "Core Hound")
+                        {
+                            manobot[i].Background = CoreHound;
+                        }
+                        manobot[i].Visibility = Visibility.Visible;
+                    }
+                    manobot[manos.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos.Count; i++)
-            {
-                if (manos[i].nombre == "wisp")
-                {
-                    manobot[i].Background = wisp;
-
-                }
-                if (manos[i].nombre == "Murloc Raider")
-                {
-                    manobot[i].Background = MurlocRaider;
-                }
-                if (manos[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot[i].Background = BloodfenRaptor;
-                }
-                if (manos[i].nombre == "River Crocolisk")
-                {
-                    manobot[i].Background = RiverCrocolisk;
-                }
-                if (manos[i].nombre == "Magma Rager")
-                {
-                    manobot[i].Background = MagmaRager;
-                }
-                if (manos[i].nombre == "Chillwind Yeti")
-                {
-                    manobot[i].Background = ChillwindYeti;
-                }
-                if (manos[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot[i].Background = OasisSnapjaw;
-                }
-                if (manos[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot[i].Background = BoulderfistOgre;
-                }
-                if (manos[i].nombre == "War Golem")
-                {
-                    manobot[i].Background = WarGolem;
-                }
-                if (manos[i].nombre == "Core Hound")
-                {
-                    manobot[i].Background = CoreHound;
-                }
-                manobot[i].Visibility = Visibility.Visible;
-            }
-            manobot[manos.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
         }
 
         private void boton24_MouseEnter(object sender, MouseEventArgs e)
@@ -2765,62 +2803,68 @@ namespace EntregaFinalPOOO
 
         private void boton25_Click(object sender, RoutedEventArgs e)
         {
-            if (j1.mano[7].mana <= j1.mana)
+            if (cartascancha.Count < 7)
             {
-                j1.jugarcarta(8, cartascancha);
-                manadisp.Content = j1.mana;
+                if (j1.activo == true)
+                {
+                    if (j1.mano[7].mana <= j1.mana)
+                    {
+                        j1.jugarcarta(8, cartascancha);
+                        manadisp.Content = j1.mana;
 
 
+                    }
+                    for (int i = 0; i < manos.Count; i++)
+                    {
+                        if (manos[i].nombre == "wisp")
+                        {
+                            manobot[i].Background = wisp;
+
+                        }
+                        if (manos[i].nombre == "Murloc Raider")
+                        {
+                            manobot[i].Background = MurlocRaider;
+                        }
+                        if (manos[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot[i].Background = BloodfenRaptor;
+                        }
+                        if (manos[i].nombre == "River Crocolisk")
+                        {
+                            manobot[i].Background = RiverCrocolisk;
+                        }
+                        if (manos[i].nombre == "Magma Rager")
+                        {
+                            manobot[i].Background = MagmaRager;
+                        }
+                        if (manos[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot[i].Background = ChillwindYeti;
+                        }
+                        if (manos[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot[i].Background = OasisSnapjaw;
+                        }
+                        if (manos[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot[i].Background = BoulderfistOgre;
+                        }
+                        if (manos[i].nombre == "War Golem")
+                        {
+                            manobot[i].Background = WarGolem;
+                        }
+                        if (manos[i].nombre == "Core Hound")
+                        {
+                            manobot[i].Background = CoreHound;
+                        }
+                        manobot[i].Visibility = Visibility.Visible;
+                    }
+                    manobot[manos.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos.Count; i++)
-            {
-                if (manos[i].nombre == "wisp")
-                {
-                    manobot[i].Background = wisp;
-
-                }
-                if (manos[i].nombre == "Murloc Raider")
-                {
-                    manobot[i].Background = MurlocRaider;
-                }
-                if (manos[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot[i].Background = BloodfenRaptor;
-                }
-                if (manos[i].nombre == "River Crocolisk")
-                {
-                    manobot[i].Background = RiverCrocolisk;
-                }
-                if (manos[i].nombre == "Magma Rager")
-                {
-                    manobot[i].Background = MagmaRager;
-                }
-                if (manos[i].nombre == "Chillwind Yeti")
-                {
-                    manobot[i].Background = ChillwindYeti;
-                }
-                if (manos[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot[i].Background = OasisSnapjaw;
-                }
-                if (manos[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot[i].Background = BoulderfistOgre;
-                }
-                if (manos[i].nombre == "War Golem")
-                {
-                    manobot[i].Background = WarGolem;
-                }
-                if (manos[i].nombre == "Core Hound")
-                {
-                    manobot[i].Background = CoreHound;
-                }
-                manobot[i].Visibility = Visibility.Visible;
-            }
-            manobot[manos.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
         }
 
         private void boton25_MouseEnter(object sender, MouseEventArgs e)
@@ -2870,62 +2914,68 @@ namespace EntregaFinalPOOO
         }
         private void boton24_Copy_Click(object sender, RoutedEventArgs e)
         {
-            if (j1.mano[8].mana <= j1.mana)
+            if (cartascancha.Count < 7)
             {
-                j1.jugarcarta(9, cartascancha);
-                manadisp.Content = j1.mana;
+                if (j1.activo == true)
+                {
+                    if (j1.mano[8].mana <= j1.mana)
+                    {
+                        j1.jugarcarta(9, cartascancha);
+                        manadisp.Content = j1.mana;
 
 
+                    }
+                    for (int i = 0; i < manos.Count; i++)
+                    {
+                        if (manos[i].nombre == "wisp")
+                        {
+                            manobot[i].Background = wisp;
+
+                        }
+                        if (manos[i].nombre == "Murloc Raider")
+                        {
+                            manobot[i].Background = MurlocRaider;
+                        }
+                        if (manos[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot[i].Background = BloodfenRaptor;
+                        }
+                        if (manos[i].nombre == "River Crocolisk")
+                        {
+                            manobot[i].Background = RiverCrocolisk;
+                        }
+                        if (manos[i].nombre == "Magma Rager")
+                        {
+                            manobot[i].Background = MagmaRager;
+                        }
+                        if (manos[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot[i].Background = ChillwindYeti;
+                        }
+                        if (manos[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot[i].Background = OasisSnapjaw;
+                        }
+                        if (manos[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot[i].Background = BoulderfistOgre;
+                        }
+                        if (manos[i].nombre == "War Golem")
+                        {
+                            manobot[i].Background = WarGolem;
+                        }
+                        if (manos[i].nombre == "Core Hound")
+                        {
+                            manobot[i].Background = CoreHound;
+                        }
+                        manobot[i].Visibility = Visibility.Visible;
+                    }
+                    manobot[manos.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos.Count; i++)
-            {
-                if (manos[i].nombre == "wisp")
-                {
-                    manobot[i].Background = wisp;
-
-                }
-                if (manos[i].nombre == "Murloc Raider")
-                {
-                    manobot[i].Background = MurlocRaider;
-                }
-                if (manos[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot[i].Background = BloodfenRaptor;
-                }
-                if (manos[i].nombre == "River Crocolisk")
-                {
-                    manobot[i].Background = RiverCrocolisk;
-                }
-                if (manos[i].nombre == "Magma Rager")
-                {
-                    manobot[i].Background = MagmaRager;
-                }
-                if (manos[i].nombre == "Chillwind Yeti")
-                {
-                    manobot[i].Background = ChillwindYeti;
-                }
-                if (manos[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot[i].Background = OasisSnapjaw;
-                }
-                if (manos[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot[i].Background = BoulderfistOgre;
-                }
-                if (manos[i].nombre == "War Golem")
-                {
-                    manobot[i].Background = WarGolem;
-                }
-                if (manos[i].nombre == "Core Hound")
-                {
-                    manobot[i].Background = CoreHound;
-                }
-                manobot[i].Visibility = Visibility.Visible;
-            }
-            manobot[manos.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
         }
 
         private void boton241_MouseEnter(object sender, MouseEventArgs e)
@@ -2976,62 +3026,68 @@ namespace EntregaFinalPOOO
 
         private void boton24_Copy1_Click(object sender, RoutedEventArgs e)
         {
-            if (j1.mano[9].mana <= j1.mana)
+            if (cartascancha.Count < 7)
             {
-                j1.jugarcarta(10, cartascancha);
-                manadisp.Content = j1.mana;
+                if (j1.activo == true)
+                {
+                    if (j1.mano[9].mana <= j1.mana)
+                    {
+                        j1.jugarcarta(10, cartascancha);
+                        manadisp.Content = j1.mana;
 
 
+                    }
+                    for (int i = 0; i < manos.Count; i++)
+                    {
+                        if (manos[i].nombre == "wisp")
+                        {
+                            manobot[i].Background = wisp;
+
+                        }
+                        if (manos[i].nombre == "Murloc Raider")
+                        {
+                            manobot[i].Background = MurlocRaider;
+                        }
+                        if (manos[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot[i].Background = BloodfenRaptor;
+                        }
+                        if (manos[i].nombre == "River Crocolisk")
+                        {
+                            manobot[i].Background = RiverCrocolisk;
+                        }
+                        if (manos[i].nombre == "Magma Rager")
+                        {
+                            manobot[i].Background = MagmaRager;
+                        }
+                        if (manos[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot[i].Background = ChillwindYeti;
+                        }
+                        if (manos[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot[i].Background = OasisSnapjaw;
+                        }
+                        if (manos[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot[i].Background = BoulderfistOgre;
+                        }
+                        if (manos[i].nombre == "War Golem")
+                        {
+                            manobot[i].Background = WarGolem;
+                        }
+                        if (manos[i].nombre == "Core Hound")
+                        {
+                            manobot[i].Background = CoreHound;
+                        }
+                        manobot[i].Visibility = Visibility.Visible;
+                    }
+                    manobot[manos.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos.Count; i++)
-            {
-                if (manos[i].nombre == "wisp")
-                {
-                    manobot[i].Background = wisp;
-
-                }
-                if (manos[i].nombre == "Murloc Raider")
-                {
-                    manobot[i].Background = MurlocRaider;
-                }
-                if (manos[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot[i].Background = BloodfenRaptor;
-                }
-                if (manos[i].nombre == "River Crocolisk")
-                {
-                    manobot[i].Background = RiverCrocolisk;
-                }
-                if (manos[i].nombre == "Magma Rager")
-                {
-                    manobot[i].Background = MagmaRager;
-                }
-                if (manos[i].nombre == "Chillwind Yeti")
-                {
-                    manobot[i].Background = ChillwindYeti;
-                }
-                if (manos[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot[i].Background = OasisSnapjaw;
-                }
-                if (manos[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot[i].Background = BoulderfistOgre;
-                }
-                if (manos[i].nombre == "War Golem")
-                {
-                    manobot[i].Background = WarGolem;
-                }
-                if (manos[i].nombre == "Core Hound")
-                {
-                    manobot[i].Background = CoreHound;
-                }
-                manobot[i].Visibility = Visibility.Visible;
-            }
-            manobot[manos.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
         }
 
         private void boton242_MouseEnter(object sender, MouseEventArgs e)
@@ -3081,62 +3137,68 @@ namespace EntregaFinalPOOO
         }
         private void boton26_Click(object sender, RoutedEventArgs e)
         {
-            if (j2.mano[0].mana <= j2.mana)
+            if (cartascancha2.Count < 7)
             {
-                j2.jugarcarta(1, cartascancha2);
-                manadisponible2.Content = j2.mana;
+                if (j2.activo == true)
+                {
+                    if (j2.mano[0].mana <= j2.mana)
+                    {
+                        j2.jugarcarta(1, cartascancha2);
+                        manadisponible2.Content = j2.mana;
 
 
+                    }
+                    for (int i = 0; i < manos2.Count; i++)
+                    {
+                        if (manos2[i].nombre == "wisp")
+                        {
+                            manobot1[i].Background = wisp;
+
+                        }
+                        if (manos2[i].nombre == "Murloc Raider")
+                        {
+                            manobot1[i].Background = MurlocRaider;
+                        }
+                        if (manos2[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot1[i].Background = BloodfenRaptor;
+                        }
+                        if (manos2[i].nombre == "River Crocolisk")
+                        {
+                            manobot1[i].Background = RiverCrocolisk;
+                        }
+                        if (manos2[i].nombre == "Magma Rager")
+                        {
+                            manobot1[i].Background = MagmaRager;
+                        }
+                        if (manos2[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot1[i].Background = ChillwindYeti;
+                        }
+                        if (manos2[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot1[i].Background = OasisSnapjaw;
+                        }
+                        if (manos2[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot1[i].Background = BoulderfistOgre;
+                        }
+                        if (manos2[i].nombre == "War Golem")
+                        {
+                            manobot1[i].Background = WarGolem;
+                        }
+                        if (manos2[i].nombre == "Core Hound")
+                        {
+                            manobot1[i].Background = CoreHound;
+                        }
+                        manobot1[i].Visibility = Visibility.Visible;
+                    }
+                    manobot1[manos2.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos2.Count; i++)
-            {
-                if (manos2[i].nombre == "wisp")
-                {
-                    manobot1[i].Background = wisp;
-
-                }
-                if (manos2[i].nombre == "Murloc Raider")
-                {
-                    manobot1[i].Background = MurlocRaider;
-                }
-                if (manos2[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot1[i].Background = BloodfenRaptor;
-                }
-                if (manos2[i].nombre == "River Crocolisk")
-                {
-                    manobot1[i].Background = RiverCrocolisk;
-                }
-                if (manos2[i].nombre == "Magma Rager")
-                {
-                    manobot1[i].Background = MagmaRager;
-                }
-                if (manos2[i].nombre == "Chillwind Yeti")
-                {
-                    manobot1[i].Background = ChillwindYeti;
-                }
-                if (manos2[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot1[i].Background = OasisSnapjaw;
-                }
-                if (manos2[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot1[i].Background = BoulderfistOgre;
-                }
-                if (manos2[i].nombre == "War Golem")
-                {
-                    manobot1[i].Background = WarGolem;
-                }
-                if (manos2[i].nombre == "Core Hound")
-                {
-                    manobot1[i].Background = CoreHound;
-                }
-                manobot1[i].Visibility = Visibility.Visible;
-            }
-            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
 
         }
         private void boton26_MouseEnter(object sender, MouseEventArgs e)
@@ -3188,62 +3250,68 @@ namespace EntregaFinalPOOO
 
         private void boton27_Click(object sender, RoutedEventArgs e)
         {
-            if (j2.mano[1].mana <= j2.mana)
+            if (cartascancha2.Count < 7)
             {
-                j2.jugarcarta(2, cartascancha2);
-                manadisponible2.Content = j2.mana;
+                if (j2.activo == true)
+                {
+                    if (j2.mano[1].mana <= j2.mana)
+                    {
+                        j2.jugarcarta(2, cartascancha2);
+                        manadisponible2.Content = j2.mana;
 
 
+                    }
+                    for (int i = 0; i < manos2.Count; i++)
+                    {
+                        if (manos2[i].nombre == "wisp")
+                        {
+                            manobot1[i].Background = wisp;
+
+                        }
+                        if (manos2[i].nombre == "Murloc Raider")
+                        {
+                            manobot1[i].Background = MurlocRaider;
+                        }
+                        if (manos2[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot1[i].Background = BloodfenRaptor;
+                        }
+                        if (manos2[i].nombre == "River Crocolisk")
+                        {
+                            manobot1[i].Background = RiverCrocolisk;
+                        }
+                        if (manos2[i].nombre == "Magma Rager")
+                        {
+                            manobot1[i].Background = MagmaRager;
+                        }
+                        if (manos2[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot1[i].Background = ChillwindYeti;
+                        }
+                        if (manos2[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot1[i].Background = OasisSnapjaw;
+                        }
+                        if (manos2[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot1[i].Background = BoulderfistOgre;
+                        }
+                        if (manos2[i].nombre == "War Golem")
+                        {
+                            manobot1[i].Background = WarGolem;
+                        }
+                        if (manos2[i].nombre == "Core Hound")
+                        {
+                            manobot1[i].Background = CoreHound;
+                        }
+                        manobot1[i].Visibility = Visibility.Visible;
+                    }
+                    manobot1[manos2.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos2.Count; i++)
-            {
-                if (manos2[i].nombre == "wisp")
-                {
-                    manobot1[i].Background = wisp;
-
-                }
-                if (manos2[i].nombre == "Murloc Raider")
-                {
-                    manobot1[i].Background = MurlocRaider;
-                }
-                if (manos2[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot1[i].Background = BloodfenRaptor;
-                }
-                if (manos2[i].nombre == "River Crocolisk")
-                {
-                    manobot1[i].Background = RiverCrocolisk;
-                }
-                if (manos2[i].nombre == "Magma Rager")
-                {
-                    manobot1[i].Background = MagmaRager;
-                }
-                if (manos2[i].nombre == "Chillwind Yeti")
-                {
-                    manobot1[i].Background = ChillwindYeti;
-                }
-                if (manos2[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot1[i].Background = OasisSnapjaw;
-                }
-                if (manos2[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot1[i].Background = BoulderfistOgre;
-                }
-                if (manos2[i].nombre == "War Golem")
-                {
-                    manobot1[i].Background = WarGolem;
-                }
-                if (manos2[i].nombre == "Core Hound")
-                {
-                    manobot1[i].Background = CoreHound;
-                }
-                manobot1[i].Visibility = Visibility.Visible;
-            }
-            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
 
         }
         private void boton27_MouseEnter(object sender, MouseEventArgs e)
@@ -3294,62 +3362,68 @@ namespace EntregaFinalPOOO
         }
         private void boton28_Click(object sender, RoutedEventArgs e)
         {
-            if (j2.mano[2].mana <= j2.mana)
+            if (cartascancha2.Count < 7)
             {
-                j2.jugarcarta(3, cartascancha2);
-                manadisponible2.Content = j2.mana;
+                if (j2.activo == true)
+                {
+                    if (j2.mano[2].mana <= j2.mana)
+                    {
+                        j2.jugarcarta(3, cartascancha2);
+                        manadisponible2.Content = j2.mana;
 
 
+                    }
+                    for (int i = 0; i < manos2.Count; i++)
+                    {
+                        if (manos2[i].nombre == "wisp")
+                        {
+                            manobot1[i].Background = wisp;
+
+                        }
+                        if (manos2[i].nombre == "Murloc Raider")
+                        {
+                            manobot1[i].Background = MurlocRaider;
+                        }
+                        if (manos2[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot1[i].Background = BloodfenRaptor;
+                        }
+                        if (manos2[i].nombre == "River Crocolisk")
+                        {
+                            manobot1[i].Background = RiverCrocolisk;
+                        }
+                        if (manos2[i].nombre == "Magma Rager")
+                        {
+                            manobot1[i].Background = MagmaRager;
+                        }
+                        if (manos2[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot1[i].Background = ChillwindYeti;
+                        }
+                        if (manos2[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot1[i].Background = OasisSnapjaw;
+                        }
+                        if (manos2[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot1[i].Background = BoulderfistOgre;
+                        }
+                        if (manos2[i].nombre == "War Golem")
+                        {
+                            manobot1[i].Background = WarGolem;
+                        }
+                        if (manos2[i].nombre == "Core Hound")
+                        {
+                            manobot1[i].Background = CoreHound;
+                        }
+                        manobot1[i].Visibility = Visibility.Visible;
+                    }
+                    manobot1[manos2.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos2.Count; i++)
-            {
-                if (manos2[i].nombre == "wisp")
-                {
-                    manobot1[i].Background = wisp;
-
-                }
-                if (manos2[i].nombre == "Murloc Raider")
-                {
-                    manobot1[i].Background = MurlocRaider;
-                }
-                if (manos2[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot1[i].Background = BloodfenRaptor;
-                }
-                if (manos2[i].nombre == "River Crocolisk")
-                {
-                    manobot1[i].Background = RiverCrocolisk;
-                }
-                if (manos2[i].nombre == "Magma Rager")
-                {
-                    manobot1[i].Background = MagmaRager;
-                }
-                if (manos2[i].nombre == "Chillwind Yeti")
-                {
-                    manobot1[i].Background = ChillwindYeti;
-                }
-                if (manos2[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot1[i].Background = OasisSnapjaw;
-                }
-                if (manos2[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot1[i].Background = BoulderfistOgre;
-                }
-                if (manos2[i].nombre == "War Golem")
-                {
-                    manobot1[i].Background = WarGolem;
-                }
-                if (manos2[i].nombre == "Core Hound")
-                {
-                    manobot1[i].Background = CoreHound;
-                }
-                manobot1[i].Visibility = Visibility.Visible;
-            }
-            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
 
         }
         private void boton28_MouseEnter(object sender, MouseEventArgs e)
@@ -3400,62 +3474,68 @@ namespace EntregaFinalPOOO
         }
         private void boton29_Click(object sender, RoutedEventArgs e)
         {
-            if (j2.mano[3].mana <= j2.mana)
+            if (cartascancha2.Count < 7)
             {
-                j2.jugarcarta(4, cartascancha2);
-                manadisponible2.Content = j2.mana;
+                if (j2.activo == true)
+                {
+                    if (j2.mano[3].mana <= j2.mana)
+                    {
+                        j2.jugarcarta(4, cartascancha2);
+                        manadisponible2.Content = j2.mana;
 
 
+                    }
+                    for (int i = 0; i < manos2.Count; i++)
+                    {
+                        if (manos2[i].nombre == "wisp")
+                        {
+                            manobot1[i].Background = wisp;
+
+                        }
+                        if (manos2[i].nombre == "Murloc Raider")
+                        {
+                            manobot1[i].Background = MurlocRaider;
+                        }
+                        if (manos2[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot1[i].Background = BloodfenRaptor;
+                        }
+                        if (manos2[i].nombre == "River Crocolisk")
+                        {
+                            manobot1[i].Background = RiverCrocolisk;
+                        }
+                        if (manos2[i].nombre == "Magma Rager")
+                        {
+                            manobot1[i].Background = MagmaRager;
+                        }
+                        if (manos2[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot1[i].Background = ChillwindYeti;
+                        }
+                        if (manos2[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot1[i].Background = OasisSnapjaw;
+                        }
+                        if (manos2[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot1[i].Background = BoulderfistOgre;
+                        }
+                        if (manos2[i].nombre == "War Golem")
+                        {
+                            manobot1[i].Background = WarGolem;
+                        }
+                        if (manos2[i].nombre == "Core Hound")
+                        {
+                            manobot1[i].Background = CoreHound;
+                        }
+                        manobot1[i].Visibility = Visibility.Visible;
+                    }
+                    manobot1[manos2.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos2.Count; i++)
-            {
-                if (manos2[i].nombre == "wisp")
-                {
-                    manobot1[i].Background = wisp;
-
-                }
-                if (manos2[i].nombre == "Murloc Raider")
-                {
-                    manobot1[i].Background = MurlocRaider;
-                }
-                if (manos2[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot1[i].Background = BloodfenRaptor;
-                }
-                if (manos2[i].nombre == "River Crocolisk")
-                {
-                    manobot1[i].Background = RiverCrocolisk;
-                }
-                if (manos2[i].nombre == "Magma Rager")
-                {
-                    manobot1[i].Background = MagmaRager;
-                }
-                if (manos2[i].nombre == "Chillwind Yeti")
-                {
-                    manobot1[i].Background = ChillwindYeti;
-                }
-                if (manos2[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot1[i].Background = OasisSnapjaw;
-                }
-                if (manos2[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot1[i].Background = BoulderfistOgre;
-                }
-                if (manos2[i].nombre == "War Golem")
-                {
-                    manobot1[i].Background = WarGolem;
-                }
-                if (manos2[i].nombre == "Core Hound")
-                {
-                    manobot1[i].Background = CoreHound;
-                }
-                manobot1[i].Visibility = Visibility.Visible;
-            }
-            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
 
         }
         private void boton29_MouseEnter(object sender, MouseEventArgs e)
@@ -3506,62 +3586,68 @@ namespace EntregaFinalPOOO
         }
         private void boton30_Click(object sender, RoutedEventArgs e)
         {
-            if (j2.mano[4].mana <= j2.mana)
+            if (cartascancha2.Count < 7)
             {
-                j2.jugarcarta(5, cartascancha2);
-                manadisponible2.Content = j2.mana;
+                if (j2.activo == true)
+                {
+                    if (j2.mano[4].mana <= j2.mana)
+                    {
+                        j2.jugarcarta(5, cartascancha2);
+                        manadisponible2.Content = j2.mana;
 
 
+                    }
+                    for (int i = 0; i < manos2.Count; i++)
+                    {
+                        if (manos2[i].nombre == "wisp")
+                        {
+                            manobot1[i].Background = wisp;
+
+                        }
+                        if (manos2[i].nombre == "Murloc Raider")
+                        {
+                            manobot1[i].Background = MurlocRaider;
+                        }
+                        if (manos2[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot1[i].Background = BloodfenRaptor;
+                        }
+                        if (manos2[i].nombre == "River Crocolisk")
+                        {
+                            manobot1[i].Background = RiverCrocolisk;
+                        }
+                        if (manos2[i].nombre == "Magma Rager")
+                        {
+                            manobot1[i].Background = MagmaRager;
+                        }
+                        if (manos2[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot1[i].Background = ChillwindYeti;
+                        }
+                        if (manos2[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot1[i].Background = OasisSnapjaw;
+                        }
+                        if (manos2[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot1[i].Background = BoulderfistOgre;
+                        }
+                        if (manos2[i].nombre == "War Golem")
+                        {
+                            manobot1[i].Background = WarGolem;
+                        }
+                        if (manos2[i].nombre == "Core Hound")
+                        {
+                            manobot1[i].Background = CoreHound;
+                        }
+                        manobot1[i].Visibility = Visibility.Visible;
+                    }
+                    manobot1[manos2.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos2.Count; i++)
-            {
-                if (manos2[i].nombre == "wisp")
-                {
-                    manobot1[i].Background = wisp;
-
-                }
-                if (manos2[i].nombre == "Murloc Raider")
-                {
-                    manobot1[i].Background = MurlocRaider;
-                }
-                if (manos2[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot1[i].Background = BloodfenRaptor;
-                }
-                if (manos2[i].nombre == "River Crocolisk")
-                {
-                    manobot1[i].Background = RiverCrocolisk;
-                }
-                if (manos2[i].nombre == "Magma Rager")
-                {
-                    manobot1[i].Background = MagmaRager;
-                }
-                if (manos2[i].nombre == "Chillwind Yeti")
-                {
-                    manobot1[i].Background = ChillwindYeti;
-                }
-                if (manos2[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot1[i].Background = OasisSnapjaw;
-                }
-                if (manos2[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot1[i].Background = BoulderfistOgre;
-                }
-                if (manos2[i].nombre == "War Golem")
-                {
-                    manobot1[i].Background = WarGolem;
-                }
-                if (manos2[i].nombre == "Core Hound")
-                {
-                    manobot1[i].Background = CoreHound;
-                }
-                manobot1[i].Visibility = Visibility.Visible;
-            }
-            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
 
         }
         private void boton30_MouseEnter(object sender, MouseEventArgs e)
@@ -3612,62 +3698,68 @@ namespace EntregaFinalPOOO
         }
         private void boton31_Click(object sender, RoutedEventArgs e)
         {
-            if (j2.mano[5].mana <= j2.mana)
+            if (cartascancha2.Count < 7)
             {
-                j2.jugarcarta(6, cartascancha2);
-                manadisponible2.Content = j2.mana;
+                if (j2.activo == true)
+                {
+                    if (j2.mano[5].mana <= j2.mana)
+                    {
+                        j2.jugarcarta(6, cartascancha2);
+                        manadisponible2.Content = j2.mana;
 
 
+                    }
+                    for (int i = 0; i < manos2.Count; i++)
+                    {
+                        if (manos2[i].nombre == "wisp")
+                        {
+                            manobot1[i].Background = wisp;
+
+                        }
+                        if (manos2[i].nombre == "Murloc Raider")
+                        {
+                            manobot1[i].Background = MurlocRaider;
+                        }
+                        if (manos2[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot1[i].Background = BloodfenRaptor;
+                        }
+                        if (manos2[i].nombre == "River Crocolisk")
+                        {
+                            manobot1[i].Background = RiverCrocolisk;
+                        }
+                        if (manos2[i].nombre == "Magma Rager")
+                        {
+                            manobot1[i].Background = MagmaRager;
+                        }
+                        if (manos2[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot1[i].Background = ChillwindYeti;
+                        }
+                        if (manos2[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot1[i].Background = OasisSnapjaw;
+                        }
+                        if (manos2[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot1[i].Background = BoulderfistOgre;
+                        }
+                        if (manos2[i].nombre == "War Golem")
+                        {
+                            manobot1[i].Background = WarGolem;
+                        }
+                        if (manos2[i].nombre == "Core Hound")
+                        {
+                            manobot1[i].Background = CoreHound;
+                        }
+                        manobot1[i].Visibility = Visibility.Visible;
+                    }
+                    manobot1[manos2.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos2.Count; i++)
-            {
-                if (manos2[i].nombre == "wisp")
-                {
-                    manobot1[i].Background = wisp;
-
-                }
-                if (manos2[i].nombre == "Murloc Raider")
-                {
-                    manobot1[i].Background = MurlocRaider;
-                }
-                if (manos2[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot1[i].Background = BloodfenRaptor;
-                }
-                if (manos2[i].nombre == "River Crocolisk")
-                {
-                    manobot1[i].Background = RiverCrocolisk;
-                }
-                if (manos2[i].nombre == "Magma Rager")
-                {
-                    manobot1[i].Background = MagmaRager;
-                }
-                if (manos2[i].nombre == "Chillwind Yeti")
-                {
-                    manobot1[i].Background = ChillwindYeti;
-                }
-                if (manos2[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot1[i].Background = OasisSnapjaw;
-                }
-                if (manos2[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot1[i].Background = BoulderfistOgre;
-                }
-                if (manos2[i].nombre == "War Golem")
-                {
-                    manobot1[i].Background = WarGolem;
-                }
-                if (manos2[i].nombre == "Core Hound")
-                {
-                    manobot1[i].Background = CoreHound;
-                }
-                manobot1[i].Visibility = Visibility.Visible;
-            }
-            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
 
         }
         private void boton31_MouseEnter(object sender, MouseEventArgs e)
@@ -3718,62 +3810,68 @@ namespace EntregaFinalPOOO
         }
         private void boton32_Click(object sender, RoutedEventArgs e)
         {
-            if (j2.mano[6].mana <= j2.mana)
+            if (cartascancha2.Count < 7)
             {
-                j2.jugarcarta(7, cartascancha2);
-                manadisponible2.Content = j2.mana;
+                if (j2.activo == true)
+                {
+                    if (j2.mano[6].mana <= j2.mana)
+                    {
+                        j2.jugarcarta(7, cartascancha2);
+                        manadisponible2.Content = j2.mana;
 
 
+                    }
+                    for (int i = 0; i < manos2.Count; i++)
+                    {
+                        if (manos2[i].nombre == "wisp")
+                        {
+                            manobot1[i].Background = wisp;
+
+                        }
+                        if (manos2[i].nombre == "Murloc Raider")
+                        {
+                            manobot1[i].Background = MurlocRaider;
+                        }
+                        if (manos2[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot1[i].Background = BloodfenRaptor;
+                        }
+                        if (manos2[i].nombre == "River Crocolisk")
+                        {
+                            manobot1[i].Background = RiverCrocolisk;
+                        }
+                        if (manos2[i].nombre == "Magma Rager")
+                        {
+                            manobot1[i].Background = MagmaRager;
+                        }
+                        if (manos2[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot1[i].Background = ChillwindYeti;
+                        }
+                        if (manos2[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot1[i].Background = OasisSnapjaw;
+                        }
+                        if (manos2[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot1[i].Background = BoulderfistOgre;
+                        }
+                        if (manos2[i].nombre == "War Golem")
+                        {
+                            manobot1[i].Background = WarGolem;
+                        }
+                        if (manos2[i].nombre == "Core Hound")
+                        {
+                            manobot1[i].Background = CoreHound;
+                        }
+                        manobot1[i].Visibility = Visibility.Visible;
+                    }
+                    manobot1[manos2.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos2.Count; i++)
-            {
-                if (manos2[i].nombre == "wisp")
-                {
-                    manobot1[i].Background = wisp;
-
-                }
-                if (manos2[i].nombre == "Murloc Raider")
-                {
-                    manobot1[i].Background = MurlocRaider;
-                }
-                if (manos2[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot1[i].Background = BloodfenRaptor;
-                }
-                if (manos2[i].nombre == "River Crocolisk")
-                {
-                    manobot1[i].Background = RiverCrocolisk;
-                }
-                if (manos2[i].nombre == "Magma Rager")
-                {
-                    manobot1[i].Background = MagmaRager;
-                }
-                if (manos2[i].nombre == "Chillwind Yeti")
-                {
-                    manobot1[i].Background = ChillwindYeti;
-                }
-                if (manos2[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot1[i].Background = OasisSnapjaw;
-                }
-                if (manos2[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot1[i].Background = BoulderfistOgre;
-                }
-                if (manos2[i].nombre == "War Golem")
-                {
-                    manobot1[i].Background = WarGolem;
-                }
-                if (manos2[i].nombre == "Core Hound")
-                {
-                    manobot1[i].Background = CoreHound;
-                }
-                manobot1[i].Visibility = Visibility.Visible;
-            }
-            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
 
         }
         private void boton32_MouseEnter(object sender, MouseEventArgs e)
@@ -3824,62 +3922,68 @@ namespace EntregaFinalPOOO
         }
         private void boton33_Click(object sender, RoutedEventArgs e)
         {
-            if (j2.mano[7].mana <= j2.mana)
+            if (cartascancha2.Count < 7)
             {
-                j2.jugarcarta(8, cartascancha2);
-                manadisponible2.Content = j2.mana;
+                if (j2.activo == true)
+                {
+                    if (j2.mano[7].mana <= j2.mana)
+                    {
+                        j2.jugarcarta(8, cartascancha2);
+                        manadisponible2.Content = j2.mana;
 
 
+                    }
+                    for (int i = 0; i < manos2.Count; i++)
+                    {
+                        if (manos2[i].nombre == "wisp")
+                        {
+                            manobot1[i].Background = wisp;
+
+                        }
+                        if (manos2[i].nombre == "Murloc Raider")
+                        {
+                            manobot1[i].Background = MurlocRaider;
+                        }
+                        if (manos2[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot1[i].Background = BloodfenRaptor;
+                        }
+                        if (manos2[i].nombre == "River Crocolisk")
+                        {
+                            manobot1[i].Background = RiverCrocolisk;
+                        }
+                        if (manos2[i].nombre == "Magma Rager")
+                        {
+                            manobot1[i].Background = MagmaRager;
+                        }
+                        if (manos2[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot1[i].Background = ChillwindYeti;
+                        }
+                        if (manos2[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot1[i].Background = OasisSnapjaw;
+                        }
+                        if (manos2[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot1[i].Background = BoulderfistOgre;
+                        }
+                        if (manos2[i].nombre == "War Golem")
+                        {
+                            manobot1[i].Background = WarGolem;
+                        }
+                        if (manos2[i].nombre == "Core Hound")
+                        {
+                            manobot1[i].Background = CoreHound;
+                        }
+                        manobot1[i].Visibility = Visibility.Visible;
+                    }
+                    manobot1[manos2.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos2.Count; i++)
-            {
-                if (manos2[i].nombre == "wisp")
-                {
-                    manobot1[i].Background = wisp;
-
-                }
-                if (manos2[i].nombre == "Murloc Raider")
-                {
-                    manobot1[i].Background = MurlocRaider;
-                }
-                if (manos2[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot1[i].Background = BloodfenRaptor;
-                }
-                if (manos2[i].nombre == "River Crocolisk")
-                {
-                    manobot1[i].Background = RiverCrocolisk;
-                }
-                if (manos2[i].nombre == "Magma Rager")
-                {
-                    manobot1[i].Background = MagmaRager;
-                }
-                if (manos2[i].nombre == "Chillwind Yeti")
-                {
-                    manobot1[i].Background = ChillwindYeti;
-                }
-                if (manos2[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot1[i].Background = OasisSnapjaw;
-                }
-                if (manos2[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot1[i].Background = BoulderfistOgre;
-                }
-                if (manos2[i].nombre == "War Golem")
-                {
-                    manobot1[i].Background = WarGolem;
-                }
-                if (manos2[i].nombre == "Core Hound")
-                {
-                    manobot1[i].Background = CoreHound;
-                }
-                manobot1[i].Visibility = Visibility.Visible;
-            }
-            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
 
         }
         private void boton33_MouseEnter(object sender, MouseEventArgs e)
@@ -3930,62 +4034,68 @@ namespace EntregaFinalPOOO
         }
         private void boton24_Copy3_Click(object sender, RoutedEventArgs e)
         {
-            if (j2.mano[8].mana <= j2.mana)
+            if (cartascancha2.Count < 7)
             {
-                j2.jugarcarta(9, cartascancha2);
-                manadisponible2.Content = j2.mana;
+                if (j2.activo == true)
+                {
+                    if (j2.mano[8].mana <= j2.mana)
+                    {
+                        j2.jugarcarta(9, cartascancha2);
+                        manadisponible2.Content = j2.mana;
 
 
+                    }
+                    for (int i = 0; i < manos2.Count; i++)
+                    {
+                        if (manos2[i].nombre == "wisp")
+                        {
+                            manobot1[i].Background = wisp;
+
+                        }
+                        if (manos2[i].nombre == "Murloc Raider")
+                        {
+                            manobot1[i].Background = MurlocRaider;
+                        }
+                        if (manos2[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot1[i].Background = BloodfenRaptor;
+                        }
+                        if (manos2[i].nombre == "River Crocolisk")
+                        {
+                            manobot1[i].Background = RiverCrocolisk;
+                        }
+                        if (manos2[i].nombre == "Magma Rager")
+                        {
+                            manobot1[i].Background = MagmaRager;
+                        }
+                        if (manos2[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot1[i].Background = ChillwindYeti;
+                        }
+                        if (manos2[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot1[i].Background = OasisSnapjaw;
+                        }
+                        if (manos2[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot1[i].Background = BoulderfistOgre;
+                        }
+                        if (manos2[i].nombre == "War Golem")
+                        {
+                            manobot1[i].Background = WarGolem;
+                        }
+                        if (manos2[i].nombre == "Core Hound")
+                        {
+                            manobot1[i].Background = CoreHound;
+                        }
+                        manobot1[i].Visibility = Visibility.Visible;
+                    }
+                    manobot1[manos2.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos2.Count; i++)
-            {
-                if (manos2[i].nombre == "wisp")
-                {
-                    manobot1[i].Background = wisp;
-
-                }
-                if (manos2[i].nombre == "Murloc Raider")
-                {
-                    manobot1[i].Background = MurlocRaider;
-                }
-                if (manos2[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot1[i].Background = BloodfenRaptor;
-                }
-                if (manos2[i].nombre == "River Crocolisk")
-                {
-                    manobot1[i].Background = RiverCrocolisk;
-                }
-                if (manos2[i].nombre == "Magma Rager")
-                {
-                    manobot1[i].Background = MagmaRager;
-                }
-                if (manos2[i].nombre == "Chillwind Yeti")
-                {
-                    manobot1[i].Background = ChillwindYeti;
-                }
-                if (manos2[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot1[i].Background = OasisSnapjaw;
-                }
-                if (manos2[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot1[i].Background = BoulderfistOgre;
-                }
-                if (manos2[i].nombre == "War Golem")
-                {
-                    manobot1[i].Background = WarGolem;
-                }
-                if (manos2[i].nombre == "Core Hound")
-                {
-                    manobot1[i].Background = CoreHound;
-                }
-                manobot1[i].Visibility = Visibility.Visible;
-            }
-            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
 
         }
         private void boton243_MouseEnter(object sender, MouseEventArgs e)
@@ -4036,62 +4146,68 @@ namespace EntregaFinalPOOO
         }
         private void boton24_Copy4_Click(object sender, RoutedEventArgs e)
         {
-            if (j2.mano[9].mana <= j2.mana)
+            if (cartascancha2.Count < 7)
             {
-                j2.jugarcarta(10, cartascancha2);
-                manadisponible2.Content = j2.mana;
+                if (j2.activo == true)
+                {
+                    if (j2.mano[9].mana <= j2.mana)
+                    {
+                        j2.jugarcarta(10, cartascancha2);
+                        manadisponible2.Content = j2.mana;
 
 
+                    }
+                    for (int i = 0; i < manos2.Count; i++)
+                    {
+                        if (manos2[i].nombre == "wisp")
+                        {
+                            manobot1[i].Background = wisp;
+
+                        }
+                        if (manos2[i].nombre == "Murloc Raider")
+                        {
+                            manobot1[i].Background = MurlocRaider;
+                        }
+                        if (manos2[i].nombre == "Bloodfen Raptor")
+                        {
+                            manobot1[i].Background = BloodfenRaptor;
+                        }
+                        if (manos2[i].nombre == "River Crocolisk")
+                        {
+                            manobot1[i].Background = RiverCrocolisk;
+                        }
+                        if (manos2[i].nombre == "Magma Rager")
+                        {
+                            manobot1[i].Background = MagmaRager;
+                        }
+                        if (manos2[i].nombre == "Chillwind Yeti")
+                        {
+                            manobot1[i].Background = ChillwindYeti;
+                        }
+                        if (manos2[i].nombre == "Oasis Snapjaw")
+                        {
+                            manobot1[i].Background = OasisSnapjaw;
+                        }
+                        if (manos2[i].nombre == "Boulderfist Ogre")
+                        {
+                            manobot1[i].Background = BoulderfistOgre;
+                        }
+                        if (manos2[i].nombre == "War Golem")
+                        {
+                            manobot1[i].Background = WarGolem;
+                        }
+                        if (manos2[i].nombre == "Core Hound")
+                        {
+                            manobot1[i].Background = CoreHound;
+                        }
+                        manobot1[i].Visibility = Visibility.Visible;
+                    }
+                    manobot1[manos2.Count()].Visibility = Visibility.Hidden;
+
+                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                }
             }
-            for (int i = 0; i < manos2.Count; i++)
-            {
-                if (manos2[i].nombre == "wisp")
-                {
-                    manobot1[i].Background = wisp;
-
-                }
-                if (manos2[i].nombre == "Murloc Raider")
-                {
-                    manobot1[i].Background = MurlocRaider;
-                }
-                if (manos2[i].nombre == "Bloodfen Raptor")
-                {
-                    manobot1[i].Background = BloodfenRaptor;
-                }
-                if (manos2[i].nombre == "River Crocolisk")
-                {
-                    manobot1[i].Background = RiverCrocolisk;
-                }
-                if (manos2[i].nombre == "Magma Rager")
-                {
-                    manobot1[i].Background = MagmaRager;
-                }
-                if (manos2[i].nombre == "Chillwind Yeti")
-                {
-                    manobot1[i].Background = ChillwindYeti;
-                }
-                if (manos2[i].nombre == "Oasis Snapjaw")
-                {
-                    manobot1[i].Background = OasisSnapjaw;
-                }
-                if (manos2[i].nombre == "Boulderfist Ogre")
-                {
-                    manobot1[i].Background = BoulderfistOgre;
-                }
-                if (manos2[i].nombre == "War Golem")
-                {
-                    manobot1[i].Background = WarGolem;
-                }
-                if (manos2[i].nombre == "Core Hound")
-                {
-                    manobot1[i].Background = CoreHound;
-                }
-                manobot1[i].Visibility = Visibility.Visible;
-            }
-            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
-
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
 
         }
         private void boton244_MouseEnter(object sender, MouseEventArgs e)
