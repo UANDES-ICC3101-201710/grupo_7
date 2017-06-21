@@ -98,13 +98,13 @@ namespace EntregaFinalPOOO
         ImageBrush BoulderfistOgre = new ImageBrush();
         ImageBrush WarGolem = new ImageBrush();
         ImageBrush CoreHound = new ImageBrush();
-        ImageBrush Recruit = new ImageBrush();
+        
         ImageBrush vacio = new ImageBrush();
         ImageBrush totem11 = new ImageBrush();
         ImageBrush totem22 = new ImageBrush();
         ImageBrush totem33 = new ImageBrush();
         ImageBrush totem44 = new ImageBrush();
-        ImageBrush palarecu = new ImageBrush();
+        ImageBrush Recruit = new ImageBrush();
 
 
         List<carta> mazos = new List<carta>();
@@ -159,8 +159,7 @@ namespace EntregaFinalPOOO
             WarGolem.ImageSource = image8;
             BitmapImage image9 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/9/9e/Core_Hound%28173%29.png/200px-Core_Hound%28173%29.png?version=61fadbe5ac356dd87a804be87e6ea538"));
             CoreHound.ImageSource = image9;
-            BitmapImage image10 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/9/9e/Core_Hound%28173%29.png/200px-Core_Hound%28173%29.png?version=61fadbe5ac356dd87a804be87e6ea538"));
-            Recruit.ImageSource = image10;
+            
             BitmapImage image11 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/3/36/Stoneclaw_Totem%28298%29_Gold.png/200px-Stoneclaw_Totem%28298%29_Gold.png?version=3eaa8881d4eb90b0a3cbb6e869dd74b5"));
             totem11.ImageSource = image11;
             BitmapImage image12 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/0/00/Healing_Totem%28275%29.png/200px-Healing_Totem%28275%29.png?version=4bb8104b8aa7cab8871434c7416fa90a"));
@@ -170,7 +169,7 @@ namespace EntregaFinalPOOO
             BitmapImage image14 = new BitmapImage(new Uri("http://media-hearth.cursecdn.com/avatars/148/876/12259.png"));
             totem44.ImageSource = image14;
             BitmapImage image15 = new BitmapImage(new Uri("http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/8/8b/Silver_Hand_Recruit(268).png/184px-Silver_Hand_Recruit(268).png?version=3d9d1b693ae9afc82a7fa2c3bf38e84a"));
-            palarecu.ImageSource = image15;
+            Recruit.ImageSource = image15;
             
            
             foreach(Button b in stackpanel_Copy1.Children)
@@ -391,7 +390,7 @@ namespace EntregaFinalPOOO
 
 
 
-        public static void refreshhmano(List<carta> cartascancha, List<carta> cartascancha2, List<Button> xx, List<Button> a2, ImageBrush wisp, ImageBrush MurlocRaider, ImageBrush BloodfenRaptor, ImageBrush RiverCrocolisk, ImageBrush MagmaRager, ImageBrush ChillwindYeti, ImageBrush OasisSnapjaw, ImageBrush BoulderfistOgre, ImageBrush WarGolem, ImageBrush CoreHound, ImageBrush recruit, Heroe j1, Heroe j2)
+        public static void refreshhmano(List<carta> cartascancha, List<carta> cartascancha2, List<Button> xx, List<Button> a2, ImageBrush wisp, ImageBrush MurlocRaider, ImageBrush BloodfenRaptor, ImageBrush RiverCrocolisk, ImageBrush MagmaRager, ImageBrush ChillwindYeti, ImageBrush OasisSnapjaw, ImageBrush BoulderfistOgre, ImageBrush WarGolem, ImageBrush CoreHound, ImageBrush recruit,  Heroe j1, Heroe j2)
         {
             for (int i = 0; i < cartascancha.Count; i++)
             {
@@ -504,7 +503,7 @@ namespace EntregaFinalPOOO
 
 
 
-        public static void refreshh(List<minion> cartascancha, List<minion> cartascancha2, List<Button> xx, List<Button> a2, ImageBrush wisp, ImageBrush MurlocRaider, ImageBrush BloodfenRaptor, ImageBrush RiverCrocolisk,ImageBrush MagmaRager ,ImageBrush ChillwindYeti, ImageBrush OasisSnapjaw, ImageBrush BoulderfistOgre, ImageBrush WarGolem, ImageBrush CoreHound,ImageBrush palarecu, Heroe j1, Heroe j2)
+        public static void refreshh(List<minion> cartascancha, List<minion> cartascancha2, List<Button> xx, List<Button> a2, ImageBrush wisp, ImageBrush MurlocRaider, ImageBrush BloodfenRaptor, ImageBrush RiverCrocolisk,ImageBrush MagmaRager ,ImageBrush ChillwindYeti, ImageBrush OasisSnapjaw, ImageBrush BoulderfistOgre, ImageBrush WarGolem, ImageBrush CoreHound,ImageBrush Recruit, ImageBrush totem11, ImageBrush totem22, ImageBrush totem33, ImageBrush totem44, Heroe j1, Heroe j2)
         {
             for (int i = 0; i < cartascancha.Count; i++)
             {
@@ -561,7 +560,23 @@ namespace EntregaFinalPOOO
                 }
                 if (cartascancha[i].nombre == "Recruit")
                 {
-                    xx[i].Background = palarecu ;
+                    xx[i].Background = Recruit ;
+                }
+                if (cartascancha[i].nombre == "Heilin Totem")
+                {
+                    xx[i].Background =totem11;
+                }
+                if (cartascancha[i].nombre == "Seiring Totem")
+                {
+                    xx[i].Background = totem22;
+                }
+                if (cartascancha[i].nombre == "Stoneclaw Totem")
+                {
+                    xx[i].Background = totem33;
+                }
+                if (cartascancha[i].nombre == "Warth of air Totem")
+                {
+                    xx[i].Background = totem44;
                 }
                 xx[i].Visibility = Visibility.Visible;
 
@@ -619,7 +634,26 @@ namespace EntregaFinalPOOO
                 {
                     a2[o].Background = CoreHound;
                 }
-                
+                if (cartascancha2[o].nombre == "Recruit")
+                {
+                    a2[o].Background = Recruit;
+                }
+                if (cartascancha2[o].nombre == "Heilin Totem")
+                {
+                    a2[o].Background = totem11;
+                }
+                if (cartascancha2[o].nombre == "Seiring Totem")
+                {
+                    a2[o].Background = totem22;
+                }
+                if (cartascancha2[o].nombre == "Stoneclaw Totem")
+                {
+                    a2[o].Background = totem33;
+                }
+                if (cartascancha2[o].nombre == "Warth of air Totem")
+                {
+                    a2[o].Background = totem44;
+                }
                 a2[o].Visibility = Visibility.Visible;
 
 
@@ -1115,7 +1149,7 @@ namespace EntregaFinalPOOO
                 manobot[i].Visibility = Visibility.Visible;
             }
             manobot[manos.Count()].Visibility = Visibility.Hidden;
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit ,j1,j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit ,totem11,totem22,totem33 ,totem44,j1,j2);
         
 
         }
@@ -1228,12 +1262,12 @@ namespace EntregaFinalPOOO
                 manobot1[i].Visibility = Visibility.Visible;
             }
             manobot1[manos2.Count()].Visibility = Visibility.Hidden;
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
 
 
             atacar2.IsEnabled = false;
 
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit,j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
 
         }
 
@@ -1537,15 +1571,16 @@ namespace EntregaFinalPOOO
         {
             if (j1.tipo == "Paladin")
             {
+                if (cartascancha.Count() < 7) { 
                 minion paladin1 = new minion("Recruit", 1, 1, true, true, 0);
                 paladin1.turno = false;
                 mazos.Add(paladin1);
 
 
                 j1.invocar(paladin1, cartascancha);
-                
 
-            }
+
+            } }
                 if (j1.tipo == "Rogue")
             {
                 minion rogue = new minion("Dagger Mastery", 2, 1, false, true, 0);
@@ -1563,44 +1598,47 @@ namespace EntregaFinalPOOO
             Random rnd = new Random();
             if (j1.tipo == "Shaman")
             {
-                int ppp = rnd.Next(4);
-                if (ppp == 0)
+                if (cartascancha.Count() < 7)
                 {
-                    minion shaman1 = new minion("Heilin Totem", 2, 0, true, true, 0);
-                    mazos.Add(shaman1);
-                    j1.invocar(shaman1, cartascancha);
-                }
-                if (ppp == 1)
-                {
-                    
-                    minion shaman5 = new minion("Seiring Totem", 1, 1, true, true, 0);
-                    mazos.Add(shaman5);
-                    j1.invocar(shaman5, cartascancha);
-                }
-                if (ppp == 2)
-                {
+                    int ppp = rnd.Next(4);
+                    if (ppp == 0)
+                    {
+                        minion shaman1 = new minion("Heilin Totem", 2, 0, true, true, 0);
+                        mazos.Add(shaman1);
+                        j1.invocar(shaman1, cartascancha);
+                    }
+                    if (ppp == 1)
+                    {
 
-                    minion shaman3 = new minion("Stoneclaw Totem", 2, 0, true, true, 0);
-                    mazos.Add(shaman3);
-                    j1.invocar(shaman3, cartascancha);
-                }
-                if (ppp == 3)
-                {
-                    minion shaman4 = new minion("Warth of air Totem", 2, 0, true, true, 0);
-                    mazos.Add(shaman4);
-                    j1.invocar(shaman4, cartascancha);
+                        minion shaman5 = new minion("Seiring Totem", 1, 1, true, true, 0);
+                        mazos.Add(shaman5);
+                        j1.invocar(shaman5, cartascancha);
+                    }
+                    if (ppp == 2)
+                    {
+
+                        minion shaman3 = new minion("Stoneclaw Totem", 2, 0, true, true, 0);
+                        mazos.Add(shaman3);
+                        j1.invocar(shaman3, cartascancha);
+                    }
+                    if (ppp == 3)
+                    {
+                        minion shaman4 = new minion("Warth of air Totem", 2, 0, true, true, 0);
+                        mazos.Add(shaman4);
+                        j1.invocar(shaman4, cartascancha);
+                    }
+
+
+
                 }
 
-                 
-
-                }
-
+            }
             j1.habilidad(j2);
             vida1.Content = j1.vida;
             Vida2.Content = j2.vida;
             manadisp.Content = j1.mana;
             habilidad.IsEnabled = false;
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit,j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
 
 
 
@@ -1613,10 +1651,13 @@ namespace EntregaFinalPOOO
 
             if (j2.tipo == "Paladin")
             {
-                minion paladin1 = new minion("Recruit", 1, 1, true, true, 0);
-                paladin1.turno = false;
-                mazos.Add(paladin1);
-                j2.invocar(paladin1, cartascancha2);
+                if (cartascancha2.Count() < 7)
+                {
+                    minion paladin1 = new minion("Recruit", 1, 1, true, true, 0);
+                    paladin1.turno = false;
+                    mazos.Add(paladin1);
+                    j2.invocar(paladin1, cartascancha2);
+                }
             }
             if (j2.tipo == "Rogue")
             {
@@ -1635,47 +1676,50 @@ namespace EntregaFinalPOOO
             Random rnd = new Random();
             if (j2.tipo == "Shaman")
             {
-                int ppp = rnd.Next(4);
-                if (ppp == 0)
+                if (cartascancha2.Count() < 7)
                 {
-                    minion shaman1 = new minion("Heilin Totem", 2, 0, true, true, 0);
-                    shaman1.turno = false;
-                    mazos2.Add(shaman1);
-                    j2.invocar(shaman1, cartascancha2);
+                    int ppp = rnd.Next(4);
+                    if (ppp == 0)
+                    {
+                        minion shaman1 = new minion("Heilin Totem", 2, 0, true, true, 0);
+                        shaman1.turno = false;
+                        mazos2.Add(shaman1);
+                        j2.invocar(shaman1, cartascancha2);
+                    }
+                    if (ppp == 1)
+                    {
+                        minion shaman5 = new minion("Seiring Totem", 1, 1, true, true, 0);
+                        shaman5.turno = false;
+                        mazos2.Add(shaman5);
+                        j2.invocar(shaman5, cartascancha2);
+                    }
+                    if (ppp == 2)
+                    {
+                        minion shaman3 = new minion("Stoneclaw Totem", 2, 0, true, true, 0);
+                        shaman3.turno = false;
+                        mazos2.Add(shaman3);
+                        j2.invocar(shaman3, cartascancha2);
+                    }
+                    if (ppp == 3)
+                    {
+                        minion shaman4 = new minion("Warth of air Totem", 2, 0, true, true, 0);
+                        shaman4.turno = false;
+                        mazos2.Add(shaman4);
+                        j2.invocar(shaman4, cartascancha2);
+                    }
                 }
-                if (ppp == 1)
-                {
-                    minion shaman5 = new minion("Seiring Totem", 1, 1, true, true, 0);
-                    shaman5.turno = false;
-                    mazos2.Add(shaman5);
-                    j2.invocar(shaman5, cartascancha2);
-                }
-                if (ppp == 2)
-                {
-                    minion shaman3 = new minion("Stoneclaw Totem", 2, 0, true, true, 0);
-                    shaman3.turno = false;
-                    mazos2.Add(shaman3);
-                    j2.invocar(shaman3, cartascancha2);
-                }
-                if (ppp == 3)
-                {
-                    minion shaman4 = new minion("Warth of air Totem", 2, 0, true, true, 0);
-                    shaman4.turno = false;
-                    mazos2.Add(shaman4);
-                    j2.invocar(shaman4, cartascancha2);
-                }
+
             }
+                j2.habilidad(j1);
+                vida1.Content = j1.vida;
+                Vida2.Content = j2.vida;
+                manadisponible2.Content = j2.mana;
+                habilidad2.IsEnabled = false;
+                refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
+
+
 
             
-            j2.habilidad(j1);
-            vida1.Content = j1.vida;
-            Vida2.Content = j2.vida;
-            manadisponible2.Content = j2.mana;
-            habilidad2.IsEnabled = false;
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit,j1, j2);
-
-
-
         }
 
         
@@ -1866,7 +1910,7 @@ namespace EntregaFinalPOOO
             vida1.Content = j1.vida;
             Vida2.Content = j2.vida;
           
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit,j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
 
 
             
@@ -2064,7 +2108,7 @@ namespace EntregaFinalPOOO
 
 
                 refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
             }
         }}
 
@@ -2108,7 +2152,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
 
         private void boton18_MouseLeave(object sender, MouseEventArgs e)
@@ -2176,7 +2220,7 @@ namespace EntregaFinalPOOO
                     }
                     manobot[manos.Count()].Visibility = Visibility.Hidden;
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
         }
@@ -2219,7 +2263,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
         private void boton19_MouseLeave(object sender, MouseEventArgs e)
         {
@@ -2287,7 +2331,7 @@ namespace EntregaFinalPOOO
                     manobot[manos.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
         }
@@ -2330,7 +2374,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
         private void boton20_MouseLeave(object sender, MouseEventArgs e)
         {
@@ -2397,7 +2441,7 @@ namespace EntregaFinalPOOO
                     manobot[manos.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
         }
@@ -2440,7 +2484,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
         private void boton21_MouseLeave(object sender, MouseEventArgs e)
         {
@@ -2507,7 +2551,7 @@ namespace EntregaFinalPOOO
                     manobot[manos.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
         }
@@ -2551,7 +2595,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
         private void boton22_MouseLeave(object sender, MouseEventArgs e)
         {
@@ -2616,7 +2660,7 @@ namespace EntregaFinalPOOO
                 manobot[manos.Count()].Visibility = Visibility.Hidden;
 
                 refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
             }
         }
         private void boton23_MouseEnter(object sender, MouseEventArgs e)
@@ -2660,7 +2704,7 @@ namespace EntregaFinalPOOO
                     popo.Background = CoreHound;
                 }
                 refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
             }
         }
         private void boton23_MouseLeave(object sender, MouseEventArgs e)
@@ -2728,7 +2772,7 @@ namespace EntregaFinalPOOO
                     manobot[manos.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
         }
@@ -2772,7 +2816,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
         private void boton24_MouseLeave(object sender, MouseEventArgs e)
         {
@@ -2840,7 +2884,7 @@ namespace EntregaFinalPOOO
                     manobot[manos.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
         }
@@ -2884,7 +2928,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
         private void boton25_MouseLeave(object sender, MouseEventArgs e)
         {
@@ -2951,7 +2995,7 @@ namespace EntregaFinalPOOO
                     manobot[manos.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
         }
@@ -2995,7 +3039,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
         private void boton241_MouseLeave(object sender, MouseEventArgs e)
         {
@@ -3063,7 +3107,7 @@ namespace EntregaFinalPOOO
                     manobot[manos.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
         }
@@ -3107,7 +3151,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
         private void boton242_MouseLeave(object sender, MouseEventArgs e)
         {
@@ -3174,7 +3218,7 @@ namespace EntregaFinalPOOO
                     manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
 
@@ -3218,7 +3262,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
 
         private void boton26_MouseLeave(object sender, MouseEventArgs e)
@@ -3287,7 +3331,7 @@ namespace EntregaFinalPOOO
                     manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
 
@@ -3331,7 +3375,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
 
         private void boton27_MouseLeave(object sender, MouseEventArgs e)
@@ -3399,7 +3443,7 @@ namespace EntregaFinalPOOO
                     manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
 
@@ -3443,7 +3487,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
 
         private void boton28_MouseLeave(object sender, MouseEventArgs e)
@@ -3511,7 +3555,7 @@ namespace EntregaFinalPOOO
                     manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
 
@@ -3555,7 +3599,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
 
         private void boton29_MouseLeave(object sender, MouseEventArgs e)
@@ -3623,7 +3667,7 @@ namespace EntregaFinalPOOO
                     manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
 
@@ -3667,7 +3711,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
 
         private void boton30_MouseLeave(object sender, MouseEventArgs e)
@@ -3735,7 +3779,7 @@ namespace EntregaFinalPOOO
                     manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
 
@@ -3779,7 +3823,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
 
         private void boton31_MouseLeave(object sender, MouseEventArgs e)
@@ -3847,7 +3891,7 @@ namespace EntregaFinalPOOO
                     manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
 
@@ -3891,7 +3935,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
 
         private void boton32_MouseLeave(object sender, MouseEventArgs e)
@@ -3959,7 +4003,7 @@ namespace EntregaFinalPOOO
                     manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
 
@@ -4003,7 +4047,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
 
         private void boton33_MouseLeave(object sender, MouseEventArgs e)
@@ -4071,7 +4115,7 @@ namespace EntregaFinalPOOO
                     manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
 
@@ -4115,7 +4159,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
 
         private void boton243_MouseLeave(object sender, MouseEventArgs e)
@@ -4183,7 +4227,7 @@ namespace EntregaFinalPOOO
                     manobot1[manos2.Count()].Visibility = Visibility.Hidden;
 
                     refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
 
@@ -4227,7 +4271,7 @@ namespace EntregaFinalPOOO
                 popo.Background = CoreHound;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
 
         private void boton244_MouseLeave(object sender, MouseEventArgs e)
