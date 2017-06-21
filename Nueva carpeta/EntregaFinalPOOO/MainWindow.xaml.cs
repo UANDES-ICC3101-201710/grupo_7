@@ -100,6 +100,11 @@ namespace EntregaFinalPOOO
         ImageBrush CoreHound = new ImageBrush();
         ImageBrush Recruit = new ImageBrush();
         ImageBrush vacio = new ImageBrush();
+        ImageBrush totem11 = new ImageBrush();
+        ImageBrush totem22 = new ImageBrush();
+        ImageBrush totem33 = new ImageBrush();
+        ImageBrush totem44 = new ImageBrush();
+        ImageBrush palarecu = new ImageBrush();
 
 
         List<carta> mazos = new List<carta>();
@@ -156,8 +161,18 @@ namespace EntregaFinalPOOO
             CoreHound.ImageSource = image9;
             BitmapImage image10 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/9/9e/Core_Hound%28173%29.png/200px-Core_Hound%28173%29.png?version=61fadbe5ac356dd87a804be87e6ea538"));
             Recruit.ImageSource = image10;
-
-
+            BitmapImage image11 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/3/36/Stoneclaw_Totem%28298%29_Gold.png/200px-Stoneclaw_Totem%28298%29_Gold.png?version=3eaa8881d4eb90b0a3cbb6e869dd74b5"));
+            totem11.ImageSource = image11;
+            BitmapImage image12 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/0/00/Healing_Totem%28275%29.png/200px-Healing_Totem%28275%29.png?version=4bb8104b8aa7cab8871434c7416fa90a"));
+            totem22.ImageSource = image12;
+            BitmapImage image13 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/b/b5/Wrath_of_Air_Totem%28365%29.png/200px-Wrath_of_Air_Totem%28365%29.png?version=e87ce5ed52d43f849c1134ad640fd504"));
+            totem33.ImageSource = image13;
+            BitmapImage image14 = new BitmapImage(new Uri("http://media-hearth.cursecdn.com/avatars/148/876/12259.png"));
+            totem44.ImageSource = image14;
+            BitmapImage image15 = new BitmapImage(new Uri("http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/8/8b/Silver_Hand_Recruit(268).png/184px-Silver_Hand_Recruit(268).png?version=3d9d1b693ae9afc82a7fa2c3bf38e84a"));
+            palarecu.ImageSource = image15;
+            
+           
             foreach(Button b in stackpanel_Copy1.Children)
             {
                 manobot.Add(b);
@@ -422,8 +437,12 @@ namespace EntregaFinalPOOO
                 }
                 if (cartascancha[i].nombre == "Recruit")
                 {
-                    xx[i].Background = recruit;
+                    xx[i].Background = recruit  ;
                 }
+               
+
+
+
                 xx[i].Visibility = Visibility.Visible;
 
                 xx[cartascancha.Count()].Visibility = Visibility.Hidden;
@@ -485,7 +504,7 @@ namespace EntregaFinalPOOO
 
 
 
-        public static void refreshh(List<minion> cartascancha, List<minion> cartascancha2, List<Button> xx, List<Button> a2, ImageBrush wisp, ImageBrush MurlocRaider, ImageBrush BloodfenRaptor, ImageBrush RiverCrocolisk,ImageBrush MagmaRager ,ImageBrush ChillwindYeti, ImageBrush OasisSnapjaw, ImageBrush BoulderfistOgre, ImageBrush WarGolem, ImageBrush CoreHound,ImageBrush recruit, Heroe j1, Heroe j2)
+        public static void refreshh(List<minion> cartascancha, List<minion> cartascancha2, List<Button> xx, List<Button> a2, ImageBrush wisp, ImageBrush MurlocRaider, ImageBrush BloodfenRaptor, ImageBrush RiverCrocolisk,ImageBrush MagmaRager ,ImageBrush ChillwindYeti, ImageBrush OasisSnapjaw, ImageBrush BoulderfistOgre, ImageBrush WarGolem, ImageBrush CoreHound,ImageBrush palarecu, Heroe j1, Heroe j2)
         {
             for (int i = 0; i < cartascancha.Count; i++)
             {
@@ -542,7 +561,7 @@ namespace EntregaFinalPOOO
                 }
                 if (cartascancha[i].nombre == "Recruit")
                 {
-                    xx[i].Background = recruit;
+                    xx[i].Background = palarecu ;
                 }
                 xx[i].Visibility = Visibility.Visible;
 
