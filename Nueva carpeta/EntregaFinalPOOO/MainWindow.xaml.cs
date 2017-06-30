@@ -23,6 +23,9 @@ namespace EntregaFinalPOOO
     /// </summary>
     public partial class MainWindow : Window
     {
+
+
+        System.Media.SoundPlayer player = new System.Media.SoundPlayer();
         string a;
         string a1;
         minion w = new minion("wisp", 1, 1, false, false, 0);
@@ -138,7 +141,8 @@ namespace EntregaFinalPOOO
         public MainWindow()
         {
             InitializeComponent();
-            
+
+            player.SoundLocation = "All Star - Smash Mouth [Lyrics].wav";
             BitmapImage image = new BitmapImage(new Uri("http://media-hearth.cursecdn.com/avatars/147/699/273.png"));
             wisp.ImageSource = image;
             BitmapImage image1 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/1/1f/Murloc_Raider%2855%29_Gold.png/200px-Murloc_Raider%2855%29_Gold.png?version=883f02d505c570b0ea5c8b4b5e13f3b8"));
@@ -933,6 +937,7 @@ namespace EntregaFinalPOOO
 
         private void boton3_Click(object sender, RoutedEventArgs e)
         {
+            player.PlayLooping();
             fondobatalla.Visibility = Visibility.Visible;
             boton3.Visibility = Visibility.Hidden;
             for (int i = 0; i < manos.Count; i++)
