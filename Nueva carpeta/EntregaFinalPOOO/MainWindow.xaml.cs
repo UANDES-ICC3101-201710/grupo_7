@@ -36,7 +36,7 @@ namespace EntregaFinalPOOO
         minion m = new minion("Murloc Raider", 2, 1, false, false, 1);
         minion m1 = new minion("Murloc Raider", 2, 1, false, false, 1);
         minion m2 = new minion("Murloc Raider", 2, 1, false, false, 1);
-        /*
+        
         minion b9 = new minion("Bloodfen Raptor", 3, 2, false, false, 2);
         minion b1 = new minion("Bloodfen Raptor", 3, 2, false, false, 2);
         minion b2 = new minion("Bloodfen Raptor", 3, 2, false, false, 2);
@@ -60,7 +60,7 @@ namespace EntregaFinalPOOO
         minion WG2 = new minion("War Golem", 7, 7, false, false, 7);
         minion CH = new minion("Core Hound", 9, 5, false, false, 7);
         minion CH1 = new minion("Core Hound", 9, 5, false, false, 7);
-        minion CH2 = new minion("Core Hound", 9, 5, false, false, 7);*/
+        minion CH2 = new minion("Core Hound", 9, 5, false, false, 7);
 
         minion w5 = new minion("wisp", 1, 1, false, false, 0);
         minion w15 = new minion("wisp", 1, 1, false, false, 0);
