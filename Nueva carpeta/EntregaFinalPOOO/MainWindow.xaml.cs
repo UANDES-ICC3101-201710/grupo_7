@@ -28,12 +28,15 @@ namespace EntregaFinalPOOO
         System.Media.SoundPlayer player = new System.Media.SoundPlayer();
         string a;
         string a1;
+
         minion w = new minion("wisp", 1, 1, false, false, 0);
+
         minion w1 = new minion("wisp", 1, 1, false, false, 0);
         minion w2 = new minion("wisp", 1, 1, false, false, 0);
         minion m = new minion("Murloc Raider", 2, 1, false, false, 1);
         minion m1 = new minion("Murloc Raider", 2, 1, false, false, 1);
         minion m2 = new minion("Murloc Raider", 2, 1, false, false, 1);
+        /*
         minion b9 = new minion("Bloodfen Raptor", 3, 2, false, false, 2);
         minion b1 = new minion("Bloodfen Raptor", 3, 2, false, false, 2);
         minion b2 = new minion("Bloodfen Raptor", 3, 2, false, false, 2);
@@ -57,7 +60,7 @@ namespace EntregaFinalPOOO
         minion WG2 = new minion("War Golem", 7, 7, false, false, 7);
         minion CH = new minion("Core Hound", 9, 5, false, false, 7);
         minion CH1 = new minion("Core Hound", 9, 5, false, false, 7);
-        minion CH2 = new minion("Core Hound", 9, 5, false, false, 7);
+        minion CH2 = new minion("Core Hound", 9, 5, false, false, 7);*/
 
         minion w5 = new minion("wisp", 1, 1, false, false, 0);
         minion w15 = new minion("wisp", 1, 1, false, false, 0);
@@ -204,6 +207,7 @@ namespace EntregaFinalPOOO
             mazos.Add(m);
             mazos.Add(m1);
             mazos.Add(m2);
+            
             mazos.Add(b9);
             mazos.Add(b1);
             mazos.Add(b2);
@@ -228,6 +232,7 @@ namespace EntregaFinalPOOO
             mazos.Add(CH);
             mazos.Add(CH1);
             mazos.Add(CH2);
+            
             mazos.Shuffle();
 
             mazos2.Add(w5);
@@ -1095,7 +1100,7 @@ namespace EntregaFinalPOOO
                     a.cambiarActividad();
                 }
             }
-            j1.darcarta();
+            j2.darcarta();
            
            
             j1.QuemarMano();
@@ -1154,6 +1159,56 @@ namespace EntregaFinalPOOO
                 manobot[i].Visibility = Visibility.Visible;
             }
             manobot[manos.Count()].Visibility = Visibility.Hidden;
+
+
+
+            for (int i = 0; i < manos2.Count; i++)
+            {
+                if (manos2[i].nombre == "wisp")
+                {
+                    manobot1[i].Background = wisp;
+
+                }
+                if (manos2[i].nombre == "Murloc Raider")
+                {
+                    manobot1[i].Background = MurlocRaider;
+                }
+                if (manos2[i].nombre == "Bloodfen Raptor")
+                {
+                    manobot1[i].Background = BloodfenRaptor;
+                }
+                if (manos2[i].nombre == "River Crocolisk")
+                {
+                    manobot1[i].Background = RiverCrocolisk;
+                }
+                if (manos2[i].nombre == "Magma Rager")
+                {
+                    manobot1[i].Background = MagmaRager;
+                }
+                if (manos2[i].nombre == "Chillwind Yeti")
+                {
+                    manobot1[i].Background = ChillwindYeti;
+                }
+                if (manos2[i].nombre == "Oasis Snapjaw")
+                {
+                    manobot1[i].Background = OasisSnapjaw;
+                }
+                if (manos2[i].nombre == "Boulderfist Ogre")
+                {
+                    manobot1[i].Background = BoulderfistOgre;
+                }
+                if (manos2[i].nombre == "War Golem")
+                {
+                    manobot1[i].Background = WarGolem;
+                }
+                if (manos2[i].nombre == "Core Hound")
+                {
+                    manobot1[i].Background = CoreHound;
+                }
+                manobot1[i].Visibility = Visibility.Visible;
+            }
+            manobot1[manos2.Count()].Visibility = Visibility.Hidden;
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit ,totem11,totem22,totem33 ,totem44,j1,j2);
         
 
@@ -1192,7 +1247,7 @@ namespace EntregaFinalPOOO
 
             manatott.Content = j2.manatotal.ToString();
             manadisponible2.Content = manatott.Content;
-            j2.darcarta();
+            j1.darcarta();
             j2.pasarturno(j1);
             
             foreach (minion n in mazos2)
@@ -1221,6 +1276,57 @@ namespace EntregaFinalPOOO
             //Listbox_Copy.IsEnabled = false;
             habilidad.IsEnabled = true;
             habilidad2.IsEnabled = false;
+
+
+
+
+
+            for (int i = 0; i < manos.Count; i++)
+            {
+                if (manos[i].nombre == "wisp")
+                {
+                    manobot[i].Background = wisp;
+
+                }
+                if (manos[i].nombre == "Murloc Raider")
+                {
+                    manobot[i].Background = MurlocRaider;
+                }
+                if (manos[i].nombre == "Bloodfen Raptor")
+                {
+                    manobot[i].Background = BloodfenRaptor;
+                }
+                if (manos[i].nombre == "River Crocolisk")
+                {
+                    manobot[i].Background = RiverCrocolisk;
+                }
+                if (manos[i].nombre == "Magma Rager")
+                {
+                    manobot[i].Background = MagmaRager;
+                }
+                if (manos[i].nombre == "Chillwind Yeti")
+                {
+                    manobot[i].Background = ChillwindYeti;
+                }
+                if (manos[i].nombre == "Oasis Snapjaw")
+                {
+                    manobot[i].Background = OasisSnapjaw;
+                }
+                if (manos[i].nombre == "Boulderfist Ogre")
+                {
+                    manobot[i].Background = BoulderfistOgre;
+                }
+                if (manos[i].nombre == "War Golem")
+                {
+                    manobot[i].Background = WarGolem;
+                }
+                if (manos[i].nombre == "Core Hound")
+                {
+                    manobot[i].Background = CoreHound;
+                }
+                manobot[i].Visibility = Visibility.Visible;
+            }
+            manobot[manos.Count()].Visibility = Visibility.Hidden;
             for (int i = 0; i < manos2.Count; i++)
             {
                 if (manos2[i].nombre == "wisp")

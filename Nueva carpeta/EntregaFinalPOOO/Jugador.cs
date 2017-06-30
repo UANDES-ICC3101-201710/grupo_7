@@ -22,8 +22,11 @@ namespace EntregaFinalPOOO
         {
             if (this.mano.Count() < 10)
             {
-                (this.mazo.Peek()).cambiarVisibilidad();
-                this.mano.Add(mazo.Pop());
+                if (this.mazo.Count!=0)
+                {
+                    (this.mazo.Peek()).cambiarVisibilidad();
+                    this.mano.Add(mazo.Pop());
+                }
             }
 
         }
