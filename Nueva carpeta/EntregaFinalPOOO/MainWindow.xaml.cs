@@ -747,7 +747,6 @@ namespace EntregaFinalPOOO
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
-                pic17.Visibility = Visibility.Visible;
                 j1.ingresartipo("Warrior");
 
             }
@@ -757,7 +756,6 @@ namespace EntregaFinalPOOO
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
-                pic1.Visibility = Visibility.Visible;
                 j1.ingresartipo("Hunter");
 
             }
@@ -768,7 +766,6 @@ namespace EntregaFinalPOOO
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
-                pic5.Visibility = Visibility.Visible;
                 j1.ingresartipo("Mage");
 
             }
@@ -779,7 +776,6 @@ namespace EntregaFinalPOOO
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
-                pic7.Visibility = Visibility.Visible;
                 j1.ingresartipo("Paladin");
 
             }
@@ -790,7 +786,6 @@ namespace EntregaFinalPOOO
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
-                pic9.Visibility = Visibility.Visible;
                 j1.ingresartipo("Priest");
 
             }
@@ -801,7 +796,6 @@ namespace EntregaFinalPOOO
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
-                pic3.Visibility = Visibility.Visible;
                 j1.ingresartipo("Druid");
 
             }
@@ -812,7 +806,6 @@ namespace EntregaFinalPOOO
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
-                pic11.Visibility = Visibility.Visible;
                 j1.ingresartipo("Rogue");
 
             }
@@ -823,7 +816,6 @@ namespace EntregaFinalPOOO
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
-                pic13.Visibility = Visibility.Visible;
                 j1.ingresartipo("Shaman");
 
             }
@@ -834,7 +826,6 @@ namespace EntregaFinalPOOO
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
-                pic15.Visibility = Visibility.Visible;
                 j1.ingresartipo("Warlock");
 
             }
@@ -851,7 +842,6 @@ namespace EntregaFinalPOOO
 
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
-                pic18.Visibility = Visibility.Visible;
                 j2.ingresartipo("Warrior");
 
             }
@@ -861,7 +851,6 @@ namespace EntregaFinalPOOO
 
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
-                pic2.Visibility = Visibility.Visible;
                 j2.ingresartipo("Hunter");
 
             }
@@ -871,7 +860,6 @@ namespace EntregaFinalPOOO
 
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
-                pic6.Visibility = Visibility.Visible;
                 j2.ingresartipo("Mage");
 
             }
@@ -881,7 +869,6 @@ namespace EntregaFinalPOOO
 
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
-                pic8.Visibility = Visibility.Visible;
                 j2.ingresartipo("Paladin");
 
             }
@@ -891,7 +878,6 @@ namespace EntregaFinalPOOO
 
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
-                pic10.Visibility = Visibility.Visible;
                 j2.ingresartipo("Priest");
 
             }
@@ -901,7 +887,6 @@ namespace EntregaFinalPOOO
 
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
-                pic4.Visibility = Visibility.Visible;
                 j2.ingresartipo("Druid");
 
             }
@@ -911,7 +896,6 @@ namespace EntregaFinalPOOO
 
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
-                pic12.Visibility = Visibility.Visible;
                 j2.ingresartipo("Rogue");
 
             }
@@ -921,7 +905,6 @@ namespace EntregaFinalPOOO
 
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
-                pic14.Visibility = Visibility.Visible;
                 j2.ingresartipo("Shaman");
 
             }
@@ -931,7 +914,6 @@ namespace EntregaFinalPOOO
 
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
-                pic16.Visibility = Visibility.Visible;
                 j2.ingresartipo("Warlock");
 
             }
@@ -942,7 +924,96 @@ namespace EntregaFinalPOOO
 
         private void boton3_Click(object sender, RoutedEventArgs e)
         {
-            player.PlayLooping();
+            //player.PlayLooping();
+            if (comboBox1.SelectedItem == "Warrior")
+            {
+                pic17.Visibility = Visibility.Visible;
+            }
+            if (comboBox1.SelectedItem == "Hunter")
+            {
+                pic1.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox1.SelectedItem == "Mage")
+            {
+                pic5.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox1.SelectedItem == "Paladin")
+            {
+                pic7.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox1.SelectedItem == "Priest")
+            {
+                pic9.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox1.SelectedItem == "Druid")
+            {
+                pic3.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox1.SelectedItem == "Rogue")
+            {
+                pic11.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox1.SelectedItem == "Shaman")
+            {
+                pic13.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox1.SelectedItem == "Warlock")
+            {
+                pic15.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox2.SelectedItem == "Warrior")
+            {
+                pic18.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox2.SelectedItem == "Hunter")
+            {
+                pic2.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox2.SelectedItem == "Mage")
+            {
+                pic6.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox2.SelectedItem == "Paladin")
+            {
+                pic8.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox2.SelectedItem == "Priest")
+            {
+                pic10.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox2.SelectedItem == "Druid")
+            {
+                pic4.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox2.SelectedItem == "Rogue")
+            {
+                pic12.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox2.SelectedItem == "Shaman")
+            {
+                pic14.Visibility = Visibility.Visible;
+            }
+
+            if (comboBox2.SelectedItem == "Warlock")
+            {
+                pic16.Visibility = Visibility.Visible;
+            }
+
             fondobatalla.Visibility = Visibility.Visible;
             boton3.Visibility = Visibility.Hidden;
             for (int i = 0; i < manos.Count; i++)
