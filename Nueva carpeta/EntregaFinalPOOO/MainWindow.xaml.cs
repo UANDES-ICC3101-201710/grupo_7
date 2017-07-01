@@ -4685,7 +4685,11 @@ namespace EntregaFinalPOOO
 
         private void boton17_MouseLeave(object sender, MouseEventArgs e)
         {
+<<<<<<< HEAD
             popo.Background = vacio;
+=======
+            popo.Background= vacio;
+>>>>>>> 397266bfc449a62261f12bc43ac65a4f43b87eca
         }
 
         private void rendirse1_Click(object sender, RoutedEventArgs e)
