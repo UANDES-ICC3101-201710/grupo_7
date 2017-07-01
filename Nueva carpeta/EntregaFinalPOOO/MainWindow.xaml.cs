@@ -161,6 +161,9 @@ namespace EntregaFinalPOOO
         List<Button> manobot = new List<Button>();
         List<Button> manobot1 = new List<Button>();
 
+        List<Button> cambioss = new List<Button>();
+        List<Button> cambioss1 = new List<Button>();
+
 
         spells carta0 = new spells("La Moneda", 0, false, false);
 
@@ -329,7 +332,14 @@ namespace EntregaFinalPOOO
                 manobot1.Add(b);
 
             }
-
+            foreach (Button b in cambiocarta1.Children) 
+            {
+                cambioss.Add(b);
+            }
+            foreach (Button b in cambiocartas2.Children)
+            {
+                cambioss1.Add(b);
+            }
 
             mazos.Add(w);
             mazos.Add(w1);
@@ -1047,14 +1057,35 @@ namespace EntregaFinalPOOO
                 j2.ingresartipo("Warlock");
 
             }
-           
 
+            refreshhmano(manos, manos, cambioss, cambioss, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            cambiocarta1.Visibility = Visibility.Visible;
+            refreshhmano(manos2, manos2, cambioss1, cambioss1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            cambiocartas2.Visibility = Visibility.Visible;
         }
         /*Comenzar*/
 
         private void boton3_Click(object sender, RoutedEventArgs e)
         {
             //player.PlayLooping();
+            cambiocartas2.Visibility = Visibility.Hidden;
+            cambiocarta1.Visibility = Visibility.Hidden;
+            for (int i = 0; i < 3; i++)
+            {
+                if (manos.Count() <= 3)
+                {
+                    j1.darcarta();
+                }
+            }
+
+            for (int i = 0; i < 3; i++)
+            {
+                if (manos2.Count() <= 2)
+                {
+                    j2.darcarta();
+                }
+            }
+
             if (comboBox1.SelectedItem == "Warrior")
             {
                 pic17.Visibility = Visibility.Visible;
@@ -4595,6 +4626,49 @@ namespace EntregaFinalPOOO
         {
             popo.Background = vacio;
         }
+
+        private void boton000_Click(object sender, RoutedEventArgs e)
+        {
+            manos.RemoveAt(0);
+            refreshhmano(manos, manos2, cambioss, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+
+        }
+
+        private void boton001_Click(object sender, RoutedEventArgs e)
+        {
+            manos.RemoveAt(1);
+            refreshhmano(manos, manos2, cambioss , manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+
+        }
+
+        private void boton004_Click(object sender, RoutedEventArgs e)
+        {
+            manos.RemoveAt(2);
+            refreshhmano(manos, manos2, cambioss, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+
+        }
+
+        private void boton0000_Click(object sender, RoutedEventArgs e)
+        {
+            manos2.RemoveAt(0);
+            refreshhmano(manos2, manos2, cambioss1, cambioss1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+
+        }
+
+        private void boton0001_Click(object sender, RoutedEventArgs e)
+        {
+            manos2.RemoveAt(1);
+            refreshhmano(manos2, manos2, cambioss1, cambioss1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+
+        }
+
+        private void boton0002_Click(object sender, RoutedEventArgs e)
+        {
+            manos2.RemoveAt(2);
+            refreshhmano(manos2, manos2, cambioss1, cambioss1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+
+        }
+
     }
 }
 
