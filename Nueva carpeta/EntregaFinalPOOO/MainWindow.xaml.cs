@@ -552,6 +552,12 @@ namespace EntregaFinalPOOO
 
 
 
+                if (cartascancha[i].nombre == "wisp")
+                {
+                    xx[i].Background = wisp;
+                }
+
+
                 if (cartascancha[i].nombre == "Murloc Raider")
                 {
                     xx[i].Background = MurlocRaider;
@@ -2716,6 +2722,10 @@ namespace EntregaFinalPOOO
 
         private void boton18_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos[0].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos[0].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaidermano;
@@ -2829,6 +2839,10 @@ namespace EntregaFinalPOOO
         }
         private void boton19_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos[1].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos[1].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaidermano;
@@ -2942,6 +2956,10 @@ namespace EntregaFinalPOOO
         }
         private void boton20_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos[2].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos[2].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaidermano;
@@ -3054,6 +3072,10 @@ namespace EntregaFinalPOOO
         }
         private void boton21_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos[3].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos[3].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaidermano;
@@ -3165,50 +3187,57 @@ namespace EntregaFinalPOOO
         }
 
         private void boton22_MouseEnter(object sender, MouseEventArgs e)
-        {   
-            if(manos[4].nombre=="Murloc Raider")
+        {
+            if (manos[4].nombre == "wisp")
             {
-                popo.Background = wispmano; 
-            }
-            if (manos[4].nombre == "Murloc Raider")
-            {
-                popo.Background = MurlocRaidermano;
-            }
-            if (manos[4].nombre == "Bloodfen Raptor")
-            {
-                popo.Background = BloodfenRaptormano;
-            }
-            if (manos[4].nombre == "River Crocolisk")
-            {
-                popo.Background = RiverCrocoliskmano;
-            }
-            if (manos[4].nombre == "Magma Ragermano")
-            {
-                popo.Background = MagmaRagermano;
-            }
-            if (manos[4].nombre == "Chillwind Yeti")
-            {
-                popo.Background = ChillwindYetimano;
-            }
-            if (manos[4].nombre == "Oasis Snapjaw")
-            {
-                popo.Background = OasisSnapjawmano;
-            }
-            if (manos[4].nombre == "Boulderfist Ogre")
-            {
-                popo.Background = BoulderfistOgremano;
-            }
-            if (manos[4].nombre == "War Golem")
-            {
-                popo.Background = WarGolemmano;
-            }
-            if (manos[4].nombre == "Core Hound")
-            {
-                popo.Background = CoreHoundmano;
-            }
-            refreshhmano(manos, manos2, manobot, manobot1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
-            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2, RiverCrocolisk1, BloodfenRaptor1, RiverCrocolisk2, ChillwindYeti1, ChillwindYeti2, ChillwindYeti3, ChillwindYeti4, OasisSnapjaw1, OasisSnapjaw2, OasisSnapjaw3, OasisSnapjaw4, OasisSnapjaw5, OasisSnapjaw6, BoulderfistOgre1, BoulderfistOgre2, BoulderfistOgre3, BoulderfistOgre4, BoulderfistOgre5, BoulderfistOgre6, WarGolem1, WarGolem2, WarGolem3, WarGolem4, WarGolem5, WarGolem6, CoreHound1, CoreHound2, CoreHound3, CoreHound4);
+                popo.Background = wisp;
 
+                {
+                    if (manos[4].nombre == "Murloc Raider")
+                    {
+                        popo.Background = wispmano;
+                    }
+                    if (manos[4].nombre == "Murloc Raider")
+                    {
+                        popo.Background = MurlocRaidermano;
+                    }
+                    if (manos[4].nombre == "Bloodfen Raptor")
+                    {
+                        popo.Background = BloodfenRaptormano;
+                    }
+                    if (manos[4].nombre == "River Crocolisk")
+                    {
+                        popo.Background = RiverCrocoliskmano;
+                    }
+                    if (manos[4].nombre == "Magma Ragermano")
+                    {
+                        popo.Background = MagmaRagermano;
+                    }
+                    if (manos[4].nombre == "Chillwind Yeti")
+                    {
+                        popo.Background = ChillwindYetimano;
+                    }
+                    if (manos[4].nombre == "Oasis Snapjaw")
+                    {
+                        popo.Background = OasisSnapjawmano;
+                    }
+                    if (manos[4].nombre == "Boulderfist Ogre")
+                    {
+                        popo.Background = BoulderfistOgremano;
+                    }
+                    if (manos[4].nombre == "War Golem")
+                    {
+                        popo.Background = WarGolemmano;
+                    }
+                    if (manos[4].nombre == "Core Hound")
+                    {
+                        popo.Background = CoreHoundmano;
+                    }
+                    refreshhmano(manos, manos2, manobot, manobot1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
+                    refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2, RiverCrocolisk1, BloodfenRaptor1, RiverCrocolisk2, ChillwindYeti1, ChillwindYeti2, ChillwindYeti3, ChillwindYeti4, OasisSnapjaw1, OasisSnapjaw2, OasisSnapjaw3, OasisSnapjaw4, OasisSnapjaw5, OasisSnapjaw6, BoulderfistOgre1, BoulderfistOgre2, BoulderfistOgre3, BoulderfistOgre4, BoulderfistOgre5, BoulderfistOgre6, WarGolem1, WarGolem2, WarGolem3, WarGolem4, WarGolem5, WarGolem6, CoreHound1, CoreHound2, CoreHound3, CoreHound4);
+
+                }
+            }
         }
         private void boton22_MouseLeave(object sender, MouseEventArgs e)
         {
@@ -3281,6 +3310,10 @@ namespace EntregaFinalPOOO
         {
             if (j1.activo == true)
             {
+                if (manos[5].nombre == "wisp")
+                {
+                    popo.Background = wisp;
+                }
                 if (manos[5].nombre == "Murloc Raider")
                 {
                     popo.Background = MurlocRaidermano;
@@ -3395,6 +3428,10 @@ namespace EntregaFinalPOOO
 
         private void boton24_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos[6].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos[6].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaidermano;
@@ -3509,6 +3546,10 @@ namespace EntregaFinalPOOO
 
         private void boton25_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos[7].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos[7].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaidermano;
@@ -3622,6 +3663,10 @@ namespace EntregaFinalPOOO
 
         private void boton241_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos[8].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos[8].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaidermano;
@@ -3736,6 +3781,10 @@ namespace EntregaFinalPOOO
 
         private void boton242_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos[9].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos[9].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaidermano;
@@ -3849,6 +3898,10 @@ namespace EntregaFinalPOOO
         }
         private void boton26_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos2[0].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos2[0].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaider;
@@ -3964,6 +4017,10 @@ namespace EntregaFinalPOOO
         }
         private void boton27_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos2[1].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos2[1].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaider;
@@ -4078,6 +4135,10 @@ namespace EntregaFinalPOOO
         }
         private void boton28_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos2[2].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos2[2].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaider;
@@ -4192,6 +4253,10 @@ namespace EntregaFinalPOOO
         }
         private void boton29_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos2[3].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos2[3].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaider;
@@ -4306,6 +4371,10 @@ namespace EntregaFinalPOOO
         }
         private void boton30_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos2[4].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos2[4].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaider;
@@ -4420,6 +4489,10 @@ namespace EntregaFinalPOOO
         }
         private void boton31_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos2[5].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos2[5].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaider;
@@ -4534,6 +4607,10 @@ namespace EntregaFinalPOOO
         }
         private void boton32_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos2[6].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos2[6].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaider;
@@ -4648,6 +4725,10 @@ namespace EntregaFinalPOOO
         }
         private void boton33_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos2[7].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos2[7].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaider;
@@ -4762,6 +4843,10 @@ namespace EntregaFinalPOOO
         }
         private void boton243_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos2[8].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos2[8].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaider;
@@ -4876,6 +4961,10 @@ namespace EntregaFinalPOOO
         }
         private void boton244_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (manos2[9].nombre == "wisp")
+            {
+                popo.Background = wisp;
+            }
             if (manos2[9].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaider;
@@ -4925,8 +5014,9 @@ namespace EntregaFinalPOOO
         private void boton000_Click(object sender, RoutedEventArgs e)
         {
             manos.RemoveAt(0);
-            refreshhmano(manos, manos2, cambioss, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-
+            cambioss[manos.Count()].Visibility = Visibility.Hidden;
+            refreshhmano(manos, manos2, cambioss, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);          
+        
         }
 
         private void boton001_Click(object sender, RoutedEventArgs e)
@@ -4943,12 +5033,7 @@ namespace EntregaFinalPOOO
 
         }
 
-        private void boton0000_Click(object sender, RoutedEventArgs e)
-        {
-            manos2.RemoveAt(0);
-            refreshhmano(manos2, manos2, cambioss1, cambioss1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
-
-        }
+      
 
         private void boton0001_Click(object sender, RoutedEventArgs e)
         {
@@ -4961,6 +5046,16 @@ namespace EntregaFinalPOOO
         {
             manos2.RemoveAt(2);
             refreshhmano(manos2, manos2, cambioss1, cambioss1, wispmano, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+
+        }
+
+      
+
+        private void boton0000_Click(object sender, RoutedEventArgs e)
+        {
+            manos2.RemoveAt(0);
+            cambioss1[manos2.Count()].Visibility = Visibility.Hidden;
+            refreshhmano(manos2, manos2, cambioss1, cambioss1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
 
         }
 
