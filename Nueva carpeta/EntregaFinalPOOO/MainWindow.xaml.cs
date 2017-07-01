@@ -150,7 +150,7 @@ namespace EntregaFinalPOOO
         ImageBrush totem33 = new ImageBrush();
         ImageBrush totem44 = new ImageBrush();
         ImageBrush Recruit = new ImageBrush();
-
+        ImageBrush lala = new ImageBrush();
 
         List<carta> mazos = new List<carta>();
         List<carta> mazos2 = new List<carta>();
@@ -345,10 +345,10 @@ namespace EntregaFinalPOOO
             mazos.Add(w1);
             mazos.Add(w2);
             
-            mazos.Add(m);
+            mazos.Add(m); 
             mazos.Add(m1);
             mazos.Add(m2);
-            
+           
             mazos.Add(b9);
             mazos.Add(b1);
             mazos.Add(b2);
