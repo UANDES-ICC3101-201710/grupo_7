@@ -163,7 +163,7 @@
         </StackPanel>
 
         <StackPanel x:Name="cambiocartas2" HorizontalAlignment="Left" Height="82" Margin="339,134,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal" Visibility="Hidden">
-            <Button x:Name="boton0000" Margin="0,0,10,0" Content=""  Width="50" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton0000_Click"/>
+            <Button x:Name="boton0000" Margin="0,0,10,0" Content=""  Width="50" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton0000_Click" />
             <Button x:Name="boton0001" Margin="0,0,10,0" Content=""  Width="50" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton0001_Click"/>
             <Button x:Name="boton0002" Margin="0,-4,10,0" Content=""  Width="50" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton0002_Click"/>
             <Button x:Name="boton0003" Margin="0,0,10,0" Content=""  Width="50" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
