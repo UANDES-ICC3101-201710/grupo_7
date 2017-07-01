@@ -3327,7 +3327,7 @@ namespace EntregaFinalPOOO
 
         private void boton11_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha2[0].nombre + "                \n ocupa mana: " + cartascancha2[0].mana + "\n ataca  " + cartascancha2[0].ataque + "\n  tiene vida  " + cartascancha2[0].vida;
+            
             if (cartascancha2[0].nombre == "wisp")
             {
                 popo.Background = wisp;
@@ -3523,7 +3523,7 @@ namespace EntregaFinalPOOO
 
         private void boton12_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha2[1].nombre + "                \n ocupa mana: " + cartascancha2[1].mana + "\n ataca  " + cartascancha2[1].ataque + "\n  tiene vida  " + cartascancha2[1].vida;
+            
             if (cartascancha2[1].nombre == "wisp")
             {
                 popo.Background = wisp;
@@ -3718,7 +3718,7 @@ namespace EntregaFinalPOOO
 
         private void boton13_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha2[2].nombre + "                \n ocupa mana: " + cartascancha2[2].mana + "\n ataca  " + cartascancha2[2].ataque + "\n  tiene vida  " + cartascancha2[2].vida;
+            
             if (cartascancha2[2].nombre == "wisp")
             {
                 popo.Background = wisp;
@@ -3912,7 +3912,7 @@ namespace EntregaFinalPOOO
 
         private void boton14_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha2[3].nombre + "                \n ocupa mana: " + cartascancha2[3].mana + "\n ataca  " + cartascancha2[3].ataque + "\n  tiene vida  " + cartascancha2[3].vida;
+           
             if (cartascancha2[3].nombre == "wisp")
             {
                 popo.Background = wisp;
@@ -4106,7 +4106,7 @@ namespace EntregaFinalPOOO
 
         private void boton15_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha2[4].nombre + "                \n ocupa mana: " + cartascancha2[4].mana + "\n ataca  " + cartascancha2[4].ataque + "\n  tiene vida  " + cartascancha2[4].vida;
+            
             if (cartascancha2[4].nombre == "wisp")
             {
                 popo.Background = wisp;
@@ -4685,7 +4685,7 @@ namespace EntregaFinalPOOO
 
         private void boton17_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Background = vacio;
         }
 
         private void rendirse1_Click(object sender, RoutedEventArgs e)
