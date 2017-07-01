@@ -148,7 +148,6 @@ namespace EntregaFinalPOOO
         ImageBrush totem11 = new ImageBrush();
         ImageBrush totem22 = new ImageBrush();
         ImageBrush totem33 = new ImageBrush();
-        
         ImageBrush totem44 = new ImageBrush();
         ImageBrush Recruit = new ImageBrush();
         ImageBrush lala = new ImageBrush();
@@ -220,7 +219,7 @@ namespace EntregaFinalPOOO
             BitmapImage image15 = new BitmapImage(new Uri("http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/8/8b/Silver_Hand_Recruit(268).png/184px-Silver_Hand_Recruit(268).png?version=3d9d1b693ae9afc82a7fa2c3bf38e84a"));
             Recruit.ImageSource = image15;
 
-            BitmapImage image16 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Documents/Visual%20Studio%202017/Projects/grupo_7/Nueva%20carpeta/EntregaFinalPOOO/wisp.png"));
+           BitmapImage image16 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Documents/Visual%20Studio%202017/Projects/grupo_7/Nueva%20carpeta/EntregaFinalPOOO/wisp.png"));
             wisp.ImageSource = image16;
             BitmapImage image17 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/murloc%20raider.png"));
             MurlocRaider.ImageSource = image17;
@@ -302,7 +301,10 @@ namespace EntregaFinalPOOO
 
 
 
+
+
  
+
 
 
 
@@ -1913,7 +1915,6 @@ namespace EntregaFinalPOOO
 
         private void boton4_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha[0].nombre + "                \n ocupa mana: " + cartascancha[0].mana + "\n ataca  " + cartascancha[0].ataque + "\n  tiene vida  " + cartascancha[0].vida;
             
                 if (cartascancha[0].nombre == "wisp")
                 {
@@ -2106,7 +2107,7 @@ namespace EntregaFinalPOOO
 
         private void boton4_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Background = vacio;
         }
 
         private void boton5_Click(object sender, RoutedEventArgs e)
@@ -2123,7 +2124,7 @@ namespace EntregaFinalPOOO
 
         private void boton5_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha[1].nombre + "                \n ocupa mana: " + cartascancha[1].mana + "\n ataca  " + cartascancha[1].ataque + "\n  tiene vida  " + cartascancha[1].vida;
+            
             if (cartascancha[1].nombre == "wisp")
             {
                 popo.Background = wisp;
@@ -2314,13 +2315,13 @@ namespace EntregaFinalPOOO
         private void boton5_MouseLeave(object sender, MouseEventArgs e)
         {
             popo.Background = vacio;
-            popo.Content = "";
+          
 
         }
 
         private void boton6_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha[2].nombre + "                \n ocupa mana: " + cartascancha[2].mana + "\n ataca  " + cartascancha[2].ataque + "\n  tiene vida  " + cartascancha[2].vida;
+            
             if (cartascancha[2].nombre == "wisp")
             {
                 popo.Background = wisp;
@@ -2510,12 +2511,12 @@ namespace EntregaFinalPOOO
 
         private void boton6_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Background = vacio;
         }
 
         private void boton7_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha[3].nombre + "                \n ocupa mana: " + cartascancha[3].mana + "\n ataca  " + cartascancha[3].ataque + "\n  tiene vida  " + cartascancha[3].vida;
+            ;
             if (cartascancha[3].nombre == "wisp")
             {
                 popo.Background = wisp;
@@ -2704,7 +2705,7 @@ namespace EntregaFinalPOOO
 
         private void boton7_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Background = vacio;
         }
 
         private void boton8_Click(object sender, RoutedEventArgs e)
@@ -2722,393 +2723,393 @@ namespace EntregaFinalPOOO
         private void boton8_MouseEnter(object sender, MouseEventArgs e)
         {
 
-            popo.Content = cartascancha[4].nombre + "                \n ocupa mana: " + cartascancha[4].mana + "\n ataca  " + cartascancha[4].ataque + "\n  tiene vida  " + cartascancha[4].vida;
+           
             if (cartascancha[4].nombre == "wisp")
             {
-                xx[4].Background = wisp;
+                popo.Background = wisp;
 
             }
             if (cartascancha[4].nombre == "Murloc Raider")
             {
-                xx[4].Background = MurlocRaider;
+                popo.Background = MurlocRaider;
             }
             if (cartascancha[4].nombre == "Bloodfen Raptor" && cartascancha[4].vida == 2)
             {
-                xx[4].Background = BloodfenRaptor;
+                popo.Background = BloodfenRaptor;
             }
             if (cartascancha[4].nombre == "Bloodfen Raptor" && cartascancha[4].vida == 1)
             {
-                xx[4].Background = BloodfenRaptor1;
+                popo.Background = BloodfenRaptor1;
             }
 
             if (cartascancha[4].nombre == "River Crocolisk" && cartascancha[4].vida == 3)
             {
-                xx[4].Background = RiverCrocolisk;
+                popo.Background = RiverCrocolisk;
             }
             if (cartascancha[4].nombre == "River Crocolisk" && cartascancha[4].vida == 2)
             {
-                xx[4].Background = RiverCrocolisk2;
+                popo.Background = RiverCrocolisk2;
             }
             if (cartascancha[4].nombre == "River Crocolisk" && cartascancha[4].vida == 1)
             {
-                xx[4].Background = RiverCrocolisk1;
+                popo.Background = RiverCrocolisk1;
             }
             if (cartascancha[4].nombre == "Magma Rager")
             {
-                xx[4].Background = MagmaRager;
+                popo.Background = MagmaRager;
             }
             if (cartascancha[4].nombre == "Chillwind Yeti" && cartascancha[4].vida == 5)
             {
-                xx[4].Background = ChillwindYeti;
+                popo.Background = ChillwindYeti;
             }
             if (cartascancha[4].nombre == "Chillwind Yeti" && cartascancha[4].vida == 4)
             {
-                xx[4].Background = ChillwindYeti4;
+                popo.Background = ChillwindYeti4;
             }
             if (cartascancha[4].nombre == "Chillwind Yeti" && cartascancha[4].vida == 3)
             {
-                xx[4].Background = ChillwindYeti3;
+                popo.Background = ChillwindYeti3;
             }
             if (cartascancha[4].nombre == "Chillwind Yeti" && cartascancha[4].vida == 2)
             {
-                xx[4].Background = ChillwindYeti2;
+                popo.Background = ChillwindYeti2;
             }
             if (cartascancha[4].nombre == "Chillwind Yeti" && cartascancha[4].vida == 1)
             {
-                xx[4].Background = ChillwindYeti1;
+                popo.Background = ChillwindYeti1;
             }
             if (cartascancha[4].nombre == "Oasis Snapjaw" && cartascancha[4].vida == 7)
             {
-                xx[4].Background = OasisSnapjaw;
+                popo.Background = OasisSnapjaw;
             }
             if (cartascancha[4].nombre == "Oasis Snapjaw" && cartascancha[4].vida == 6)
             {
-                xx[4].Background = OasisSnapjaw6;
+                popo.Background = OasisSnapjaw6;
             }
             if (cartascancha[4].nombre == "Oasis Snapjaw" && cartascancha[4].vida == 5)
             {
-                xx[4].Background = OasisSnapjaw5;
+                popo.Background = OasisSnapjaw5;
             }
             if (cartascancha[4].nombre == "Oasis Snapjaw" && cartascancha[4].vida == 4)
             {
-                xx[4].Background = OasisSnapjaw4;
+                popo.Background = OasisSnapjaw4;
             }
             if (cartascancha[4].nombre == "Oasis Snapjaw" && cartascancha[4].vida == 3)
             {
-                xx[4].Background = OasisSnapjaw3;
+                popo.Background = OasisSnapjaw3;
 
             }
             if (cartascancha[4].nombre == "Oasis Snapjaw" && cartascancha[4].vida == 2)
             {
-                xx[4].Background = OasisSnapjaw2;
+                popo.Background = OasisSnapjaw2;
             }
             if (cartascancha[4].nombre == "Oasis Snapjaw" && cartascancha[4].vida == 1)
             {
-                xx[4].Background = OasisSnapjaw1;
+                popo.Background = OasisSnapjaw1;
             }
             if (cartascancha[4].nombre == "Boulderfist Ogre" && cartascancha[4].vida == 7)
             {
-                xx[4].Background = BoulderfistOgre;
+                popo.Background = BoulderfistOgre;
             }
             if (cartascancha[4].nombre == "Boulderfist Ogre" && cartascancha[4].vida == 6)
             {
-                xx[4].Background = BoulderfistOgre6;
+                popo.Background = BoulderfistOgre6;
             }
             if (cartascancha[4].nombre == "Boulderfist Ogre" && cartascancha[4].vida == 5)
             {
-                xx[4].Background = BoulderfistOgre5;
+                popo.Background = BoulderfistOgre5;
             }
             if (cartascancha[4].nombre == "Boulderfist Ogre" && cartascancha[4].vida == 4)
             {
-                xx[4].Background = BoulderfistOgre4;
+                popo.Background = BoulderfistOgre4;
             }
             if (cartascancha[4].nombre == "Boulderfist Ogre" && cartascancha[4].vida == 3)
             {
-                xx[4].Background = BoulderfistOgre3;
+                popo.Background = BoulderfistOgre3;
             }
             if (cartascancha[4].nombre == "Boulderfist Ogre" && cartascancha[4].vida == 2)
             {
-                xx[4].Background = BoulderfistOgre2;
+                popo.Background = BoulderfistOgre2;
             }
             if (cartascancha[4].nombre == "Boulderfist Ogre" && cartascancha[4].vida == 1)
             {
-                xx[4].Background = BoulderfistOgre1;
+                popo.Background = BoulderfistOgre1;
             }
 
             if (cartascancha[4].nombre == "War Golem" && cartascancha[4].vida == 7)
             {
-                xx[4].Background = WarGolem;
+                popo.Background = WarGolem;
             }
             if (cartascancha[4].nombre == "War Golem" && cartascancha[4].vida == 6)
             {
-                xx[4].Background = WarGolem6;
+                popo.Background = WarGolem6;
             }
             if (cartascancha[4].nombre == "War Golem" && cartascancha[4].vida == 5)
             {
-                xx[4].Background = WarGolem5;
+                popo.Background = WarGolem5;
             }
             if (cartascancha[4].nombre == "War Golem" && cartascancha[4].vida == 4)
             {
-                xx[4].Background = WarGolem4;
+                popo.Background = WarGolem4;
             }
             if (cartascancha[4].nombre == "War Golem" && cartascancha[4].vida == 3)
             {
-                xx[4].Background = WarGolem3;
+                popo.Background = WarGolem3;
             }
             if (cartascancha[4].nombre == "War Golem" && cartascancha[4].vida == 2)
             {
-                xx[4].Background = WarGolem2;
+                popo.Background = WarGolem2;
             }
             if (cartascancha[4].nombre == "War Golem" && cartascancha[4].vida == 1)
             {
-                xx[4].Background = WarGolem1;
+                popo.Background = WarGolem1;
             }
 
             if (cartascancha[4].nombre == "Core Hound" && cartascancha[4].vida == 5)
             {
-                xx[4].Background = CoreHound;
+                popo.Background = CoreHound;
             }
             if (cartascancha[4].nombre == "Core Hound" && cartascancha[4].vida == 4)
             {
-                xx[4].Background = CoreHound4;
+                popo.Background = CoreHound4;
             }
             if (cartascancha[4].nombre == "Core Hound" && cartascancha[4].vida == 3)
             {
-                xx[4].Background = CoreHound3;
+                popo.Background = CoreHound3;
             }
             if (cartascancha[4].nombre == "Core Hound" && cartascancha[4].vida == 2)
             {
-                xx[4].Background = CoreHound2;
+                popo.Background = CoreHound2;
 
             }
             if (cartascancha[4].nombre == "Core Hound" && cartascancha[4].vida == 1)
             {
-                xx[4].Background = CoreHound1;
+                popo.Background = CoreHound1;
             }
             if (cartascancha[4].nombre == "Recruit")
             {
-                xx[4].Background = Recruit;
+                popo.Background = Recruit;
             }
             if (cartascancha[4].nombre == "Heilin Totem")
             {
-                xx[4].Background = totem11;
+                popo.Background = totem11;
             }
             if (cartascancha[4].nombre == "Seiring Totem")
             {
-                xx[4].Background = totem22;
+                popo.Background = totem22;
             }
             if (cartascancha[4].nombre == "Stoneclaw Totem")
             {
-                xx[4].Background = totem33;
+                popo.Background = totem33;
             }
             if (cartascancha[4].nombre == "Warth of air Totem")
             {
-                xx[4].Background = totem44;
+                popo.Background = totem44;
             }
 
-            xx[4].Visibility = Visibility.Visible;
+            popo.Visibility = Visibility.Visible;
 
         }
 
         private void boton8_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Background = vacio;
         }
 
         private void boton9_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha[5].nombre + "                \n ocupa mana: " + cartascancha[5].mana + "\n ataca  " + cartascancha[5].ataque + "\n  tiene vida  " + cartascancha[5].vida;
+           
             if (cartascancha[5].nombre == "wisp")
             {
-                xx[5].Background = wisp;
+                popo.Background = wisp;
 
             }
             if (cartascancha[5].nombre == "Murloc Raider")
             {
-                xx[5].Background = MurlocRaider;
+                popo.Background = MurlocRaider;
             }
             if (cartascancha[5].nombre == "Bloodfen Raptor" && cartascancha[5].vida == 2)
             {
-                xx[5].Background = BloodfenRaptor;
+                popo.Background = BloodfenRaptor;
             }
             if (cartascancha[5].nombre == "Bloodfen Raptor" && cartascancha[5].vida == 1)
             {
-                xx[5].Background = BloodfenRaptor1;
+                popo.Background = BloodfenRaptor1;
             }
 
             if (cartascancha[5].nombre == "River Crocolisk" && cartascancha[5].vida == 3)
             {
-                xx[5].Background = RiverCrocolisk;
+                popo.Background = RiverCrocolisk;
             }
             if (cartascancha[5].nombre == "River Crocolisk" && cartascancha[5].vida == 2)
             {
-                xx[5].Background = RiverCrocolisk2;
+                popo.Background = RiverCrocolisk2;
             }
             if (cartascancha[5].nombre == "River Crocolisk" && cartascancha[5].vida == 1)
             {
-                xx[5].Background = RiverCrocolisk1;
+                popo.Background = RiverCrocolisk1;
             }
             if (cartascancha[5].nombre == "Magma Rager")
             {
-                xx[5].Background = MagmaRager;
+                popo.Background = MagmaRager;
             }
             if (cartascancha[5].nombre == "Chillwind Yeti" && cartascancha[5].vida == 5)
             {
-                xx[5].Background = ChillwindYeti;
+                popo.Background = ChillwindYeti;
             }
             if (cartascancha[5].nombre == "Chillwind Yeti" && cartascancha[5].vida == 4)
             {
-                xx[5].Background = ChillwindYeti4;
+                popo.Background = ChillwindYeti4;
             }
             if (cartascancha[5].nombre == "Chillwind Yeti" && cartascancha[5].vida == 3)
             {
-                xx[5].Background = ChillwindYeti3;
+                popo.Background = ChillwindYeti3;
             }
             if (cartascancha[5].nombre == "Chillwind Yeti" && cartascancha[5].vida == 2)
             {
-                xx[5].Background = ChillwindYeti2;
+                popo.Background = ChillwindYeti2;
             }
             if (cartascancha[5].nombre == "Chillwind Yeti" && cartascancha[5].vida == 1)
             {
-                xx[5].Background = ChillwindYeti1;
+                popo.Background = ChillwindYeti1;
             }
             if (cartascancha[5].nombre == "Oasis Snapjaw" && cartascancha[5].vida == 7)
             {
-                xx[5].Background = OasisSnapjaw;
+                popo.Background = OasisSnapjaw;
             }
             if (cartascancha[5].nombre == "Oasis Snapjaw" && cartascancha[5].vida == 6)
             {
-                xx[5].Background = OasisSnapjaw6;
+                popo.Background = OasisSnapjaw6;
             }
             if (cartascancha[5].nombre == "Oasis Snapjaw" && cartascancha[5].vida == 5)
             {
-                xx[5].Background = OasisSnapjaw5;
+                popo.Background = OasisSnapjaw5;
             }
             if (cartascancha[5].nombre == "Oasis Snapjaw" && cartascancha[5].vida == 4)
             {
-                xx[5].Background = OasisSnapjaw4;
+                popo.Background = OasisSnapjaw4;
             }
             if (cartascancha[5].nombre == "Oasis Snapjaw" && cartascancha[5].vida == 3)
             {
-                xx[5].Background = OasisSnapjaw3;
+                popo.Background = OasisSnapjaw3;
 
             }
             if (cartascancha[5].nombre == "Oasis Snapjaw" && cartascancha[5].vida == 2)
             {
-                xx[5].Background = OasisSnapjaw2;
+                popo.Background = OasisSnapjaw2;
             }
             if (cartascancha[5].nombre == "Oasis Snapjaw" && cartascancha[5].vida == 1)
             {
-                xx[5].Background = OasisSnapjaw1;
+                popo.Background = OasisSnapjaw1;
             }
             if (cartascancha[5].nombre == "Boulderfist Ogre" && cartascancha[5].vida == 7)
             {
-                xx[5].Background = BoulderfistOgre;
+                popo.Background = BoulderfistOgre;
             }
             if (cartascancha[5].nombre == "Boulderfist Ogre" && cartascancha[5].vida == 6)
             {
-                xx[5].Background = BoulderfistOgre6;
+                popo.Background = BoulderfistOgre6;
             }
             if (cartascancha[5].nombre == "Boulderfist Ogre" && cartascancha[5].vida == 5)
             {
-                xx[5].Background = BoulderfistOgre5;
+                popo.Background = BoulderfistOgre5;
             }
             if (cartascancha[5].nombre == "Boulderfist Ogre" && cartascancha[5].vida == 4)
             {
-                xx[5].Background = BoulderfistOgre4;
+                popo.Background = BoulderfistOgre4;
             }
             if (cartascancha[5].nombre == "Boulderfist Ogre" && cartascancha[5].vida == 3)
             {
-                xx[5].Background = BoulderfistOgre3;
+                popo.Background = BoulderfistOgre3;
             }
             if (cartascancha[5].nombre == "Boulderfist Ogre" && cartascancha[5].vida == 2)
             {
-                xx[5].Background = BoulderfistOgre2;
+                popo.Background = BoulderfistOgre2;
             }
             if (cartascancha[5].nombre == "Boulderfist Ogre" && cartascancha[5].vida == 1)
             {
-                xx[5].Background = BoulderfistOgre1;
+                popo.Background = BoulderfistOgre1;
             }
 
             if (cartascancha[5].nombre == "War Golem" && cartascancha[5].vida == 7)
             {
-                xx[5].Background = WarGolem;
+                popo.Background = WarGolem;
             }
             if (cartascancha[5].nombre == "War Golem" && cartascancha[5].vida == 6)
             {
-                xx[5].Background = WarGolem6;
+                popo.Background = WarGolem6;
             }
             if (cartascancha[5].nombre == "War Golem" && cartascancha[5].vida == 5)
             {
-                xx[5].Background = WarGolem5;
+                popo.Background = WarGolem5;
             }
             if (cartascancha[5].nombre == "War Golem" && cartascancha[5].vida == 4)
             {
-                xx[5].Background = WarGolem4;
+                popo.Background = WarGolem4;
             }
             if (cartascancha[5].nombre == "War Golem" && cartascancha[5].vida == 3)
             {
-                xx[5].Background = WarGolem3;
+                popo.Background = WarGolem3;
             }
             if (cartascancha[5].nombre == "War Golem" && cartascancha[5].vida == 2)
             {
-                xx[5].Background = WarGolem2;
+                popo.Background = WarGolem2;
             }
             if (cartascancha[5].nombre == "War Golem" && cartascancha[5].vida == 1)
             {
-                xx[5].Background = WarGolem1;
+                popo.Background = WarGolem1;
             }
 
             if (cartascancha[5].nombre == "Core Hound" && cartascancha[5].vida == 5)
             {
-                xx[5].Background = CoreHound;
+                popo.Background = CoreHound;
             }
             if (cartascancha[5].nombre == "Core Hound" && cartascancha[5].vida == 4)
             {
-                xx[5].Background = CoreHound4;
+                popo.Background = CoreHound4;
             }
             if (cartascancha[5].nombre == "Core Hound" && cartascancha[5].vida == 3)
             {
-                xx[5].Background = CoreHound3;
+                popo.Background = CoreHound3;
             }
             if (cartascancha[5].nombre == "Core Hound" && cartascancha[5].vida == 2)
             {
-                xx[5].Background = CoreHound2;
+                popo.Background = CoreHound2;
 
             }
             if (cartascancha[5].nombre == "Core Hound" && cartascancha[5].vida == 1)
             {
-                xx[5].Background = CoreHound1;
+                popo.Background = CoreHound1;
             }
             if (cartascancha[5].nombre == "Recruit")
             {
-                xx[5].Background = Recruit;
+                popo.Background = Recruit;
             }
             if (cartascancha[5].nombre == "Heilin Totem")
             {
-                xx[5].Background = totem11;
+                popo.Background = totem11;
             }
             if (cartascancha[5].nombre == "Seiring Totem")
             {
-                xx[5].Background = totem22;
+                popo.Background = totem22;
             }
             if (cartascancha[5].nombre == "Stoneclaw Totem")
             {
-                xx[5].Background = totem33;
+                popo.Background = totem33;
             }
             if (cartascancha[5].nombre == "Warth of air Totem")
             {
-                xx[5].Background = totem44;
+                popo.Background = totem44;
             }
 
-            xx[5].Visibility = Visibility.Visible;
+            popo.Visibility = Visibility.Visible;
 
         }
 
         private void boton9_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
-        }
+            popo.Background = vacio;
+        }  
 
         private void boton10_Click(object sender, RoutedEventArgs e)
         {
@@ -3124,196 +3125,196 @@ namespace EntregaFinalPOOO
 
         private void boton10_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha[6].nombre + "                \n ocupa mana: " + cartascancha[6].mana + "\n ataca  " + cartascancha[6].ataque + "\n  tiene vida  " + cartascancha[6].vida;
+           
             if (cartascancha[6].nombre == "wisp")
             {
-                xx[6].Background = wisp;
+                popo.Background = wisp;
 
             }
             if (cartascancha[6].nombre == "Murloc Raider")
             {
-                xx[6].Background = MurlocRaider;
+                popo.Background = MurlocRaider;
             }
             if (cartascancha[6].nombre == "Bloodfen Raptor" && cartascancha[6].vida == 2)
             {
-                xx[6].Background = BloodfenRaptor;
+                popo.Background = BloodfenRaptor;
             }
             if (cartascancha[6].nombre == "Bloodfen Raptor" && cartascancha[6].vida == 1)
             {
-                xx[6].Background = BloodfenRaptor1;
+                popo.Background = BloodfenRaptor1;
             }
 
             if (cartascancha[6].nombre == "River Crocolisk" && cartascancha[6].vida == 3)
             {
-                xx[6].Background = RiverCrocolisk;
+                popo.Background = RiverCrocolisk;
             }
             if (cartascancha[6].nombre == "River Crocolisk" && cartascancha[6].vida == 2)
             {
-                xx[6].Background = RiverCrocolisk2;
+                popo.Background = RiverCrocolisk2;
             }
             if (cartascancha[6].nombre == "River Crocolisk" && cartascancha[6].vida == 1)
             {
-                xx[6].Background = RiverCrocolisk1;
+                popo.Background = RiverCrocolisk1;
             }
             if (cartascancha[6].nombre == "Magma Rager")
             {
-                xx[6].Background = MagmaRager;
+                popo.Background = MagmaRager;
             }
             if (cartascancha[6].nombre == "Chillwind Yeti" && cartascancha[6].vida == 5)
             {
-                xx[6].Background = ChillwindYeti;
+                popo.Background = ChillwindYeti;
             }
             if (cartascancha[6].nombre == "Chillwind Yeti" && cartascancha[6].vida == 4)
             {
-                xx[6].Background = ChillwindYeti4;
+                popo.Background = ChillwindYeti4;
             }
             if (cartascancha[6].nombre == "Chillwind Yeti" && cartascancha[6].vida == 3)
             {
-                xx[6].Background = ChillwindYeti3;
+                popo.Background = ChillwindYeti3;
             }
             if (cartascancha[6].nombre == "Chillwind Yeti" && cartascancha[6].vida == 2)
             {
-                xx[6].Background = ChillwindYeti2;
+                popo.Background = ChillwindYeti2;
             }
             if (cartascancha[6].nombre == "Chillwind Yeti" && cartascancha[6].vida == 1)
             {
-                xx[6].Background = ChillwindYeti1;
+                popo.Background = ChillwindYeti1;
             }
             if (cartascancha[6].nombre == "Oasis Snapjaw" && cartascancha[6].vida == 7)
             {
-                xx[6].Background = OasisSnapjaw;
+                popo.Background = OasisSnapjaw;
             }
             if (cartascancha[6].nombre == "Oasis Snapjaw" && cartascancha[6].vida == 6)
             {
-                xx[6].Background = OasisSnapjaw6;
+                popo.Background = OasisSnapjaw6;
             }
             if (cartascancha[6].nombre == "Oasis Snapjaw" && cartascancha[6].vida == 5)
             {
-                xx[6].Background = OasisSnapjaw5;
+                popo.Background = OasisSnapjaw5;
             }
             if (cartascancha[6].nombre == "Oasis Snapjaw" && cartascancha[6].vida == 4)
             {
-                xx[6].Background = OasisSnapjaw4;
+                popo.Background = OasisSnapjaw4;
             }
             if (cartascancha[6].nombre == "Oasis Snapjaw" && cartascancha[6].vida == 3)
             {
-                xx[6].Background = OasisSnapjaw3;
+                popo.Background = OasisSnapjaw3;
             
             }
             if (cartascancha[6].nombre == "Oasis Snapjaw" && cartascancha[6].vida == 2)
             {
-                xx[6].Background = OasisSnapjaw2;
+                popo.Background = OasisSnapjaw2;
             }
             if (cartascancha[6].nombre == "Oasis Snapjaw" && cartascancha[6].vida == 1)
             {
-                xx[6].Background = OasisSnapjaw1;
+                popo.Background = OasisSnapjaw1;
             }
             if (cartascancha[6].nombre == "Boulderfist Ogre" && cartascancha[6].vida == 7)
             {
-                xx[6].Background = BoulderfistOgre;
+                popo.Background = BoulderfistOgre;
             }
             if (cartascancha[6].nombre == "Boulderfist Ogre" && cartascancha[6].vida == 6)
             {
-                xx[6].Background = BoulderfistOgre6;
+                popo.Background = BoulderfistOgre6;
             }
             if (cartascancha[6].nombre == "Boulderfist Ogre" && cartascancha[6].vida == 5)
             {
-                xx[6].Background = BoulderfistOgre5;
+                popo.Background = BoulderfistOgre5;
             }
             if (cartascancha[6].nombre == "Boulderfist Ogre" && cartascancha[6].vida == 4)
             {
-                xx[6].Background = BoulderfistOgre4;
+                popo.Background = BoulderfistOgre4;
             }
             if (cartascancha[6].nombre == "Boulderfist Ogre" && cartascancha[6].vida == 3)
             {
-                xx[6].Background = BoulderfistOgre3;
+                popo.Background = BoulderfistOgre3;
             }
             if (cartascancha[6].nombre == "Boulderfist Ogre" && cartascancha[6].vida == 2)
             {
-                xx[6].Background = BoulderfistOgre2;
+                popo.Background = BoulderfistOgre2;
             }
             if (cartascancha[6].nombre == "Boulderfist Ogre" && cartascancha[6].vida == 1)
             {
-                xx[6].Background = BoulderfistOgre1;
+                popo.Background = BoulderfistOgre1;
             }
 
             if (cartascancha[6].nombre == "War Golem" && cartascancha[6].vida == 7)
             {
-                xx[6].Background = WarGolem;
+                popo.Background = WarGolem;
             }
             if (cartascancha[6].nombre == "War Golem" && cartascancha[6].vida == 6)
             {
-                xx[6].Background = WarGolem6;
+                popo.Background = WarGolem6;
             }
             if (cartascancha[6].nombre == "War Golem" && cartascancha[6].vida == 5)
             {
-                xx[6].Background = WarGolem5;
+                popo.Background = WarGolem5;
             }
             if (cartascancha[6].nombre == "War Golem" && cartascancha[6].vida == 4)
             {
-                xx[6].Background = WarGolem4;
+                popo.Background = WarGolem4;
             }
             if (cartascancha[6].nombre == "War Golem" && cartascancha[6].vida == 3)
             {
-                xx[6].Background = WarGolem3;
+                popo.Background = WarGolem3;
             }
             if (cartascancha[6].nombre == "War Golem" && cartascancha[6].vida == 2)
             {
-                xx[6].Background = WarGolem2;
+                popo.Background = WarGolem2;
             }
             if (cartascancha[6].nombre == "War Golem" && cartascancha[6].vida == 1)
             {
-                xx[6].Background = WarGolem1;
+                popo.Background = WarGolem1;
             }
 
             if (cartascancha[6].nombre == "Core Hound" && cartascancha[6].vida == 5)
             {
-                xx[6].Background = CoreHound;
+                popo.Background = CoreHound;
             }
             if (cartascancha[6].nombre == "Core Hound" && cartascancha[6].vida == 4)
             {
-                xx[6].Background = CoreHound4;
+                popo.Background = CoreHound4;
             }
             if (cartascancha[6].nombre == "Core Hound" && cartascancha[6].vida == 3)
             {
-                xx[6].Background = CoreHound3;
+                popo.Background = CoreHound3;
             }
             if (cartascancha[6].nombre == "Core Hound" && cartascancha[6].vida == 2)
             {
-                xx[6].Background = CoreHound2;
+                popo.Background = CoreHound2;
 
             }
             if (cartascancha[6].nombre == "Core Hound" && cartascancha[6].vida == 1)
             {
-                xx[6].Background = CoreHound1;
+                popo.Background = CoreHound1;
             }
             if (cartascancha[6].nombre == "Recruit")
             {
-                xx[6].Background = Recruit;
+                popo.Background = Recruit;
             }
             if (cartascancha[6].nombre == "Heilin Totem")
             {
-                xx[6].Background = totem11;
+                popo.Background = totem11;
             }
             if (cartascancha[6].nombre == "Seiring Totem")
             {
-                xx[6].Background = totem22;
+                popo.Background = totem22;
             }
             if (cartascancha[6].nombre == "Stoneclaw Totem")
             {
-                xx[6].Background = totem33;
+                popo.Background = totem33;
             }
             if (cartascancha[6].nombre == "Warth of air Totem")
             {
-                xx[6].Background = totem44;
+                popo.Background = totem44;
             }
 
-            xx[6].Visibility = Visibility.Visible;
+            popo.Visibility = Visibility.Visible;
         }
 
         private void boton10_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Background = vacio;
         }
 
         private void popo_MouseLeave(object sender, MouseEventArgs e)
@@ -3323,1365 +3324,1368 @@ namespace EntregaFinalPOOO
 
         private void boton11_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha2[0].nombre + "                \n ocupa mana: " + cartascancha2[0].mana + "\n ataca  " + cartascancha2[0].ataque + "\n  tiene vida  " + cartascancha2[0].vida;
+            
             if (cartascancha2[0].nombre == "wisp")
             {
-                a2[0].Background = wisp;
+                popo.Background = wisp;
 
             }
             if (cartascancha2[0].nombre == "Murloc Raider")
             {
-                a2[0].Background = MurlocRaider;
+                popo.Background = MurlocRaider;
             }
             if (cartascancha2[0].nombre == "Bloodfen Raptor" && cartascancha2[0].vida == 2)
             {
-                a2[0].Background = BloodfenRaptor;
+                popo.Background = BloodfenRaptor;
             }
             if (cartascancha2[0].nombre == "Bloodfen Raptor" && cartascancha2[0].vida == 1)
             {
-                a2[0].Background = BloodfenRaptor1;
+                popo.Background = BloodfenRaptor1;
             }
 
             if (cartascancha2[0].nombre == "River Crocolisk" && cartascancha2[0].vida == 3)
             {
-                a2[0].Background = RiverCrocolisk;
+                popo.Background = RiverCrocolisk;
             }
             if (cartascancha2[0].nombre == "River Crocolisk" && cartascancha2[0].vida == 2)
             {
-                a2[0].Background = RiverCrocolisk2;
+                popo.Background = RiverCrocolisk2;
             }
             if (cartascancha2[0].nombre == "River Crocolisk" && cartascancha2[0].vida == 1)
             {
-                a2[0].Background = RiverCrocolisk1;
+                popo.Background = RiverCrocolisk1;
             }
             if (cartascancha2[0].nombre == "Magma Rager")
             {
-                a2[0].Background = MagmaRager;
+                popo.Background = MagmaRager;
             }
             if (cartascancha2[0].nombre == "Chillwind Yeti" && cartascancha2[0].vida == 5)
             {
-                a2[0].Background = ChillwindYeti;
+                popo.Background = ChillwindYeti;
             }
             if (cartascancha2[0].nombre == "Chillwind Yeti" && cartascancha2[0].vida == 4)
             {
-                a2[0].Background = ChillwindYeti4;
+                popo.Background = ChillwindYeti4;
             }
             if (cartascancha2[0].nombre == "Chillwind Yeti" && cartascancha2[0].vida == 3)
             {
-                a2[0].Background = ChillwindYeti3;
+                popo.Background = ChillwindYeti3;
             }
             if (cartascancha2[0].nombre == "Chillwind Yeti" && cartascancha2[0].vida == 2)
             {
-                a2[0].Background = ChillwindYeti2;
+                popo.Background = ChillwindYeti2;
             }
             if (cartascancha2[0].nombre == "Chillwind Yeti" && cartascancha2[0].vida == 1)
             {
-                a2[0].Background = ChillwindYeti1;
+                popo.Background = ChillwindYeti1;
             }
             if (cartascancha2[0].nombre == "Oasis Snapjaw" && cartascancha2[0].vida == 7)
             {
-                a2[0].Background = OasisSnapjaw;
+                popo.Background = OasisSnapjaw;
             }
             if (cartascancha2[0].nombre == "Oasis Snapjaw" && cartascancha2[0].vida == 6)
             {
-                a2[0].Background = OasisSnapjaw6;
+                popo.Background = OasisSnapjaw6;
             }
             if (cartascancha2[0].nombre == "Oasis Snapjaw" && cartascancha2[0].vida == 5)
             {
-                a2[0].Background = OasisSnapjaw5;
+                popo.Background = OasisSnapjaw5;
             }
             if (cartascancha2[0].nombre == "Oasis Snapjaw" && cartascancha2[0].vida == 4)
             {
-                a2[0].Background = OasisSnapjaw4;
+                popo.Background = OasisSnapjaw4;
             }
             if (cartascancha2[0].nombre == "Oasis Snapjaw" && cartascancha2[0].vida == 3)
             {
-                a2[0].Background = OasisSnapjaw3;
+                popo.Background = OasisSnapjaw3;
 
             }
             if (cartascancha2[0].nombre == "Oasis Snapjaw" && cartascancha2[0].vida == 2)
             {
-                a2[0].Background = OasisSnapjaw2;
+                popo.Background = OasisSnapjaw2;
             }
             if (cartascancha2[0].nombre == "Oasis Snapjaw" && cartascancha2[0].vida == 1)
             {
-                a2[0].Background = OasisSnapjaw1;
+                popo.Background = OasisSnapjaw1;
             }
             if (cartascancha2[0].nombre == "Boulderfist Ogre" && cartascancha2[0].vida == 7)
             {
-                a2[0].Background = BoulderfistOgre;
+                popo.Background = BoulderfistOgre;
             }
             if (cartascancha2[0].nombre == "Boulderfist Ogre" && cartascancha2[0].vida == 6)
             {
-                a2[0].Background = BoulderfistOgre6;
+                popo.Background = BoulderfistOgre6;
             }
             if (cartascancha2[0].nombre == "Boulderfist Ogre" && cartascancha2[0].vida == 5)
             {
-                a2[0].Background = BoulderfistOgre5;
+                popo.Background = BoulderfistOgre5;
             }
             if (cartascancha2[0].nombre == "Boulderfist Ogre" && cartascancha2[0].vida == 4)
             {
-                a2[0].Background = BoulderfistOgre4;
+                popo.Background = BoulderfistOgre4;
             }
             if (cartascancha2[0].nombre == "Boulderfist Ogre" && cartascancha2[0].vida == 3)
             {
-                a2[0].Background = BoulderfistOgre3;
+                popo.Background = BoulderfistOgre3;
             }
             if (cartascancha2[0].nombre == "Boulderfist Ogre" && cartascancha2[0].vida == 2)
             {
-                a2[0].Background = BoulderfistOgre2;
+                popo.Background = BoulderfistOgre2;
             }
             if (cartascancha2[0].nombre == "Boulderfist Ogre" && cartascancha2[0].vida == 1)
             {
-                a2[0].Background = BoulderfistOgre1;
+                popo.Background = BoulderfistOgre1;
             }
 
             if (cartascancha2[0].nombre == "War Golem" && cartascancha2[0].vida == 7)
             {
-                a2[0].Background = WarGolem;
+                popo.Background = WarGolem;
             }
             if (cartascancha2[0].nombre == "War Golem" && cartascancha2[0].vida == 6)
             {
-                a2[0].Background = WarGolem6;
+                popo.Background = WarGolem6;
             }
             if (cartascancha2[0].nombre == "War Golem" && cartascancha2[0].vida == 5)
             {
-                a2[0].Background = WarGolem5;
+                popo.Background = WarGolem5;
             }
             if (cartascancha2[0].nombre == "War Golem" && cartascancha2[0].vida == 4)
             {
-                a2[0].Background = WarGolem4;
+                popo.Background = WarGolem4;
             }
             if (cartascancha2[0].nombre == "War Golem" && cartascancha2[0].vida == 3)
             {
-                a2[0].Background = WarGolem3;
+                popo.Background = WarGolem3;
             }
             if (cartascancha2[0].nombre == "War Golem" && cartascancha2[0].vida == 2)
             {
-                a2[0].Background = WarGolem2;
+                popo.Background = WarGolem2;
             }
             if (cartascancha2[0].nombre == "War Golem" && cartascancha2[0].vida == 1)
             {
-                a2[0].Background = WarGolem1;
+                popo.Background = WarGolem1;
             }
 
             if (cartascancha2[0].nombre == "Core Hound" && cartascancha2[0].vida == 5)
             {
-                a2[0].Background = CoreHound;
+                popo.Background = CoreHound;
             }
             if (cartascancha2[0].nombre == "Core Hound" && cartascancha2[0].vida == 4)
             {
-                a2[0].Background = CoreHound4;
+                popo.Background = CoreHound4;
             }
             if (cartascancha2[0].nombre == "Core Hound" && cartascancha2[0].vida == 3)
             {
-                a2[0].Background = CoreHound3;
+                popo.Background = CoreHound3;
             }
             if (cartascancha2[0].nombre == "Core Hound" && cartascancha2[0].vida == 2)
             {
-                a2[0].Background = CoreHound2;
+                popo.Background = CoreHound2;
 
             }
             if (cartascancha2[0].nombre == "Core Hound" && cartascancha2[0].vida == 1)
             {
-                a2[0].Background = CoreHound1;
+                popo.Background = CoreHound1;
             }
             if (cartascancha2[0].nombre == "Recruit")
             {
-                a2[0].Background = Recruit;
+                popo.Background = Recruit;
             }
             if (cartascancha2[0].nombre == "Heilin Totem")
             {
-                a2[0].Background = totem11;
+                popo.Background = totem11;
             }
             if (cartascancha2[0].nombre == "Seiring Totem")
             {
-                a2[0].Background = totem22;
+                popo.Background = totem22;
             }
             if (cartascancha2[0].nombre == "Stoneclaw Totem")
             {
-                a2[0].Background = totem33;
+                popo.Background = totem33;
             }
             if (cartascancha2[0].nombre == "Warth of air Totem")
             {
-                a2[0].Background = totem44;
+                popo.Background = totem44;
             }
 
-            a2[0].Visibility = Visibility.Visible;    
+            popo.Visibility = Visibility.Visible;    
            //a2[o].Content = cartascancha2[o].nombre + "                \n ocupa mana: " + cartascancha2[o].mana + "\n ataca  " + cartascancha2[o].ataque + "\n  tiene vida  " + cartascancha2[o].vida;
                        
         }
 
         private void boton11_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Background = vacio;
         }
 
         private void boton12_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha2[1].nombre + "                \n ocupa mana: " + cartascancha2[1].mana + "\n ataca  " + cartascancha2[1].ataque + "\n  tiene vida  " + cartascancha2[1].vida;
+            
             if (cartascancha2[1].nombre == "wisp")
             {
-                a2[1].Background = wisp;
+                popo.Background = wisp;
 
             }
             if (cartascancha2[1].nombre == "Murloc Raider")
             {
-               a2[1].Background = MurlocRaider;
+                popo.Background = MurlocRaider;
             }
             if (cartascancha2[1].nombre == "Bloodfen Raptor" && cartascancha2[1].vida == 2)
             {
-                a2[1].Background = BloodfenRaptor;
+                popo.Background = BloodfenRaptor;
             }
             if (cartascancha2[1].nombre == "Bloodfen Raptor" && cartascancha2[1].vida == 1)
             {
-                a2[1].Background = BloodfenRaptor1;
+                popo.Background = BloodfenRaptor1;
             }
 
             if (cartascancha2[1].nombre == "River Crocolisk" && cartascancha2[1].vida == 3)
             {
-                a2[1].Background = RiverCrocolisk;
+                popo.Background = RiverCrocolisk;
             }
             if (cartascancha2[1].nombre == "River Crocolisk" && cartascancha2[1].vida == 2)
             {
-                a2[1].Background = RiverCrocolisk2;
+                popo.Background = RiverCrocolisk2;
             }
             if (cartascancha2[1].nombre == "River Crocolisk" && cartascancha2[1].vida == 1)
             {
-                a2[1].Background = RiverCrocolisk1;
+                popo.Background = RiverCrocolisk1;
             }
             if (cartascancha2[1].nombre == "Magma Rager")
             {
-                a2[1].Background = MagmaRager;
+                popo.Background = MagmaRager;
             }
             if (cartascancha2[1].nombre == "Chillwind Yeti" && cartascancha2[1].vida == 5)
             {
-                a2[1].Background = ChillwindYeti;
+                popo.Background = ChillwindYeti;
             }
             if (cartascancha2[1].nombre == "Chillwind Yeti" && cartascancha2[1].vida == 4)
             {
-                a2[1].Background = ChillwindYeti4;
+                popo.Background = ChillwindYeti4;
             }
             if (cartascancha2[1].nombre == "Chillwind Yeti" && cartascancha2[1].vida == 3)
             {
-                a2[1].Background = ChillwindYeti3;
+                popo.Background = ChillwindYeti3;
             }
             if (cartascancha2[1].nombre == "Chillwind Yeti" && cartascancha2[1].vida == 2)
             {
-                a2[1].Background = ChillwindYeti2;
+                popo.Background = ChillwindYeti2;
             }
             if (cartascancha2[1].nombre == "Chillwind Yeti" && cartascancha2[1].vida == 1)
             {
-                a2[1].Background = ChillwindYeti1;
+                popo.Background = ChillwindYeti1;
             }
             if (cartascancha2[1].nombre == "Oasis Snapjaw" && cartascancha2[1].vida == 7)
             {
-                a2[1].Background = OasisSnapjaw;
+                popo.Background = OasisSnapjaw;
             }
             if (cartascancha2[1].nombre == "Oasis Snapjaw" && cartascancha2[1].vida == 6)
             {
-                a2[1].Background = OasisSnapjaw6;
+                popo.Background = OasisSnapjaw6;
             }
             if (cartascancha2[1].nombre == "Oasis Snapjaw" && cartascancha2[1].vida == 5)
             {
-                a2[1].Background = OasisSnapjaw5;
+                popo.Background = OasisSnapjaw5;
             }
             if (cartascancha2[1].nombre == "Oasis Snapjaw" && cartascancha2[1].vida == 4)
             {
-                a2[1].Background = OasisSnapjaw4;
+                popo.Background = OasisSnapjaw4;
             }
             if (cartascancha2[1].nombre == "Oasis Snapjaw" && cartascancha2[1].vida == 3)
             {
-                a2[1].Background = OasisSnapjaw3;
+                popo.Background = OasisSnapjaw3;
 
             }
             if (cartascancha2[1].nombre == "Oasis Snapjaw" && cartascancha2[1].vida == 2)
             {
-                a2[1].Background = OasisSnapjaw2;
+                popo.Background = OasisSnapjaw2;
             }
             if (cartascancha2[1].nombre == "Oasis Snapjaw" && cartascancha2[1].vida == 1)
             {
-                a2[1].Background = OasisSnapjaw1;
+                popo.Background = OasisSnapjaw1;
             }
             if (cartascancha2[1].nombre == "Boulderfist Ogre" && cartascancha2[1].vida == 7)
             {
-                a2[1].Background = BoulderfistOgre;
+                popo.Background = BoulderfistOgre;
             }
             if (cartascancha2[1].nombre == "Boulderfist Ogre" && cartascancha2[1].vida == 6)
             {
-                a2[1].Background = BoulderfistOgre6;
+                popo.Background = BoulderfistOgre6;
             }
             if (cartascancha2[1].nombre == "Boulderfist Ogre" && cartascancha2[1].vida == 5)
             {
-                a2[1].Background = BoulderfistOgre5;
+                popo.Background = BoulderfistOgre5;
             }
             if (cartascancha2[1].nombre == "Boulderfist Ogre" && cartascancha2[1].vida == 4)
             {
-                a2[1].Background = BoulderfistOgre4;
+                popo.Background = BoulderfistOgre4;
             }
             if (cartascancha2[1].nombre == "Boulderfist Ogre" && cartascancha2[1].vida == 3)
             {
-                a2[1].Background = BoulderfistOgre3;
+                popo.Background = BoulderfistOgre3;
             }
             if (cartascancha2[1].nombre == "Boulderfist Ogre" && cartascancha2[1].vida == 2)
             {
-                a2[1].Background = BoulderfistOgre2;
+                popo.Background = BoulderfistOgre2;
             }
             if (cartascancha2[1].nombre == "Boulderfist Ogre" && cartascancha2[1].vida == 1)
             {
-                a2[1].Background = BoulderfistOgre1;
+                popo.Background = BoulderfistOgre1;
             }
 
             if (cartascancha2[1].nombre == "War Golem" && cartascancha2[1].vida == 7)
             {
-                a2[1].Background = WarGolem;
+                popo.Background = WarGolem;
             }
             if (cartascancha2[1].nombre == "War Golem" && cartascancha2[1].vida == 6)
             {
-                a2[1].Background = WarGolem6;
+                popo.Background = WarGolem6;
             }
             if (cartascancha2[1].nombre == "War Golem" && cartascancha2[1].vida == 5)
             {
-                a2[1].Background = WarGolem5;
+                popo.Background = WarGolem5;
             }
             if (cartascancha2[1].nombre == "War Golem" && cartascancha2[1].vida == 4)
             {
-                a2[1].Background = WarGolem4;
+                popo.Background = WarGolem4;
             }
             if (cartascancha2[1].nombre == "War Golem" && cartascancha2[1].vida == 3)
             {
-                a2[1].Background = WarGolem3;
+                popo.Background = WarGolem3;
             }
             if (cartascancha2[1].nombre == "War Golem" && cartascancha2[1].vida == 2)
             {
-                a2[1].Background = WarGolem2;
+                popo.Background = WarGolem2;
             }
             if (cartascancha2[1].nombre == "War Golem" && cartascancha2[1].vida == 1)
             {
-                a2[1].Background = WarGolem1;
+                popo.Background = WarGolem1;
             }
 
             if (cartascancha2[1].nombre == "Core Hound" && cartascancha2[1].vida == 5)
             {
-                a2[1].Background = CoreHound;
+                popo.Background = CoreHound;
             }
             if (cartascancha2[1].nombre == "Core Hound" && cartascancha2[1].vida == 4)
             {
-                a2[1].Background = CoreHound4;
+                popo.Background = CoreHound4;
             }
             if (cartascancha2[1].nombre == "Core Hound" && cartascancha2[1].vida == 3)
             {
-                a2[1].Background = CoreHound3;
+                popo.Background = CoreHound3;
             }
             if (cartascancha2[1].nombre == "Core Hound" && cartascancha2[1].vida == 2)
             {
-                a2[1].Background = CoreHound2;
+                popo.Background = CoreHound2;
 
             }
             if (cartascancha2[1].nombre == "Core Hound" && cartascancha2[1].vida == 1)
             {
-                a2[1].Background = CoreHound1;
+                popo.Background = CoreHound1;
             }
             if (cartascancha2[1].nombre == "Recruit")
             {
-                a2[1].Background = Recruit;
+                popo.Background = Recruit;
             }
             if (cartascancha2[1].nombre == "Heilin Totem")
             {
-                a2[1].Background = totem11;
+                popo.Background = totem11;
             }
             if (cartascancha2[1].nombre == "Seiring Totem")
             {
-                a2[1].Background = totem22;
+                popo.Background = totem22;
             }
             if (cartascancha2[1].nombre == "Stoneclaw Totem")
             {
-                a2[1].Background = totem33;
+                popo.Background = totem33;
             }
             if (cartascancha2[1].nombre == "Warth of air Totem")
             {
-                a2[1].Background = totem44;
+                popo.Background = totem44;
             }
 
-            a2[1].Visibility = Visibility.Visible;  
+            popo.Visibility = Visibility.Visible;  
 
         }
 
         private void boton12_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Background = vacio;
         }
 
         private void boton13_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha2[2].nombre + "                \n ocupa mana: " + cartascancha2[2].mana + "\n ataca  " + cartascancha2[2].ataque + "\n  tiene vida  " + cartascancha2[2].vida;
+            
             if (cartascancha2[2].nombre == "wisp")
             {
-                a2[2].Background = wisp;
+                popo.Background = wisp;
 
             }
             if (cartascancha2[2].nombre == "Murloc Raider")
             {
-                a2[2].Background = MurlocRaider;
+                popo.Background = MurlocRaider;
             }
             if (cartascancha2[2].nombre == "Bloodfen Raptor" && cartascancha2[2].vida == 2)
             {
-                a2[2].Background = BloodfenRaptor;
+                popo.Background = BloodfenRaptor;
             }
             if (cartascancha2[2].nombre == "Bloodfen Raptor" && cartascancha2[2].vida == 1)
             {
-                a2[2].Background = BloodfenRaptor1;
+                popo.Background = BloodfenRaptor1;
             }
 
             if (cartascancha2[2].nombre == "River Crocolisk" && cartascancha2[2].vida == 3)
             {
-                a2[2].Background = RiverCrocolisk;
+                popo.Background = RiverCrocolisk;
             }
             if (cartascancha2[2].nombre == "River Crocolisk" && cartascancha2[2].vida == 2)
             {
-                a2[2].Background = RiverCrocolisk2;
+                popo.Background = RiverCrocolisk2;
             }
             if (cartascancha2[2].nombre == "River Crocolisk" && cartascancha2[2].vida == 1)
             {
-                a2[2].Background = RiverCrocolisk1;
+                popo.Background = RiverCrocolisk1;
             }
             if (cartascancha2[2].nombre == "Magma Rager")
             {
-                a2[2].Background = MagmaRager;
+                popo.Background = MagmaRager;
             }
             if (cartascancha2[2].nombre == "Chillwind Yeti" && cartascancha2[2].vida == 5)
             {
-                a2[2].Background = ChillwindYeti;
+                popo.Background = ChillwindYeti;
             }
             if (cartascancha2[2].nombre == "Chillwind Yeti" && cartascancha2[2].vida == 4)
             {
-                a2[2].Background = ChillwindYeti4;
+                popo.Background = ChillwindYeti4;
             }
             if (cartascancha2[2].nombre == "Chillwind Yeti" && cartascancha2[2].vida == 3)
             {
-                a2[2].Background = ChillwindYeti3;
+                popo.Background = ChillwindYeti3;
             }
             if (cartascancha2[2].nombre == "Chillwind Yeti" && cartascancha2[2].vida == 2)
             {
-                a2[2].Background = ChillwindYeti2;
+                popo.Background = ChillwindYeti2;
             }
             if (cartascancha2[2].nombre == "Chillwind Yeti" && cartascancha2[2].vida == 1)
             {
-                a2[2].Background = ChillwindYeti1;
+                popo.Background = ChillwindYeti1;
             }
             if (cartascancha2[2].nombre == "Oasis Snapjaw" && cartascancha2[2].vida == 7)
             {
-                a2[2].Background = OasisSnapjaw;
+                popo.Background = OasisSnapjaw;
             }
             if (cartascancha2[2].nombre == "Oasis Snapjaw" && cartascancha2[2].vida == 6)
             {
-                a2[2].Background = OasisSnapjaw6;
+                popo.Background = OasisSnapjaw6;
             }
             if (cartascancha2[2].nombre == "Oasis Snapjaw" && cartascancha2[2].vida == 5)
             {
-                a2[2].Background = OasisSnapjaw5;
+                popo.Background = OasisSnapjaw5;
             }
             if (cartascancha2[2].nombre == "Oasis Snapjaw" && cartascancha2[2].vida == 4)
             {
-                a2[2].Background = OasisSnapjaw4;
+                popo.Background = OasisSnapjaw4;
             }
             if (cartascancha2[2].nombre == "Oasis Snapjaw" && cartascancha2[2].vida == 3)
             {
-                a2[2].Background = OasisSnapjaw3;
+                popo.Background = OasisSnapjaw3;
 
             }
             if (cartascancha2[2].nombre == "Oasis Snapjaw" && cartascancha2[2].vida == 2)
             {
-                a2[2].Background = OasisSnapjaw2;
+                popo.Background = OasisSnapjaw2;
             }
             if (cartascancha2[2].nombre == "Oasis Snapjaw" && cartascancha2[2].vida == 1)
             {
-                a2[2].Background = OasisSnapjaw1;
+                popo.Background = OasisSnapjaw1;
             }
             if (cartascancha2[2].nombre == "Boulderfist Ogre" && cartascancha2[2].vida == 7)
             {
-                a2[2].Background = BoulderfistOgre;
+                popo.Background = BoulderfistOgre;
             }
             if (cartascancha2[2].nombre == "Boulderfist Ogre" && cartascancha2[2].vida == 6)
             {
-                a2[2].Background = BoulderfistOgre6;
+                popo.Background = BoulderfistOgre6;
             }
             if (cartascancha2[2].nombre == "Boulderfist Ogre" && cartascancha2[2].vida == 5)
             {
-                a2[2].Background = BoulderfistOgre5;
+                popo.Background = BoulderfistOgre5;
             }
             if (cartascancha2[2].nombre == "Boulderfist Ogre" && cartascancha2[2].vida == 4)
             {
-                a2[2].Background = BoulderfistOgre4;
+                popo.Background = BoulderfistOgre4;
             }
             if (cartascancha2[2].nombre == "Boulderfist Ogre" && cartascancha2[2].vida == 3)
             {
-                a2[2].Background = BoulderfistOgre3;
+                popo.Background = BoulderfistOgre3;
             }
             if (cartascancha2[2].nombre == "Boulderfist Ogre" && cartascancha2[2].vida == 2)
             {
-                a2[2].Background = BoulderfistOgre2;
+                popo.Background = BoulderfistOgre2;
             }
             if (cartascancha2[2].nombre == "Boulderfist Ogre" && cartascancha2[2].vida == 1)
             {
-                a2[2].Background = BoulderfistOgre1;
+                popo.Background = BoulderfistOgre1;
             }
 
             if (cartascancha2[2].nombre == "War Golem" && cartascancha2[2].vida == 7)
             {
-                a2[2].Background = WarGolem;
+                popo.Background = WarGolem;
             }
             if (cartascancha2[2].nombre == "War Golem" && cartascancha2[2].vida == 6)
             {
-                a2[2].Background = WarGolem6;
+                popo.Background = WarGolem6;
             }
             if (cartascancha2[2].nombre == "War Golem" && cartascancha2[2].vida == 5)
             {
-                a2[2].Background = WarGolem5;
+                popo.Background = WarGolem5;
             }
             if (cartascancha2[2].nombre == "War Golem" && cartascancha2[2].vida == 4)
             {
-                a2[2].Background = WarGolem4;
+                popo.Background = WarGolem4;
             }
             if (cartascancha2[2].nombre == "War Golem" && cartascancha2[2].vida == 3)
             {
-                a2[2].Background = WarGolem3;
+                popo.Background = WarGolem3;
             }
             if (cartascancha2[2].nombre == "War Golem" && cartascancha2[2].vida == 2)
             {
-                a2[2].Background = WarGolem2;
+                popo.Background = WarGolem2;
             }
             if (cartascancha2[2].nombre == "War Golem" && cartascancha2[2].vida == 1)
             {
-                a2[2].Background = WarGolem1;
+                popo.Background = WarGolem1;
             }
 
             if (cartascancha2[2].nombre == "Core Hound" && cartascancha2[2].vida == 5)
             {
-                a2[2].Background = CoreHound;
+                popo.Background = CoreHound;
             }
             if (cartascancha2[2].nombre == "Core Hound" && cartascancha2[2].vida == 4)
             {
-                a2[2].Background = CoreHound4;
+                popo.Background = CoreHound4;
             }
             if (cartascancha2[2].nombre == "Core Hound" && cartascancha2[2].vida == 3)
             {
-                a2[2].Background = CoreHound3;
+                popo.Background = CoreHound3;
             }
             if (cartascancha2[2].nombre == "Core Hound" && cartascancha2[2].vida == 2)
             {
-                a2[2].Background = CoreHound2;
+                popo.Background = CoreHound2;
 
             }
             if (cartascancha2[2].nombre == "Core Hound" && cartascancha2[2].vida == 1)
             {
-                a2[2].Background = CoreHound1;
+                popo.Background = CoreHound1;
             }
             if (cartascancha2[2].nombre == "Recruit")
             {
-                a2[2].Background = Recruit;
+                popo.Background = Recruit;
             }
             if (cartascancha2[2].nombre == "Heilin Totem")
             {
-                a2[2].Background = totem11;
+                popo.Background = totem11;
             }
             if (cartascancha2[2].nombre == "Seiring Totem")
             {
-                a2[2].Background = totem22;
+                popo.Background = totem22;
             }
             if (cartascancha2[2].nombre == "Stoneclaw Totem")
             {
-                a2[2].Background = totem33;
+                popo.Background = totem33;
             }
             if (cartascancha2[2].nombre == "Warth of air Totem")
             {
-                a2[2].Background = totem44;
+                popo.Background = totem44;
             }
 
-            a2[2].Visibility = Visibility.Visible;  
+            popo.Visibility = Visibility.Visible;  
         }
 
         private void boton13_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Background = vacio;
         }
 
         private void boton14_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha2[3].nombre + "                \n ocupa mana: " + cartascancha2[3].mana + "\n ataca  " + cartascancha2[3].ataque + "\n  tiene vida  " + cartascancha2[3].vida;
+           
             if (cartascancha2[3].nombre == "wisp")
             {
-                a2[3].Background = wisp;
+                popo.Background = wisp;
 
             }
             if (cartascancha2[3].nombre == "Murloc Raider")
             {
-                a2[3].Background = MurlocRaider;
+                popo.Background = MurlocRaider;
             }
             if (cartascancha2[3].nombre == "Bloodfen Raptor" && cartascancha2[3].vida == 2)
             {
-                a2[3].Background = BloodfenRaptor;
+                popo.Background = BloodfenRaptor;
             }
             if (cartascancha2[3].nombre == "Bloodfen Raptor" && cartascancha2[3].vida == 1)
             {
-                a2[3].Background = BloodfenRaptor1;
+                popo.Background = BloodfenRaptor1;
             }
 
             if (cartascancha2[3].nombre == "River Crocolisk" && cartascancha2[3].vida == 3)
             {
-                a2[3].Background = RiverCrocolisk;
+                popo.Background = RiverCrocolisk;
             }
             if (cartascancha2[3].nombre == "River Crocolisk" && cartascancha2[3].vida == 2)
             {
-                a2[3].Background = RiverCrocolisk2;
+                popo.Background = RiverCrocolisk2;
             }
             if (cartascancha2[3].nombre == "River Crocolisk" && cartascancha2[3].vida == 1)
             {
-                a2[3].Background = RiverCrocolisk1;
+                popo.Background = RiverCrocolisk1;
             }
             if (cartascancha2[3].nombre == "Magma Rager")
             {
-                a2[3].Background = MagmaRager;
+                popo.Background = MagmaRager;
             }
             if (cartascancha2[3].nombre == "Chillwind Yeti" && cartascancha2[3].vida == 5)
             {
-                a2[3].Background = ChillwindYeti;
+                popo.Background = ChillwindYeti;
             }
             if (cartascancha2[3].nombre == "Chillwind Yeti" && cartascancha2[3].vida == 4)
             {
-                a2[3].Background = ChillwindYeti4;
+                popo.Background = ChillwindYeti4;
             }
             if (cartascancha2[3].nombre == "Chillwind Yeti" && cartascancha2[3].vida == 3)
             {
-                a2[3].Background = ChillwindYeti3;
+                popo.Background = ChillwindYeti3;
             }
             if (cartascancha2[3].nombre == "Chillwind Yeti" && cartascancha2[3].vida == 2)
             {
-                a2[3].Background = ChillwindYeti2;
+                popo.Background = ChillwindYeti2;
             }
             if (cartascancha2[3].nombre == "Chillwind Yeti" && cartascancha2[3].vida == 1)
             {
-                a2[3].Background = ChillwindYeti1;
+                popo.Background = ChillwindYeti1;
             }
             if (cartascancha2[3].nombre == "Oasis Snapjaw" && cartascancha2[3].vida == 7)
             {
-                a2[3].Background = OasisSnapjaw;
+                popo.Background = OasisSnapjaw;
             }
             if (cartascancha2[3].nombre == "Oasis Snapjaw" && cartascancha2[3].vida == 6)
             {
-                a2[3].Background = OasisSnapjaw6;
+                popo.Background = OasisSnapjaw6;
             }
             if (cartascancha2[3].nombre == "Oasis Snapjaw" && cartascancha2[3].vida == 5)
             {
-                a2[3].Background = OasisSnapjaw5;
+                popo.Background = OasisSnapjaw5;
             }
             if (cartascancha2[3].nombre == "Oasis Snapjaw" && cartascancha2[3].vida == 4)
             {
-                a2[3].Background = OasisSnapjaw4;
+                popo.Background = OasisSnapjaw4;
             }
             if (cartascancha2[3].nombre == "Oasis Snapjaw" && cartascancha2[3].vida == 3)
             {
-                a2[3].Background = OasisSnapjaw3;
+                popo.Background = OasisSnapjaw3;
 
             }
             if (cartascancha2[3].nombre == "Oasis Snapjaw" && cartascancha2[3].vida == 2)
             {
-                a2[3].Background = OasisSnapjaw2;
+                popo.Background = OasisSnapjaw2;
             }
             if (cartascancha2[3].nombre == "Oasis Snapjaw" && cartascancha2[3].vida == 1)
             {
-                a2[3].Background = OasisSnapjaw1;
+                popo.Background = OasisSnapjaw1;
             }
             if (cartascancha2[3].nombre == "Boulderfist Ogre" && cartascancha2[3].vida == 7)
             {
-                a2[3].Background = BoulderfistOgre;
+                popo.Background = BoulderfistOgre;
             }
             if (cartascancha2[3].nombre == "Boulderfist Ogre" && cartascancha2[3].vida == 6)
             {
-                a2[3].Background = BoulderfistOgre6;
+                popo.Background = BoulderfistOgre6;
             }
             if (cartascancha2[3].nombre == "Boulderfist Ogre" && cartascancha2[3].vida == 5)
             {
-                a2[3].Background = BoulderfistOgre5;
+                popo.Background = BoulderfistOgre5;
             }
             if (cartascancha2[3].nombre == "Boulderfist Ogre" && cartascancha2[3].vida == 4)
             {
-                a2[3].Background = BoulderfistOgre4;
+                popo.Background = BoulderfistOgre4;
             }
             if (cartascancha2[3].nombre == "Boulderfist Ogre" && cartascancha2[3].vida == 3)
             {
-                a2[3].Background = BoulderfistOgre3;
+                popo.Background = BoulderfistOgre3;
             }
             if (cartascancha2[3].nombre == "Boulderfist Ogre" && cartascancha2[3].vida == 2)
             {
-                a2[3].Background = BoulderfistOgre2;
+                popo.Background = BoulderfistOgre2;
             }
             if (cartascancha2[3].nombre == "Boulderfist Ogre" && cartascancha2[3].vida == 1)
             {
-                a2[3].Background = BoulderfistOgre1;
+                popo.Background = BoulderfistOgre1;
             }
 
             if (cartascancha2[3].nombre == "War Golem" && cartascancha2[3].vida == 7)
             {
-                a2[3].Background = WarGolem;
+                popo.Background = WarGolem;
             }
             if (cartascancha2[3].nombre == "War Golem" && cartascancha2[3].vida == 6)
             {
-                a2[3].Background = WarGolem6;
+                popo.Background = WarGolem6;
             }
             if (cartascancha2[3].nombre == "War Golem" && cartascancha2[3].vida == 5)
             {
-                a2[3].Background = WarGolem5;
+                popo.Background = WarGolem5;
             }
             if (cartascancha2[3].nombre == "War Golem" && cartascancha2[3].vida == 4)
             {
-                a2[3].Background = WarGolem4;
+                popo.Background = WarGolem4;
             }
             if (cartascancha2[3].nombre == "War Golem" && cartascancha2[3].vida == 3)
             {
-                a2[3].Background = WarGolem3;
+                popo.Background = WarGolem3;
             }
             if (cartascancha2[3].nombre == "War Golem" && cartascancha2[3].vida == 2)
             {
-                a2[3].Background = WarGolem2;
+                popo.Background = WarGolem2;
             }
             if (cartascancha2[3].nombre == "War Golem" && cartascancha2[3].vida == 1)
             {
-                a2[3].Background = WarGolem1;
+                popo.Background = WarGolem1;
             }
 
             if (cartascancha2[3].nombre == "Core Hound" && cartascancha2[3].vida == 5)
             {
-                a2[3].Background = CoreHound;
+                popo.Background = CoreHound;
             }
             if (cartascancha2[3].nombre == "Core Hound" && cartascancha2[3].vida == 4)
             {
-                a2[3].Background = CoreHound4;
+                popo.Background = CoreHound4;
             }
             if (cartascancha2[3].nombre == "Core Hound" && cartascancha2[3].vida == 3)
             {
-                a2[3].Background = CoreHound3;
+                popo.Background = CoreHound3;
             }
             if (cartascancha2[3].nombre == "Core Hound" && cartascancha2[3].vida == 2)
             {
-                a2[3].Background = CoreHound2;
+                popo.Background = CoreHound2;
 
             }
             if (cartascancha2[3].nombre == "Core Hound" && cartascancha2[3].vida == 1)
             {
-                a2[3].Background = CoreHound1;
+                popo.Background = CoreHound1;
             }
             if (cartascancha2[3].nombre == "Recruit")
             {
-                a2[3].Background = Recruit;
+                popo.Background = Recruit;
             }
             if (cartascancha2[3].nombre == "Heilin Totem")
             {
-                a2[3].Background = totem11;
+                popo.Background = totem11;
             }
             if (cartascancha2[3].nombre == "Seiring Totem")
             {
-                a2[3].Background = totem22;
+                popo.Background = totem22;
             }
             if (cartascancha2[3].nombre == "Stoneclaw Totem")
             {
-                a2[3].Background = totem33;
+                popo.Background = totem33;
             }
             if (cartascancha2[3].nombre == "Warth of air Totem")
             {
-                a2[3].Background = totem44;
+                popo.Background = totem44;
             }
 
-            a2[3].Visibility = Visibility.Visible;    
+            popo.Visibility = Visibility.Visible;    
         }
 
         private void boton14_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Background = vacio;
         }
 
         private void boton15_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha2[4].nombre + "                \n ocupa mana: " + cartascancha2[4].mana + "\n ataca  " + cartascancha2[4].ataque + "\n  tiene vida  " + cartascancha2[4].vida;
+            
             if (cartascancha2[4].nombre == "wisp")
             {
-                a2[4].Background = wisp;
+                popo.Background = wisp;
 
             }
             if (cartascancha2[4].nombre == "Murloc Raider")
             {
-                a2[4].Background = MurlocRaider;
+                popo.Background = MurlocRaider;
             }
             if (cartascancha2[4].nombre == "Bloodfen Raptor" && cartascancha2[4].vida == 2)
             {
-                a2[4].Background = BloodfenRaptor;
+                popo.Background = BloodfenRaptor;
             }
             if (cartascancha2[4].nombre == "Bloodfen Raptor" && cartascancha2[4].vida == 1)
             {
-                a2[4].Background = BloodfenRaptor1;
+                popo.Background = BloodfenRaptor1;
             }
 
             if (cartascancha2[4].nombre == "River Crocolisk" && cartascancha2[4].vida == 3)
             {
-                a2[4].Background = RiverCrocolisk;
+                popo.Background = RiverCrocolisk;
             }
             if (cartascancha2[4].nombre == "River Crocolisk" && cartascancha2[4].vida == 2)
             {
-                a2[4].Background = RiverCrocolisk2;
+                popo.Background = RiverCrocolisk2;
             }
             if (cartascancha2[4].nombre == "River Crocolisk" && cartascancha2[4].vida == 1)
             {
-                a2[4].Background = RiverCrocolisk1;
+                popo.Background = RiverCrocolisk1;
             }
             if (cartascancha2[4].nombre == "Magma Rager")
             {
-                a2[4].Background = MagmaRager;
+                popo.Background = MagmaRager;
             }
             if (cartascancha2[4].nombre == "Chillwind Yeti" && cartascancha2[4].vida == 5)
             {
-                a2[4].Background = ChillwindYeti;
+                popo.Background = ChillwindYeti;
             }
             if (cartascancha2[4].nombre == "Chillwind Yeti" && cartascancha2[4].vida == 4)
             {
-                a2[4].Background = ChillwindYeti4;
+                popo.Background = ChillwindYeti4;
             }
             if (cartascancha2[4].nombre == "Chillwind Yeti" && cartascancha2[4].vida == 3)
             {
-                a2[4].Background = ChillwindYeti3;
+                popo.Background = ChillwindYeti3;
             }
             if (cartascancha2[4].nombre == "Chillwind Yeti" && cartascancha2[4].vida == 2)
             {
-                a2[4].Background = ChillwindYeti2;
+                popo.Background = ChillwindYeti2;
             }
             if (cartascancha2[4].nombre == "Chillwind Yeti" && cartascancha2[4].vida == 1)
             {
-                a2[4].Background = ChillwindYeti1;
+                popo.Background = ChillwindYeti1;
             }
             if (cartascancha2[4].nombre == "Oasis Snapjaw" && cartascancha2[4].vida == 7)
             {
-                a2[4].Background = OasisSnapjaw;
+                popo.Background = OasisSnapjaw;
             }
             if (cartascancha2[4].nombre == "Oasis Snapjaw" && cartascancha2[4].vida == 6)
             {
-                a2[4].Background = OasisSnapjaw6;
+                popo.Background = OasisSnapjaw6;
             }
             if (cartascancha2[4].nombre == "Oasis Snapjaw" && cartascancha2[4].vida == 5)
             {
-                a2[4].Background = OasisSnapjaw5;
+                popo.Background = OasisSnapjaw5;
             }
             if (cartascancha2[4].nombre == "Oasis Snapjaw" && cartascancha2[4].vida == 4)
             {
-                a2[4].Background = OasisSnapjaw4;
+                popo.Background = OasisSnapjaw4;
             }
             if (cartascancha2[4].nombre == "Oasis Snapjaw" && cartascancha2[4].vida == 3)
             {
-                a2[4].Background = OasisSnapjaw3;
+                popo.Background = OasisSnapjaw3;
 
             }
             if (cartascancha2[4].nombre == "Oasis Snapjaw" && cartascancha2[4].vida == 2)
             {
-                a2[4].Background = OasisSnapjaw2;
+                popo.Background = OasisSnapjaw2;
             }
             if (cartascancha2[4].nombre == "Oasis Snapjaw" && cartascancha2[4].vida == 1)
             {
-                a2[4].Background = OasisSnapjaw1;
+                popo.Background = OasisSnapjaw1;
             }
             if (cartascancha2[4].nombre == "Boulderfist Ogre" && cartascancha2[4].vida == 7)
             {
-                a2[4].Background = BoulderfistOgre;
+                popo.Background = BoulderfistOgre;
             }
             if (cartascancha2[4].nombre == "Boulderfist Ogre" && cartascancha2[4].vida == 6)
             {
-                a2[4].Background = BoulderfistOgre6;
+                popo.Background = BoulderfistOgre6;
             }
             if (cartascancha2[4].nombre == "Boulderfist Ogre" && cartascancha2[4].vida == 5)
             {
-                a2[4].Background = BoulderfistOgre5;
+                popo.Background = BoulderfistOgre5;
             }
             if (cartascancha2[4].nombre == "Boulderfist Ogre" && cartascancha2[4].vida == 4)
             {
-                a2[4].Background = BoulderfistOgre4;
+                popo.Background = BoulderfistOgre4;
             }
             if (cartascancha2[4].nombre == "Boulderfist Ogre" && cartascancha2[4].vida == 3)
             {
-                a2[4].Background = BoulderfistOgre3;
+                popo.Background = BoulderfistOgre3;
             }
             if (cartascancha2[4].nombre == "Boulderfist Ogre" && cartascancha2[4].vida == 2)
             {
-                a2[4].Background = BoulderfistOgre2;
+                popo.Background = BoulderfistOgre2;
             }
             if (cartascancha2[4].nombre == "Boulderfist Ogre" && cartascancha2[4].vida == 1)
             {
-                a2[4].Background = BoulderfistOgre1;
+                popo.Background = BoulderfistOgre1;
             }
 
             if (cartascancha2[4].nombre == "War Golem" && cartascancha2[4].vida == 7)
             {
-                a2[4].Background = WarGolem;
+                popo.Background = WarGolem;
             }
             if (cartascancha2[4].nombre == "War Golem" && cartascancha2[4].vida == 6)
             {
-                a2[4].Background = WarGolem6;
+                popo.Background = WarGolem6;
             }
             if (cartascancha2[4].nombre == "War Golem" && cartascancha2[4].vida == 5)
             {
-                a2[4].Background = WarGolem5;
+                popo.Background = WarGolem5;
             }
             if (cartascancha2[4].nombre == "War Golem" && cartascancha2[4].vida == 4)
             {
-                a2[4].Background = WarGolem4;
+                popo.Background = WarGolem4;
             }
             if (cartascancha2[4].nombre == "War Golem" && cartascancha2[4].vida == 3)
             {
-                a2[4].Background = WarGolem3;
+                popo.Background = WarGolem3;
             }
             if (cartascancha2[4].nombre == "War Golem" && cartascancha2[4].vida == 2)
             {
-                a2[4].Background = WarGolem2;
+                popo.Background = WarGolem2;
             }
             if (cartascancha2[4].nombre == "War Golem" && cartascancha2[4].vida == 1)
             {
-                a2[4].Background = WarGolem1;
+                popo.Background = WarGolem1;
             }
 
             if (cartascancha2[4].nombre == "Core Hound" && cartascancha2[4].vida == 5)
             {
-                a2[4].Background = CoreHound;
+                popo.Background = CoreHound;
             }
             if (cartascancha2[4].nombre == "Core Hound" && cartascancha2[4].vida == 4)
             {
-                a2[4].Background = CoreHound4;
+                popo.Background = CoreHound4;
             }
             if (cartascancha2[4].nombre == "Core Hound" && cartascancha2[4].vida == 3)
             {
-                a2[4].Background = CoreHound3;
+                popo.Background = CoreHound3;
             }
             if (cartascancha2[4].nombre == "Core Hound" && cartascancha2[4].vida == 2)
             {
-                a2[4].Background = CoreHound2;
+                popo.Background = CoreHound2;
 
             }
             if (cartascancha2[4].nombre == "Core Hound" && cartascancha2[4].vida == 1)
             {
-                a2[4].Background = CoreHound1;
+                popo.Background = CoreHound1;
             }
             if (cartascancha2[4].nombre == "Recruit")
             {
-                a2[4].Background = Recruit;
+                popo.Background = Recruit;
             }
             if (cartascancha2[4].nombre == "Heilin Totem")
             {
-                a2[4].Background = totem11;
+                popo.Background = totem11;
             }
             if (cartascancha2[4].nombre == "Seiring Totem")
             {
-                a2[4].Background = totem22;
+                popo.Background = totem22;
             }
             if (cartascancha2[4].nombre == "Stoneclaw Totem")
             {
-                a2[4].Background = totem33;
+                popo.Background = totem33;
             }
             if (cartascancha2[4].nombre == "Warth of air Totem")
             {
-                a2[4].Background = totem44;
+                popo.Background = totem44;
             }
 
-            a2[4].Visibility = Visibility.Visible;    
+            popo.Visibility = Visibility.Visible;    
         }
 
         private void boton15_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Background = vacio;
         }
 
         private void boton16_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha2[5].nombre + "                \n ocupa mana: " + cartascancha2[5].mana + "\n ataca  " + cartascancha2[5].ataque + "\n  tiene vida  " + cartascancha2[5].vida;
+            
             if (cartascancha2[5].nombre == "wisp")
             {
-                a2[5].Background = wisp;
+                popo.Background = wisp;
 
             }
             if (cartascancha2[5].nombre == "Murloc Raider")
             {
-                a2[5].Background = MurlocRaider;
+                popo.Background = MurlocRaider;
             }
             if (cartascancha2[5].nombre == "Bloodfen Raptor" && cartascancha2[5].vida == 2)
             {
-                a2[5].Background = BloodfenRaptor;
+                popo.Background = BloodfenRaptor;
             }
             if (cartascancha2[5].nombre == "Bloodfen Raptor" && cartascancha2[5].vida == 1)
             {
-                a2[5].Background = BloodfenRaptor1;
+                popo.Background = BloodfenRaptor1;
             }
 
             if (cartascancha2[5].nombre == "River Crocolisk" && cartascancha2[5].vida == 3)
             {
-                a2[5].Background = RiverCrocolisk;
+                popo.Background = RiverCrocolisk;
             }
             if (cartascancha2[5].nombre == "River Crocolisk" && cartascancha2[5].vida == 2)
             {
-                a2[5].Background = RiverCrocolisk2;
+                popo.Background = RiverCrocolisk2;
             }
             if (cartascancha2[5].nombre == "River Crocolisk" && cartascancha2[5].vida == 1)
             {
-                a2[5].Background = RiverCrocolisk1;
+                popo.Background = RiverCrocolisk1;
             }
             if (cartascancha2[5].nombre == "Magma Rager")
             {
-                a2[5].Background = MagmaRager;
+                popo.Background = MagmaRager;
             }
             if (cartascancha2[5].nombre == "Chillwind Yeti" && cartascancha2[5].vida == 5)
             {
-                a2[5].Background = ChillwindYeti;
+                popo.Background = ChillwindYeti;
             }
             if (cartascancha2[5].nombre == "Chillwind Yeti" && cartascancha2[5].vida == 4)
             {
-                a2[5].Background = ChillwindYeti4;
+                popo.Background = ChillwindYeti4;
             }
             if (cartascancha2[5].nombre == "Chillwind Yeti" && cartascancha2[5].vida == 3)
             {
-                a2[5].Background = ChillwindYeti3;
+                popo.Background = ChillwindYeti3;
             }
             if (cartascancha2[5].nombre == "Chillwind Yeti" && cartascancha2[5].vida == 2)
             {
-                a2[5].Background = ChillwindYeti2;
+                popo.Background = ChillwindYeti2;
             }
             if (cartascancha2[5].nombre == "Chillwind Yeti" && cartascancha2[5].vida == 1)
             {
-                a2[5].Background = ChillwindYeti1;
+                popo.Background = ChillwindYeti1;
             }
             if (cartascancha2[5].nombre == "Oasis Snapjaw" && cartascancha2[5].vida == 7)
             {
-                a2[5].Background = OasisSnapjaw;
+                popo.Background = OasisSnapjaw;
             }
             if (cartascancha2[5].nombre == "Oasis Snapjaw" && cartascancha2[5].vida == 6)
             {
-                a2[5].Background = OasisSnapjaw6;
+                popo.Background = OasisSnapjaw6;
             }
             if (cartascancha2[5].nombre == "Oasis Snapjaw" && cartascancha2[5].vida == 5)
             {
-                a2[5].Background = OasisSnapjaw5;
+                popo.Background = OasisSnapjaw5;
             }
             if (cartascancha2[5].nombre == "Oasis Snapjaw" && cartascancha2[5].vida == 4)
             {
-                a2[5].Background = OasisSnapjaw4;
+                popo.Background = OasisSnapjaw4;
             }
             if (cartascancha2[5].nombre == "Oasis Snapjaw" && cartascancha2[5].vida == 3)
             {
-                a2[5].Background = OasisSnapjaw3;
+                popo.Background = OasisSnapjaw3;
 
-                {
+                
                     if (cartascancha2[5].nombre == "Oasis Snapjaw" && cartascancha2[5].vida == 2)
                     {
-                        a2[5].Background = OasisSnapjaw2;
+                        popo.Background = OasisSnapjaw2;
                     }
                     if (cartascancha2[5].nombre == "Oasis Snapjaw" && cartascancha2[5].vida == 1)
                     {
-                        a2[5].Background = OasisSnapjaw1;
+                        popo.Background = OasisSnapjaw1;
                     }
                     if (cartascancha2[5].nombre == "Boulderfist Ogre" && cartascancha2[5].vida == 7)
                     {
-                        a2[5].Background = BoulderfistOgre;
+                        popo.Background = BoulderfistOgre;
                     }
                     if (cartascancha2[5].nombre == "Boulderfist Ogre" && cartascancha2[5].vida == 6)
                     {
-                        a2[5].Background = BoulderfistOgre6;
+                        popo.Background = BoulderfistOgre6;
                     }
                     if (cartascancha2[5].nombre == "Boulderfist Ogre" && cartascancha2[5].vida == 5)
                     {
-                        a2[5].Background = BoulderfistOgre5;
+                        popo.Background = BoulderfistOgre5;
                     }
                     if (cartascancha2[5].nombre == "Boulderfist Ogre" && cartascancha2[5].vida == 4)
                     {
-                        a2[5].Background = BoulderfistOgre4;
+                        popo.Background = BoulderfistOgre4;
                     }
                     if (cartascancha2[5].nombre == "Boulderfist Ogre" && cartascancha2[5].vida == 3)
                     {
-                        a2[5].Background = BoulderfistOgre3;
+                        popo.Background = BoulderfistOgre3;
                     }
                     if (cartascancha2[5].nombre == "Boulderfist Ogre" && cartascancha2[5].vida == 2)
                     {
-                        a2[5].Background = BoulderfistOgre2;
+                        popo.Background = BoulderfistOgre2;
                     }
                     if (cartascancha2[5].nombre == "Boulderfist Ogre" && cartascancha2[5].vida == 1)
                     {
-                        a2[5].Background = BoulderfistOgre1;
+                        popo.Background = BoulderfistOgre1;
                     }
 
                     if (cartascancha2[5].nombre == "War Golem" && cartascancha2[5].vida == 7)
                     {
-                        a2[5].Background = WarGolem;
+                        popo.Background = WarGolem;
                     }
                     if (cartascancha2[5].nombre == "War Golem" && cartascancha2[5].vida == 6)
                     {
-                        a2[5].Background = WarGolem6;
+                        popo.Background = WarGolem6;
                     }
                     if (cartascancha2[5].nombre == "War Golem" && cartascancha2[5].vida == 5)
                     {
-                        a2[5].Background = WarGolem5;
+                        popo.Background = WarGolem5;
                     }
                     if (cartascancha2[5].nombre == "War Golem" && cartascancha2[5].vida == 4)
                     {
-                        a2[5].Background = WarGolem4;
+                        popo.Background = WarGolem4;
                     }
                     if (cartascancha2[5].nombre == "War Golem" && cartascancha2[5].vida == 3)
                     {
-                        a2[5].Background = WarGolem3;
+                        popo.Background = WarGolem3;
                     }
                     if (cartascancha2[5].nombre == "War Golem" && cartascancha2[5].vida == 2)
                     {
-                        a2[5].Background = WarGolem2;
+                        popo.Background = WarGolem2;
                     }
                     if (cartascancha2[5].nombre == "War Golem" && cartascancha2[5].vida == 1)
                     {
-                        a2[5].Background = WarGolem1;
+                        popo.Background = WarGolem1;
                     }
 
                     if (cartascancha2[5].nombre == "Core Hound" && cartascancha2[5].vida == 5)
                     {
-                        a2[5].Background = CoreHound;
+                        popo.Background = CoreHound;
                     }
                     if (cartascancha2[5].nombre == "Core Hound" && cartascancha2[5].vida == 4)
                     {
-                        a2[5].Background = CoreHound4;
+                        popo.Background = CoreHound4;
                     }
                     if (cartascancha2[5].nombre == "Core Hound" && cartascancha2[5].vida == 3)
                     {
-                        a2[5].Background = CoreHound3;
+                        popo.Background = CoreHound3;
                     }
                     if (cartascancha2[5].nombre == "Core Hound" && cartascancha2[5].vida == 2)
                     {
-                        a2[5].Background = CoreHound2;
+                        popo.Background = CoreHound2;
 
                     }
                     if (cartascancha2[5].nombre == "Core Hound" && cartascancha2[5].vida == 1)
                     {
-                        a2[5].Background = CoreHound1;
+                        popo.Background = CoreHound1;
                     }
                     if (cartascancha2[5].nombre == "Recruit")
                     {
-                        a2[5].Background = Recruit;
+                        popo.Background = Recruit;
                     }
                     if (cartascancha2[5].nombre == "Heilin Totem")
                     {
-                        a2[5].Background = totem11;
+                        popo.Background = totem11;
                     }
                     if (cartascancha2[5].nombre == "Seiring Totem")
                     {
-                        a2[5].Background = totem22;
+                        popo.Background = totem22;
                     }
                     if (cartascancha2[5].nombre == "Stoneclaw Totem")
                     {
-                        a2[5].Background = totem33;
+                        popo.Background = totem33;
                     }
                     if (cartascancha2[5].nombre == "Warth of air Totem")
                     {
-                        a2[5].Background = totem44;
+                        popo.Background = totem44;
                     }
 
-                    a2[5].Visibility = Visibility.Visible;
+                    popo.Visibility = Visibility.Visible;
                 }
-            }
+            
         }
 
         private void boton16_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Background = vacio;
         }
 
         private void boton17_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = cartascancha2[6].nombre + "                \n ocupa mana: " + cartascancha2[6].mana + "\n ataca  " + cartascancha2[6].ataque + "\n  tiene vida  " + cartascancha2[6].vida;
+           
             if (cartascancha2[6].nombre == "wisp")
             {
-                a2[6].Background = wisp;
+                popo.Background = wisp;
 
             }
             if (cartascancha2[6].nombre == "Murloc Raider")
             {
-               a2[6].Background = MurlocRaider;
+                popo.Background = MurlocRaider;
             }
             if (cartascancha2[6].nombre == "Bloodfen Raptor" && cartascancha2[6].vida == 2)
             {
-                a2[6].Background = BloodfenRaptor;
+                popo.Background = BloodfenRaptor;
             }
             if (cartascancha2[6].nombre == "Bloodfen Raptor" && cartascancha2[6].vida == 1)
             {
-                a2[6].Background = BloodfenRaptor1;
+                popo.Background = BloodfenRaptor1;
             }
 
             if (cartascancha2[6].nombre == "River Crocolisk" && cartascancha2[6].vida == 3)
             {
-                a2[6].Background = RiverCrocolisk;
+                popo.Background = RiverCrocolisk;
             }
             if (cartascancha2[6].nombre == "River Crocolisk" && cartascancha2[6].vida == 2)
             {
-                a2[6].Background = RiverCrocolisk2;
+                popo.Background = RiverCrocolisk2;
             }
             if (cartascancha2[6].nombre == "River Crocolisk" && cartascancha2[6].vida == 1)
             {
-                a2[6].Background = RiverCrocolisk1;
+                popo.Background = RiverCrocolisk1;
             }
             if (cartascancha2[6].nombre == "Magma Rager")
             {
-                a2[6].Background = MagmaRager;
+                popo.Background = MagmaRager;
             }
             if (cartascancha2[6].nombre == "Chillwind Yeti" && cartascancha2[6].vida == 5)
             {
-                a2[6].Background = ChillwindYeti;
+                popo.Background = ChillwindYeti;
             }
             if (cartascancha2[6].nombre == "Chillwind Yeti" && cartascancha2[6].vida == 4)
             {
-                a2[6].Background = ChillwindYeti4;
+                popo.Background = ChillwindYeti4;
             }
             if (cartascancha2[6].nombre == "Chillwind Yeti" && cartascancha2[6].vida == 3)
             {
-                a2[6].Background = ChillwindYeti3;
+                popo.Background = ChillwindYeti3;
             }
             if (cartascancha2[6].nombre == "Chillwind Yeti" && cartascancha2[6].vida == 2)
             {
-                a2[6].Background = ChillwindYeti2;
+                popo.Background = ChillwindYeti2;
             }
             if (cartascancha2[6].nombre == "Chillwind Yeti" && cartascancha2[6].vida == 1)
             {
-                a2[6].Background = ChillwindYeti1;
+                popo.Background = ChillwindYeti1;
             }
             if (cartascancha2[6].nombre == "Oasis Snapjaw" && cartascancha2[6].vida == 7)
             {
-                a2[6].Background = OasisSnapjaw;
+                popo.Background = OasisSnapjaw;
             }
             if (cartascancha2[6].nombre == "Oasis Snapjaw" && cartascancha2[6].vida == 6)
             {
-                a2[6].Background = OasisSnapjaw6;
+                popo.Background = OasisSnapjaw6;
             }
             if (cartascancha2[6].nombre == "Oasis Snapjaw" && cartascancha2[6].vida == 5)
             {
-                a2[6].Background = OasisSnapjaw5;
+                popo.Background = OasisSnapjaw5;
             }
             if (cartascancha2[6].nombre == "Oasis Snapjaw" && cartascancha2[6].vida == 4)
             {
-                a2[6].Background = OasisSnapjaw4;
+                popo.Background = OasisSnapjaw4;
             }
             if (cartascancha2[6].nombre == "Oasis Snapjaw" && cartascancha2[6].vida == 3)
             {
-                a2[6].Background = OasisSnapjaw3;
+                popo.Background = OasisSnapjaw3;
 
             }
             if (cartascancha2[6].nombre == "Oasis Snapjaw" && cartascancha2[6].vida == 2)
             {
-                a2[6].Background = OasisSnapjaw2;
+                popo.Background = OasisSnapjaw2;
             }
             if (cartascancha2[6].nombre == "Oasis Snapjaw" && cartascancha2[6].vida == 1)
             {
-                a2[6].Background = OasisSnapjaw1;
+                popo.Background = OasisSnapjaw1;
             }
             if (cartascancha2[6].nombre == "Boulderfist Ogre" && cartascancha2[6].vida == 7)
             {
-                a2[6].Background = BoulderfistOgre;
+                popo.Background = BoulderfistOgre;
             }
             if (cartascancha2[6].nombre == "Boulderfist Ogre" && cartascancha2[6].vida == 6)
             {
-                a2[6].Background = BoulderfistOgre6;
+                popo.Background = BoulderfistOgre6;
             }
             if (cartascancha2[6].nombre == "Boulderfist Ogre" && cartascancha2[6].vida == 5)
             {
-                a2[6].Background = BoulderfistOgre5;
+                popo.Background = BoulderfistOgre5;
             }
             if (cartascancha2[6].nombre == "Boulderfist Ogre" && cartascancha2[6].vida == 4)
             {
-                a2[6].Background = BoulderfistOgre4;
+                popo.Background = BoulderfistOgre4;
             }
             if (cartascancha2[6].nombre == "Boulderfist Ogre" && cartascancha2[6].vida == 3)
             {
-                a2[6].Background = BoulderfistOgre3;
+                popo.Background = BoulderfistOgre3;
             }
             if (cartascancha2[6].nombre == "Boulderfist Ogre" && cartascancha2[6].vida == 2)
             {
-                a2[6].Background = BoulderfistOgre2;
+                popo.Background = BoulderfistOgre2;
             }
             if (cartascancha2[6].nombre == "Boulderfist Ogre" && cartascancha2[6].vida == 1)
             {
-                a2[6].Background = BoulderfistOgre1;
+                popo.Background = BoulderfistOgre1;
             }
 
             if (cartascancha2[6].nombre == "War Golem" && cartascancha2[6].vida == 7)
             {
-                a2[6].Background = WarGolem;
+                popo.Background = WarGolem;
             }
             if (cartascancha2[6].nombre == "War Golem" && cartascancha2[6].vida == 6)
             {
-                a2[6].Background = WarGolem6;
+                popo.Background = WarGolem6;
             }
             if (cartascancha2[6].nombre == "War Golem" && cartascancha2[6].vida == 5)
             {
-                a2[6].Background = WarGolem5;
+                popo.Background = WarGolem5;
             }
             if (cartascancha2[6].nombre == "War Golem" && cartascancha2[6].vida == 4)
             {
-                a2[6].Background = WarGolem4;
+                popo.Background = WarGolem4;
             }
             if (cartascancha2[6].nombre == "War Golem" && cartascancha2[6].vida == 3)
             {
-                a2[6].Background = WarGolem3;
+                popo.Background = WarGolem3;
             }
             if (cartascancha2[6].nombre == "War Golem" && cartascancha2[6].vida == 2)
             {
-                a2[6].Background = WarGolem2;
+                popo.Background = WarGolem2;
             }
             if (cartascancha2[6].nombre == "War Golem" && cartascancha2[6].vida == 1)
             {
-                a2[6].Background = WarGolem1;
+                popo.Background = WarGolem1;
             }
 
             if (cartascancha2[6].nombre == "Core Hound" && cartascancha2[6].vida == 5)
             {
-                a2[6].Background = CoreHound;
+                popo.Background = CoreHound;
             }
             if (cartascancha2[6].nombre == "Core Hound" && cartascancha2[6].vida == 4)
             {
-                a2[6].Background = CoreHound4;
+                popo.Background = CoreHound4;
             }
             if (cartascancha2[6].nombre == "Core Hound" && cartascancha2[6].vida == 3)
             {
-                a2[6].Background = CoreHound3;
+                popo.Background = CoreHound3;
             }
             if (cartascancha2[6].nombre == "Core Hound" && cartascancha2[6].vida == 2)
             {
-                a2[6].Background = CoreHound2;
+                popo.Background = CoreHound2;
 
             }
             if (cartascancha2[6].nombre == "Core Hound" && cartascancha2[6].vida == 1)
             {
-                a2[6].Background = CoreHound1;
+                popo.Background = CoreHound1;
             }
             if (cartascancha2[6].nombre == "Recruit")
             {
-                a2[6].Background = Recruit;
+                popo.Background = Recruit;
             }
             if (cartascancha2[6].nombre == "Heilin Totem")
             {
-                a2[6].Background = totem11;
+                popo.Background = totem11;
             }
             if (cartascancha2[6].nombre == "Seiring Totem")
             {
-                a2[6].Background = totem22;
+                popo.Background = totem22;
             }
             if (cartascancha2[6].nombre == "Stoneclaw Totem")
             {
-                a2[6].Background = totem33;
+                popo.Background = totem33;
             }
             if (cartascancha2[6].nombre == "Warth of air Totem")
             {
-                a2[6].Background = totem44;
+                popo.Background = totem44;
             }
 
-            a2[6].Visibility = Visibility.Visible;    
+            popo.Visibility = Visibility.Visible;    
         }
 
         private void boton17_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+
+            popo.Background = vacio;
+
+         
         }
 
         private void rendirse1_Click(object sender, RoutedEventArgs e)
