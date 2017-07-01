@@ -3112,7 +3112,7 @@ namespace EntregaFinalPOOO
         private void boton9_MouseLeave(object sender, MouseEventArgs e)
         {
             popo.Background = vacio;
-        }
+        }  
 
         private void boton10_Click(object sender, RoutedEventArgs e)
         {
