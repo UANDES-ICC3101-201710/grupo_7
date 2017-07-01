@@ -75,14 +75,14 @@
 
 
         <Label x:Name="manatott" Content="Label" HorizontalAlignment="Left" Margin="1011,137,0,0" VerticalAlignment="Top" Width="106" FontSize="14" FontWeight="Bold" Height="58" Foreground="#FFFBF6F6"/>
-        <Button x:Name="rendirse1" Content="Rendirse" HorizontalAlignment="Left" Margin="1064,487,0,0" VerticalAlignment="Top" Width="75" Background="Red" Click="rendirse1_Click"/>
-        <Button x:Name="rendirse2" Content="Rendirse" HorizontalAlignment="Left" Margin="1064,116,0,0" VerticalAlignment="Top" Width="75" Background="#FFE61010" Click="rendirse2_Click" IsEnabled="False"/>
+        <Button x:Name="rendirse1" Content="Rendirse" HorizontalAlignment="Left" Margin="1084,700,0,0" VerticalAlignment="Top" Width="74" Background="Red" Click="rendirse1_Click"/>
+        <Button x:Name="rendirse2" Content="Rendirse" HorizontalAlignment="Left" Margin="1074,10,0,0" VerticalAlignment="Top" Width="74" Background="#FFE61010" Click="rendirse2_Click" IsEnabled="False"/>
 
         <ComboBox x:Name="combobox3" HorizontalAlignment="Left" Margin="700,515,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combobox3_SelectionChanged" Height="20"/>
         <ComboBox x:Name="combobox4" HorizontalAlignment="Left" Margin="742,99,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combobox4_SelectionChanged" Height="20"/>
         <Button x:Name="habilidad" Content="Habilidad" HorizontalAlignment="Left" Margin="700,544,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4" Background="#FF5EA4D0" MouseEnter="habilidad_MouseEnter" MouseLeave="habilidad_MouseLeave"/>
         <Button x:Name="habilidad2" Content="Habilidad" HorizontalAlignment="Left" Margin="694,194,0,0" VerticalAlignment="Top" Width="75" Background="#FF2D9CB5" Click="habilidad2_Click" IsEnabled="False" MouseEnter="habilidad2_MouseEnter" MouseLeave="habilidad2_MouseLeave"/>
-        <Button x:Name="atacar2" Content="Atacar!" HorizontalAlignment="Left" Margin="953,273,0,0" VerticalAlignment="Top" Width="121" Click="Button_Click_6" IsEnabled="False" Height="65"/>
+        <Button x:Name="atacar2" Content="Atacar!" HorizontalAlignment="Left" Margin="953,300,0,0" VerticalAlignment="Top" Width="121" Click="Button_Click_6" IsEnabled="False" Height="65"/>
         <Button x:Name="atacarheroe2" Content="Atacar heroe" HorizontalAlignment="Left" Margin="568,221,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click_5"/>
         <Button x:Name="atacarheroe1" Content="Atacar heroe" HorizontalAlignment="Left" Margin="568,500,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click_7"/>
         <Label x:Name="eheroe1" Content="Elegir heroe" HorizontalAlignment="Left" Margin="736,420,0,0" VerticalAlignment="Top"/>
@@ -90,7 +90,7 @@
         <Label x:Name="decir1" Content="Decir algo" HorizontalAlignment="Left" Margin="795,470,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFDFDFD"/>
         <Label x:Name="decir2" Content="Decir algo" HorizontalAlignment="Left" Margin="796,73,0,0" VerticalAlignment="Top" Foreground="#FFFBF8F8" FontWeight="Bold"/>
 
-        
+
 
         <DockPanel Margin="-1237,-52,1236.6,52">
             <Menu DockPanel.Dock="Top" Margin="0,0,985,0" Height="20">
