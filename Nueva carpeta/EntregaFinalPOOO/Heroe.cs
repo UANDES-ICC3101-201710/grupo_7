@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace EntregaFinalPOOO
-{   [Serializable]
-    public class Heroe : Jugador
+{
+    [Serializable]
+    public class Heroe : Jugador, Interfaceatacar
     {
         public string tipo { get; set; }
         public int vida = 30;
@@ -83,29 +84,29 @@ namespace EntregaFinalPOOO
                     lista.Add(n);
                 }
             }
-        
 
-                           
+
+
         }
         public void jugarcarta(int a, List<minion> lista)
         {
-           
 
-            if (this.mano[a -1].mana <= this.mana)
+
+            if (this.mano[a - 1].mana <= this.mana)
             {
-                this.gastarmana(this.mano[a -1]);
+                this.gastarmana(this.mano[a - 1]);
 
-               Consola.WriteOutput("---------------------------------\n" + this.nombre + " has elegido la carta " + this.mano[a-1].nombre + "\n---------------------------------");
-                (this.mano[a-1 ]).cambiarActividad();
-                carta cc = this.mano[a-1 ];
+                Consola.WriteOutput("---------------------------------\n" + this.nombre + " has elegido la carta " + this.mano[a - 1].nombre + "\n---------------------------------");
+                (this.mano[a - 1]).cambiarActividad();
+                carta cc = this.mano[a - 1];
                 if (cc.GetType().Equals(typeof(minion)))
                 {
-                    minion p = (minion)this.mano[a-1 ];
+                    minion p = (minion)this.mano[a - 1];
                     lista.Add(p);
                 }
 
 
-                this.mano.RemoveAt(a -1);
+                this.mano.RemoveAt(a - 1);
 
 
 
@@ -128,7 +129,7 @@ namespace EntregaFinalPOOO
                 vida = value;
             }
         }
-        public Heroe(string tipo, string nombre, List<carta> mano, Stack<carta> mazo, int mana, int manatotal,bool activo)
+        public Heroe(string tipo, string nombre, List<carta> mano, Stack<carta> mazo, int mana, int manatotal, bool activo)
         {
             this.tipo = tipo;
             this.nombre = nombre;
@@ -184,6 +185,7 @@ namespace EntregaFinalPOOO
         {
             base.ingresarmazo(mazo);
         }
+
         public int habilidad(Heroe tipo)
         {
             if (this.mana >= 2)
@@ -237,40 +239,41 @@ namespace EntregaFinalPOOO
                 }
                 if (this.tipo == "Mage")
                 {
-                    if (tipo.tipo == "Warrior")
-                    {
-                        if (tipo.escudo == 0)
-                        {
-                            tipo.vida = tipo.vida - 2;
-                            if (tipo.vida <= 0)
-                            {
-                                tipo.Rendirse(tipo.vida);
-                            }
-                        }
-                        if (tipo.escudo > 0)
-                        {
-                            int y1 = tipo.escudo - 2;
-                            tipo.escudo = 0;
-                            tipo.vida = tipo.vida - y1;
-                            if (tipo.vida <= 0)
-                            {
-                                tipo.Rendirse(tipo.vida);
-                            }
-                        }
+                    /* if (tipo.tipo == "Warrior")
+                     {
+                         if (tipo.escudo == 0)
+                         {
+                             tipo.vida = tipo.vida - 2;
+                             if (tipo.vida <= 0)
+                             {   
+                                 tipo.Rendirse(tipo.vida);
+                             }
+                         }
+                         if (tipo.escudo > 0)
+                         {
+                             int y1 = tipo.escudo - 2;
+                             tipo.escudo = 0;
+                             tipo.vida = tipo.vida - y1;
+                             if (tipo.vida <= 0)
+                             {
+                                 tipo.Rendirse(tipo.vida);
+                             }
+                         }
 
-                    }
-                    else
-                    {
-                        
-                        tipo.vida = tipo.vida - 2;
-                        if (tipo.vida <= 0)
-                        {
-                            tipo.Rendirse(tipo.vida);
-                        }
-                    }
+                     }
+                     else
+                     {
+
+                         tipo.vida = tipo.vida - 2;
+                         if (tipo.vida <= 0)
+                         {
+                             tipo.Rendirse(tipo.vida);
+                         }
+                     }
+                 }
+                 */
                 }
 
-                
                 if (this.tipo == "Priest")
                 {
                     this.vida = this.vida + 2;
@@ -306,13 +309,44 @@ namespace EntregaFinalPOOO
 
         }
 
+        public int attack(minion nombre, Heroe jugador, List<minion> cartascancha, List<minion> cartascancha2)
+        {
+
+
+            if (jugador == null)
+            {
+
+
+                nombre.vida = nombre.vida - 2;
+
+                if (nombre.vida <= 0)
+                {
+                    nombre.morirminion();
+
+                }
+
+
+                return nombre.vida;
+
+            }
+            if (jugador != null)
+            {
+
+                jugador.vida = jugador.vida - 2;
+                return jugador.vida;
+
+            }
+
+            return 0;
+
+
+
+        }
+
+
+
+
 
 
     }
-
-
-
-
-
-
 }
