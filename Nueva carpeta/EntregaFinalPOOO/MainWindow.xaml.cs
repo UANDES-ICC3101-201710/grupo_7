@@ -4685,7 +4685,7 @@ namespace EntregaFinalPOOO
 
         private void boton17_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Background= vacio;
         }
 
         private void rendirse1_Click(object sender, RoutedEventArgs e)
