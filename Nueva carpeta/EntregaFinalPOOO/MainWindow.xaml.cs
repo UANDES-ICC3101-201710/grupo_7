@@ -95,16 +95,55 @@ namespace EntregaFinalPOOO
         
         
         ImageBrush wisp = new ImageBrush();
+        ImageBrush wispmano = new ImageBrush();
         ImageBrush MurlocRaider = new ImageBrush();
+        ImageBrush MurlocRaidermano = new ImageBrush();
+        ImageBrush BloodfenRaptormano = new ImageBrush();
         ImageBrush BloodfenRaptor = new ImageBrush();
+        ImageBrush BloodfenRaptor1 = new ImageBrush();
+        ImageBrush RiverCrocoliskmano = new ImageBrush();
         ImageBrush RiverCrocolisk = new ImageBrush();
+        ImageBrush RiverCrocolisk1 = new ImageBrush();
+        ImageBrush RiverCrocolisk2 = new ImageBrush();
+        ImageBrush MagmaRagermano = new ImageBrush();
         ImageBrush MagmaRager = new ImageBrush();
+        ImageBrush ChillwindYetimano = new ImageBrush();
         ImageBrush ChillwindYeti = new ImageBrush();
+        ImageBrush ChillwindYeti1 = new ImageBrush();
+        ImageBrush ChillwindYeti2 = new ImageBrush();
+        ImageBrush ChillwindYeti3 = new ImageBrush();
+        ImageBrush ChillwindYeti4 = new ImageBrush();
+        ImageBrush OasisSnapjawmano = new ImageBrush();
         ImageBrush OasisSnapjaw = new ImageBrush();
+        ImageBrush OasisSnapjaw1 = new ImageBrush();
+        ImageBrush OasisSnapjaw2 = new ImageBrush();
+        ImageBrush OasisSnapjaw3 = new ImageBrush();
+        ImageBrush OasisSnapjaw4 = new ImageBrush();
+        ImageBrush OasisSnapjaw5 = new ImageBrush();
+        ImageBrush OasisSnapjaw6 = new ImageBrush();
+        ImageBrush BoulderfistOgremano = new ImageBrush();
         ImageBrush BoulderfistOgre = new ImageBrush();
+        ImageBrush BoulderfistOgre1 = new ImageBrush();
+        ImageBrush BoulderfistOgre2 = new ImageBrush();
+        ImageBrush BoulderfistOgre3 = new ImageBrush();
+        ImageBrush BoulderfistOgre4 = new ImageBrush();
+        ImageBrush BoulderfistOgre5 = new ImageBrush();
+        ImageBrush BoulderfistOgre6 = new ImageBrush();
+        ImageBrush WarGolemmano = new ImageBrush();
         ImageBrush WarGolem = new ImageBrush();
+        ImageBrush WarGolem1 = new ImageBrush();
+        ImageBrush WarGolem2 = new ImageBrush();
+        ImageBrush WarGolem3 = new ImageBrush();
+        ImageBrush WarGolem4 = new ImageBrush();
+        ImageBrush WarGolem5 = new ImageBrush();
+        ImageBrush WarGolem6 = new ImageBrush();
+        ImageBrush CoreHoundmano = new ImageBrush();
         ImageBrush CoreHound = new ImageBrush();
-        
+        ImageBrush CoreHound1 = new ImageBrush();
+        ImageBrush CoreHound2 = new ImageBrush();
+        ImageBrush CoreHound3 = new ImageBrush();
+        ImageBrush CoreHound4 = new ImageBrush();
+
         ImageBrush vacio = new ImageBrush();
         ImageBrush totem11 = new ImageBrush();
         ImageBrush totem22 = new ImageBrush();
@@ -147,26 +186,25 @@ namespace EntregaFinalPOOO
 
             player.SoundLocation = "All Star - Smash Mouth [Lyrics].wav";
             BitmapImage image = new BitmapImage(new Uri("http://media-hearth.cursecdn.com/avatars/147/699/273.png"));
-            wisp.ImageSource = image;
+            wispmano.ImageSource = image;
             BitmapImage image1 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/1/1f/Murloc_Raider%2855%29_Gold.png/200px-Murloc_Raider%2855%29_Gold.png?version=883f02d505c570b0ea5c8b4b5e13f3b8"));
-            MurlocRaider.ImageSource = image1;
-            BitmapImage image2 = new BitmapImage(new Uri("http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_172.png"));
-            BloodfenRaptor.ImageSource = image2;
+            MurlocRaidermano.ImageSource = image1;
+            BitmapImage image2 = new BitmapImage(new Uri("http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_172.png")); 
+            BloodfenRaptormano.ImageSource = image2;
             BitmapImage image3 = new BitmapImage(new Uri("https://media-hearth.cursecdn.com/avatars/147/580/535.png"));
-            RiverCrocolisk.ImageSource = image3;
+            RiverCrocoliskmano.ImageSource = image3;
             BitmapImage image4 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/e/e3/Magma_Rager%28362%29_Gold.png/200px-Magma_Rager%28362%29_Gold.png?version=2f74b68dc2a909f90ec5c1b281403cc4"));
-            MagmaRager.ImageSource = image4;
+            MagmaRagermano.ImageSource = image4;
             BitmapImage image5 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/1/11/Chillwind_Yeti%2831%29_Gold.png/200px-Chillwind_Yeti%2831%29_Gold.png?version=d51f12af8fc503b7aadd3775cdb4b3c4"));
-            ChillwindYeti.ImageSource = image5;
+            ChillwindYetimano.ImageSource = image5;
             BitmapImage image6 = new BitmapImage(new Uri("http://media-hearth.cursecdn.com/avatars/147/579/15.png"));
-            OasisSnapjaw.ImageSource = image6;
+            OasisSnapjawmano.ImageSource = image6;
             BitmapImage image7 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/f/fd/Boulderfist_Ogre%2860%29.png/200px-Boulderfist_Ogre%2860%29.png?version=7413c2a7a083d1e07079b5a064ba544d"));
-            BoulderfistOgre.ImageSource = image7;
+            BoulderfistOgremano.ImageSource = image7;
             BitmapImage image8 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/5/59/War_Golem%28323%29_Gold.png/200px-War_Golem%28323%29_Gold.png?version=dadc0de413eb02f718d3073d75b23cfd"));
-            WarGolem.ImageSource = image8;
+            WarGolemmano.ImageSource = image8;
             BitmapImage image9 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/9/9e/Core_Hound%28173%29.png/200px-Core_Hound%28173%29.png?version=61fadbe5ac356dd87a804be87e6ea538"));
-            CoreHound.ImageSource = image9;
-            
+            CoreHoundmano.ImageSource = image9;
             BitmapImage image11 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/3/36/Stoneclaw_Totem%28298%29_Gold.png/200px-Stoneclaw_Totem%28298%29_Gold.png?version=3eaa8881d4eb90b0a3cbb6e869dd74b5"));
             totem11.ImageSource = image11;
             BitmapImage image12 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/0/00/Healing_Totem%28275%29.png/200px-Healing_Totem%28275%29.png?version=4bb8104b8aa7cab8871434c7416fa90a"));
@@ -177,9 +215,101 @@ namespace EntregaFinalPOOO
             totem44.ImageSource = image14;
             BitmapImage image15 = new BitmapImage(new Uri("http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/8/8b/Silver_Hand_Recruit(268).png/184px-Silver_Hand_Recruit(268).png?version=3d9d1b693ae9afc82a7fa2c3bf38e84a"));
             Recruit.ImageSource = image15;
+
+
+            BitmapImage image16 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/wisp.png"));
+            wisp.ImageSource = image16;
+            BitmapImage image17 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/murloc%20raider.png"));
+            MurlocRaider.ImageSource = image17;
+            BitmapImage image18 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/Hearthstone%20Screenshot%2006-30-17%2016.10.46.png"));
+            BloodfenRaptor.ImageSource = image18;
+            BitmapImage image19 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/Hearthstone%20Screenshot%2006-30-17%2016.11.20%20lal%20a.png"));
+            BloodfenRaptor1.ImageSource = image19;
+            BitmapImage image20 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/Hearthstone%20Screenshot%2006-30-17%2016.11.38.png"));
+            RiverCrocolisk.ImageSource = image20;
+            BitmapImage image21 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/Hearthstone%20Screenshot%2006-30-17%2016.12.11.png"));
+            RiverCrocolisk2.ImageSource = image21;
+            BitmapImage image22 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/1%20vida%20crokolisk.png"));
+            RiverCrocolisk1.ImageSource = image22;
+            BitmapImage image23 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/magma%20rager.png"));
+            MagmaRager.ImageSource = image23;
+            BitmapImage image24 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/yeti%205.png"));
+            ChillwindYeti.ImageSource = image24;
+            BitmapImage image25 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/yeti%204.png"));
+            ChillwindYeti4.ImageSource = image25;
+            BitmapImage image26 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/yeti%203.png"));
+            ChillwindYeti3.ImageSource = image26;
+            BitmapImage image27 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/yeti%202.png"));
+            ChillwindYeti2.ImageSource = image27;
+            BitmapImage image28 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/yeti%201.png"));
+            ChillwindYeti1.ImageSource = image28;
+            BitmapImage image29 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/Hearthstone%20Screenshot%2006-30-17%2016.12%20lol.png"));
+            OasisSnapjaw.ImageSource = image29;
+            BitmapImage image30 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/oasis%201.png"));
+            OasisSnapjaw1.ImageSource = image30;
+            BitmapImage image31 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/oasis%202.png"));
+            OasisSnapjaw2.ImageSource = image31;
+            BitmapImage image32 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/oasis%203.png"));
+            OasisSnapjaw3.ImageSource = image32;
+            BitmapImage image33 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/oasis%20snapjaw%204.png"));
+            OasisSnapjaw4.ImageSource = image33;
+            BitmapImage image34 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/oasis%20snapjaw%205.png"));
+            OasisSnapjaw5.ImageSource = image34;
+            BitmapImage image35 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/oasis%206.png"));
+            OasisSnapjaw6.ImageSource = image35;
+            BitmapImage image36 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/boulder%207.png"));
+            BoulderfistOgre.ImageSource = image36;
+            BitmapImage image37 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/boulder%206.png"));
+            BoulderfistOgre6.ImageSource = image37;
+            BitmapImage image38 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/boulder%205.png"));
+            BoulderfistOgre5.ImageSource = image38;
+            BitmapImage image39 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/boulder%204.png"));
+            BoulderfistOgre4.ImageSource = image39;
+            BitmapImage image40 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/boulder%203.png"));
+            BoulderfistOgre3.ImageSource = image40;
+            BitmapImage image41 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/boulder%202.png"));
+            BoulderfistOgre2.ImageSource = image41;
+            BitmapImage image42 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/boulder%201.png"));
+            BoulderfistOgre1.ImageSource = image42;
+            BitmapImage image43 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/wg7.png"));
+            WarGolem.ImageSource = image43;
+            BitmapImage image44 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/wg1.png"));
+            WarGolem1.ImageSource = image44;
+            BitmapImage image45 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/wg2.png"));
+            WarGolem2.ImageSource = image45;
+            BitmapImage image46 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/wg3.png"));
+            WarGolem3.ImageSource = image46;
+            BitmapImage image47 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/wg4.png"));
+            WarGolem4.ImageSource = image47;
+            BitmapImage image48 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/wg5.png"));
+            WarGolem5.ImageSource = image48;
+            BitmapImage image49 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/wg6.png"));
+            WarGolem6.ImageSource = image49;
+            BitmapImage image50 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/core%20hound%205.png"));
+            CoreHound.ImageSource = image50;
+            BitmapImage image51 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/core%20hound%204.png"));
+            CoreHound1.ImageSource = image51;
+            BitmapImage image52 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/core%20hound%203.png"));
+            CoreHound2.ImageSource = image52;
+            BitmapImage image53 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/core%20hound%202.png"));
+            CoreHound3.ImageSource = image53;
+            BitmapImage image54 = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/core%20hound%201.png"));
+            CoreHound4.ImageSource = image54;
+
+
+
+
+
+
+
+
+
+
+
+
+
             
-           
-            foreach(Button b in stackpanel_Copy1.Children)
+            foreach (Button b in stackpanel_Copy1.Children)
             {
                 manobot.Add(b);
             }
@@ -1020,44 +1150,44 @@ namespace EntregaFinalPOOO
             {
                 if (manos[i].nombre == "wisp")
                 {
-                    manobot[i].Background = wisp;
+                    manobot[i].Background = wispmano;
 
                 }
                 if (manos[i].nombre == "Murloc Raider")
                 {
-                    manobot[i].Background = MurlocRaider;
+                    manobot[i].Background = MurlocRaidermano;
                 }
                 if (manos[i].nombre == "Bloodfen Raptor")
                 {
-                    manobot[i].Background = BloodfenRaptor;
+                    manobot[i].Background = BloodfenRaptormano;
                 }
                 if (manos[i].nombre == "River Crocolisk")
                 {
-                    manobot[i].Background = RiverCrocolisk;
+                    manobot[i].Background = RiverCrocoliskmano;
                 }
                 if (manos[i].nombre == "Magma Rager")
                 {
-                    manobot[i].Background = MagmaRager;
+                    manobot[i].Background = MagmaRagermano;
                 }
                 if (manos[i].nombre == "Chillwind Yeti")
                 {
-                    manobot[i].Background = ChillwindYeti;
+                    manobot[i].Background = ChillwindYetimano;
                 }
                 if (manos[i].nombre == "Oasis Snapjaw")
                 {
-                    manobot[i].Background = OasisSnapjaw;
+                    manobot[i].Background = OasisSnapjawmano;
                 }
                 if (manos[i].nombre == "Boulderfist Ogre")
                 {
-                    manobot[i].Background = BoulderfistOgre;
+                    manobot[i].Background = BoulderfistOgremano;
                 }
                 if (manos[i].nombre == "War Golem")
                 {
-                    manobot[i].Background = WarGolem;
+                    manobot[i].Background = WarGolemmano;
                 }
                 if (manos[i].nombre == "Core Hound")
                 {
-                    manobot[i].Background = CoreHound;
+                    manobot[i].Background = CoreHoundmano;
                 }
 
                 manobot[i].Visibility = Visibility.Visible;
@@ -1065,44 +1195,44 @@ namespace EntregaFinalPOOO
                 {
                     if (manos2[j].nombre == "wisp")
                     {
-                        manobot1[j].Background = wisp;
+                        manobot1[j].Background = wispmano;
 
                     }
                     if (manos2[j].nombre == "Murloc Raider")
                     {
-                        manobot1[j].Background = MurlocRaider;
+                        manobot1[j].Background = MurlocRaidermano;
                     }
                     if (manos2[j].nombre == "Bloodfen Raptor")
                     {
-                        manobot1[j].Background = BloodfenRaptor;
+                        manobot1[j].Background = BloodfenRaptormano;
                     }
                     if (manos2[j].nombre == "River Crocolisk")
                     {
-                        manobot1[j].Background = RiverCrocolisk;
+                        manobot1[j].Background = RiverCrocoliskmano;
                     }
                     if (manos2[j].nombre == "Magma Rager")
                     {
-                        manobot1[j].Background = MagmaRager;
+                        manobot1[j].Background = MagmaRagermano;
                     }
                     if (manos2[j].nombre == "Chillwind Yeti")
                     {
-                        manobot1[j].Background = ChillwindYeti;
+                        manobot1[j].Background = ChillwindYetimano;
                     }
                     if (manos2[j].nombre == "Oasis Snapjaw")
                     {
-                        manobot1[j].Background = OasisSnapjaw;
+                        manobot1[j].Background = OasisSnapjawmano;
                     }
                     if (manos2[j].nombre == "Boulderfist Ogre")
                     {
-                        manobot1[j].Background = BoulderfistOgre;
+                        manobot1[j].Background = BoulderfistOgremano;
                     }
                     if (manos2[j].nombre == "War Golem")
                     {
-                        manobot1[j].Background = WarGolem;
+                        manobot1[j].Background = WarGolemmano;
                     }
                     if (manos2[j].nombre == "Core Hound")
                     {
-                        manobot1[j].Background = CoreHound;
+                        manobot1[j].Background = CoreHoundmano;
                     }
 
                     manobot1[j].Visibility = Visibility.Visible;
@@ -1777,6 +1907,11 @@ namespace EntregaFinalPOOO
                 mazos.Add(druid);
                 j1.invocar(druid, cartascancha);
             }
+            if (j1.tipo == "Mage")
+            {
+                j1.attack(atacado, null, null, null);
+
+            }
             Random rnd = new Random();
             if (j1.tipo == "Shaman")
             {
@@ -2245,51 +2380,51 @@ namespace EntregaFinalPOOO
                 {
                     if (manos[i].nombre == "wisp")
                     {
-                        manobot[i].Background = wisp;
+                        manobot[i].Background = wispmano;
 
                     }
                     if (manos[i].nombre == "Murloc Raider")
                     {
-                        manobot[i].Background = MurlocRaider;
+                        manobot[i].Background = MurlocRaidermano;
                     }
                     if (manos[i].nombre == "Bloodfen Raptor")
                     {
-                        manobot[i].Background = BloodfenRaptor;
+                        manobot[i].Background = BloodfenRaptormano;
                     }
                     if (manos[i].nombre == "River Crocolisk")
                     {
-                        manobot[i].Background = RiverCrocolisk;
+                        manobot[i].Background = RiverCrocoliskmano;
                     }
                     if (manos[i].nombre == "Magma Rager")
                     {
-                        manobot[i].Background = MagmaRager;
+                        manobot[i].Background = MagmaRagermano;
                     }
                     if (manos[i].nombre == "Chillwind Yeti")
                     {
-                        manobot[i].Background = ChillwindYeti;
+                        manobot[i].Background = ChillwindYetimano;
                     }
                     if (manos[i].nombre == "Oasis Snapjaw")
                     {
-                        manobot[i].Background = OasisSnapjaw;
+                        manobot[i].Background = OasisSnapjawmano;
                     }
                     if (manos[i].nombre == "Boulderfist Ogre")
                     {
-                        manobot[i].Background = BoulderfistOgre;
+                        manobot[i].Background = BoulderfistOgremano;
                     }
                     if (manos[i].nombre == "War Golem")
                     {
-                        manobot[i].Background = WarGolem;
+                        manobot[i].Background = WarGolemmano;
                     }
                     if (manos[i].nombre == "Core Hound")
                     {
-                        manobot[i].Background = CoreHound;
+                        manobot[i].Background = CoreHoundmano;
                     }
                     manobot[i].Visibility = Visibility.Visible;
                 }
                 manobot[manos.Count()].Visibility = Visibility.Hidden;
 
 
-                refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                refreshhmano(manos, manos2, manobot, manobot1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
                 refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
             }
         }}
@@ -2299,41 +2434,41 @@ namespace EntregaFinalPOOO
         {
             if (manos[0].nombre == "Murloc Raider")
             {
-                popo.Background = MurlocRaider;
+                popo.Background = MurlocRaidermano;
             }
             if (manos[0].nombre == "Bloodfen Raptor")
             {
-                popo.Background = BloodfenRaptor;
+                popo.Background = BloodfenRaptormano;
             }
             if (manos[0].nombre == "River Crocolisk")
             {
-                popo.Background = RiverCrocolisk;
+                popo.Background = RiverCrocoliskmano;
             }
             if (manos[0].nombre == "Magma Rager")
             {
-                popo.Background = MagmaRager;
+                popo.Background = MagmaRagermano;
             }
             if (manos[0].nombre == "Chillwind Yeti")
             {
-                popo.Background = ChillwindYeti;
+                popo.Background = ChillwindYetimano;
             }
             if (manos[0].nombre == "Oasis Snapjaw")
             {
-                popo.Background = OasisSnapjaw;
+                popo.Background = OasisSnapjawmano;
             }
             if (manos[0].nombre == "Boulderfist Ogre")
             {
-                popo.Background = BoulderfistOgre;
+                popo.Background = BoulderfistOgremano;
             }
             if (manos[0].nombre == "War Golem")
             {
-                popo.Background = WarGolem;
+                popo.Background = WarGolemmano;
             }
             if (manos[0].nombre == "Core Hound")
             {
-                popo.Background = CoreHound;
+                popo.Background = CoreHoundmano;
             }
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshhmano(manos, manos2, manobot, manobot1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
         }
 
@@ -2359,49 +2494,49 @@ namespace EntregaFinalPOOO
                     {
                         if (manos[i].nombre == "wisp")
                         {
-                            manobot[i].Background = wisp;
+                            manobot[i].Background = wispmano;
 
                         }
                         if (manos[i].nombre == "Murloc Raider")
                         {
-                            manobot[i].Background = MurlocRaider;
+                            manobot[i].Background = MurlocRaidermano;
                         }
                         if (manos[i].nombre == "Bloodfen Raptor")
                         {
-                            manobot[i].Background = BloodfenRaptor;
+                            manobot[i].Background = BloodfenRaptormano;
                         }
                         if (manos[i].nombre == "River Crocolisk")
                         {
-                            manobot[i].Background = RiverCrocolisk;
+                            manobot[i].Background = RiverCrocoliskmano;
                         }
                         if (manos[i].nombre == "Magma Rager")
                         {
-                            manobot[i].Background = MagmaRager;
+                            manobot[i].Background = MagmaRagermano;
                         }
                         if (manos[i].nombre == "Chillwind Yeti")
                         {
-                            manobot[i].Background = ChillwindYeti;
+                            manobot[i].Background = ChillwindYetimano;
                         }
                         if (manos[i].nombre == "Oasis Snapjaw")
                         {
-                            manobot[i].Background = OasisSnapjaw;
+                            manobot[i].Background = OasisSnapjawmano;
                         }
                         if (manos[i].nombre == "Boulderfist Ogre")
                         {
-                            manobot[i].Background = BoulderfistOgre;
+                            manobot[i].Background = BoulderfistOgremano;
                         }
                         if (manos[i].nombre == "War Golem")
                         {
-                            manobot[i].Background = WarGolem;
+                            manobot[i].Background = WarGolemmano;
                         }
                         if (manos[i].nombre == "Core Hound")
                         {
-                            manobot[i].Background = CoreHound;
+                            manobot[i].Background = CoreHoundmano;
                         }
                         manobot[i].Visibility = Visibility.Visible;
                     }
                     manobot[manos.Count()].Visibility = Visibility.Hidden;
-                    refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+                    refreshhmano(manos, manos2, manobot, manobot1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
                     refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);
                 }
             }
@@ -2410,39 +2545,39 @@ namespace EntregaFinalPOOO
         {
             if (manos[1].nombre == "Murloc Raider")
             {
-                popo.Background = MurlocRaider;
+                popo.Background = MurlocRaidermano;
             }
             if (manos[1].nombre == "Bloodfen Raptor")
             {
-                popo.Background = BloodfenRaptor;
+                popo.Background = BloodfenRaptormano;
             }
             if (manos[1].nombre == "River Crocolisk")
             {
-                popo.Background = RiverCrocolisk;
+                popo.Background = RiverCrocoliskmano;
             }
             if (manos[1].nombre == "Magma Rager")
             {
-                popo.Background = MagmaRager;
+                popo.Background = MagmaRagermano;
             }
             if (manos[1].nombre == "Chillwind Yeti")
             {
-                popo.Background = ChillwindYeti;
+                popo.Background = ChillwindYetimano;
             }
             if (manos[1].nombre == "Oasis Snapjaw")
             {
-                popo.Background = OasisSnapjaw;
+                popo.Background = OasisSnapjawmano;
             }
             if (manos[1].nombre == "Boulderfist Ogre")
             {
-                popo.Background = BoulderfistOgre;
+                popo.Background = BoulderfistOgremano;
             }
             if (manos[1].nombre == "War Golem")
             {
-                popo.Background = WarGolem;
+                popo.Background = WarGolemmano;
             }
             if (manos[1].nombre == "Core Hound")
             {
-                popo.Background = CoreHound;
+                popo.Background = CoreHoundmano;
             }
             refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2);

@@ -13,7 +13,7 @@ namespace EntregaFinalPOOO
         public int ataque { get; set; }
 
 
-        public minion(string nombre, int vida, int ataque, Boolean actividad, Boolean visibilidad, int mana)
+        public minion(string nombre, int ataque, int vida, Boolean actividad, Boolean visibilidad, int mana)
         {
             this.nombre = nombre;
             this.vida = vida;
