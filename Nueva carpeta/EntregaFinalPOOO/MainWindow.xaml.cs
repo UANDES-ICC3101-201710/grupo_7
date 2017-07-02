@@ -180,6 +180,10 @@ namespace EntregaFinalPOOO
         List<minion> shaman = new List<minion>();
         List<minion> shaman2 = new List<minion>();
 
+        List<minion> weapon1 = new List<minion>();
+        List<minion> weapon2 = new List<minion>();
+
+
         Heroe j1 = new Heroe(null, null, null, null, 1, 1, true);
         Heroe j2 = new Heroe(null, null, null, null, 1, 1, false);
 
@@ -519,6 +523,7 @@ namespace EntregaFinalPOOO
             eheroe2.Visibility = Visibility.Hidden;
             decir1.Visibility = Visibility.Hidden;
             decir2.Visibility = Visibility.Hidden;
+            weapon1_.Visibility = Visibility.Hidden;
 
             vida1.Content = j1.vida.ToString();
             Vida2.Content = j2.vida.ToString();
@@ -4780,10 +4785,13 @@ namespace EntregaFinalPOOO
             } }
                 if (j1.tipo == "Rogue")
             {
-                minion rogue = new minion("Dagger Mastery", 2, 1, false, true, 0);
+                minion rogue = new minion("Dagger Mastery", 2, 1, true, true, 0);
                 rogue.turno = false;
                 mazos.Add(rogue);
-                j1.invocar(rogue, cartascancha);
+                j1.invocar(rogue, weapon1);
+                weapon1_.Visibility = Visibility.Visible;
+                weapon1_.Content = "Dagger Mystery";
+
             }
             if (j1.tipo == "Druid")
             {
@@ -4849,9 +4857,11 @@ namespace EntregaFinalPOOO
 
 
         }
+        int contadorweapon1 = 0;
         /*Habilidad*/
         private void habilidad2_Click(object sender, RoutedEventArgs e)
         {
+            
 
             if (j2.tipo == "Paladin")
             {
@@ -4865,10 +4875,12 @@ namespace EntregaFinalPOOO
             }
             if (j2.tipo == "Rogue")
             {
-                minion rogue = new minion("Dagger Mastery", 2, 1, true, true, 0);
+                minion rogue = new minion("Dagger Mastery", 2, 500000, true, true, 0);
                 rogue.turno = false;
                 mazos2.Add(rogue);
                 j2.invocar(rogue, cartascancha2);
+               
+                weapon1_.Content = "dagger mystery";
             }
             if (j2.tipo == "Druid")
             {
@@ -5127,8 +5139,16 @@ namespace EntregaFinalPOOO
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2, RiverCrocolisk1, BloodfenRaptor1, RiverCrocolisk2, ChillwindYeti1, ChillwindYeti2, ChillwindYeti3, ChillwindYeti4, OasisSnapjaw1, OasisSnapjaw2, OasisSnapjaw3, OasisSnapjaw4, OasisSnapjaw5, OasisSnapjaw6, BoulderfistOgre1, BoulderfistOgre2, BoulderfistOgre3, BoulderfistOgre4, BoulderfistOgre5, BoulderfistOgre6, WarGolem1, WarGolem2, WarGolem3, WarGolem4, WarGolem5, WarGolem6, CoreHound1, CoreHound2, CoreHound3, CoreHound4);
 
 
+            //ver wl mayor o igual 
+            if (contadorweapon1 <3)
+            {
+                contadorweapon1 = contadorweapon1 + 1;
+               
+            }
+            if (contadorweapon1 > 2)
+            {
 
-
+            }
 
             xx[cartascancha.Count()].Visibility = Visibility.Hidden;
 
@@ -7669,6 +7689,19 @@ namespace EntregaFinalPOOO
 
         }
 
+        private void audio_Click(object sender, RoutedEventArgs e)
+        {
+            player.Stop();
+            
+        }
+
+        private void weapon1__Click(object sender, RoutedEventArgs e)
+        {
+            
+            MessageBox.Show(contadorweapon1.ToString());
+           
+
+        }
     }
 }
 

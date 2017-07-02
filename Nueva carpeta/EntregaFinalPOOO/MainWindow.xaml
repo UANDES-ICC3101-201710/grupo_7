@@ -173,6 +173,8 @@
             <Button x:Name="boton0003" Margin="0,0,10,0" Content=""  Width="50" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
 
         </StackPanel>
+        <Button x:Name="audio" Content="Button" HorizontalAlignment="Left" Margin="64,520,0,0" VerticalAlignment="Top" Width="75" Click="audio_Click"/>
+        <Button x:Name="weapon1_" Content="Button" HorizontalAlignment="Left" Margin="420,515,0,0" VerticalAlignment="Top" Width="102" Height="49" Click="weapon1__Click"/>
 
 
 

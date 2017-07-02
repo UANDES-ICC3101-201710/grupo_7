@@ -83,6 +83,11 @@ namespace EntregaFinalPOOO
 
                     lista.Add(n);
                 }
+                if (this.tipo == "Rogue")
+                {
+                    lista.Add(n);
+                }
+                
             }
 
 
