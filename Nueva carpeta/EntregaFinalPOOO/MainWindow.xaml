@@ -28,7 +28,7 @@
         </Style>
     </Window.Resources>
     <Grid Margin="0,0,37.4,0.4" RenderTransformOrigin="0.533,0.495">
-        <Button x:Name="boton3" Content="Comenzar!!!!" HorizontalAlignment="Left" Margin="953,273,0,0" VerticalAlignment="Top" Width="196" Height="65" Click="boton3_Click" FontSize="24"/>
+        <Button x:Name="boton3" HorizontalAlignment="Left" Margin="953,273,0,0" VerticalAlignment="Top" Width="196" Height="65" Click="boton3_Click" FontSize="24" Style="{StaticResource MyButton}"/>
         <Image x:Name="fondobatalla" Margin="-108,0,-153.4,-8.4" Source="fondo1.jpg" Stretch="Fill" Visibility="Hidden"/>
         <Button x:Name="boton1" Content="Confirmar" HorizontalAlignment="Left" Margin="820,453,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" RenderTransformOrigin="0.754,-3.012" Height="23"/>
 

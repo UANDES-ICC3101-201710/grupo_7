@@ -26,6 +26,8 @@ namespace EntregaFinalPOOO
 
 
         System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+        System.Media.SoundPlayer player1 = new System.Media.SoundPlayer();
+
         string a;
         string a1;
 
@@ -144,6 +146,8 @@ namespace EntregaFinalPOOO
         ImageBrush CoreHound3 = new ImageBrush();
         ImageBrush CoreHound4 = new ImageBrush();
 
+        ImageBrush playb = new ImageBrush();
+
         ImageBrush vacio = new ImageBrush();
         ImageBrush totem11 = new ImageBrush();
         ImageBrush totem22 = new ImageBrush();
@@ -188,6 +192,13 @@ namespace EntregaFinalPOOO
             InitializeComponent();
 
             player.SoundLocation = "All Star - Smash Mouth [Lyrics].wav";
+            player1.SoundLocation = "Game of Thrones   Main Theme Official Soundtrack Version.wav";
+            player1.PlayLooping();
+
+            
+            BitmapImage imageplay = new BitmapImage(new Uri("file:///C:/Users/Juan%20Carlos%20Diaz/Pictures/play.png"));
+            playb.ImageSource = imageplay;
+
             BitmapImage image = new BitmapImage(new Uri("http://media-hearth.cursecdn.com/avatars/147/699/273.png"));
             wispmano.ImageSource = image;
             BitmapImage image1 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/1/1f/Murloc_Raider%2855%29_Gold.png/200px-Murloc_Raider%2855%29_Gold.png?version=883f02d505c570b0ea5c8b4b5e13f3b8"));
@@ -303,7 +314,7 @@ namespace EntregaFinalPOOO
 
 
 
- 
+            boton3.Background = playb;
 
 
 
@@ -1338,7 +1349,8 @@ namespace EntregaFinalPOOO
 
         private void boton3_Click(object sender, RoutedEventArgs e)
         {
-            //player.PlayLooping();
+            player1.Stop();
+            player.PlayLooping();
             cambiocartas2.Visibility = Visibility.Hidden;
             cambiocarta1.Visibility = Visibility.Hidden;
             for (int i = 0; i < 3; i++)
