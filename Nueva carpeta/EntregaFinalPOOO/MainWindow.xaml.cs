@@ -7697,8 +7697,15 @@ namespace EntregaFinalPOOO
 
         private void weapon1__Click(object sender, RoutedEventArgs e)
         {
+            //atacar = ;
+            if (atacar != null && atacado != null)
+            {
+
+                atacar2.IsEnabled = true;
+
+
+            }
             
-            MessageBox.Show(contadorweapon1.ToString());
            
 
         }
