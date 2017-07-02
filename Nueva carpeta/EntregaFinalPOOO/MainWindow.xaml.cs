@@ -186,6 +186,9 @@ namespace EntregaFinalPOOO
         minion atacar;
         minion atacado;
 
+        Heroe hatacar;
+        Heroe hatacado;
+
 
         public MainWindow()
         {
@@ -1911,7 +1914,7 @@ namespace EntregaFinalPOOO
         private void boton11_Click(object sender, RoutedEventArgs e)
         {
             atacado = cartascancha2[0];
-            if (atacar != null && atacado != null)
+            if (atacar != null && atacado != null || hatacado != null && atacado != null)//COPIA ESTE IF BAX SI ES PAL J1  , SI WEON TAL CUAL .Y LO PONES EN TODOS LO BOTONES DE LA CANCHA DEL J2 
             {
 
                 atacar2.IsEnabled = true;
@@ -4791,7 +4794,8 @@ namespace EntregaFinalPOOO
             }
             if (j1.tipo == "Mage")
             {
-                j1.attack(atacado, null, null, null);
+                hatacado = j1;
+               
 
             }
             Random rnd = new Random();
@@ -5107,6 +5111,15 @@ namespace EntregaFinalPOOO
                 atacar = null;
 
             }
+            if (hatacado != null && atacado != null && j1.activo == true)
+            {
+                hatacado.attack(atacado,null,null,null);
+
+                hatacado = null;
+                atacado = null;
+
+            }
+
 
             vida1.Content = j1.vida;
             Vida2.Content = j2.vida;

@@ -321,7 +321,7 @@ namespace EntregaFinalPOOO
 
                 if (nombre.vida <= 0)
                 {
-                    nombre.morirminion();
+                    nombre.morirminion();// NO SE MUERE :(
 
                 }
 
