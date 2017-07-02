@@ -322,6 +322,7 @@ namespace EntregaFinalPOOO
                 if (nombre.vida <= 0)
                 {
                     nombre.morirminion();// NO SE MUERE :(
+                    cartascancha2.Remove(nombre);
 
                 }
 

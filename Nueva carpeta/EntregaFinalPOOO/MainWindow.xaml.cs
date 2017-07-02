@@ -5111,9 +5111,9 @@ namespace EntregaFinalPOOO
                 atacar = null;
 
             }
-            if (hatacado != null && atacado != null && j1.activo == true)
+            if (hatacado != null && atacado != null && j1.activo == true)// mage 
             {
-                hatacado.attack(atacado,null,null,null);
+                hatacado.attack(atacado,null,null,cartascancha2);
 
                 hatacado = null;
                 atacado = null;
