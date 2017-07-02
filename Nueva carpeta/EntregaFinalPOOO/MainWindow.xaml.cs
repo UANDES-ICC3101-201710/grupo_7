@@ -1611,6 +1611,7 @@ namespace EntregaFinalPOOO
             manatot1.Content = j1.manatotal.ToString();
             manadisp.Content = manatot1.Content;
             j1.pasarturno(j2);
+            weapon1_.IsEnabled = true;
 
             foreach (minion n in mazos)
             {
@@ -5140,13 +5141,19 @@ namespace EntregaFinalPOOO
 
 
             //ver wl mayor o igual 
-            if (contadorweapon1 <3)
+            if (contadorweapon1 <2 )
             {
                 contadorweapon1 = contadorweapon1 + 1;
+                weapon1_.IsEnabled = false;
+
                
             }
-            if (contadorweapon1 > 2)
+            else
             {
+                weapon1.RemoveAt(0);
+                weapon1_.Visibility = Visibility.Hidden;
+                contadorweapon1 = 0;
+
 
             }
 
@@ -7697,7 +7704,7 @@ namespace EntregaFinalPOOO
 
         private void weapon1__Click(object sender, RoutedEventArgs e)
         {
-            //atacar = ;
+            atacar =weapon1[0] ;
             if (atacar != null && atacado != null)
             {
 
@@ -7708,6 +7715,11 @@ namespace EntregaFinalPOOO
             
            
 
+        }
+
+        private void weapon1__MouseEnter(object sender, MouseEventArgs e)
+        {
+            popo.Content = "contador=" + contadorweapon1 + "   ";
         }
     }
 }
