@@ -5140,7 +5140,7 @@ namespace EntregaFinalPOOO
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2, RiverCrocolisk1, BloodfenRaptor1, RiverCrocolisk2, ChillwindYeti1, ChillwindYeti2, ChillwindYeti3, ChillwindYeti4, OasisSnapjaw1, OasisSnapjaw2, OasisSnapjaw3, OasisSnapjaw4, OasisSnapjaw5, OasisSnapjaw6, BoulderfistOgre1, BoulderfistOgre2, BoulderfistOgre3, BoulderfistOgre4, BoulderfistOgre5, BoulderfistOgre6, WarGolem1, WarGolem2, WarGolem3, WarGolem4, WarGolem5, WarGolem6, CoreHound1, CoreHound2, CoreHound3, CoreHound4);
 
 
-            //ver wl mayor o igual 
+            /*ver wl mayor o igual 
             if (contadorweapon1 <2 )
             {
                 contadorweapon1 = contadorweapon1 + 1;
@@ -5150,12 +5150,13 @@ namespace EntregaFinalPOOO
             }
             else
             {
-                weapon1.RemoveAt(0);
+                *weapon1.RemoveAt(0);
                 weapon1_.Visibility = Visibility.Hidden;
                 contadorweapon1 = 0;
 
 
-            }
+            }*/
+
 
             xx[cartascancha.Count()].Visibility = Visibility.Hidden;
 
