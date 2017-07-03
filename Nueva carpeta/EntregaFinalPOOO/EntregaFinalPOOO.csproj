@@ -188,5 +188,8 @@
   <ItemGroup>
     <Resource Include="fondoinicio.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cambio_de_cartas.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
