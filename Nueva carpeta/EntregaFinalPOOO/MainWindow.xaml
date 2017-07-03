@@ -79,8 +79,8 @@
         <ComboBox x:Name="combobox3" HorizontalAlignment="Left" Margin="700,515,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combobox3_SelectionChanged" Height="20"/>
         <ComboBox x:Name="combobox4" HorizontalAlignment="Left" Margin="742,99,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combobox4_SelectionChanged" Height="20"/>
 
-        <Button x:Name="habilidad" Content="" HorizontalAlignment="Left" Margin="700,544,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4" Background="#FF5EA4D0" MouseEnter="habilidad_MouseEnter" MouseLeave="habilidad_MouseLeave" Height="60"/>
-        <Button x:Name="habilidad2" Content="" HorizontalAlignment="Left" Margin="691,108,0,0" VerticalAlignment="Top" Width="75" Background="#FF2D9CB5" Click="habilidad2_Click" IsEnabled="False" MouseEnter="habilidad2_MouseEnter" MouseLeave="habilidad2_MouseLeave" Height="61"/>
+        <Button x:Name="habilidad" Content="" HorizontalAlignment="Left" Margin="700,544,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4" Background="#FF5EA4D0" MouseEnter="habilidad_MouseEnter" MouseLeave="habilidad_MouseLeave" Height="60" Style="{StaticResource MyButton}"/>
+        <Button x:Name="habilidad2" Content="" HorizontalAlignment="Left" Margin="691,108,0,0" VerticalAlignment="Top" Width="75" Background="#FF2D9CB5" Click="habilidad2_Click" IsEnabled="False" MouseEnter="habilidad2_MouseEnter" MouseLeave="habilidad2_MouseLeave" Height="61" Style="{StaticResource MyButton}"/>
 
        
 
