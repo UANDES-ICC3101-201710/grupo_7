@@ -187,6 +187,8 @@ namespace EntregaFinalPOOO
         List<Button> cambioss = new List<Button>();
         List<Button> cambioss1 = new List<Button>();
 
+        List<Button> manamana = new List<Button>();
+
 
         spells carta0 = new spells("La Moneda", 0, false, false);
 
@@ -367,6 +369,9 @@ namespace EntregaFinalPOOO
             BitmapImage naudio = new BitmapImage(new Uri("../../nosound.png", UriKind.Relative));
             noaudio.ImageSource = naudio;
 
+            BitmapImage manana = new BitmapImage(new Uri("../../mana.png", UriKind.Relative));
+            lala.ImageSource = manana;
+
 
 
 
@@ -388,9 +393,10 @@ namespace EntregaFinalPOOO
 
 
 
-
-
-
+            foreach (Button b in mana1.Children) 
+            {
+                manamana.Add(b); 
+            }
 
 
             foreach (Button b in stackpanel_Copy1.Children)
@@ -636,7 +642,7 @@ namespace EntregaFinalPOOO
             Application.Current.Shutdown();
         }
 
-
+        public static void refreshmana() { }
 
         public static void refreshhmano(List<carta> cartascancha, List<carta> cartascancha2, List<Button> xx, List<Button> a2, ImageBrush wisp, ImageBrush MurlocRaider, ImageBrush BloodfenRaptor, ImageBrush RiverCrocolisk, ImageBrush MagmaRager, ImageBrush ChillwindYeti, ImageBrush OasisSnapjaw, ImageBrush BoulderfistOgre, ImageBrush WarGolem, ImageBrush CoreHound, ImageBrush recruit, Heroe j1, Heroe j2)
         {
