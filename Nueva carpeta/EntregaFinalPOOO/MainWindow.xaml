@@ -134,7 +134,7 @@
             <Button x:Name="boton24_Copy3"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton24_Copy3_Click" MouseEnter="boton243_MouseEnter" MouseLeave="boton243_MouseLeave"/>
             <Button x:Name="boton24_Copy4"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton24_Copy4_Click" MouseEnter="boton244_MouseEnter" MouseLeave="boton244_MouseLeave"/>
             <Button x:Name="boton24_Copy5"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}"/>
-            
+
         </StackPanel>
         <Image x:Name="pic17" Margin="519,515,463.6,81.4" Source="warrior.png" Stretch="Fill"/>
         <Image x:Name="pic18" Margin="518,69,464.6,541.4" Source="warrior2.png" Stretch="Fill"/>
@@ -171,7 +171,7 @@
             <Button x:Name="boton001" Margin="0,0,10,0" Content=""  Width="50" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton001_Click"/>
             <Button x:Name="boton004" Margin="0,0,10,0" Content=""  Width="50" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton004_Click"/>
             <Button x:Name="boton002" Margin="0,0,10,0" Content=""  Width="50" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
-            
+
 
         </StackPanel>
 
@@ -180,10 +180,10 @@
             <Button x:Name="boton0001" Margin="0,0,10,0" Content=""  Width="50" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton0001_Click"/>
             <Button x:Name="boton0002" Margin="0,-4,10,0" Content=""  Width="50" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton0002_Click"/>
             <Button x:Name="boton0003" Margin="0,0,10,0" Content=""  Width="50" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
-            
+
 
         </StackPanel>
-        <Button x:Name="audio" Content="Button" HorizontalAlignment="Left" Margin="64,520,0,0" VerticalAlignment="Top" Width="75" Click="audio_Click"/>
+        <Button x:Name="audio" Content="Button" HorizontalAlignment="Left" Margin="64,520,0,0" VerticalAlignment="Top" Width="77" Click="audio_Click" Height="56" Style="{StaticResource MyButton}"  />
         <Button x:Name="weapon1_" Content="Button" HorizontalAlignment="Left" Margin="433,531,0,0" VerticalAlignment="Top" Width="97" Height="72" Click="weapon1__Click" MouseEnter="weapon1__MouseEnter" Style="{StaticResource MyButton}" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>

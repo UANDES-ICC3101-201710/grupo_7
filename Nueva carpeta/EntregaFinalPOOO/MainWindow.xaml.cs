@@ -170,6 +170,7 @@ namespace EntregaFinalPOOO
 
         ImageBrush escudo = new ImageBrush();
         ImageBrush daga = new ImageBrush();
+        ImageBrush noaudio = new ImageBrush();
 
 
 
@@ -363,6 +364,11 @@ namespace EntregaFinalPOOO
             BitmapImage wrogue = new BitmapImage(new Uri("../../wrogue.png", UriKind.Relative));
             daga.ImageSource = wrogue;
 
+            BitmapImage naudio = new BitmapImage(new Uri("../../nosound.png", UriKind.Relative));
+            noaudio.ImageSource = naudio;
+
+
+
 
 
 
@@ -541,6 +547,7 @@ namespace EntregaFinalPOOO
             boton8.Visibility = Visibility.Hidden;
             boton9.Visibility = Visibility.Hidden;
             boton10.Visibility = Visibility.Hidden;
+            audio.Visibility = Visibility.Hidden;
 
             FinTurno.Visibility = Visibility.Hidden;
             boton11.Visibility = Visibility.Hidden;
@@ -1430,6 +1437,8 @@ namespace EntregaFinalPOOO
         {
             player1.Stop();
             player.PlayLooping();
+            audio.Background = noaudio;
+            audio.Visibility = Visibility.Visible;
             cambio1.Visibility = Visibility.Hidden;
             cambio2.Visibility = Visibility.Hidden;
             cambiocartas2.Visibility = Visibility.Hidden;
