@@ -156,6 +156,15 @@ namespace EntregaFinalPOOO
         ImageBrush totem44 = new ImageBrush();
         ImageBrush Recruit = new ImageBrush();
         ImageBrush lala = new ImageBrush();
+        ImageBrush habhunter = new ImageBrush();
+        ImageBrush habmage = new ImageBrush();
+        ImageBrush habpaladin = new ImageBrush();
+        ImageBrush habpriest = new ImageBrush();
+        ImageBrush habrogue = new ImageBrush();
+        ImageBrush habshaman = new ImageBrush();
+        ImageBrush habwarlock = new ImageBrush();
+        ImageBrush habwarrior = new ImageBrush();
+        ImageBrush habdruid = new ImageBrush();
 
         List<carta> mazos = new List<carta>();
         List<carta> mazos2 = new List<carta>();
@@ -319,6 +328,24 @@ namespace EntregaFinalPOOO
             BitmapImage image54 = new BitmapImage(new Uri("../../core hound 4.png", UriKind.Relative));
             CoreHound4.ImageSource = image54;
 
+            BitmapImage image55 = new BitmapImage(new Uri("../../HHunter.png", UriKind.Relative));
+            habhunter.ImageSource = image55;
+            BitmapImage image56 = new BitmapImage(new Uri("../../HMage.png", UriKind.Relative));
+            habmage.ImageSource = image56;
+            BitmapImage image57 = new BitmapImage(new Uri("../../HPaladin.png", UriKind.Relative));
+            habpaladin.ImageSource = image57;
+            BitmapImage image58 = new BitmapImage(new Uri("../../HPriest.png", UriKind.Relative));
+            habpriest.ImageSource = image58;
+            BitmapImage image59 = new BitmapImage(new Uri("../../HRogue.png", UriKind.Relative));
+            habrogue.ImageSource = image59;
+            BitmapImage image60 = new BitmapImage(new Uri("../../HShaman.png", UriKind.Relative));
+            habshaman.ImageSource = image60;
+            BitmapImage image61 = new BitmapImage(new Uri("../../HWarlock.png", UriKind.Relative));
+            habwarlock.ImageSource = image61;
+            BitmapImage image62 = new BitmapImage(new Uri("../../HWarrior.png", UriKind.Relative));
+            habwarrior.ImageSource = image62;
+            BitmapImage image63 = new BitmapImage(new Uri("../../HDruid.png", UriKind.Relative));
+            habwarrior.ImageSource = image63;
 
 
 
@@ -1149,6 +1176,7 @@ namespace EntregaFinalPOOO
             boton1.Visibility = Visibility.Hidden;
             j1.ingresarnombre(a);
             j1.ingresarnombre(text1.Text);
+            
 
         }
 
@@ -1176,16 +1204,18 @@ namespace EntregaFinalPOOO
             eheroe1.Visibility = Visibility.Hidden;
             if (comboBox1.SelectedItem == "Warrior")
             {
-
+                habilidad.Background = habwarrior;
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
                 j1.ingresartipo("Warrior");
+                
 
             }
 
             if (comboBox1.SelectedItem == "Hunter")
             {
+                habilidad.Background = habhunter;
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
@@ -1195,7 +1225,7 @@ namespace EntregaFinalPOOO
 
             if (comboBox1.SelectedItem == "Mage")
             {
-
+                habilidad.Background = habmage;
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
@@ -1205,7 +1235,7 @@ namespace EntregaFinalPOOO
 
             if (comboBox1.SelectedItem == "Paladin")
             {
-
+                habilidad.Background = habpaladin;
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
@@ -1215,7 +1245,7 @@ namespace EntregaFinalPOOO
 
             if (comboBox1.SelectedItem == "Priest")
             {
-
+                habilidad.Background = habpriest;
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
@@ -1225,7 +1255,7 @@ namespace EntregaFinalPOOO
 
             if (comboBox1.SelectedItem == "Druid")
             {
-
+                habilidad.Background = habdruid;
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
@@ -1235,7 +1265,7 @@ namespace EntregaFinalPOOO
 
             if (comboBox1.SelectedItem == "Rogue")
             {
-
+                habilidad.Background = habrogue;
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
@@ -1245,7 +1275,7 @@ namespace EntregaFinalPOOO
 
             if (comboBox1.SelectedItem == "Shaman")
             {
-
+                habilidad.Background = habshaman;
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
@@ -1255,7 +1285,7 @@ namespace EntregaFinalPOOO
 
             if (comboBox1.SelectedItem == "Warlock")
             {
-
+                habilidad.Background = habwarlock;
                 comboBox1.Visibility = Visibility.Hidden;
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
@@ -1272,7 +1302,7 @@ namespace EntregaFinalPOOO
             eheroe2.Visibility = Visibility.Hidden;
             if (comboBox2.SelectedItem == "Warrior")
             {
-
+                habilidad2.Background = habwarrior;
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 j2.ingresartipo("Warrior");
@@ -1281,7 +1311,7 @@ namespace EntregaFinalPOOO
 
             if (comboBox2.SelectedItem == "Hunter")
             {
-
+                habilidad2.Background = habhunter;
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 j2.ingresartipo("Hunter");
@@ -1290,7 +1320,7 @@ namespace EntregaFinalPOOO
 
             if (comboBox2.SelectedItem == "Mage")
             {
-
+                habilidad2.Background = habmage;
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 j2.ingresartipo("Mage");
@@ -1299,7 +1329,7 @@ namespace EntregaFinalPOOO
 
             if (comboBox2.SelectedItem == "Paladin")
             {
-
+                habilidad2.Background = habpaladin;
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 j2.ingresartipo("Paladin");
@@ -1308,7 +1338,7 @@ namespace EntregaFinalPOOO
 
             if (comboBox2.SelectedItem == "Priest")
             {
-
+                habilidad2.Background = habpriest;
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 j2.ingresartipo("Priest");
@@ -1317,7 +1347,7 @@ namespace EntregaFinalPOOO
 
             if (comboBox2.SelectedItem == "Druid")
             {
-
+                habilidad2.Background = habdruid;
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 j2.ingresartipo("Druid");
@@ -1326,7 +1356,7 @@ namespace EntregaFinalPOOO
 
             if (comboBox2.SelectedItem == "Rogue")
             {
-
+                habilidad2.Background = habrogue;
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 j2.ingresartipo("Rogue");
@@ -1335,7 +1365,7 @@ namespace EntregaFinalPOOO
 
             if (comboBox2.SelectedItem == "Shaman")
             {
-
+                habilidad2.Background = habshaman;
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 j2.ingresartipo("Shaman");
@@ -1344,7 +1374,7 @@ namespace EntregaFinalPOOO
 
             if (comboBox2.SelectedItem == "Warlock")
             {
-
+                habilidad2.Background = habwarlock;
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 j2.ingresartipo("Warlock");
@@ -4777,6 +4807,7 @@ namespace EntregaFinalPOOO
         {
             if (j1.tipo == "Paladin")
             {
+                
                 if (cartascancha.Count() < 7)
                 {
                     minion paladin1 = new minion("Recruit", 1, 1, true, true, 0);
@@ -4790,6 +4821,7 @@ namespace EntregaFinalPOOO
             } 
                 if (j1.tipo == "Rogue")
             {
+
                 minion rogue = new minion("Dagger Mastery", 2, 1, true, true, 0);
                 rogue.turno = false;
                 mazos.Add(rogue);
@@ -5349,14 +5381,18 @@ namespace EntregaFinalPOOO
         {
             if (j1.tipo == "Mage")
             {
+                
                 popo.Content = ("Resta 2 de vida a quien quieras! \nMana:2");
             }
             if (j1.tipo == "Warrior")
             {
+
                 popo.Content = ("Sube 2 de escudo a tu Heroe! \nMana:2");
             }
             if (j1.tipo == "Paladin")
             {
+                
+
                 popo.Content = ("Invoca A un recruit 1/1 , para que te ayude en la pelea! \nMana:2");
             }
             if (j1.tipo == "Hunter")
@@ -5366,6 +5402,7 @@ namespace EntregaFinalPOOO
             
             if (j1.tipo == "Druid")
             {
+                
                 popo.Content = ("Convierte en un Oso y ataca a tu enemigo!1/1\n Mana:2");
             }
             if (j1.tipo == "Rogue ")
@@ -5374,7 +5411,7 @@ namespace EntregaFinalPOOO
             }
             if (j1.tipo == "Shaman")
             {
-                popo.Content = ("Invoca un Totem!\n Mana:2");
+                popo.Content = habshaman;
             }
             if (j1.tipo == "Warlock ")
             {
@@ -5388,7 +5425,7 @@ namespace EntregaFinalPOOO
 
         private void habilidad_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Content = vacio;
         }
 
         private void habilidad2_MouseEnter(object sender, MouseEventArgs e)
