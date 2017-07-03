@@ -153,7 +153,7 @@
             <Button x:Name="boton6" Margin="0,0,10,0" Content="" Width="50" MouseEnter="boton6_MouseEnter" MouseLeave="boton6_MouseLeave" Height="80" VerticalAlignment="Top" Click="boton6_Click" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton7" Margin="0,0,10,0" Content="" Width="50" MouseEnter="boton7_MouseEnter" MouseLeave="boton7_MouseLeave" Click="boton7_Click" Style="{StaticResource MyButton}" />
             <Button x:Name="boton8" Margin="0 0 10 0 " Content="" Width="50" Click="boton8_Click" MouseEnter="boton8_MouseEnter" MouseLeave="boton8_MouseLeave" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton9" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton9_MouseEnter" MouseLeave="boton9_MouseLeave" Click="boton9_Click " Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton9" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton9_MouseEnter" MouseLeave="boton9_MouseLeave" Click="boton9_Click" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton10"  Content="" Width="50" Click="boton10_Click" MouseEnter="boton10_MouseEnter" MouseLeave="boton10_MouseLeave" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton10_Copy"  Content="" Width="50" Click="boton10_Click" MouseEnter="boton10_MouseEnter" MouseLeave="boton10_MouseLeave" Style="{StaticResource MyButton}"/>
         </StackPanel>

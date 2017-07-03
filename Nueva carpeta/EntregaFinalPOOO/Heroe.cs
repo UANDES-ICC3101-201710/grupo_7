@@ -317,28 +317,31 @@ namespace EntregaFinalPOOO
         public int attack(minion nombre, Heroe jugador, List<minion> cartascancha, List<minion> cartascancha2)
         {
 
-
+            
             if (jugador == null)
             {
 
-
-                nombre.vida = nombre.vida - 2;
-
-                if (nombre.vida <= 0)
+                if (this.tipo == "Mage")
                 {
-                    nombre.morirminion();// NO SE MUERE :(
-                    cartascancha2.Remove(nombre);
+                    nombre.vida = nombre.vida - 1;
 
+
+                    if (nombre.vida <= 0)
+                    {
+                        nombre.morirminion();// NO SE MUERE :(
+                        cartascancha2.Remove(nombre);
+
+                    }
                 }
-
 
                 return nombre.vida;
 
             }
             if (jugador != null)
             {
-
-                jugador.vida = jugador.vida - 2;
+                if (this.tipo == "Mage") { 
+                jugador.vida = jugador.vida - 1;
+                }
                 return jugador.vida;
 
             }

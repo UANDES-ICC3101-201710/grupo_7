@@ -1742,7 +1742,7 @@ namespace EntregaFinalPOOO
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             atacar = cartascancha[0];
-            if (atacar != null && atacado != null)
+            if (atacar != null && atacado != null || hatacado != null && atacar != null)
             {
 
                 atacar2.IsEnabled = true;
@@ -1755,7 +1755,7 @@ namespace EntregaFinalPOOO
         private void boton17_Click(object sender, RoutedEventArgs e)
         {
             atacado = cartascancha2[6];
-            if (atacar != null && atacado != null)
+            if (atacar != null && atacado != null || hatacado != null && atacado != null)
             {
 
                 atacar2.IsEnabled = true;
@@ -2134,9 +2134,9 @@ namespace EntregaFinalPOOO
         private void boton5_Click(object sender, RoutedEventArgs e)
         {
             atacar = cartascancha[1];
-            if (atacar != null && atacado != null)
+            if (atacar != null && atacado != null || hatacado != null && atacar != null)
             {
-               
+
                 atacar2.IsEnabled = true;
 
 
@@ -2732,9 +2732,9 @@ namespace EntregaFinalPOOO
         private void boton8_Click(object sender, RoutedEventArgs e)
         {
             atacar = cartascancha[4];
-            if (atacar != null && atacado != null)
+            if (atacar != null && atacado != null || hatacado != null && atacar != null)
             {
-                
+
                 atacar2.IsEnabled = true;
 
 
@@ -3135,9 +3135,9 @@ namespace EntregaFinalPOOO
         private void boton10_Click(object sender, RoutedEventArgs e)
         {
             atacar = cartascancha[6];
-            if (atacar != null && atacado != null)
+            if (atacar != null && atacado != null || hatacado != null && atacar != null)
             {
-                
+
                 atacar2.IsEnabled = true;
 
 
@@ -4890,6 +4890,12 @@ namespace EntregaFinalPOOO
                 mazos2.Add(druid);
                 j2.invocar(druid, cartascancha2);
             }
+            if (j1.tipo == "Mage")
+            {
+                hatacado = j2;
+
+
+            }
             Random rnd = new Random();
             if (j2.tipo == "Shaman")
             {
@@ -4997,9 +5003,9 @@ namespace EntregaFinalPOOO
         private void boton6_Click(object sender, RoutedEventArgs e)
         {
             atacar = cartascancha[2];
-            if (atacar != null && atacado != null)
+            if (atacar != null && atacado != null || hatacado != null && atacar != null)
             {
-               
+
                 atacar2.IsEnabled = true;
 
 
@@ -5009,9 +5015,9 @@ namespace EntregaFinalPOOO
         private void boton7_Click(object sender, RoutedEventArgs e)
         {
             atacar = cartascancha[3];
-            if (atacar != null && atacado != null)
+            if (atacar != null && atacado != null || hatacado != null && atacar != null)
             {
-               
+
                 atacar2.IsEnabled = true;
 
 
@@ -5021,9 +5027,9 @@ namespace EntregaFinalPOOO
         private void boton9_Click(object sender, RoutedEventArgs e)
         {
             atacar = cartascancha[5];
-            if (atacar != null && atacado != null)
+            if (atacar != null && atacado != null || hatacado != null && atacar != null)
             {
-               
+
                 atacar2.IsEnabled = true;
 
 
@@ -5033,9 +5039,9 @@ namespace EntregaFinalPOOO
         private void boton12_Click(object sender, RoutedEventArgs e)
         {
             atacado = cartascancha2[1];
-             if(atacar!=null && atacado !=null)
+            if (atacar != null && atacado != null || hatacado != null && atacado != null)
             {
-               
+
                 atacar2.IsEnabled = true;
 
 
@@ -5045,9 +5051,9 @@ namespace EntregaFinalPOOO
         private void boton13_Click(object sender, RoutedEventArgs e)
         {
             atacado = cartascancha2[2];
-            if (atacar != null && atacado != null)
+            if (atacar != null && atacado != null || hatacado != null && atacado != null)
             {
-               
+
                 atacar2.IsEnabled = true;
 
 
@@ -5057,9 +5063,9 @@ namespace EntregaFinalPOOO
         private void boton14_Click(object sender, RoutedEventArgs e)
         {
             atacado = cartascancha2[3];
-            if (atacar != null && atacado != null)
+            if (atacar != null && atacado != null || hatacado != null && atacado != null)
             {
-           
+
                 atacar2.IsEnabled = true;
 
 
@@ -5069,9 +5075,9 @@ namespace EntregaFinalPOOO
         private void boton15_Click(object sender, RoutedEventArgs e)
         {
             atacado = cartascancha2[4];
-            if (atacar != null && atacado != null)
+            if (atacar != null && atacado != null || hatacado != null && atacado != null)
             {
-                
+
                 atacar2.IsEnabled = true;
 
 
@@ -5081,9 +5087,9 @@ namespace EntregaFinalPOOO
         private void boton16_Click(object sender, RoutedEventArgs e)
         {
             atacado = cartascancha2[5];
-            if (atacar != null && atacado != null)
+            if (atacar != null && atacado != null || hatacado != null && atacado != null)
             {
-             
+
                 atacar2.IsEnabled = true;
 
 
@@ -5141,6 +5147,23 @@ namespace EntregaFinalPOOO
                 atacado = null;
 
             }
+            if (hatacado != null && atacar != null && j2.activo == true)// mage 
+            {
+                hatacado.attack(atacar, null, null, cartascancha);
+
+                hatacado = null;
+                atacar = null;
+
+            }
+            if (hatacado != null && heroeatacado != null && j2.activo == true)// mage 
+            {
+                MessageBox.Show("somebii");
+                hatacado.attack(null, heroeatacado, null, cartascancha);
+
+                hatacado = null;
+                atacar = null;
+
+            }
 
 
             vida1.Content = j1.vida;
@@ -5191,7 +5214,7 @@ namespace EntregaFinalPOOO
         private void Button_Click_7(object sender, RoutedEventArgs e)
         {
             heroeatacado = j1;
-            if ((atacar != null && heroeatacado != null) || (atacado != null && heroeatacado != null))
+            if ((atacar != null && heroeatacado != null) || (atacado != null && heroeatacado != null) || (hatacado != null && heroeatacado != null))
             {
 
                 atacar2.IsEnabled = true;
