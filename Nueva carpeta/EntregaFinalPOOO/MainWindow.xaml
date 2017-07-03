@@ -28,7 +28,7 @@
         </Style>
     </Window.Resources>
     <Grid Margin="0,0,2,0" RenderTransformOrigin="0.533,0.495">
-        <Image x:Name="fondoinicio" Margin="0,-1,0,14" Source="fondoinicio.png" Stretch="Fill"/>
+        <Image x:Name="fondoinicio" Margin="0,-1,0,14" Source="fondoinicio.png" Stretch="Fill" Visibility="Hidden"/>
 
 
 
@@ -44,7 +44,7 @@
         <ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Margin="726,134,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_2"/>
 
         <Button x:Name="FinTurno" Content="Terminar Turno " HorizontalAlignment="Left" Margin="953,392,0,0" VerticalAlignment="Top" Width="121" Click="FinTurno_Click" Background="#FF59B650"/>
-        <StackPanel x:Name="stackpanel_Copy" HorizontalAlignment="Left" Height="82" Margin="363,256,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal">
+        <StackPanel x:Name="stackpanel_Copy" HorizontalAlignment="Left" Height="82" Margin="363,256,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal" Visibility="Hidden">
             <Button x:Name="boton11" Margin="0,0,10,0" Content=""  Width="50" Click="boton11_Click" MouseEnter="boton11_MouseEnter" MouseLeave="boton11_MouseLeave" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton12" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton12_MouseEnter" MouseLeave="boton12_MouseLeave" Click="boton12_Click" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton13" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton13_MouseEnter" MouseLeave="boton13_MouseLeave" Click="boton13_Click" Style="{StaticResource MyButton}"/>
@@ -77,7 +77,7 @@
 
 
         <Label x:Name="manatott" Content="Label" HorizontalAlignment="Left" Margin="1011,137,0,0" VerticalAlignment="Top" Width="106" FontSize="14" FontWeight="Bold" Height="58" Foreground="#FFFBF6F6"/>
-        <Button x:Name="rendirse1" Content="Rendirse" HorizontalAlignment="Left" Margin="1084,700,0,0" VerticalAlignment="Top" Width="74" Background="Red" Click="rendirse1_Click"/>
+        <Button x:Name="rendirse1" Content="Rendirse" HorizontalAlignment="Left" Margin="1092,653,0,0" VerticalAlignment="Top" Width="74" Background="Red" Click="rendirse1_Click"/>
         <Button x:Name="rendirse2" Content="Rendirse" HorizontalAlignment="Left" Margin="1074,10,0,0" VerticalAlignment="Top" Width="74" Background="#FFE61010" Click="rendirse2_Click" IsEnabled="False"/>
 
         <ComboBox x:Name="combobox3" HorizontalAlignment="Left" Margin="700,515,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combobox3_SelectionChanged" Height="20"/>
@@ -198,7 +198,28 @@
         <Label x:Name="Vida2" Content="Label" HorizontalAlignment="Left" Margin="654,155,0,0" VerticalAlignment="Top" Height="40" FontSize="14" FontWeight="Bold" Background="{x:Null}" Foreground="#FFFBFBFB" Width="47" RenderTransformOrigin="0.519,0.66"/>
         <Button x:Name="fotoescudo" Content="Button" HorizontalAlignment="Left" Margin="649,566,0,0" VerticalAlignment="Top" Width="43" Height="40"/>
         <Button x:Name="fotoescudo2" Content="Button" HorizontalAlignment="Left" Margin="654,116,0,0" VerticalAlignment="Top" Width="46" Height="34"/>
+        <StackPanel x:Name="mana1" HorizontalAlignment="Left" Height="49" Margin="683,691,0,0" VerticalAlignment="Top" Width="496" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.239"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.746"/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <Button x:Name="botono0" Margin="0,0,10,0" Content=""   Width="35" Height="35"/>
+            <Button x:Name="botono1" Margin="0,0,10,0" Content=""   Width="35" Height="35"/>
+            <Button x:Name="botono2" Margin="0,0,10,0" Content=""   Width="35" Height="35"/>
+            <Button x:Name="botono3" Margin="0,0,10,0" Content=""   Width="35" Height="35"/>
+            <Button x:Name="botono4" Margin="0,0,10,0" Content=""   Width="35" Height="35"/>
+            <Button x:Name="botono5" Margin="0,0,10,0" Content=""   Width="35" Height="35"/>
+            <Button x:Name="botono6" Margin="0,0,10,0" Content=""   Width="35" Height="35"/>
+            <Button x:Name="botono7" Margin="0,0,10,0" Content=""   Width="35" Height="35"/>
+            <Button x:Name="botono8" Margin="0,0,10,0" Content=""   Width="35" Height="35"/>
+            <Button x:Name="botono9" Margin="0,0,10,0" Content=""   Width="35" Height="35"/>
+            <Button x:Name="botono10" Margin="0,0,10,0" Content=""   Width="35" Height="35"/>
 
+        </StackPanel>
 
 
     </Grid>
