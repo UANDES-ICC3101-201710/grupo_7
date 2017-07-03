@@ -166,7 +166,7 @@ namespace EntregaFinalPOOO
         ImageBrush habwarrior = new ImageBrush();
         ImageBrush habdruid = new ImageBrush();
         ImageBrush escudo = new ImageBrush();
-
+        ImageBrush daga = new ImageBrush();
 
 
 
@@ -352,6 +352,8 @@ namespace EntregaFinalPOOO
             habdruid.ImageSource = image63;
             BitmapImage escudo1 = new BitmapImage(new Uri("../../Escudo.png", UriKind.Relative));
             escudo.ImageSource = escudo1;
+            BitmapImage wrogue = new BitmapImage(new Uri("../../wrogue.png", UriKind.Relative));
+            daga.ImageSource = wrogue;
 
 
 
@@ -4840,7 +4842,8 @@ namespace EntregaFinalPOOO
                 mazos.Add(rogue);
                 j1.invocar(rogue, weapon1);
                 weapon1_.Visibility = Visibility.Visible;
-                weapon1_.Content = "Dagger Mystery";
+                weapon1_.Content = " ";
+                weapon1_.Background = daga;
 
             }
             if (j1.tipo == "Druid")
@@ -4866,7 +4869,7 @@ namespace EntregaFinalPOOO
                 
                 fotoescudo.Background = escudo;
                 fotoescudo.Content = j1.escudo;
-                MessageBox.Show(j1.escudo.ToString());
+                
 
             }
             if (j1.tipo == "Warlock")
@@ -5000,6 +5003,7 @@ namespace EntregaFinalPOOO
                 j2.invocar(rogue, cartascancha2);
                
                 weapon1_.Content = "dagger mystery";
+                weapon1_.Background = daga;
             }
             if (j2.tipo == "Druid")
             {

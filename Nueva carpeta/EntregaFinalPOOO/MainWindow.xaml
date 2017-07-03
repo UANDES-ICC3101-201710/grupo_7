@@ -176,7 +176,16 @@
 
         </StackPanel>
         <Button x:Name="audio" Content="Button" HorizontalAlignment="Left" Margin="64,520,0,0" VerticalAlignment="Top" Width="75" Click="audio_Click"/>
-        <Button x:Name="weapon1_" Content="Button" HorizontalAlignment="Left" Margin="420,515,0,0" VerticalAlignment="Top" Width="102" Height="49" Click="weapon1__Click" MouseEnter="weapon1__MouseEnter"/>
+        <Button x:Name="weapon1_" Content="Button" HorizontalAlignment="Left" Margin="433,531,0,0" VerticalAlignment="Top" Width="97" Height="72" Click="weapon1__Click" MouseEnter="weapon1__MouseEnter" Style="{StaticResource MyButton}" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.489"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
         <Label x:Name="vida1" Content="Label" HorizontalAlignment="Left" Margin="654,609,0,0" VerticalAlignment="Top" Height="38" Width="47" FontSize="14" FontWeight="Bold" Foreground="#FFF9F4F4"/>
         <Label x:Name="Vida2" Content="Label" HorizontalAlignment="Left" Margin="654,155,0,0" VerticalAlignment="Top" Height="40" FontSize="14" FontWeight="Bold" Background="{x:Null}" Foreground="#FFFBFBFB" Width="47" RenderTransformOrigin="0.519,0.66"/>
         <Button x:Name="fotoescudo" Content="Button" HorizontalAlignment="Left" Margin="649,566,0,0" VerticalAlignment="Top" Width="43" Height="40"/>
