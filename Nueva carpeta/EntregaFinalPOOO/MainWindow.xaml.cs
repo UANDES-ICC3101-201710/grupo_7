@@ -4563,14 +4563,15 @@ namespace EntregaFinalPOOO
         private void boton17_MouseEnter(object sender, MouseEventArgs e)
         {
            
+          
+            if (cartascancha2[6].nombre == "Murloc Raider")
+            {
+                popo.Background = MurlocRaider;
+            }
             if (cartascancha2[6].nombre == "wisp")
             {
                 popo.Background = wisp;
 
-            }
-            if (cartascancha2[6].nombre == "Murloc Raider")
-            {
-                popo.Background = MurlocRaider;
             }
             if (cartascancha2[6].nombre == "Bloodfen Raptor" && cartascancha2[6].vida == 2)
             {
@@ -4980,7 +4981,18 @@ namespace EntregaFinalPOOO
         /*Habilidad*/
         private void habilidad2_Click(object sender, RoutedEventArgs e)
         {
+            if (j2.tipo == "Warrior" && j2.mana >= 2)
+            {
 
+
+                j2.escudo = j2.escudo + 2;
+
+
+
+          
+                MessageBox.Show(j2.escudo.ToString());
+
+            }
             if (j2.tipo == "Paladin")
             {
                 if (cartascancha2.Count() < 7)
