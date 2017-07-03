@@ -113,9 +113,15 @@ namespace EntregaFinalPOOO
                         }
                         if (jugador.escudo > 0)
                         {
-                            int y1 = jugador.escudo - this.ataque;
-                            jugador.vida = jugador.vida - y1;
+                            jugador.escudo = jugador.escudo - this.ataque;
+                            if (jugador.escudo < 0)
+                            {
+                                jugador.vida = jugador.vida + jugador.escudo;
+                                jugador.escudo = 0;
+                            }
+                            
                             this.turno = false;
+                                
                             return jugador.vida;
                         }
                     }

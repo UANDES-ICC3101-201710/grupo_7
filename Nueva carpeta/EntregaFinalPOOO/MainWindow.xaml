@@ -51,8 +51,8 @@
             <Button x:Name="boton14" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton14_MouseEnter" MouseLeave="boton14_MouseLeave" Click="boton14_Click" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton15" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton15_MouseEnter" MouseLeave="boton15_MouseLeave" Click="boton15_Click" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton16" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton16_MouseEnter" MouseLeave="boton16_MouseLeave" Click="boton16_Click" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton17"  Content="" Width="50" Click="boton17_Click" MouseEnter="boton17_MouseEnter" MouseLeave="boton17_MouseLeave" Height="65" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton17_Copy"  Content="" Width="50" Click="boton17_Click" MouseEnter="boton17_MouseEnter" MouseLeave="boton17_MouseLeave" Height="65" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton17"  Content="" Width="50" Click="boton17_Click" MouseEnter="boton17_MouseEnter" MouseLeave="boton17_MouseLeave" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton17_Copy"  Content="" Width="50"  Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
         </StackPanel>
 
         <Button x:Name="FinTurno_Copy" Content="Terminar Turno" HorizontalAlignment="Left" Margin="953,200,0,0" VerticalAlignment="Top" Width="121" IsEnabled="False" Click="FinTurno_Copy_Click" Background="#FF59B650"/>
@@ -184,9 +184,20 @@
 
         </StackPanel>
         <Button x:Name="audio" Content="Button" HorizontalAlignment="Left" Margin="64,520,0,0" VerticalAlignment="Top" Width="75" Click="audio_Click"/>
-        <Button x:Name="weapon1_" Content="Button" HorizontalAlignment="Left" Margin="420,515,0,0" VerticalAlignment="Top" Width="102" Height="49" Click="weapon1__Click" MouseEnter="weapon1__MouseEnter"/>
+        <Button x:Name="weapon1_" Content="Button" HorizontalAlignment="Left" Margin="433,531,0,0" VerticalAlignment="Top" Width="97" Height="72" Click="weapon1__Click" MouseEnter="weapon1__MouseEnter" Style="{StaticResource MyButton}" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.489"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
         <Label x:Name="vida1" Content="Label" HorizontalAlignment="Left" Margin="654,609,0,0" VerticalAlignment="Top" Height="38" Width="47" FontSize="14" FontWeight="Bold" Foreground="#FFF9F4F4"/>
         <Label x:Name="Vida2" Content="Label" HorizontalAlignment="Left" Margin="654,155,0,0" VerticalAlignment="Top" Height="40" FontSize="14" FontWeight="Bold" Background="{x:Null}" Foreground="#FFFBFBFB" Width="47" RenderTransformOrigin="0.519,0.66"/>
+        <Button x:Name="fotoescudo" Content="Button" HorizontalAlignment="Left" Margin="649,566,0,0" VerticalAlignment="Top" Width="43" Height="40"/>
+        <Button x:Name="fotoescudo2" Content="Button" HorizontalAlignment="Left" Margin="654,116,0,0" VerticalAlignment="Top" Width="46" Height="34"/>
 
 
 

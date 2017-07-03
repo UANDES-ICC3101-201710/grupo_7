@@ -165,7 +165,14 @@ namespace EntregaFinalPOOO
         ImageBrush habwarlock = new ImageBrush();
         ImageBrush habwarrior = new ImageBrush();
         ImageBrush habdruid = new ImageBrush();
+<<<<<<< HEAD
         ImageBrush FondoIni = new ImageBrush();
+=======
+        ImageBrush escudo = new ImageBrush();
+        ImageBrush daga = new ImageBrush();
+
+
+>>>>>>> bfc1337764817605f97a4f9f016ee1c340bfefe8
 
         List<carta> mazos = new List<carta>();
         List<carta> mazos2 = new List<carta>();
@@ -347,8 +354,17 @@ namespace EntregaFinalPOOO
             habwarrior.ImageSource = image62;
             BitmapImage image63 = new BitmapImage(new Uri("../../Hdruid.png", UriKind.Relative));
             habdruid.ImageSource = image63;
+<<<<<<< HEAD
             BitmapImage image64 = new BitmapImage(new Uri("../../fondoinicio.png", UriKind.Relative));
             FondoIni.ImageSource = image64;
+=======
+            BitmapImage escudo1 = new BitmapImage(new Uri("../../Escudo.png", UriKind.Relative));
+            escudo.ImageSource = escudo1;
+            BitmapImage wrogue = new BitmapImage(new Uri("../../wrogue.png", UriKind.Relative));
+            daga.ImageSource = wrogue;
+
+
+>>>>>>> bfc1337764817605f97a4f9f016ee1c340bfefe8
 
 
 
@@ -1215,7 +1231,12 @@ namespace EntregaFinalPOOO
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
                 j1.ingresartipo("Warrior");
-                
+                fotoescudo.Background = escudo;
+                fotoescudo.Content = j1.escudo;
+                MessageBox.Show(j1.escudo.ToString());
+
+
+
 
             }
 
@@ -4558,14 +4579,15 @@ namespace EntregaFinalPOOO
         private void boton17_MouseEnter(object sender, MouseEventArgs e)
         {
            
+          
+            if (cartascancha2[6].nombre == "Murloc Raider")
+            {
+                popo.Background = MurlocRaider;
+            }
             if (cartascancha2[6].nombre == "wisp")
             {
                 popo.Background = wisp;
 
-            }
-            if (cartascancha2[6].nombre == "Murloc Raider")
-            {
-                popo.Background = MurlocRaider;
             }
             if (cartascancha2[6].nombre == "Bloodfen Raptor" && cartascancha2[6].vida == 2)
             {
@@ -4837,7 +4859,8 @@ namespace EntregaFinalPOOO
                 mazos.Add(rogue);
                 j1.invocar(rogue, weapon1);
                 weapon1_.Visibility = Visibility.Visible;
-                weapon1_.Content = "Dagger Mystery";
+                weapon1_.Content = " ";
+                weapon1_.Background = daga;
 
             }
             if (j1.tipo == "Druid")
@@ -4853,7 +4876,20 @@ namespace EntregaFinalPOOO
                
 
             }
-            if(j1.tipo == "Warlock")
+            if (j1.tipo == "Warrior" && j1.mana>=2 )
+            {
+               
+                
+                    j1.escudo = j1.escudo + 2;
+                    
+
+                
+                fotoescudo.Background = escudo;
+                fotoescudo.Content = j1.escudo;
+                
+
+            }
+            if (j1.tipo == "Warlock")
             {
                 j1.darcarta();
                 for (int i = 0; i < manos.Count; i++)
@@ -4961,7 +4997,18 @@ namespace EntregaFinalPOOO
         /*Habilidad*/
         private void habilidad2_Click(object sender, RoutedEventArgs e)
         {
+            if (j2.tipo == "Warrior" && j2.mana >= 2)
+            {
 
+
+                j2.escudo = j2.escudo + 2;
+
+
+
+          
+                MessageBox.Show(j2.escudo.ToString());
+
+            }
             if (j2.tipo == "Paladin")
             {
                 if (cartascancha2.Count() < 7)
@@ -4984,6 +5031,7 @@ namespace EntregaFinalPOOO
                 j2.invocar(rogue, cartascancha2);
                
                 weapon1_.Content = "dagger mystery";
+                weapon1_.Background = daga;
             }
             if (j2.tipo == "Druid")
             {
@@ -5323,7 +5371,12 @@ namespace EntregaFinalPOOO
                 atacar = null;
 
             }
+            if (j1.tipo == "Warrior")
+            {
+                fotoescudo.Background = escudo;
+                fotoescudo.Content = j1.escudo;
 
+            }
 
             vida1.Content = j1.vida;
             Vida2.Content = j2.vida;
