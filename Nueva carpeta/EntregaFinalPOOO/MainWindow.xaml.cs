@@ -4777,16 +4777,17 @@ namespace EntregaFinalPOOO
         {
             if (j1.tipo == "Paladin")
             {
-                if (cartascancha.Count() < 7) { 
-                minion paladin1 = new minion("Recruit", 1, 1, true, true, 0);
-                paladin1.turno = false;
-                mazos.Add(paladin1);
+                if (cartascancha.Count() < 7)
+                {
+                    minion paladin1 = new minion("Recruit", 1, 1, true, true, 0);
+                    paladin1.turno = false;
+                    mazos.Add(paladin1);
 
 
-                j1.invocar(paladin1, cartascancha);
+                    j1.invocar(paladin1, cartascancha);
 
-
-            } }
+                }
+            } 
                 if (j1.tipo == "Rogue")
             {
                 minion rogue = new minion("Dagger Mastery", 2, 1, true, true, 0);
@@ -4918,7 +4919,6 @@ namespace EntregaFinalPOOO
         /*Habilidad*/
         private void habilidad2_Click(object sender, RoutedEventArgs e)
         {
-            
 
             if (j2.tipo == "Paladin")
             {
@@ -4926,10 +4926,14 @@ namespace EntregaFinalPOOO
                 {
                     minion paladin1 = new minion("Recruit", 1, 1, true, true, 0);
                     paladin1.turno = false;
-                    mazos.Add(paladin1);
+                    mazos2.Add(paladin1);
+
+
                     j2.invocar(paladin1, cartascancha2);
+
                 }
-            }
+            } 
+           
             if (j2.tipo == "Rogue")
             {
                 minion rogue = new minion("Dagger Mastery", 2, 500000, true, true, 0);
