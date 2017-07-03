@@ -344,7 +344,7 @@ namespace EntregaFinalPOOO
             habwarlock.ImageSource = image61;
             BitmapImage image62 = new BitmapImage(new Uri("../../HWarrior.png", UriKind.Relative));
             habwarrior.ImageSource = image62;
-            BitmapImage image63 = new BitmapImage(new Uri("../../HDruid.png", UriKind.Relative));
+            BitmapImage image63 = new BitmapImage(new Uri("../../Hdruid.png", UriKind.Relative));
             habwarrior.ImageSource = image63;
 
 
