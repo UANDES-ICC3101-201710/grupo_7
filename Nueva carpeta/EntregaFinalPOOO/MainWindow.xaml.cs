@@ -165,10 +165,14 @@ namespace EntregaFinalPOOO
         ImageBrush habwarlock = new ImageBrush();
         ImageBrush habwarrior = new ImageBrush();
         ImageBrush habdruid = new ImageBrush();
+<<<<<<< HEAD
+        ImageBrush FondoIni = new ImageBrush();
+=======
         ImageBrush escudo = new ImageBrush();
         ImageBrush daga = new ImageBrush();
 
 
+>>>>>>> bfc1337764817605f97a4f9f016ee1c340bfefe8
 
         List<carta> mazos = new List<carta>();
         List<carta> mazos2 = new List<carta>();
@@ -218,7 +222,7 @@ namespace EntregaFinalPOOO
             player1.SoundLocation = "../../Game of Thrones   Main Theme Official Soundtrack Version.wav";
             player1.PlayLooping();
 
-            
+
             BitmapImage imageplay = new BitmapImage(new Uri("../../play.png", UriKind.Relative));
             playb.ImageSource = imageplay;
 
@@ -253,7 +257,7 @@ namespace EntregaFinalPOOO
             BitmapImage image15 = new BitmapImage(new Uri("http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/8/8b/Silver_Hand_Recruit(268).png/184px-Silver_Hand_Recruit(268).png?version=3d9d1b693ae9afc82a7fa2c3bf38e84a"));
             Recruit.ImageSource = image15;
 
-           BitmapImage image16 = new BitmapImage(new Uri("../../wisp.png",  UriKind.Relative));
+            BitmapImage image16 = new BitmapImage(new Uri("../../wisp.png", UriKind.Relative));
             wisp.ImageSource = image16;
             BitmapImage image17 = new BitmapImage(new Uri("../../murloc raider.png", UriKind.Relative));
             MurlocRaider.ImageSource = image17;
@@ -350,12 +354,17 @@ namespace EntregaFinalPOOO
             habwarrior.ImageSource = image62;
             BitmapImage image63 = new BitmapImage(new Uri("../../Hdruid.png", UriKind.Relative));
             habdruid.ImageSource = image63;
+<<<<<<< HEAD
+            BitmapImage image64 = new BitmapImage(new Uri("../../fondoinicio.png", UriKind.Relative));
+            FondoIni.ImageSource = image64;
+=======
             BitmapImage escudo1 = new BitmapImage(new Uri("../../Escudo.png", UriKind.Relative));
             escudo.ImageSource = escudo1;
             BitmapImage wrogue = new BitmapImage(new Uri("../../wrogue.png", UriKind.Relative));
             daga.ImageSource = wrogue;
 
 
+>>>>>>> bfc1337764817605f97a4f9f016ee1c340bfefe8
 
 
 
@@ -417,11 +426,11 @@ namespace EntregaFinalPOOO
             mazos.Add(m2);
 
 
-            
-            mazos.Add(m); 
+
+            mazos.Add(m);
             mazos.Add(m1);
             mazos.Add(m2);
-           
+
 
             mazos.Add(b9);
             mazos.Add(b1);
@@ -575,6 +584,9 @@ namespace EntregaFinalPOOO
             manadisp.Content = j1.mana.ToString();
             manadisponible2.Content = j2.mana.ToString();
             fondobatalla.Visibility = Visibility.Hidden;
+            fondoinicio.Visibility = Visibility.Visible;
+            cambio1.Visibility = Visibility.Hidden;
+            cambio2.Visibility = Visibility.Hidden;
 
 
 
@@ -1404,10 +1416,12 @@ namespace EntregaFinalPOOO
                 j2.ingresartipo("Warlock");
 
             }
-
+            fondoinicio.Visibility = Visibility.Hidden;
             refreshhmano(manos, manos, cambioss, cambioss, wisp, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
+            cambio1.Visibility = Visibility.Visible;
             cambiocarta1.Visibility = Visibility.Visible;
             refreshhmano(manos2, manos2, cambioss1, cambioss1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
+            cambio2.Visibility = Visibility.Visible;
             cambiocartas2.Visibility = Visibility.Visible;
         }
         /*Comenzar*/
@@ -1416,6 +1430,8 @@ namespace EntregaFinalPOOO
         {
             player1.Stop();
             player.PlayLooping();
+            cambio1.Visibility = Visibility.Hidden;
+            cambio2.Visibility = Visibility.Hidden;
             cambiocartas2.Visibility = Visibility.Hidden;
             cambiocarta1.Visibility = Visibility.Hidden;
             for (int i = 0; i < 3; i++)
@@ -7963,6 +7979,26 @@ namespace EntregaFinalPOOO
         private void weapon1__MouseEnter(object sender, MouseEventArgs e)
         {
             popo.Content = "contador=" + contadorweapon1 + "   ";
+        }
+
+        private void atacarheroe2_MouseEnter(object sender, MouseEventArgs e)
+        {
+            popo.Content = "Ataca al heroe enemigo!";
+        }
+
+        private void atacarheroe2_MouseLeave(object sender, MouseEventArgs e)
+        {
+            popo.Content = vacio;
+        }
+
+        private void atacarheroe1_MouseEnter(object sender, MouseEventArgs e)
+        {
+            popo.Content = "Ataca al heroe enemigo!";
+        }
+
+        private void atacarheroe1_MouseLeave(object sender, MouseEventArgs e)
+        {
+            popo.Content = vacio;
         }
     }
 }

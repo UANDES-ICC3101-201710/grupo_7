@@ -185,5 +185,8 @@
   <ItemGroup>
     <Resource Include="hunter2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fondoinicio.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
