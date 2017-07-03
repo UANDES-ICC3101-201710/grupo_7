@@ -1436,6 +1436,7 @@ namespace EntregaFinalPOOO
 
             }
             fondoinicio.Visibility = Visibility.Hidden;
+            fondocambio.Visibility = Visibility.Visible;
             refreshhmano(manos, manos, cambioss, cambioss, wisp, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
             cambio1.Visibility = Visibility.Visible;
             cambiocarta1.Visibility = Visibility.Visible;
@@ -1454,6 +1455,7 @@ namespace EntregaFinalPOOO
             audio.Background = noaudio;
             audio.Content = "";
             audio.Visibility = Visibility.Visible;
+            fondocambio.Visibility = Visibility.Hidden;
             cambio1.Visibility = Visibility.Hidden;
             cambio2.Visibility = Visibility.Hidden;
             cambiocartas2.Visibility = Visibility.Hidden;
