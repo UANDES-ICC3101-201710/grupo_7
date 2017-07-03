@@ -4807,6 +4807,59 @@ namespace EntregaFinalPOOO
                
 
             }
+            if(j1.tipo == "Warlock")
+            {
+                j1.darcarta();
+                for (int i = 0; i < manos.Count; i++)
+                {
+                    if (manos[i].nombre == "wisp")
+                    {
+                        manobot[i].Background = wispmano;
+
+                    }
+                    if (manos[i].nombre == "Murloc Raider")
+                    {
+                        manobot[i].Background = MurlocRaidermano;
+                    }
+                    if (manos[i].nombre == "Bloodfen Raptor")
+                    {
+                        manobot[i].Background = BloodfenRaptormano;
+                    }
+                    if (manos[i].nombre == "River Crocolisk")
+                    {
+                        manobot[i].Background = RiverCrocoliskmano;
+                    }
+                    if (manos[i].nombre == "Magma Rager")
+                    {
+                        manobot[i].Background = MagmaRagermano;
+                    }
+                    if (manos[i].nombre == "Chillwind Yeti")
+                    {
+                        manobot[i].Background = ChillwindYetimano;
+                    }
+                    if (manos[i].nombre == "Oasis Snapjaw")
+                    {
+                        manobot[i].Background = OasisSnapjawmano;
+                    }
+                    if (manos[i].nombre == "Boulderfist Ogre")
+                    {
+                        manobot[i].Background = BoulderfistOgremano;
+                    }
+                    if (manos[i].nombre == "War Golem")
+                    {
+                        manobot[i].Background = WarGolemmano;
+                    }
+                    if (manos[i].nombre == "Core Hound")
+                    {
+                        manobot[i].Background = CoreHoundmano;
+                    }
+                    manobot[i].Visibility = Visibility.Visible;
+                }
+                manobot[manos.Count()].Visibility = Visibility.Hidden;
+
+
+                refreshhmano(manos, manos2, manobot, manobot1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
+            }
             Random rnd = new Random();
             if (j1.tipo == "Shaman")
             {
@@ -4895,6 +4948,60 @@ namespace EntregaFinalPOOO
                 hatacado = j2;
 
 
+            }
+            if (j2.tipo == "Warlock")
+            {
+                j2.darcarta();
+
+                for (int i = 0; i < manos2.Count; i++)
+                {
+                    if (manos2[i].nombre == "wisp")
+                    {
+                        manobot1[i].Background = wispmano;
+
+                    }
+                    if (manos2[i].nombre == "Murloc Raider")
+                    {
+                        manobot1[i].Background = MurlocRaidermano;
+                    }
+                    if (manos2[i].nombre == "Bloodfen Raptor")
+                    {
+                        manobot1[i].Background = BloodfenRaptormano;
+                    }
+                    if (manos2[i].nombre == "River Crocolisk")
+                    {
+                        manobot1[i].Background = RiverCrocoliskmano;
+                    }
+                    if (manos2[i].nombre == "Magma Rager")
+                    {
+                        manobot1[i].Background = MagmaRagermano;
+                    }
+                    if (manos2[i].nombre == "Chillwind Yeti")
+                    {
+                        manobot1[i].Background = ChillwindYetimano;
+                    }
+                    if (manos2[i].nombre == "Oasis Snapjaw")
+                    {
+                        manobot1[i].Background = OasisSnapjawmano;
+                    }
+                    if (manos2[i].nombre == "Boulderfist Ogre")
+                    {
+                        manobot1[i].Background = BoulderfistOgremano;
+                    }
+                    if (manos2[i].nombre == "War Golem")
+                    {
+                        manobot1[i].Background = WarGolemmano;
+                    }
+                    if (manos2[i].nombre == "Core Hound")
+                    {
+                        manobot1[i].Background = CoreHoundmano;
+                    }
+                    manobot1[i].Visibility = Visibility.Visible;
+                }
+                manobot1[manos2.Count()].Visibility = Visibility.Hidden;
+
+
+                refreshhmano(manos, manos2, manobot, manobot1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
             }
             Random rnd = new Random();
             if (j2.tipo == "Shaman")

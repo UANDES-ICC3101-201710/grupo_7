@@ -300,7 +300,7 @@ namespace EntregaFinalPOOO
 
                 if (this.tipo == "Warlock")
                 {
-                    this.darcarta();
+                    
                     this.vida = this.vida - 2;
                     if (this.vida < 0)
                     {
