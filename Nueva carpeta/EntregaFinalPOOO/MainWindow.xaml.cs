@@ -1752,7 +1752,7 @@ namespace EntregaFinalPOOO
 
 
             }
-
+            
         }
 
         private void boton17_Click(object sender, RoutedEventArgs e)
@@ -5227,6 +5227,7 @@ namespace EntregaFinalPOOO
                 atacar.attack(null, heroeatacado, cartascancha, cartascancha2);
                 
                 heroeatacado = null;
+                
                
             }
             
@@ -5234,7 +5235,7 @@ namespace EntregaFinalPOOO
             atacar.attack(atacado, null, cartascancha, cartascancha2);
                 
                 atacado = null;
-            atacar = null;
+                atacar = null;
                 
             }
             if (atacado != null && atacar != null && j2.activo == true)
@@ -5243,6 +5244,7 @@ namespace EntregaFinalPOOO
 
                 atacado = null;
                 atacar = null;
+
 
             }
             if (hatacado != null && atacado != null && j1.activo == true)// mage 
