@@ -367,6 +367,9 @@ namespace EntregaFinalPOOO
             BitmapImage naudio = new BitmapImage(new Uri("../../nosound.png", UriKind.Relative));
             noaudio.ImageSource = naudio;
 
+            BitmapImage manana = new BitmapImage(new Uri("../../mana.png", UriKind.Relative));
+            lala.ImageSource = manana;
+
 
 
 
