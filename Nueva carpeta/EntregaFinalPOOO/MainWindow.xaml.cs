@@ -4977,7 +4977,18 @@ namespace EntregaFinalPOOO
         /*Habilidad*/
         private void habilidad2_Click(object sender, RoutedEventArgs e)
         {
+            if (j2.tipo == "Warrior" && j2.mana >= 2)
+            {
 
+
+                j2.escudo = j2.escudo + 2;
+
+
+
+          
+                MessageBox.Show(j2.escudo.ToString());
+
+            }
             if (j2.tipo == "Paladin")
             {
                 if (cartascancha2.Count() < 7)
