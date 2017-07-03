@@ -1438,6 +1438,7 @@ namespace EntregaFinalPOOO
             player1.Stop();
             player.PlayLooping();
             audio.Background = noaudio;
+            audio.Content = "";
             audio.Visibility = Visibility.Visible;
             cambio1.Visibility = Visibility.Hidden;
             cambio2.Visibility = Visibility.Hidden;
