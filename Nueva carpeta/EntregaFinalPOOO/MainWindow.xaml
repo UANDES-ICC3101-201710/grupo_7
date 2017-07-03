@@ -164,9 +164,9 @@
             <Button x:Name="boton10"  Content="" Width="50" Click="boton10_Click" MouseEnter="boton10_MouseEnter" MouseLeave="boton10_MouseLeave" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton10_Copy"  Content="" Width="50" Click="boton10_Click" MouseEnter="boton10_MouseEnter" MouseLeave="boton10_MouseLeave" Style="{StaticResource MyButton}"/>
         </StackPanel>
-        <Label x:Name="cambio2" Content="Jugador 2! Elige las cartas que deseas cambiar!" Width="274" Margin="392,27,525,700" Foreground="Black"/>
-        <Label x:Name="cambio1" Content="Jugador 1! Elige las cartas que deseas cambiar!" Width="274" Margin="392,423,525,304" Foreground="Black" Background="#00000000"/>
-        <StackPanel x:Name="cambiocarta1" HorizontalAlignment="Left" Height="157" Margin="339,255,0,0" VerticalAlignment="Top" Width="375" Orientation="Horizontal" Visibility="Hidden">
+        <Label x:Name="cambio2" Content="Jugador 2! Elige las cartas que deseas cambiar!" Width="274" Margin="492,27,425,700" Foreground="Black"/>
+        <Label x:Name="cambio1" Content="Jugador 1! Elige las cartas que deseas cambiar!" Width="274" Margin="492,500,425,227" Foreground="Black" Background="#00000000"/>
+        <StackPanel x:Name="cambiocarta1" HorizontalAlignment="Left" Height="157" Margin="434,544,0,0" VerticalAlignment="Top" Width="375" Orientation="Horizontal" Visibility="Visible">
             <Button x:Name="boton000" Margin="0,0,10,0" Content=""  Width="106" Height="147" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton000_Click" />
             <Button x:Name="boton001" Margin="0,0,10,0" Content=""  Width="106" Height="147" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton001_Click"/>
             <Button x:Name="boton004" Margin="0,0,10,0" Content=""  Width="106" Height="147" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton004_Click"/>
@@ -175,7 +175,7 @@
 
         </StackPanel>
 
-        <StackPanel x:Name="cambiocartas2" HorizontalAlignment="Left" Height="157" Margin="326,59,0,0" VerticalAlignment="Top" Width="375" Orientation="Horizontal" Visibility="Hidden">
+        <StackPanel x:Name="cambiocartas2" HorizontalAlignment="Left" Height="157" Margin="434,59,0,0" VerticalAlignment="Top" Width="412" Orientation="Horizontal" Visibility="Visible">
             <Button x:Name="boton0000" Margin="0,0,10,0" Content=""  Width="106" Height="147" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton0000_Click" />
             <Button x:Name="boton0001" Margin="0,0,10,0" Content=""  Width="106" Height="147" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton0001_Click"/>
             <Button x:Name="boton0002" Margin="0,-4,10,0" Content=""  Width="106" Height="147" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton0002_Click"/>
