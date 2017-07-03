@@ -28,7 +28,7 @@
         </Style>
     </Window.Resources>
     <Grid Margin="0,0,2,0" RenderTransformOrigin="0.533,0.495">
-        <Image x:Name="fondoinicio" Margin="0,-1,0,14" Source="fondoinicio.png" Stretch="Fill"/>
+        <Image x:Name="fondoinicio" Margin="0,-1,0,14" Source="fondoinicio.png" Stretch="Fill" Visibility="Hidden"/>
 
 
 

@@ -573,6 +573,9 @@ namespace EntregaFinalPOOO
             decir1.Visibility = Visibility.Hidden;
             decir2.Visibility = Visibility.Hidden;
             weapon1_.Visibility = Visibility.Hidden;
+            fotoescudo.Visibility = Visibility.Hidden;
+            fotoescudo2.Visibility = Visibility.Hidden;
+
 
             vida1.Content = j1.vida.ToString();
             Vida2.Content = j2.vida.ToString();
@@ -1234,6 +1237,8 @@ namespace EntregaFinalPOOO
                 fotoescudo.Background = escudo;
                 fotoescudo.Content = j1.escudo;
                 MessageBox.Show(j1.escudo.ToString());
+                fotoescudo.Visibility = Visibility.Visible;
+               
 
 
 
@@ -1333,6 +1338,10 @@ namespace EntregaFinalPOOO
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 j2.ingresartipo("Warrior");
+                fotoescudo2.Background = escudo;
+                fotoescudo2.Content = j2.escudo;
+                
+                fotoescudo2.Visibility = Visibility.Visible;
 
             }
 
