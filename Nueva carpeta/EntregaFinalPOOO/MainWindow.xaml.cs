@@ -165,6 +165,10 @@ namespace EntregaFinalPOOO
         ImageBrush habwarlock = new ImageBrush();
         ImageBrush habwarrior = new ImageBrush();
         ImageBrush habdruid = new ImageBrush();
+        ImageBrush escudo = new ImageBrush();
+
+
+
 
         List<carta> mazos = new List<carta>();
         List<carta> mazos2 = new List<carta>();
@@ -345,10 +349,12 @@ namespace EntregaFinalPOOO
             BitmapImage image62 = new BitmapImage(new Uri("../../HWarrior.png", UriKind.Relative));
             habwarrior.ImageSource = image62;
             BitmapImage image63 = new BitmapImage(new Uri("../../Hdruid.png", UriKind.Relative));
-
             habdruid.ImageSource = image63;
+            BitmapImage escudo1 = new BitmapImage(new Uri("../../Escudo.png", UriKind.Relative));
+            escudo.ImageSource = escudo1;
 
-            
+
+
 
 
 
@@ -1211,7 +1217,12 @@ namespace EntregaFinalPOOO
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
                 j1.ingresartipo("Warrior");
-                
+                fotoescudo.Background = escudo;
+                fotoescudo.Content = j1.escudo;
+                MessageBox.Show(j1.escudo.ToString());
+
+
+
 
             }
 
@@ -4845,7 +4856,20 @@ namespace EntregaFinalPOOO
                
 
             }
-            if(j1.tipo == "Warlock")
+            if (j1.tipo == "Warrior" && j1.mana>=2 )
+            {
+               
+                
+                    j1.escudo = j1.escudo + 2;
+                    
+
+                
+                fotoescudo.Background = escudo;
+                fotoescudo.Content = j1.escudo;
+                MessageBox.Show(j1.escudo.ToString());
+
+            }
+            if (j1.tipo == "Warlock")
             {
                 j1.darcarta();
                 for (int i = 0; i < manos.Count; i++)
@@ -5315,7 +5339,12 @@ namespace EntregaFinalPOOO
                 atacar = null;
 
             }
+            if (j1.tipo == "Warrior")
+            {
+                fotoescudo.Background = escudo;
+                fotoescudo.Content = j1.escudo;
 
+            }
 
             vida1.Content = j1.vida;
             Vida2.Content = j2.vida;

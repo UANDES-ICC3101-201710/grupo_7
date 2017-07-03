@@ -236,12 +236,7 @@ namespace EntregaFinalPOOO
                 }
 
 
-                if (this.tipo == "Warrior")
-                {
-                    this.escudo = this.escudo + 2;
-                    return escudo;
-
-                }
+                
                 if (this.tipo == "Mage")
                 {
                     /* if (tipo.tipo == "Warrior")
