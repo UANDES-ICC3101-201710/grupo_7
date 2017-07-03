@@ -642,7 +642,13 @@ namespace EntregaFinalPOOO
             Application.Current.Shutdown();
         }
 
-        public static void refreshmana() { }
+        public static void refreshmana(ImageBrush lala, List<Button> manamana, Heroe j) 
+        {
+            for (int i = 0; i < j.mana; i++) 
+            {
+                manamana[i].Background = lala;
+            }
+        }
 
         public static void refreshhmano(List<carta> cartascancha, List<carta> cartascancha2, List<Button> xx, List<Button> a2, ImageBrush wisp, ImageBrush MurlocRaider, ImageBrush BloodfenRaptor, ImageBrush RiverCrocolisk, ImageBrush MagmaRager, ImageBrush ChillwindYeti, ImageBrush OasisSnapjaw, ImageBrush BoulderfistOgre, ImageBrush WarGolem, ImageBrush CoreHound, ImageBrush recruit, Heroe j1, Heroe j2)
         {
@@ -1441,6 +1447,8 @@ namespace EntregaFinalPOOO
 
         private void boton3_Click(object sender, RoutedEventArgs e)
         {
+            refreshmana(lala, manamana, j1);
+
             player1.Stop();
             player.PlayLooping();
             audio.Background = noaudio;
@@ -1696,6 +1704,7 @@ namespace EntregaFinalPOOO
         {
 
             j1.terminarturnomana();
+            refreshmana(lala, manamana, j1);
             manatot1.Content = String.Empty;
             manatot1.Content = j1.manatotal.ToString();
             manadisp.Content = manatot1.Content;
@@ -5573,9 +5582,12 @@ namespace EntregaFinalPOOO
                 {
                     j1.jugarcarta(1, cartascancha);
                     manadisp.Content = j1.mana;
+                   
 
 
                 }
+                
+
                 for (int i = 0; i < manos.Count; i++)
                 {
                     if (manos[i].nombre == "wisp")
@@ -5626,7 +5638,7 @@ namespace EntregaFinalPOOO
 
                 refreshhmano(manos, manos2, manobot, manobot1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
                     refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2, RiverCrocolisk1, BloodfenRaptor1, RiverCrocolisk2, ChillwindYeti1, ChillwindYeti2, ChillwindYeti3, ChillwindYeti4, OasisSnapjaw1, OasisSnapjaw2, OasisSnapjaw3, OasisSnapjaw4, OasisSnapjaw5, OasisSnapjaw6, BoulderfistOgre1, BoulderfistOgre2, BoulderfistOgre3, BoulderfistOgre4, BoulderfistOgre5, BoulderfistOgre6, WarGolem1, WarGolem2, WarGolem3, WarGolem4, WarGolem5, WarGolem6, CoreHound1, CoreHound2, CoreHound3, CoreHound4);
-
+                    
                 }
             }
         }
@@ -5676,6 +5688,7 @@ namespace EntregaFinalPOOO
             }
             refreshhmano(manos, manos2, manobot, manobot1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2, RiverCrocolisk1, BloodfenRaptor1, RiverCrocolisk2, ChillwindYeti1, ChillwindYeti2, ChillwindYeti3, ChillwindYeti4, OasisSnapjaw1, OasisSnapjaw2, OasisSnapjaw3, OasisSnapjaw4, OasisSnapjaw5, OasisSnapjaw6, BoulderfistOgre1, BoulderfistOgre2, BoulderfistOgre3, BoulderfistOgre4, BoulderfistOgre5, BoulderfistOgre6, WarGolem1, WarGolem2, WarGolem3, WarGolem4, WarGolem5, WarGolem6, CoreHound1, CoreHound2, CoreHound3, CoreHound4);
+            refreshmana(lala, manamana, j1);
 
         }
 
