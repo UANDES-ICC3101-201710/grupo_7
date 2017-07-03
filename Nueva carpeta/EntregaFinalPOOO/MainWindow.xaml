@@ -166,7 +166,7 @@
         </StackPanel>
         <Label x:Name="cambio2" Content="Jugador 2! Elige las cartas que deseas cambiar!" Width="274" Margin="492,27,425,700" Foreground="Black"/>
         <Label x:Name="cambio1" Content="Jugador 1! Elige las cartas que deseas cambiar!" Width="274" Margin="492,500,425,227" Foreground="Black" Background="#00000000"/>
-        <StackPanel x:Name="cambiocarta1" HorizontalAlignment="Left" Height="157" Margin="434,544,0,0" VerticalAlignment="Top" Width="375" Orientation="Horizontal" Visibility="Visible">
+        <StackPanel x:Name="cambiocarta1" HorizontalAlignment="Left" Height="157" Margin="434,544,0,0" VerticalAlignment="Top" Width="375" Orientation="Horizontal" Visibility="Hidden">
             <Button x:Name="boton000" Margin="0,0,10,0" Content=""  Width="106" Height="147" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton000_Click" />
             <Button x:Name="boton001" Margin="0,0,10,0" Content=""  Width="106" Height="147" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton001_Click"/>
             <Button x:Name="boton004" Margin="0,0,10,0" Content=""  Width="106" Height="147" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton004_Click"/>
@@ -175,7 +175,7 @@
 
         </StackPanel>
 
-        <StackPanel x:Name="cambiocartas2" HorizontalAlignment="Left" Height="157" Margin="434,59,0,0" VerticalAlignment="Top" Width="412" Orientation="Horizontal" Visibility="Visible">
+        <StackPanel x:Name="cambiocartas2" HorizontalAlignment="Left" Height="157" Margin="434,59,0,0" VerticalAlignment="Top" Width="412" Orientation="Horizontal" Visibility="Hidden">
             <Button x:Name="boton0000" Margin="0,0,10,0" Content=""  Width="106" Height="147" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton0000_Click" />
             <Button x:Name="boton0001" Margin="0,0,10,0" Content=""  Width="106" Height="147" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton0001_Click"/>
             <Button x:Name="boton0002" Margin="0,-4,10,0" Content=""  Width="106" Height="147" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton0002_Click"/>
@@ -183,7 +183,7 @@
 
 
         </StackPanel>
-        <Button x:Name="audio" Content="             " HorizontalAlignment="Left" Margin="64,520,0,0" VerticalAlignment="Top" Width="77" Click="audio_Click" Height="56" Style="{StaticResource MyButton}"  />
+        <Button x:Name="audio" Content="Button" HorizontalAlignment="Left" Margin="64,520,0,0" VerticalAlignment="Top" Width="75" Click="audio_Click"/>
         <Button x:Name="weapon1_" Content="Button" HorizontalAlignment="Left" Margin="433,531,0,0" VerticalAlignment="Top" Width="97" Height="72" Click="weapon1__Click" MouseEnter="weapon1__MouseEnter" Style="{StaticResource MyButton}" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
