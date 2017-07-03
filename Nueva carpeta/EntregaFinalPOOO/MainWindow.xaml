@@ -47,8 +47,8 @@
             <Button x:Name="boton14" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton14_MouseEnter" MouseLeave="boton14_MouseLeave" Click="boton14_Click" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton15" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton15_MouseEnter" MouseLeave="boton15_MouseLeave" Click="boton15_Click" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton16" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton16_MouseEnter" MouseLeave="boton16_MouseLeave" Click="boton16_Click" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton17"  Content="" Width="50" Click="boton17_Click" MouseEnter="boton17_MouseEnter" MouseLeave="boton17_MouseLeave" Height="65" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton17_Copy"  Content="" Width="50" Click="boton17_Click" MouseEnter="boton17_MouseEnter" MouseLeave="boton17_MouseLeave" Height="65" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton17"  Content="" Width="50" Click="boton17_Click" MouseEnter="boton17_MouseEnter" MouseLeave="boton17_MouseLeave" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton17_Copy"  Content="" Width="50"  Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
         </StackPanel>
 
         <Button x:Name="FinTurno_Copy" Content="Terminar Turno" HorizontalAlignment="Left" Margin="953,200,0,0" VerticalAlignment="Top" Width="121" IsEnabled="False" Click="FinTurno_Copy_Click" Background="#FF59B650"/>
