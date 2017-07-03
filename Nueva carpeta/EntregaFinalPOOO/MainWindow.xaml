@@ -55,11 +55,9 @@
         <GroupBox x:Name="datos" Header="Informacion de la carta&#xA;" HorizontalAlignment="Left" Height="161" Margin="9,259,0,0" VerticalAlignment="Top" Width="212">
             <Label x:Name="popo" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="152" Width="201" MouseEnter="popo_MouseEnter" MouseLeave="popo_MouseLeave" Margin="0,-18,-2,-11" Foreground="White" />
         </GroupBox>
-        <TextBlock x:Name="Datosj1" HorizontalAlignment="Left" Margin="895,420,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="77" Width="128" Text="Vida:&#xA;Mana Total :&#xA;Mana Disponible:" FontWeight="Bold" FontSize="14" Foreground="White"/>
-        <TextBlock x:Name="datosj2" HorizontalAlignment="Left" Margin="929,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="71" Width="120" FontSize="14" FontWeight="Bold" Foreground="#FFFDFBFB"><Run Text="Vida:"/><LineBreak/><Run Text="Mana Total:"/><LineBreak/><Run Text="Mana Disponible:"/></TextBlock>
-        <Label x:Name="Vida2" Content="Label" HorizontalAlignment="Left" Margin="978,119,0,0" VerticalAlignment="Top" Height="24" FontSize="14" FontWeight="Bold" Background="{x:Null}" Foreground="#FFFBFBFB"/>
+        <TextBlock x:Name="Datosj1" HorizontalAlignment="Left" Margin="895,420,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="77" Width="128" Text="Mana Total :&#xA;Mana Disponible:" FontWeight="Bold" FontSize="14" Foreground="White"/>
+        <TextBlock x:Name="datosj2" HorizontalAlignment="Left" Margin="929,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="71" Width="120" FontSize="14" FontWeight="Bold" Foreground="#FFFDFBFB"><Run Text=""/><LineBreak/><Run Text="Mana Total:"/><LineBreak/><Run Text="Mana Disponible:"/></TextBlock>
         <Label x:Name="manadisponible2" Content="Label" HorizontalAlignment="Left" Margin="1049,160,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Background="{x:Null}" Foreground="#FFFBF8F8"/>
-        <Label x:Name="vida1" Content="Label" HorizontalAlignment="Left" Margin="929,415,0,0" VerticalAlignment="Top" Height="34" Width="47" FontSize="14" FontWeight="Bold" Foreground="#FFF9F4F4"/>
         <Label x:Name="manatot1" Content="Label" HorizontalAlignment="Left" Margin="976,431,0,0" VerticalAlignment="Top" Height="34" Width="47" FontSize="14" FontWeight="Bold" Foreground="#FFF9F4F4"/>
         <Label x:Name="manadisp" Content="Label" HorizontalAlignment="Left" Margin="1009,450,0,0" VerticalAlignment="Top" Height="34" RenderTransformOrigin="0.5,0.5" Width="47" FontSize="14" FontWeight="Bold" Foreground="#FFF7F4F4">
 
@@ -175,6 +173,8 @@
         </StackPanel>
         <Button x:Name="audio" Content="Button" HorizontalAlignment="Left" Margin="64,520,0,0" VerticalAlignment="Top" Width="75" Click="audio_Click"/>
         <Button x:Name="weapon1_" Content="Button" HorizontalAlignment="Left" Margin="420,515,0,0" VerticalAlignment="Top" Width="102" Height="49" Click="weapon1__Click" MouseEnter="weapon1__MouseEnter"/>
+        <Label x:Name="vida1" Content="Label" HorizontalAlignment="Left" Margin="654,609,0,0" VerticalAlignment="Top" Height="38" Width="47" FontSize="14" FontWeight="Bold" Foreground="#FFF9F4F4"/>
+        <Label x:Name="Vida2" Content="Label" HorizontalAlignment="Left" Margin="654,155,0,0" VerticalAlignment="Top" Height="40" FontSize="14" FontWeight="Bold" Background="{x:Null}" Foreground="#FFFBFBFB" Width="47" RenderTransformOrigin="0.519,0.66"/>
 
 
 
