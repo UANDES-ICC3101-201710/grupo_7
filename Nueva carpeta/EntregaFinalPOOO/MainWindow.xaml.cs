@@ -7799,47 +7799,47 @@ namespace EntregaFinalPOOO
         {
             manos.RemoveAt(0);
             cambioss[manos.Count()].Visibility = Visibility.Hidden;
-            refreshhmano(manos, manos2, cambioss, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);          
+            refreshhmano(manos, manos2, cambioss, manobot1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);          
         
         }
-
+        
         private void boton001_Click(object sender, RoutedEventArgs e)
         {
             manos.RemoveAt(1);
-            refreshhmano(manos, manos2, cambioss , manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshhmano(manos, manos2, cambioss, manobot1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
 
         }
 
         private void boton004_Click(object sender, RoutedEventArgs e)
         {
             manos.RemoveAt(2);
-            refreshhmano(manos, manos2, cambioss, manobot1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshhmano(manos, manos2, cambioss, manobot1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
 
         }
 
-      
+
 
         private void boton0001_Click(object sender, RoutedEventArgs e)
         {
             manos2.RemoveAt(1);
-            refreshhmano(manos2, manos2, cambioss1, cambioss1, wispmano, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshhmano(manos2, manos2, cambioss1, cambioss1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
 
         }
 
         private void boton0002_Click(object sender, RoutedEventArgs e)
         {
             manos2.RemoveAt(2);
-            refreshhmano(manos2, manos2, cambioss1, cambioss1, wispmano, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshhmano(manos2, manos2, cambioss1, cambioss1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
 
         }
 
-      
+
 
         private void boton0000_Click(object sender, RoutedEventArgs e)
         {
             manos2.RemoveAt(0);
             cambioss1[manos2.Count()].Visibility = Visibility.Hidden;
-            refreshhmano(manos2, manos2, cambioss1, cambioss1, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, j1, j2);
+            refreshhmano(manos2, manos2, cambioss1, cambioss1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
 
         }
 
