@@ -345,7 +345,11 @@ namespace EntregaFinalPOOO
             BitmapImage image62 = new BitmapImage(new Uri("../../HWarrior.png", UriKind.Relative));
             habwarrior.ImageSource = image62;
             BitmapImage image63 = new BitmapImage(new Uri("../../Hdruid.png", UriKind.Relative));
+<<<<<<< HEAD
             habdruid.ImageSource = image63;
+=======
+            habwarrior.ImageSource = image63;
+>>>>>>> c53ae610d024707d43fd0b6794d0417ce8d33b02
 
 
 
