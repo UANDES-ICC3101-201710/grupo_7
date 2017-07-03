@@ -4872,7 +4872,7 @@ namespace EntregaFinalPOOO
                     int ppp = rnd.Next(4);
                     if (ppp == 0)
                     {
-                        minion shaman1 = new minion("Heilin Totem", 2, 0, true, true, 0);
+                        minion shaman1 = new minion("Heilin Totem", 0, 2, true, true, 0);
                         mazos.Add(shaman1);
                         j1.invocar(shaman1, cartascancha);
                     }
@@ -4886,13 +4886,13 @@ namespace EntregaFinalPOOO
                     if (ppp == 2)
                     {
 
-                        minion shaman3 = new minion("Stoneclaw Totem", 2, 0, true, true, 0);
+                        minion shaman3 = new minion("Stoneclaw Totem", 0, 2, true, true, 0);
                         mazos.Add(shaman3);
                         j1.invocar(shaman3, cartascancha);
                     }
                     if (ppp == 3)
                     {
-                        minion shaman4 = new minion("Warth of air Totem", 2, 0, true, true, 0);
+                        minion shaman4 = new minion("Warth of air Totem", 0, 2, true, true, 0);
                         mazos.Add(shaman4);
                         j1.invocar(shaman4, cartascancha);
                     }
@@ -5018,10 +5018,11 @@ namespace EntregaFinalPOOO
                     int ppp = rnd.Next(4);
                     if (ppp == 0)
                     {
-                        minion shaman1 = new minion("Heilin Totem", 2, 0, true, true, 0);
+                        minion shaman1 = new minion("Heilin Totem", 0, 2, true, true, 0);
                         shaman1.turno = false;
                         mazos2.Add(shaman1);
                         j2.invocar(shaman1, cartascancha2);
+                        
                     }
                     if (ppp == 1)
                     {
@@ -5032,14 +5033,14 @@ namespace EntregaFinalPOOO
                     }
                     if (ppp == 2)
                     {
-                        minion shaman3 = new minion("Stoneclaw Totem", 2, 0, true, true, 0);
+                        minion shaman3 = new minion("Stoneclaw Totem", 0, 2, true, true, 0);
                         shaman3.turno = false;
                         mazos2.Add(shaman3);
                         j2.invocar(shaman3, cartascancha2);
                     }
                     if (ppp == 3)
                     {
-                        minion shaman4 = new minion("Warth of air Totem", 2, 0, true, true, 0);
+                        minion shaman4 = new minion("Warth of air Totem", 0, 2, true, true, 0);
                         shaman4.turno = false;
                         mazos2.Add(shaman4);
                         j2.invocar(shaman4, cartascancha2);
