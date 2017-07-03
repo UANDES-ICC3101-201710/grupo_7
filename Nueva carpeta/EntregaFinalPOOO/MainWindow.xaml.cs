@@ -5132,6 +5132,15 @@ namespace EntregaFinalPOOO
                 atacado = null;
 
             }
+            if (hatacado != null && heroeatacado != null && j1.activo == true)// mage 
+            {
+                MessageBox.Show("someboe");
+                hatacado.attack(null, heroeatacado, null,  cartascancha2);
+
+                hatacado = null;
+                atacado = null;
+
+            }
 
 
             vida1.Content = j1.vida;
@@ -5168,7 +5177,7 @@ namespace EntregaFinalPOOO
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
             heroeatacado = j2;
-            if ((atacar != null && heroeatacado != null) || (atacado != null && heroeatacado != null))
+            if ((atacar != null && heroeatacado != null) || (atacado != null && heroeatacado != null) || (hatacado != null && heroeatacado != null))
             {
 
                 atacar2.IsEnabled = true;
