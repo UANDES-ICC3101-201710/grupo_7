@@ -1341,6 +1341,8 @@ namespace EntregaFinalPOOO
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
                 j1.ingresartipo("Druid");
+                fotoescudo.Background = escudo;
+                fotoescudo.Content = j1.escudo;
 
             }
 
@@ -1436,6 +1438,8 @@ namespace EntregaFinalPOOO
                 comboBox2.Visibility = Visibility.Hidden;
                 boton3.Visibility = Visibility.Visible;
                 j2.ingresartipo("Druid");
+                fotoescudo2.Background = escudo;
+                fotoescudo2.Content = j2.escudo;
 
             }
 
@@ -4955,6 +4959,8 @@ namespace EntregaFinalPOOO
                     weapon1_.Visibility = Visibility.Visible;
                     weapon1_.Content = " ";
                     weapon1_.Background = oso;
+                    fotoescudo.Background=escudo;
+                    fotoescudo.Content = j1.escudo;
                 }
                 if (j1.tipo == "Mage")
                 {
@@ -5135,7 +5141,10 @@ namespace EntregaFinalPOOO
                     j2.invocar(druid, weapon2);
                     weapon2_.Visibility = Visibility.Visible;
                     weapon2_.Content = " ";
-                    weapon2_.Background = daga;
+                    weapon2_.Background = oso;
+                    fotoescudo2.Visibility = Visibility.Visible;
+                    fotoescudo2.Background = escudo;
+                    fotoescudo2.Content = j2.escudo;
                 }
                 if (j1.tipo == "Mage")
                 {
@@ -5496,6 +5505,24 @@ namespace EntregaFinalPOOO
             {
                 fotoescudo.Background = escudo;
                 fotoescudo.Content = j1.escudo;
+
+            }
+            if (j1.tipo == "Druid")
+            {
+                fotoescudo.Background = escudo;
+                fotoescudo.Content = j1.escudo;
+
+            }
+            if (j2.tipo == "Warrior")
+            {
+                fotoescudo.Background = escudo;
+                fotoescudo.Content = j2.escudo;
+
+            }
+            if (j2.tipo == "Druid")
+            {
+                fotoescudo.Background = escudo;
+                fotoescudo.Content = j2.escudo;
 
             }
 
