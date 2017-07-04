@@ -94,7 +94,7 @@
 
         <Button x:Name="atacar2" Content="Atacar!" HorizontalAlignment="Left" Margin="953,300,0,0" VerticalAlignment="Top" Width="121" Click="Button_Click_6" IsEnabled="False" Height="65"/>
         <Button x:Name="atacarheroe2" Content="Atacar heroe" HorizontalAlignment="Left" Margin="568,221,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click_5"/>
-        <Button x:Name="atacarheroe1" Content="Atacar heroe" HorizontalAlignment="Left" Margin="568,500,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click_7"/>
+        <Button x:Name="atacarheroe1" Content="Atacar heroe" HorizontalAlignment="Left" Margin="568,489,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click_7"/>
         <Label x:Name="eheroe1" Content="Elegir heroe" HorizontalAlignment="Left" Margin="691,252,0,0" VerticalAlignment="Top" Foreground="#FFF3E8E8" Height="34" Width="110" FontWeight="Bold"/>
         <Label x:Name="eheroe2" Content="Elegir heroe" HorizontalAlignment="Left" Margin="691,313,0,0" VerticalAlignment="Top" Foreground="Snow" Height="41" Width="110" FontWeight="Bold"/>
         <Label x:Name="decir1" Content="Decir algo" HorizontalAlignment="Left" Margin="795,470,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFDFDFD"/>
@@ -169,7 +169,7 @@
             <Button x:Name="boton10_Copy"  Content="" Width="50" Click="boton10_Click" MouseEnter="boton10_MouseEnter" MouseLeave="boton10_MouseLeave" Style="{StaticResource MyButton}"/>
         </StackPanel>
         <Label x:Name="cambio2" Content="Jugador 2! Elige las cartas que deseas cambiar!" Width="274" Margin="492,27,425,700" Foreground="White" FontWeight="Bold"/>
-        <Label x:Name="cambio1" Content="Jugador 1! Elige las cartas que deseas cambiar!" Width="274" Margin="492,500,425,227" Foreground="White" FontWeight="Bold" Background="{x:Null}"/>
+        <Label x:Name="cambio1" Content="Jugador 1! Elige las cartas que deseas cambiar!" Width="274" Margin="478,514,442,212.8" Foreground="White" FontWeight="Bold" Background="{x:Null}"/>
         <StackPanel x:Name="cambiocarta1" HorizontalAlignment="Left" Height="157" Margin="434,544,0,0" VerticalAlignment="Top" Width="375" Orientation="Horizontal" Visibility="Hidden">
             <Button x:Name="boton000" Margin="0,0,10,0" Content=""  Width="106" Height="147" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton000_Click" />
             <Button x:Name="boton001" Margin="0,0,10,0" Content=""  Width="106" Height="147" VerticalAlignment="Top" Style="{StaticResource MyButton}" Click="boton001_Click"/>

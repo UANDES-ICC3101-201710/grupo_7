@@ -5372,7 +5372,7 @@ namespace EntregaFinalPOOO
                     fotoescudo2.Background = escudo;
                     fotoescudo2.Content = j2.escudo;
                 }
-                if (j1.tipo == "Mage")
+                if (j2.tipo == "Mage")
                 {
                     hatacado = j2;
 
@@ -5767,7 +5767,7 @@ namespace EntregaFinalPOOO
                 hatacado.attack(null, heroeatacado, null, cartascancha2);
 
                 hatacado = null;
-                atacado = null;
+                heroeatacado= null;
 
             }
             if (hatacado != null && atacar != null && j2.activo == true)// mage 
@@ -5784,7 +5784,7 @@ namespace EntregaFinalPOOO
                 hatacado.attack(null, heroeatacado, null, cartascancha);
 
                 hatacado = null;
-                atacar = null;
+                heroeatacado = null;
 
             }
             if (j1.tipo == "Warrior")
