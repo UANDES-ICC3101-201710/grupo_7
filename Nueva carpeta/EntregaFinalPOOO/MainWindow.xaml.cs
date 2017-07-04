@@ -345,9 +345,9 @@ namespace EntregaFinalPOOO
             CoreHound.ImageSource = image50;
             BitmapImage image51 = new BitmapImage(new Uri("../../core hound 1.png", UriKind.Relative));
             CoreHound1.ImageSource = image51;
-            BitmapImage image52 = new BitmapImage(new Uri("../../core hound 2..png", UriKind.Relative));
+            BitmapImage image52 = new BitmapImage(new Uri("../../core hound 2.png", UriKind.Relative));
             CoreHound2.ImageSource = image52;
-            BitmapImage image53 = new BitmapImage(new Uri("../../core hound 3..png", UriKind.Relative));
+            BitmapImage image53 = new BitmapImage(new Uri("../../core hound 3.png", UriKind.Relative));
             CoreHound3.ImageSource = image53;
             BitmapImage image54 = new BitmapImage(new Uri("../../core hound 4.png", UriKind.Relative));
             CoreHound4.ImageSource = image54;
