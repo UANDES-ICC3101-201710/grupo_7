@@ -6211,11 +6211,11 @@ namespace EntregaFinalPOOO
 
         private void boton22_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (manos[4].nombre == "wisp")
-            {
-                popo.Background = wisp;
+                    if (manos[4].nombre == "wisp")
+                    {
+                         popo.Background = wisp;
 
-            }
+                    }
                     if (manos[4].nombre == "Murloc Raider")
                     {
                         popo.Background = wispmano;
@@ -7275,13 +7275,14 @@ namespace EntregaFinalPOOO
         }
         private void boton29_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (manos2[3].nombre == "wisp")
-            {
-                popo.Background = wispmano;
-            }
+           
             if (manos2[3].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaidermano;
+            }
+            if (manos2[3].nombre == "wisp")
+            {
+                popo.Background = wispmano;
             }
             if (manos2[3].nombre == "Bloodfen Raptor")
             {
