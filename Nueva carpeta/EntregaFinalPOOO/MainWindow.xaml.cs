@@ -233,7 +233,7 @@ namespace EntregaFinalPOOO
         public MainWindow()
         {
             InitializeComponent();
-
+           
             player.SoundLocation = "../../All Star - Smash Mouth [Lyrics].wav";
             player1.SoundLocation = "../../Game of Thrones   Main Theme Official Soundtrack Version.wav";
             player1.PlayLooping();
@@ -472,9 +472,7 @@ namespace EntregaFinalPOOO
 
 
 
-            mazos.Add(m);
-            mazos.Add(m1);
-            mazos.Add(m2);
+        
 
 
             mazos.Add(b9);
@@ -501,7 +499,7 @@ namespace EntregaFinalPOOO
             mazos.Add(CH);
             mazos.Add(CH1);
             mazos.Add(CH2);
-
+            
             mazos.Shuffle();
 
             mazos2.Add(w5);
@@ -539,12 +537,12 @@ namespace EntregaFinalPOOO
 
             var mazo = new Stack<carta>(mazos);
             var mazo2 = new Stack<carta>(mazos2);
-
+            
             j1.ingresarmazo(mazo);
             j1.ingresarmano(manos);
             j2.ingresarmazo(mazo2);
             j2.ingresarmano(manos2);
-
+            MessageBox.Show(j1.mazo.Count.ToString() + "   mazos:" + mazos.Count().ToString() + " Jugador2.mazo=" + j2.mazo.Count.ToString() + " mazos2" + mazos2.Count.ToString());
             for (int i = 0; i < 3; i++)
             {
                 j1.darcarta();
@@ -1482,6 +1480,7 @@ namespace EntregaFinalPOOO
         private void boton3_Click(object sender, RoutedEventArgs e)
         {
             refreshmana(lala, manamana, j1);
+            MessageBox.Show(j1.mazo.Count.ToString() + "   mazos:" + mazos.Count().ToString()+" Jugador2.mazo="+j2.mazo.Count.ToString()+" mazos2"+mazos2.Count.ToString());
 
             player1.Stop();
             player.PlayLooping();
@@ -2081,7 +2080,7 @@ namespace EntregaFinalPOOO
 
         private void boton4_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            popo.Content = "actividad  \n " + cartascancha[0].actividad + "visibilidad \n " + cartascancha[0].visibilidad + "turno\n" + cartascancha[0].turno;
             if (cartascancha[0].nombre == "wisp")
             {
                 popo.Background = wisp;
@@ -2290,7 +2289,7 @@ namespace EntregaFinalPOOO
 
         private void boton5_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            popo.Content = "actividad  \n " + cartascancha[1].actividad + "visibilidad \n " + cartascancha[1].visibilidad + "turno\n" + cartascancha[1].turno;
             if (cartascancha[1].nombre == "wisp")
             {
                 popo.Background = wisp;
