@@ -182,6 +182,9 @@ namespace EntregaFinalPOOO
         ImageBrush rogueex = new ImageBrush();
 
 
+        ImageBrush oso = new ImageBrush();
+
+
 
 
         List<carta> mazos = new List<carta>();
@@ -403,6 +406,9 @@ namespace EntregaFinalPOOO
             warriorex.ImageSource = fotito7;
             BitmapImage fotito8 = new BitmapImage(new Uri("../../warlockex.png", UriKind.Relative));
             warlockex.ImageSource = fotito8;
+
+            BitmapImage fotito9 = new BitmapImage(new Uri("../../bear.png", UriKind.Relative));
+            oso.ImageSource = fotito9;
 
 
 
