@@ -279,7 +279,7 @@ namespace EntregaFinalPOOO
             totem331.ImageSource = image131;
             BitmapImage image14 = new BitmapImage(new Uri("../../totem11.png", UriKind.Relative)); 
             totem44.ImageSource = image14;
-            BitmapImage image15 = new BitmapImage(new Uri("http://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/8/8b/Silver_Hand_Recruit(268).png/184px-Silver_Hand_Recruit(268).png?version=3d9d1b693ae9afc82a7fa2c3bf38e84a"));
+            BitmapImage image15 = new BitmapImage(new Uri("../../recruit.png", UriKind.Relative));
             Recruit.ImageSource = image15;
             BitmapImage image16 = new BitmapImage(new Uri("../../wisp.png", UriKind.Relative));
             wisp.ImageSource = image16;
