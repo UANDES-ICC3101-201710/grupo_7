@@ -199,9 +199,9 @@
             </Button.RenderTransform>
         </Button>
         <Label x:Name="vida1" Content="Label" HorizontalAlignment="Left" Margin="654,609,0,0" VerticalAlignment="Top" Height="38" Width="47" FontSize="14" FontWeight="Bold" Foreground="#FFF9F4F4"/>
-        <Label x:Name="Vida2" Content="Label" HorizontalAlignment="Left" Margin="654,155,0,0" VerticalAlignment="Top" Height="40" FontSize="14" FontWeight="Bold" Background="{x:Null}" Foreground="#FFFBFBFB" Width="47" RenderTransformOrigin="0.519,0.66"/>
-        <Button x:Name="fotoescudo" Content="Button" HorizontalAlignment="Left" Margin="649,566,0,0" VerticalAlignment="Top" Width="43" Height="40"/>
-        <Button x:Name="fotoescudo2" Content="Button" HorizontalAlignment="Left" Margin="654,116,0,0" VerticalAlignment="Top" Width="46" Height="34"/>
+        <Label x:Name="Vida2" Content="Label" HorizontalAlignment="Left" Margin="654,155,0,0" VerticalAlignment="Top" Height="40" FontSize="14" FontWeight="Bold" Background="{x:Null}" Foreground="#FFFBFBFB" Width="47" RenderTransformOrigin="1.165,0.781"/>
+        <Button x:Name="fotoescudo" Content="Button" HorizontalAlignment="Left" Margin="649,566,0,0" VerticalAlignment="Top" Width="43" Height="40"  Style="{StaticResource MyButton}" Foreground="#FFFFFEFE" />
+        <Button x:Name="fotoescudo2" Content="Button" HorizontalAlignment="Left" Margin="654,116,0,0" VerticalAlignment="Top" Width="46" Height="34"  Style="{StaticResource MyButton}" Foreground="White"  />
         <StackPanel x:Name="mana1" HorizontalAlignment="Left" Height="32" Margin="889,657,0,0" VerticalAlignment="Top" Width="269" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5">
             <StackPanel.RenderTransform>
                 <TransformGroup>
