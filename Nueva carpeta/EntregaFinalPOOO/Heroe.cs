@@ -227,13 +227,17 @@ namespace EntregaFinalPOOO
                         }
                         if (tipo.escudo > 0)
                         {
-                            int y1 = tipo.escudo - 2;
-                            tipo.escudo = 0;
-                            tipo.vida = tipo.vida - y1;
-                            if (tipo.vida <= 0)
+                            tipo.escudo = tipo.escudo - 2;
+                            if (tipo.escudo < 0)
                             {
-                                tipo.Rendirse(tipo.vida);
+                                tipo.vida = tipo.vida + tipo.escudo;
+                                tipo.escudo = 0;
+                                if (tipo.vida <= 0) 
+                                {
+                                    tipo.Rendirse(tipo.vida);
+                                }
                             }
+                            
                         }
 
                     }
