@@ -200,7 +200,7 @@ namespace EntregaFinalPOOO
         List<minion> cartascancha2 = new List<minion>();
         List<minion> shaman = new List<minion>();
         List<minion> shaman2 = new List<minion>();
-        List<weapon> Lrogue = new List<weapon>();
+        
 
         List<minion> weapon1 = new List<minion>();
         List<minion> weapon2 = new List<minion>();
@@ -1705,7 +1705,12 @@ namespace EntregaFinalPOOO
         /*Fin Turno j1*/
         private void FinTurno_Click(object sender, RoutedEventArgs e)
         {
-            weapon1_.Background = vacio;
+            
+            if (contadorweapon1 == 2)
+            {
+                weapon1_.Background = vacio;
+                contadorweapon1 = 0;
+            }
             j1.terminarturnomana();
             refreshmana(lala, manamana, j1);
             manatot1.Content = String.Empty;
@@ -1868,6 +1873,8 @@ namespace EntregaFinalPOOO
         private void FinTurno_Copy_Click(object sender, RoutedEventArgs e)
         {
             //Listbox_Copy.Items.Clear();
+
+            
             j2.terminarturnomana();
 
             manatott.Content = j2.manatotal.ToString();
@@ -4887,9 +4894,10 @@ namespace EntregaFinalPOOO
                     j1.invocar(paladin1, cartascancha);
 
                 }
-            } 
-                if (j1.tipo == "Rogue")
+            }
+            if (j1.tipo == "Rogue" && j1.mana >= 2)
             {
+                contadorweapon1 = 0;
                 
                 minion rogue = new minion("Dagger Mastery", 1, 2394, true, true, 0);
                 rogue.turno = true;
@@ -4900,7 +4908,7 @@ namespace EntregaFinalPOOO
                 weapon1_.Background = daga;
 
             }
-            if (j1.tipo == "Druid")
+            if (j1.tipo == "Druid" && j1.mana>=2)
             {
                 minion druid = new minion("Shapeshift", 2, 0, true, true, 0);
                 druid.turno = false;
@@ -5031,6 +5039,7 @@ namespace EntregaFinalPOOO
 
         }
         int contadorweapon1 = 0;
+        int contadorweapon2 = 0;
         /*Habilidad*/
         private void habilidad2_Click(object sender, RoutedEventArgs e)
         {
@@ -5058,18 +5067,9 @@ namespace EntregaFinalPOOO
                     j2.invocar(paladin1, cartascancha2);
 
                 }
-            } 
-           
-            if (j2.tipo == "Rogue")
-            {
-                minion rogue = new minion("Dagger Mastery", 2, 500000, true, true, 0);
-                rogue.turno = false;
-                mazos2.Add(rogue);
-                j2.invocar(rogue, cartascancha2);
-               
-                weapon1_.Content = "dagger mystery";
-                weapon1_.Background = daga;
             }
+
+           
             if (j2.tipo == "Druid")
             {
                 minion druid = new minion("Shapeshift", 2, 0, true, true, 0);
@@ -7996,6 +7996,7 @@ namespace EntregaFinalPOOO
 
         private void weapon1__Click(object sender, RoutedEventArgs e)
         {
+            contadorweapon1 = contadorweapon1 + 1;
             atacar =weapon1[0] ;
             if (atacar != null && atacado != null)
             {
@@ -8011,7 +8012,7 @@ namespace EntregaFinalPOOO
 
         private void weapon1__MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = "actividad: " + weapon1[0].actividad + " \nvisibilidad: " + weapon1[0].visibilidad + " \nactividad: " + weapon1[0].actividad;
+            popo.Content = "actividad: " + weapon1[0].actividad + " \nvisibilidad: " + weapon1[0].visibilidad + " \nactividad: " + weapon1[0].actividad + "\n"+ contadorweapon1;
         }
 
         private void atacarheroe2_MouseEnter(object sender, MouseEventArgs e)
