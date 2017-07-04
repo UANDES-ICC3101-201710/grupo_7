@@ -5409,7 +5409,7 @@ namespace EntregaFinalPOOO
                 atacado.attack(null, heroeatacado, cartascancha2, cartascancha);
 
                 heroeatacado = null;
-                ;
+                
             }
 
             if (heroeatacado != null && atacar != null && j1.activo == true)
@@ -5424,7 +5424,7 @@ namespace EntregaFinalPOOO
             if (atacado != null && atacar != null && j1.activo == true)
             {
                 atacar.attack(atacado, null, cartascancha, cartascancha2);
-                if (j1.tipo == "Druid" || j1.tipo == "Rogue")
+                /*if (j1.tipo == "Druid" || j1.tipo == "Rogue")
                 {
                     if (weapon1.Count() != 0)
                     {
@@ -5434,7 +5434,7 @@ namespace EntregaFinalPOOO
 
                         }
                     }
-                }
+                }*/
                     
                 
                 atacado = null;
@@ -5446,7 +5446,7 @@ namespace EntregaFinalPOOO
 
 
                 atacado.attack(atacar, null, cartascancha2, cartascancha);
-                if (j2.tipo == "Druid" || j2.tipo == "Rogue")
+                /*if (j2.tipo == "Druid" || j2.tipo == "Rogue")
                 {
                     if (weapon1.Count() != 0)
                     {
@@ -5454,8 +5454,8 @@ namespace EntregaFinalPOOO
                     {
                         atacar.attack(null, j2, cartascancha2, cartascancha);
                     }
-                }
-            }
+                }}*/
+            
                 atacado = null;
                 atacar = null;
 
