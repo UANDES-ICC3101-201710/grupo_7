@@ -188,7 +188,7 @@
 
         </StackPanel>
         <Button x:Name="audio" Content="Button" HorizontalAlignment="Left" Margin="64,520,0,0" VerticalAlignment="Top" Width="75" Click="audio_Click"/>
-        <Button x:Name="weapon1_" Content="Button" HorizontalAlignment="Left" Margin="433,531,0,0" VerticalAlignment="Top" Width="97" Height="72" Click="weapon1__Click" MouseEnter="weapon1__MouseEnter" Style="{StaticResource MyButton}" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="weapon1_" Content="Button" HorizontalAlignment="Left" Margin="415,542,0,0" VerticalAlignment="Top" Width="109" Height="86" Click="weapon1__Click" MouseEnter="weapon1__MouseEnter" Style="{StaticResource MyButton}" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
