@@ -1742,7 +1742,7 @@ namespace EntregaFinalPOOO
 
             if (j1.tipo == "Druid") 
             {
-                MessageBox.Show("h");
+              
                 weapon1_.Background = vacio;
             }
             j1.terminarturnomana();
@@ -5465,7 +5465,7 @@ namespace EntregaFinalPOOO
             }
             if (hatacado != null && heroeatacado != null && j1.activo == true)// mage 
             {
-                MessageBox.Show("someboe");
+                
                 hatacado.attack(null, heroeatacado, null, cartascancha2);
 
                 hatacado = null;
@@ -5482,7 +5482,7 @@ namespace EntregaFinalPOOO
             }
             if (hatacado != null && heroeatacado != null && j2.activo == true)// mage 
             {
-                MessageBox.Show("somebii");
+                
                 hatacado.attack(null, heroeatacado, null, cartascancha);
 
                 hatacado = null;
