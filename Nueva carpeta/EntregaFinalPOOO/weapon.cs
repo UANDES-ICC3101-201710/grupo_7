@@ -7,16 +7,20 @@ using System.Threading.Tasks;
 namespace EntregaFinalPOOO
 {
     [Serializable]
-    class weapon : carta
+    public class weapon : carta
     {
-        private int ataque;
-        private int durabilidad;
+        private int ataque { get; set; }
+        public int durabilidad = 2;
 
-        public weapon(int ataque, int durabilidad, string nombre)
+        public weapon(int ataque, string nombre)
         {
             this.ataque = ataque;
-            this.durabilidad = durabilidad;
             this.nombre = nombre;
+        }
+
+        public void quemardurabilidad() 
+        {
+            this.durabilidad = this.durabilidad - 2;
         }
 
         public override void cambiarActividad()

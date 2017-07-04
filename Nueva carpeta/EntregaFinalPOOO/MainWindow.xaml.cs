@@ -200,7 +200,7 @@ namespace EntregaFinalPOOO
 
 
         spells carta0 = new spells("La Moneda", 0, false, false);
-
+        weapon atacaaar;
 
         List<carta> manos = new List<carta>();
         List<carta> manos2 = new List<carta>();
@@ -209,6 +209,7 @@ namespace EntregaFinalPOOO
         List<minion> cartascancha2 = new List<minion>();
         List<minion> shaman = new List<minion>();
         List<minion> shaman2 = new List<minion>();
+        
 
         List<minion> weapon1 = new List<minion>();
         List<minion> weapon2 = new List<minion>();
@@ -1733,7 +1734,12 @@ namespace EntregaFinalPOOO
         /*Fin Turno j1*/
         private void FinTurno_Click(object sender, RoutedEventArgs e)
         {
-
+            
+            if (contadorweapon1 == 2)
+            {
+                weapon1_.Background = vacio;
+                contadorweapon1 = 0;
+            }
             j1.terminarturnomana();
             refreshmana(lala, manamana, j1);
             manatot1.Content = String.Empty;
@@ -1896,7 +1902,12 @@ namespace EntregaFinalPOOO
         private void FinTurno_Copy_Click(object sender, RoutedEventArgs e)
         {
             //Listbox_Copy.Items.Clear();
+<<<<<<< HEAD
            
+=======
+
+            
+>>>>>>> b44e419a5e4b368fedc43b3c6a2b19564bfe32d8
             j2.terminarturnomana();
 
             manatott.Content = j2.manatotal.ToString();
@@ -4918,6 +4929,7 @@ namespace EntregaFinalPOOO
 
                     }
                 }
+<<<<<<< HEAD
                 if (j1.tipo == "Rogue")
                 {
 
@@ -4947,6 +4959,33 @@ namespace EntregaFinalPOOO
                 if (j1.tipo == "Warrior" && j1.mana >= 2)
                 {
 
+=======
+            }
+            if (j1.tipo == "Rogue" && j1.mana >= 2)
+            {
+                contadorweapon1 = 0;
+                
+                minion rogue = new minion("Dagger Mastery", 1, 2394, true, true, 0);
+                rogue.turno = true;
+                mazos.Add(rogue);
+                j1.invocar(rogue, weapon1);
+                weapon1_.Visibility = Visibility.Visible;
+                weapon1_.Content = " ";
+                weapon1_.Background = daga;
+
+            }
+            if (j1.tipo == "Druid" && j1.mana>=2)
+            {
+                minion druid = new minion("Shapeshift", 2, 0, true, true, 0);
+                druid.turno = false;
+                mazos.Add(druid);
+                j1.invocar(druid, cartascancha);
+            }
+            if (j1.tipo == "Mage")
+            {
+                hatacado = j1;
+               
+>>>>>>> b44e419a5e4b368fedc43b3c6a2b19564bfe32d8
 
                     j1.escudo = j1.escudo + 2;
 
@@ -5063,6 +5102,7 @@ namespace EntregaFinalPOOO
             }
         }
         int contadorweapon1 = 0;
+        int contadorweapon2 = 0;
         /*Habilidad*/
         private void habilidad2_Click(object sender, RoutedEventArgs e)
         {
@@ -5093,6 +5133,22 @@ namespace EntregaFinalPOOO
 
                     }
                 }
+<<<<<<< HEAD
+=======
+            }
+
+           
+            if (j2.tipo == "Druid")
+            {
+                minion druid = new minion("Shapeshift", 2, 0, true, true, 0);
+                druid.turno = false;
+                mazos2.Add(druid);
+                j2.invocar(druid, cartascancha2);
+            }
+            if (j1.tipo == "Mage")
+            {
+                hatacado = j2;
+>>>>>>> b44e419a5e4b368fedc43b3c6a2b19564bfe32d8
 
                 if (j2.tipo == "Rogue")
                 {
@@ -7576,13 +7632,14 @@ namespace EntregaFinalPOOO
         }
         private void boton32_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (manos2[6].nombre == "wisp")
-            {
-                popo.Background = wispmano;
-            }
+            
             if (manos2[6].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaidermano;
+            }
+            if (manos2[6].nombre == "wisp")
+            {
+                popo.Background = wispmano;
             }
             if (manos2[6].nombre == "Bloodfen Raptor")
             {
@@ -8036,6 +8093,7 @@ namespace EntregaFinalPOOO
 
         private void weapon1__Click(object sender, RoutedEventArgs e)
         {
+            contadorweapon1 = contadorweapon1 + 1;
             atacar =weapon1[0] ;
             if (atacar != null && atacado != null)
             {
@@ -8045,13 +8103,13 @@ namespace EntregaFinalPOOO
 
             }
             
-           
+          
 
         }
 
         private void weapon1__MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = "contador=" + contadorweapon1 + "   ";
+            popo.Content = "actividad: " + weapon1[0].actividad + " \nvisibilidad: " + weapon1[0].visibilidad + " \nactividad: " + weapon1[0].actividad + "\n"+ contadorweapon1;
         }
 
         private void atacarheroe2_MouseEnter(object sender, MouseEventArgs e)
