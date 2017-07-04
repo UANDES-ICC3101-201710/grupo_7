@@ -5394,16 +5394,29 @@ namespace EntregaFinalPOOO
 
             if (atacado != null && atacar != null && j1.activo == true)
             {
-                atacar.attack(atacado, null, cartascancha, cartascancha2);
+                if (atacar == weapon1[0])
+                {
+                    atacado.attack(null, j1, cartascancha, cartascancha2);
 
+                }
+                if (atacar != weapon1[0])
+                {
+                    atacar.attack(atacado, null, cartascancha, cartascancha2);
+                }
                 atacado = null;
                 atacar = null;
 
             }
             if (atacado != null && atacar != null && j2.activo == true)
             {
-                atacado.attack(atacar, null, cartascancha2, cartascancha);
-
+                if (atacado != weapon2[0])
+                {
+                    atacado.attack(atacar, null, cartascancha2, cartascancha);
+                }
+                if (atacado == weapon2[0])
+                {
+                    atacar.attack(null, j2, cartascancha2, cartascancha);
+                }
                 atacado = null;
                 atacar = null;
 
