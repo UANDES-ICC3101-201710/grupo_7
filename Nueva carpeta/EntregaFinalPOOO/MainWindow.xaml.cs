@@ -5455,6 +5455,11 @@ namespace EntregaFinalPOOO
                     weapon1_.Background = vacio;
                     contadorweapon1 = 0;
                 }
+                if (contadorweapon2 == 2)
+                {
+                    weapon2_.Background = vacio;
+                    contadorweapon2 = 0;
+                }
            
         }
         Heroe heroeatacado;
@@ -8046,6 +8051,26 @@ namespace EntregaFinalPOOO
         private void atacarheroe1_MouseLeave(object sender, MouseEventArgs e)
         {
             popo.Content = vacio;
+        }
+
+        private void weapon2__Click(object sender, RoutedEventArgs e)
+        {
+            contadorweapon2 = contadorweapon2 + 1;
+            atacado= weapon2[0];
+            if (atacar != null && atacado != null)
+            {
+
+                atacar2.IsEnabled = true;
+
+
+            }
+           
+        }
+
+        private void weapon2__MouseEnter(object sender, MouseEventArgs e)
+        {
+            popo.Content = "actividad: " + weapon2[0].actividad + " \nvisibilidad: " + weapon2[0].visibilidad + " \nactividad: " + weapon2[0].actividad + "\n" + contadorweapon2;
+
         }
     }
 }
