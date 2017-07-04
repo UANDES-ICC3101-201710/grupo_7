@@ -186,10 +186,14 @@
     <Resource Include="hunter2.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <Resource Include="mDbxeUJ.jpg" />
+=======
     <Resource Include="fondoinicio.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="cambio_de_cartas.png" />
+>>>>>>> d310448809ec5694ea13807830867917be6e9c65
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

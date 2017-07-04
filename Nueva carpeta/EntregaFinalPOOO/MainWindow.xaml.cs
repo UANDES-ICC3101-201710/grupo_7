@@ -14,6 +14,10 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Threading;
 using System.IO;
+<<<<<<< HEAD
+using System.Runtime.Serialization.Formatters.Binary;
+=======
+>>>>>>> d310448809ec5694ea13807830867917be6e9c65
 
 namespace EntregaFinalPOOO
 {
@@ -230,6 +234,11 @@ namespace EntregaFinalPOOO
         public MainWindow()
         {
             InitializeComponent();
+<<<<<<< HEAD
+            
+           
+            
+=======
 
             player.SoundLocation = "../../All Star - Smash Mouth [Lyrics].wav";
             player1.SoundLocation = "../../Game of Thrones   Main Theme Official Soundtrack Version.wav";
@@ -239,6 +248,7 @@ namespace EntregaFinalPOOO
             BitmapImage imageplay = new BitmapImage(new Uri("../../play.png", UriKind.Relative));
             playb.ImageSource = imageplay;
 
+>>>>>>> d310448809ec5694ea13807830867917be6e9c65
             BitmapImage image = new BitmapImage(new Uri("http://media-hearth.cursecdn.com/avatars/147/699/273.png"));
             wispmano.ImageSource = image;
             BitmapImage image1 = new BitmapImage(new Uri("https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/1/1f/Murloc_Raider%2855%29_Gold.png/200px-Murloc_Raider%2855%29_Gold.png?version=883f02d505c570b0ea5c8b4b5e13f3b8"));
@@ -669,6 +679,24 @@ namespace EntregaFinalPOOO
             Application.Current.Shutdown();
         }
 
+<<<<<<< HEAD
+        private void  deserializar_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("deszerialisamos");
+            BinaryFormatter formateador = new BinaryFormatter();
+            Stream mistream = new FileStream("heroe1.aut", FileMode.Open, FileAccess.Read, FileShare.None);
+            Heroe j3 = (Heroe)formateador.Deserialize(mistream);
+
+            MessageBox.Show("vida juego anterior " + j3.vida);
+            MessageBox.Show("vida juego anterior " + j3.nombre);
+           
+            Heroe j1 = new Heroe(j3.tipo , j3.nombre , null, null, j3.mana , j3.manatotal , true);
+            mistream.Close();
+
+        }
+
+        public static void refreshhmano(List<carta> cartascancha, List<carta> cartascancha2, List<Button> xx, List<Button> a2, ImageBrush wisp, ImageBrush MurlocRaider, ImageBrush BloodfenRaptor, ImageBrush RiverCrocolisk, ImageBrush MagmaRager, ImageBrush ChillwindYeti, ImageBrush OasisSnapjaw, ImageBrush BoulderfistOgre, ImageBrush WarGolem, ImageBrush CoreHound, ImageBrush recruit,  Heroe j1, Heroe j2)
+=======
         public static void refreshmana(ImageBrush lala, List<Button> manamana, Heroe j) 
         {
             for (int i = 0; i < j.mana; i++) 
@@ -678,6 +706,7 @@ namespace EntregaFinalPOOO
         }
 
         public static void refreshhmano(List<carta> cartascancha, List<carta> cartascancha2, List<Button> xx, List<Button> a2, ImageBrush wisp, ImageBrush MurlocRaider, ImageBrush BloodfenRaptor, ImageBrush RiverCrocolisk, ImageBrush MagmaRager, ImageBrush ChillwindYeti, ImageBrush OasisSnapjaw, ImageBrush BoulderfistOgre, ImageBrush WarGolem, ImageBrush CoreHound, ImageBrush recruit, Heroe j1, Heroe j2)
+>>>>>>> d310448809ec5694ea13807830867917be6e9c65
         {
             for (int i = 0; i < cartascancha.Count; i++)
             {
@@ -1269,7 +1298,9 @@ namespace EntregaFinalPOOO
 
         }
 
+
         /*Elegir Heroe1*/
+        
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
             eheroe1.Visibility = Visibility.Hidden;
@@ -1593,6 +1624,7 @@ namespace EntregaFinalPOOO
             }
 
             fondobatalla.Visibility = Visibility.Visible;
+            fondo1.Visibility = Visibility.Hidden;
             boton3.Visibility = Visibility.Hidden;
             for (int i = 0; i < manos.Count; i++)
             {
@@ -5481,6 +5513,11 @@ namespace EntregaFinalPOOO
                     weapon1_.Background = vacio;
                     contadorweapon1 = 0;
                 }
+                if (contadorweapon2 == 2)
+                {
+                    weapon2_.Background = vacio;
+                    contadorweapon2 = 0;
+                }
            
         }
         Heroe heroeatacado;
@@ -7974,6 +8011,21 @@ namespace EntregaFinalPOOO
             popo.Background = vacio;
         }
 
+<<<<<<< HEAD
+        private void serializar_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("serialisamos");
+
+            BinaryFormatter formateador = new BinaryFormatter();
+            Stream mistream = new FileStream("heroe1.aut", FileMode.Create, FileAccess.Write, FileShare.None);
+            formateador.Serialize(mistream, j1 );
+            mistream.Close();
+
+        }
+
+       
+        
+=======
         private void boton000_Click(object sender, RoutedEventArgs e)
         {
             manos.RemoveAt(0);
@@ -8069,9 +8121,29 @@ namespace EntregaFinalPOOO
         {
             popo.Content = vacio;
         }
+
+        private void weapon2__Click(object sender, RoutedEventArgs e)
+        {
+            contadorweapon2 = contadorweapon2 + 1;
+            atacado= weapon2[0];
+            if (atacar != null && atacado != null)
+            {
+
+                atacar2.IsEnabled = true;
+
+
+            }
+           
+        }
+
+        private void weapon2__MouseEnter(object sender, MouseEventArgs e)
+        {
+            popo.Content = "actividad: " + weapon2[0].actividad + " \nvisibilidad: " + weapon2[0].visibilidad + " \nactividad: " + weapon2[0].actividad + "\n" + contadorweapon2;
+
+        }
+>>>>>>> d310448809ec5694ea13807830867917be6e9c65
     }
 }
-
 public static class ThreadSafeRandom
 {
     [ThreadStatic]
