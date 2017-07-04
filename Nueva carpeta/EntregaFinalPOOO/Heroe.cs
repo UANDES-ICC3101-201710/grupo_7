@@ -215,7 +215,7 @@ namespace EntregaFinalPOOO
 
                 if (this.tipo == "Hunter")
                 {
-                    if (tipo.tipo == "Warrior")
+                    if (tipo.tipo == "Warrior"  ||tipo.tipo=="Druid")
                     {
                         if (tipo.escudo == 0)
                         {

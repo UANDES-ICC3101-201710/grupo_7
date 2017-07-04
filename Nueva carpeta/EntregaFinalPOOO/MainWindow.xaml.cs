@@ -1740,7 +1740,10 @@ namespace EntregaFinalPOOO
         private void FinTurno_Click(object sender, RoutedEventArgs e)
         {
 
-
+             if (j1.tipo == "Druid") 
+            {
+                weapon1_.Background = vacio;
+            }
             j1.terminarturnomana();
             refreshmana(lala, manamana, j1);
             manatot1.Content = String.Empty;
@@ -1904,7 +1907,10 @@ namespace EntregaFinalPOOO
         {
             //Listbox_Copy.Items.Clear();
 
-
+            if (j2.tipo == "Druid")
+            {
+                weapon2_.Background = vacio;
+            }
             j2.terminarturnomana();
 
             manatott.Content = j2.manatotal.ToString();
@@ -4940,10 +4946,14 @@ namespace EntregaFinalPOOO
             }
             if (j1.tipo == "Druid" && j1.mana >= 2)
             {
-                minion druid = new minion("Shapeshift", 2, 0, true, true, 0);
-                druid.turno = false;
+                j1.escudo = j1.escudo + 1;
+                minion druid = new minion("Shapeshift", 1, 485857, true, true, 0);
+                druid.turno = true;
                 mazos.Add(druid);
                 j1.invocar(druid, cartascancha);
+                weapon1_.Visibility = Visibility.Visible;
+                weapon1_.Content = " ";
+                weapon1_.Background = daga;
             }
             if (j1.tipo == "Mage")
             {
@@ -5508,6 +5518,7 @@ namespace EntregaFinalPOOO
                 weapon2_.Background = vacio;
                 contadorweapon2 = 0;
             }
+           
             fotoescudo.Content = j1.escudo;
             fotoescudo2.Content = j2.escudo;
 
@@ -8059,8 +8070,15 @@ namespace EntregaFinalPOOO
 
         private void weapon1__Click(object sender, RoutedEventArgs e)
         {
-            contadorweapon1 = contadorweapon1 + 1;
-            atacar = weapon1[0];
+            if (j1.tipo == "Rogue")
+            {
+                contadorweapon1 = contadorweapon1 + 1;
+                atacar = weapon1[0];
+            }
+            if (j1.tipo == "Druid") 
+            {
+                atacar = weapon1[0];
+            }
             if (atacar != null && atacado != null)
             {
 
