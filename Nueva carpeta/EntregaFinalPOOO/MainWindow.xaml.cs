@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Threading;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace EntregaFinalPOOO
 {
@@ -138,6 +140,8 @@ namespace EntregaFinalPOOO
         public MainWindow()
         {
             InitializeComponent();
+            
+           
             
             BitmapImage image = new BitmapImage(new Uri("http://media-hearth.cursecdn.com/avatars/147/699/273.png"));
             wisp.ImageSource = image;
@@ -388,7 +392,20 @@ namespace EntregaFinalPOOO
             Application.Current.Shutdown();
         }
 
+        private void  deserializar_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("deszerialisamos");
+            BinaryFormatter formateador = new BinaryFormatter();
+            Stream mistream = new FileStream("heroe1.aut", FileMode.Open, FileAccess.Read, FileShare.None);
+            Heroe j3 = (Heroe)formateador.Deserialize(mistream);
 
+            MessageBox.Show("vida juego anterior " + j3.vida);
+            MessageBox.Show("vida juego anterior " + j3.nombre);
+           
+            Heroe j1 = new Heroe(j3.tipo , j3.nombre , null, null, j3.mana , j3.manatotal , true);
+            mistream.Close();
+
+        }
 
         public static void refreshhmano(List<carta> cartascancha, List<carta> cartascancha2, List<Button> xx, List<Button> a2, ImageBrush wisp, ImageBrush MurlocRaider, ImageBrush BloodfenRaptor, ImageBrush RiverCrocolisk, ImageBrush MagmaRager, ImageBrush ChillwindYeti, ImageBrush OasisSnapjaw, ImageBrush BoulderfistOgre, ImageBrush WarGolem, ImageBrush CoreHound, ImageBrush recruit,  Heroe j1, Heroe j2)
         {
@@ -728,7 +745,9 @@ namespace EntregaFinalPOOO
 
         }
 
+
         /*Elegir Heroe1*/
+        
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
             eheroe1.Visibility = Visibility.Hidden;
@@ -934,6 +953,7 @@ namespace EntregaFinalPOOO
         private void boton3_Click(object sender, RoutedEventArgs e)
         {
             fondobatalla.Visibility = Visibility.Visible;
+            fondo1.Visibility = Visibility.Hidden;
             boton3.Visibility = Visibility.Hidden;
             for (int i = 0; i < manos.Count; i++)
             {
@@ -4278,9 +4298,22 @@ namespace EntregaFinalPOOO
         {
             popo.Background = vacio;
         }
+
+        private void serializar_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("serialisamos");
+
+            BinaryFormatter formateador = new BinaryFormatter();
+            Stream mistream = new FileStream("heroe1.aut", FileMode.Create, FileAccess.Write, FileShare.None);
+            formateador.Serialize(mistream, j1 );
+            mistream.Close();
+
+        }
+
+       
+        
     }
 }
-
 public static class ThreadSafeRandom
 {
     [ThreadStatic]
