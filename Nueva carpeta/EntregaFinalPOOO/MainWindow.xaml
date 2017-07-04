@@ -48,7 +48,7 @@
         <ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Margin="689,362,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_2"/>
 
         <Button x:Name="FinTurno" Content="Terminar Turno " HorizontalAlignment="Left" Margin="953,392,0,0" VerticalAlignment="Top" Width="121" Click="FinTurno_Click" Background="#FF59B650"/>
-        <StackPanel x:Name="stackpanel_Copy" HorizontalAlignment="Left" Height="82" Margin="363,256,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal" Visibility="Hidden">
+        <StackPanel x:Name="stackpanel_Copy" HorizontalAlignment="Left" Height="82" Margin="363,256,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal">
             <Button x:Name="boton11" Margin="0,0,10,0" Content=""  Width="50" Click="boton11_Click" MouseEnter="boton11_MouseEnter" MouseLeave="boton11_MouseLeave" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton12" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton12_MouseEnter" MouseLeave="boton12_MouseLeave" Click="boton12_Click" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton13" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton13_MouseEnter" MouseLeave="boton13_MouseLeave" Click="boton13_Click" Style="{StaticResource MyButton}"/>
@@ -88,7 +88,7 @@
         <ComboBox x:Name="combobox4" HorizontalAlignment="Left" Margin="742,99,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combobox4_SelectionChanged" Height="20"/>
 
         <Button x:Name="habilidad" Content="" HorizontalAlignment="Left" Margin="700,544,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4" Background="#FF5EA4D0" MouseEnter="habilidad_MouseEnter" MouseLeave="habilidad_MouseLeave" Height="60" Style="{StaticResource MyButton}"/>
-        <Button x:Name="habilidad2" Content="" HorizontalAlignment="Left" Margin="691,108,0,0" VerticalAlignment="Top" Width="75" Background="#FF2D9CB5" Click="habilidad2_Click" IsEnabled="False" MouseEnter="habilidad2_MouseEnter" MouseLeave="habilidad2_MouseLeave" Height="61" Style="{StaticResource MyButton}"/>
+        <Button x:Name="habilidad2" Content="" HorizontalAlignment="Left" Margin="691,108,0,0" VerticalAlignment="Top" Width="75" Background="#FF2D9CB5" Click="habilidad2_Click" MouseEnter="habilidad2_MouseEnter" MouseLeave="habilidad2_MouseLeave" Height="61" Style="{StaticResource MyButton}"/>
 
 
 
