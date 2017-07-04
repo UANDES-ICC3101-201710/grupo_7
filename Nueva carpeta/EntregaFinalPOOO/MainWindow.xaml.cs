@@ -200,7 +200,7 @@ namespace EntregaFinalPOOO
 
 
         spells carta0 = new spells("La Moneda", 0, false, false);
-        weapon atacaaar;
+
 
         List<carta> manos = new List<carta>();
         List<carta> manos2 = new List<carta>();
@@ -209,7 +209,6 @@ namespace EntregaFinalPOOO
         List<minion> cartascancha2 = new List<minion>();
         List<minion> shaman = new List<minion>();
         List<minion> shaman2 = new List<minion>();
-        
 
         List<minion> weapon1 = new List<minion>();
         List<minion> weapon2 = new List<minion>();
@@ -1734,12 +1733,7 @@ namespace EntregaFinalPOOO
         /*Fin Turno j1*/
         private void FinTurno_Click(object sender, RoutedEventArgs e)
         {
-            
-            if (contadorweapon1 == 2)
-            {
-                weapon1_.Background = vacio;
-                contadorweapon1 = 0;
-            }
+
             j1.terminarturnomana();
             refreshmana(lala, manamana, j1);
             manatot1.Content = String.Empty;
@@ -1902,12 +1896,7 @@ namespace EntregaFinalPOOO
         private void FinTurno_Copy_Click(object sender, RoutedEventArgs e)
         {
             //Listbox_Copy.Items.Clear();
-<<<<<<< HEAD
            
-=======
-
-            
->>>>>>> b44e419a5e4b368fedc43b3c6a2b19564bfe32d8
             j2.terminarturnomana();
 
             manatott.Content = j2.manatotal.ToString();
@@ -4929,7 +4918,6 @@ namespace EntregaFinalPOOO
 
                     }
                 }
-<<<<<<< HEAD
                 if (j1.tipo == "Rogue")
                 {
 
@@ -4959,33 +4947,6 @@ namespace EntregaFinalPOOO
                 if (j1.tipo == "Warrior" && j1.mana >= 2)
                 {
 
-=======
-            }
-            if (j1.tipo == "Rogue" && j1.mana >= 2)
-            {
-                contadorweapon1 = 0;
-                
-                minion rogue = new minion("Dagger Mastery", 1, 2394, true, true, 0);
-                rogue.turno = true;
-                mazos.Add(rogue);
-                j1.invocar(rogue, weapon1);
-                weapon1_.Visibility = Visibility.Visible;
-                weapon1_.Content = " ";
-                weapon1_.Background = daga;
-
-            }
-            if (j1.tipo == "Druid" && j1.mana>=2)
-            {
-                minion druid = new minion("Shapeshift", 2, 0, true, true, 0);
-                druid.turno = false;
-                mazos.Add(druid);
-                j1.invocar(druid, cartascancha);
-            }
-            if (j1.tipo == "Mage")
-            {
-                hatacado = j1;
-               
->>>>>>> b44e419a5e4b368fedc43b3c6a2b19564bfe32d8
 
                     j1.escudo = j1.escudo + 2;
 
@@ -5049,51 +5010,51 @@ namespace EntregaFinalPOOO
 
                     refreshhmano(manos, manos2, manobot, manobot1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
                 }
-
-                Random rnd = new Random();
-                if (j1.tipo == "Shaman")
+            
+            Random rnd = new Random();
+            if (j1.tipo == "Shaman")
+            {
+                if (cartascancha.Count() < 7)
                 {
-                    if (cartascancha.Count() < 7)
+                    int ppp = rnd.Next(4);
+                    if (ppp == 0)
                     {
-                        int ppp = rnd.Next(4);
-                        if (ppp == 0)
-                        {
-                            minion shaman1 = new minion("Heilin Totem", 0, 2, true, true, 0);
-                            mazos.Add(shaman1);
-                            j1.invocar(shaman1, cartascancha);
-                        }
-                        if (ppp == 1)
-                        {
+                        minion shaman1 = new minion("Heilin Totem", 0, 2, true, true, 0);
+                        mazos.Add(shaman1);
+                        j1.invocar(shaman1, cartascancha);
+                    }
+                    if (ppp == 1)
+                    {
 
-                            minion shaman5 = new minion("Seiring Totem", 1, 1, true, true, 0);
-                            mazos.Add(shaman5);
-                            j1.invocar(shaman5, cartascancha);
-                        }
-                        if (ppp == 2)
-                        {
+                        minion shaman5 = new minion("Seiring Totem", 1, 1, true, true, 0);
+                        mazos.Add(shaman5);
+                        j1.invocar(shaman5, cartascancha);
+                    }
+                    if (ppp == 2)
+                    {
 
-                            minion shaman3 = new minion("Stoneclaw Totem", 0, 2, true, true, 0);
-                            mazos.Add(shaman3);
-                            j1.invocar(shaman3, cartascancha);
-                        }
-                        if (ppp == 3)
-                        {
-                            minion shaman4 = new minion("Warth of air Totem", 0, 2, true, true, 0);
-                            mazos.Add(shaman4);
-                            j1.invocar(shaman4, cartascancha);
-                        }
-
-
-
+                        minion shaman3 = new minion("Stoneclaw Totem", 0, 2, true, true, 0);
+                        mazos.Add(shaman3);
+                        j1.invocar(shaman3, cartascancha);
+                    }
+                    if (ppp == 3)
+                    {
+                        minion shaman4 = new minion("Warth of air Totem", 0, 2, true, true, 0);
+                        mazos.Add(shaman4);
+                        j1.invocar(shaman4, cartascancha);
                     }
 
-                }
-                j1.habilidad(j2);
-                vida1.Content = j1.vida;
-                Vida2.Content = j2.vida;
-                manadisp.Content = j1.mana;
 
-                refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2, RiverCrocolisk1, BloodfenRaptor1, RiverCrocolisk2, ChillwindYeti1, ChillwindYeti2, ChillwindYeti3, ChillwindYeti4, OasisSnapjaw1, OasisSnapjaw2, OasisSnapjaw3, OasisSnapjaw4, OasisSnapjaw5, OasisSnapjaw6, BoulderfistOgre1, BoulderfistOgre2, BoulderfistOgre3, BoulderfistOgre4, BoulderfistOgre5, BoulderfistOgre6, WarGolem1, WarGolem2, WarGolem3, WarGolem4, WarGolem5, WarGolem6, CoreHound1, CoreHound2, CoreHound3, CoreHound4);
+
+                }
+
+            }
+            j1.habilidad(j2);
+            vida1.Content = j1.vida;
+            Vida2.Content = j2.vida;
+            manadisp.Content = j1.mana;
+            
+            refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2, RiverCrocolisk1, BloodfenRaptor1, RiverCrocolisk2, ChillwindYeti1, ChillwindYeti2, ChillwindYeti3, ChillwindYeti4, OasisSnapjaw1, OasisSnapjaw2, OasisSnapjaw3, OasisSnapjaw4, OasisSnapjaw5, OasisSnapjaw6, BoulderfistOgre1, BoulderfistOgre2, BoulderfistOgre3, BoulderfistOgre4, BoulderfistOgre5, BoulderfistOgre6, WarGolem1, WarGolem2, WarGolem3, WarGolem4, WarGolem5, WarGolem6, CoreHound1, CoreHound2, CoreHound3, CoreHound4);
 
 
 
@@ -5102,7 +5063,6 @@ namespace EntregaFinalPOOO
             }
         }
         int contadorweapon1 = 0;
-        int contadorweapon2 = 0;
         /*Habilidad*/
         private void habilidad2_Click(object sender, RoutedEventArgs e)
         {
@@ -5133,22 +5093,6 @@ namespace EntregaFinalPOOO
 
                     }
                 }
-<<<<<<< HEAD
-=======
-            }
-
-           
-            if (j2.tipo == "Druid")
-            {
-                minion druid = new minion("Shapeshift", 2, 0, true, true, 0);
-                druid.turno = false;
-                mazos2.Add(druid);
-                j2.invocar(druid, cartascancha2);
-            }
-            if (j1.tipo == "Mage")
-            {
-                hatacado = j2;
->>>>>>> b44e419a5e4b368fedc43b3c6a2b19564bfe32d8
 
                 if (j2.tipo == "Rogue")
                 {
@@ -7632,14 +7576,13 @@ namespace EntregaFinalPOOO
         }
         private void boton32_MouseEnter(object sender, MouseEventArgs e)
         {
-            
-            if (manos2[6].nombre == "Murloc Raider")
-            {
-                popo.Background = MurlocRaidermano;
-            }
             if (manos2[6].nombre == "wisp")
             {
                 popo.Background = wispmano;
+            }
+            if (manos2[6].nombre == "Murloc Raider")
+            {
+                popo.Background = MurlocRaidermano;
             }
             if (manos2[6].nombre == "Bloodfen Raptor")
             {
@@ -8093,7 +8036,6 @@ namespace EntregaFinalPOOO
 
         private void weapon1__Click(object sender, RoutedEventArgs e)
         {
-            contadorweapon1 = contadorweapon1 + 1;
             atacar =weapon1[0] ;
             if (atacar != null && atacado != null)
             {
@@ -8103,13 +8045,13 @@ namespace EntregaFinalPOOO
 
             }
             
-          
+           
 
         }
 
         private void weapon1__MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = "actividad: " + weapon1[0].actividad + " \nvisibilidad: " + weapon1[0].visibilidad + " \nactividad: " + weapon1[0].actividad + "\n"+ contadorweapon1;
+            popo.Content = "contador=" + contadorweapon1 + "   ";
         }
 
         private void atacarheroe2_MouseEnter(object sender, MouseEventArgs e)
