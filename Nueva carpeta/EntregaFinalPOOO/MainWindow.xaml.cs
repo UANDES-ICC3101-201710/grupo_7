@@ -542,7 +542,6 @@ namespace EntregaFinalPOOO
             j1.ingresarmano(manos);
             j2.ingresarmazo(mazo2);
             j2.ingresarmano(manos2);
-            MessageBox.Show(j1.mazo.Count.ToString() + "   mazos:" + mazos.Count().ToString() + " Jugador2.mazo=" + j2.mazo.Count.ToString() + " mazos2" + mazos2.Count.ToString());
             for (int i = 0; i < 3; i++)
             {
                 j1.darcarta();
@@ -1480,7 +1479,6 @@ namespace EntregaFinalPOOO
         private void boton3_Click(object sender, RoutedEventArgs e)
         {
             refreshmana(lala, manamana, j1);
-            MessageBox.Show(j1.mazo.Count.ToString() + "   mazos:" + mazos.Count().ToString()+" Jugador2.mazo="+j2.mazo.Count.ToString()+" mazos2"+mazos2.Count.ToString());
 
             player1.Stop();
             player.PlayLooping();
