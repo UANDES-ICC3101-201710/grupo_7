@@ -102,6 +102,10 @@ namespace EntregaFinalPOOO
                 {
                     lista.Add(n);
                 }
+                if (this.tipo == "Druid")
+                {
+                    lista.Add(n);
+                }
                 
             }
 
