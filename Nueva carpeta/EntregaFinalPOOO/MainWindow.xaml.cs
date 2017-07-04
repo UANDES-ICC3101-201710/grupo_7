@@ -6569,7 +6569,7 @@ namespace EntregaFinalPOOO
         {
             if (manos[7].nombre == "wisp")
             {
-                popo.Background = wisp;
+                popo.Background = wispmano;
             }
             if (manos[7].nombre == "Murloc Raider")
             {
