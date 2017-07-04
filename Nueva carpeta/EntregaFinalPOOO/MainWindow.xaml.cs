@@ -5539,7 +5539,7 @@ namespace EntregaFinalPOOO
 
         private void habilidad_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = vacio;
+            popo.Background = vacio;
         }
 
         private void habilidad2_MouseEnter(object sender, MouseEventArgs e)
@@ -5585,7 +5585,7 @@ namespace EntregaFinalPOOO
 
         private void habilidad2_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Background = vacio;
         }
 
         private void boton18_Click(object sender, RoutedEventArgs e)
