@@ -1282,8 +1282,8 @@ namespace EntregaFinalPOOO
                 j1.ingresartipo("Warrior");
                 fotoescudo.Background = escudo;
                 fotoescudo.Content = j1.escudo;
-                MessageBox.Show(j1.escudo.ToString());
-                fotoescudo.Visibility = Visibility.Visible;
+                
+                
 
 
 
@@ -1387,7 +1387,7 @@ namespace EntregaFinalPOOO
                 fotoescudo2.Background = escudo;
                 fotoescudo2.Content = j2.escudo;
 
-                fotoescudo2.Visibility = Visibility.Visible;
+                
 
             }
 
@@ -1487,6 +1487,8 @@ namespace EntregaFinalPOOO
             cambio2.Visibility = Visibility.Hidden;
             cambiocartas2.Visibility = Visibility.Hidden;
             cambiocarta1.Visibility = Visibility.Hidden;
+            fotoescudo2.Visibility = Visibility.Visible;
+            fotoescudo.Visibility = Visibility.Visible;
             for (int i = 0; i < 3; i++)
             {
                 if (manos.Count() <= 3)
@@ -5071,10 +5073,10 @@ namespace EntregaFinalPOOO
 
                 j2.escudo = j2.escudo + 2;
 
+                fotoescudo2.Content = j2.escudo;
 
 
-
-                MessageBox.Show(j2.escudo.ToString());
+               
 
             }
             if (j2.tipo == "Paladin")
@@ -5500,6 +5502,8 @@ namespace EntregaFinalPOOO
                 weapon2_.Background = vacio;
                 contadorweapon2 = 0;
             }
+            fotoescudo.Content = j1.escudo;
+            fotoescudo2.Content = j2.escudo;
 
         }
         Heroe heroeatacado;
