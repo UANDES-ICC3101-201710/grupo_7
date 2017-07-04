@@ -2082,7 +2082,7 @@ namespace EntregaFinalPOOO
 
         private void boton4_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = "actividad  \n " + cartascancha[0].actividad + "visibilidad \n " + cartascancha[0].visibilidad + "turno\n" + cartascancha[0].turno;
+            
             if (cartascancha[0].nombre == "wisp")
             {
                 popo.Background = wisp;
@@ -2291,7 +2291,7 @@ namespace EntregaFinalPOOO
 
         private void boton5_MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = "actividad  \n " + cartascancha[1].actividad + "visibilidad \n " + cartascancha[1].visibilidad + "turno\n" + cartascancha[1].turno;
+            
             if (cartascancha[1].nombre == "wisp")
             {
                 popo.Background = wisp;
