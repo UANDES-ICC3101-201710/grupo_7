@@ -5595,7 +5595,7 @@ namespace EntregaFinalPOOO
             {
                 popo.Background = druidex;
             }
-            if (j1.tipo == "Rogue ")
+            if (j1.tipo == "Rogue")
             {
                 popo.Background = rogueex;
             }
@@ -5641,7 +5641,7 @@ namespace EntregaFinalPOOO
             {
                 popo.Background = druidex;
             }
-            if (j2.tipo == "Rogue ")
+            if (j2.tipo == "Rogue")
             {
                 popo.Background = rogueex;
             }
