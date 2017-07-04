@@ -5430,17 +5430,46 @@ namespace EntregaFinalPOOO
             if (atacado != null && atacar != null && j1.activo == true)
             {
                 atacar.attack(atacado, null, cartascancha, cartascancha2);
-                /*if (j1.tipo == "Druid" || j1.tipo == "Rogue")
+                if (j1.tipo == "Druid" || j1.tipo == "Rogue")
                 {
                     if (weapon1.Count() != 0)
                     {
                         if (atacar == weapon1[0])
                         {
-                            atacado.attack(null, j1, cartascancha, cartascancha2);
+                            if (j1.tipo == "Rogue")
+                            {
+                                j1.vida = j1.vida - atacado.ataque;
+                            }
+                            //atacado.attack(null, j1, cartascancha, cartascancha2);
+                            if (j1.tipo == "Druid")
+                            {
+                                if (j1.escudo == 0)
+                                {
+                                    j1.vida = j1.vida - atacado.ataque;
+                                    if (j1.vida <= 0)
+                                    {
+                                        j1.Rendirse(j1.vida);
+                                    }
+                                }
+                                if (j1.escudo > 0)
+                                {
+                                    j1.escudo = j1.escudo - atacado.ataque;
+                                    if (j1.escudo < 0)
+                                    {
+                                        j1.vida = j1.vida + j1.escudo;
+                                        j1.escudo = 0;
+                                        if (j1.vida <= 0)
+                                        {
+                                            j1.Rendirse(j1.vida);
+                                        }
+                                    }
 
+                                }
+
+                            }
                         }
                     }
-                }*/
+                }
                     
                 
                 atacado = null;
@@ -5452,16 +5481,47 @@ namespace EntregaFinalPOOO
 
 
                 atacado.attack(atacar, null, cartascancha2, cartascancha);
-                /*if (j2.tipo == "Druid" || j2.tipo == "Rogue")
+                if (j2.tipo == "Druid" || j2.tipo == "Rogue")
                 {
-                    if (weapon1.Count() != 0)
+                    if (weapon2.Count() != 0)
                     {
-                    if (atacado == weapon2[0])
-                    {
-                        atacar.attack(null, j2, cartascancha2, cartascancha);
+                        if (atacado == weapon2[0])
+                        {
+                            if (j2.tipo == "Rogue")
+                            {
+                                j2.vida = j2.vida - atacar.ataque;
+                            }
+                            //atacado.attack(null, j1, cartascancha, cartascancha2);
+                            if (j2.tipo == "Druid")
+                            {
+                                if (j2.escudo == 0)
+                                {
+                                    j2.vida = j2.vida - atacar.ataque;
+                                    if (j2.vida <= 0)
+                                    {
+                                        j2.Rendirse(j2.vida);
+                                    }
+                                }
+                                if (j2.escudo > 0)
+                                {
+                                    j2.escudo = j2.escudo - atacar.ataque;
+                                    if (j2.escudo < 0)
+                                    {
+                                        j2.vida = j2.vida + j2.escudo;
+                                        j2.escudo = 0;
+                                        if (j2.vida <= 0)
+                                        {
+                                            j2.Rendirse(j2.vida);
+                                        }
+                                    }
+
+                                }
+
+                            }
+                        }
                     }
-                }}*/
-            
+                }
+
                 atacado = null;
                 atacar = null;
 
@@ -5553,31 +5613,41 @@ namespace EntregaFinalPOOO
             xx[cartascancha.Count()].Visibility = Visibility.Hidden;
 
             a2[cartascancha2.Count()].Visibility = Visibility.Hidden;
-            if (j1.tipo == "Rogue" || j2.tipo == "Rogue")
+            if (j1.tipo == "Rogue")
             {
                 if (contadorweapon1 == 2)
                 {
                     weapon1_.Background = vacio;
                     contadorweapon1 = 0;
                 }
+               
+            }
+            if (j2.tipo == "Rogue")
+            {
                 if (contadorweapon2 == 2)
                 {
                     weapon2_.Background = vacio;
                     contadorweapon2 = 0;
                 }
+
             }
-            if (j1.tipo == "Druid" || j2.tipo == "Druid")
+            if (j2.tipo == "Druid")
+            {
+                if (contadorweapon2 == 1)
+                {
+                    weapon2_.Background = vacio;
+                    contadorweapon2 = 0;
+                }
+
+            }
+            if (j1.tipo == "Druid" )
             {
                 if (contadorweapon1 == 1)
                 {
                     weapon1_.Background = vacio;
                     contadorweapon1 = 0;
                 }
-                if (contadorweapon2 == 1)
-                {
-                    weapon2_.Background = vacio;
-                    contadorweapon2 = 0;
-                }
+              
             }
             fotoescudo.Content = j1.escudo;
             fotoescudo2.Content = j2.escudo;
