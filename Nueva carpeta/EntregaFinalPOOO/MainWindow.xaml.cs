@@ -5065,7 +5065,19 @@ namespace EntregaFinalPOOO
                 }
             }
 
-           
+            if (j2.tipo == "Rogue" && j2.mana >= 2)
+            {
+                contadorweapon2 = 0;
+
+                minion rogue1 = new minion("Dagger Mastery", 1, 2394, true, true, 0);
+                rogue1.turno = true;
+                mazos2.Add(rogue1);
+                j2.invocar(rogue1, weapon2);
+                weapon2_.Visibility = Visibility.Visible;
+                weapon2_.Content = " ";
+                weapon2_.Background = daga;
+
+            }
             if (j2.tipo == "Druid")
             {
                 minion druid = new minion("Shapeshift", 2, 0, true, true, 0);

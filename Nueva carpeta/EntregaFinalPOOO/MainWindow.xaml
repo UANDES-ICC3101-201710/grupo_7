@@ -224,6 +224,7 @@
             <Button x:Name="botono10" Margin="0,0,10,0" Content=""   Width="15" Height="15"/>
 
         </StackPanel>
+        <Button x:Name="weapon2_" Content="" HorizontalAlignment="Left" Margin="444,129,0,0" VerticalAlignment="Top" Width="86" Height="71" Style="{StaticResource MyButton}"/>
 
 
     </Grid>
