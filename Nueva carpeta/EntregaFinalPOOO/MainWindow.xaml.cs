@@ -7096,7 +7096,7 @@ namespace EntregaFinalPOOO
                     if (j2.mano[2].mana <= j2.mana)
                     {
                         j2.jugarcarta(3, cartascancha2);
-                        manadisponible2.Content = j2.mana;
+                        manadisponible2.Content = j2.mana;  
 
 
                     }
