@@ -4954,7 +4954,7 @@ namespace EntregaFinalPOOO
                     j1.invocar(druid, weapon1);
                     weapon1_.Visibility = Visibility.Visible;
                     weapon1_.Content = " ";
-                    weapon1_.Background = daga;
+                    weapon1_.Background = oso;
                 }
                 if (j1.tipo == "Mage")
                 {
