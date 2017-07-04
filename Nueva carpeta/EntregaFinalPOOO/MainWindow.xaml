@@ -48,7 +48,7 @@
         <ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Margin="689,362,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_2"/>
 
         <Button x:Name="FinTurno" Content="Terminar Turno " HorizontalAlignment="Left" Margin="953,392,0,0" VerticalAlignment="Top" Width="121" Click="FinTurno_Click" Background="#FF59B650"/>
-        <StackPanel x:Name="stackpanel_Copy" HorizontalAlignment="Left" Height="82" Margin="363,256,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal" Visibility="Hidden">
+        <StackPanel x:Name="stackpanel_Copy" HorizontalAlignment="Left" Height="82" Margin="363,256,0,0" VerticalAlignment="Top" Width="483" Orientation="Horizontal">
             <Button x:Name="boton11" Margin="0,0,10,0" Content=""  Width="50" Click="boton11_Click" MouseEnter="boton11_MouseEnter" MouseLeave="boton11_MouseLeave" Height="82" VerticalAlignment="Top" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton12" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton12_MouseEnter" MouseLeave="boton12_MouseLeave" Click="boton12_Click" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton13" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton13_MouseEnter" MouseLeave="boton13_MouseLeave" Click="boton13_Click" Style="{StaticResource MyButton}"/>
@@ -126,7 +126,7 @@
             <Button x:Name="boton24_Copy1"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}" Click="boton24_Copy1_Click" MouseEnter="boton242_MouseEnter" MouseLeave="boton242_MouseLeave"/>
             <Button x:Name="boton24_Copy2"  Content="" Width="50" Height="94" Style="{StaticResource MyButton}"/>
         </StackPanel>
-        <StackPanel x:Name="stackpanel_Copy2" HorizontalAlignment="Left" Height="94" Margin="204,-1,0,0" VerticalAlignment="Top" Width="656" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5">
+        <StackPanel x:Name="stackpanel_Copy2" HorizontalAlignment="Left" Height="94" Margin="204,1,0,0" VerticalAlignment="Top" Width="656" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5">
             <Button x:Name="boton26" Margin="0,0,10,0" Content="" Style="{StaticResource MyButton}" Width="50" Click="boton26_Click" MouseEnter="boton26_MouseEnter" MouseLeave="boton26_MouseLeave" />
             <Button x:Name="boton27" Margin="0,0,10,0" Content="" Width="51"  Height="94" VerticalAlignment="Bottom" Style="{StaticResource MyButton}" Click="boton27_Click" MouseEnter="boton27_MouseEnter" MouseLeave="boton27_MouseLeave"/>
             <Button x:Name="boton28" Margin="0,0,10,0" Content="" Width="49"  Height="94" VerticalAlignment="Top"  Style="{StaticResource MyButton}" Click="boton28_Click" MouseEnter="boton28_MouseEnter" MouseLeave="boton28_MouseLeave"/>

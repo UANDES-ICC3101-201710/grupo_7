@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace EntregaFinalPOOO
 {
     [Serializable]
-    class weapon : carta
+    public class weapon : carta
     {
-        private int ataque;
-        private int durabilidad;
+        private int ataque { get; set; }
+        private int durabilidad { get; set; }
 
         public weapon(int ataque, int durabilidad, string nombre)
         {

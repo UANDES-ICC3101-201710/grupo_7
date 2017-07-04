@@ -64,6 +64,21 @@ namespace EntregaFinalPOOO
             }
         }
 
+        public void invocarW(weapon  n, List<weapon> lista)
+        {
+            if (this.mana >= 2)
+            {
+
+                if (this.tipo == "Rogue")
+                {
+
+
+
+                    lista.Add(n);
+                }
+            }
+        }
+
         public void invocar(minion n, List<minion> lista)
         {
             if (this.mana >= 2)

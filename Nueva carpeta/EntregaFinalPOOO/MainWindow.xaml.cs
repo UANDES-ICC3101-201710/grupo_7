@@ -191,7 +191,7 @@ namespace EntregaFinalPOOO
 
 
         spells carta0 = new spells("La Moneda", 0, false, false);
-
+        weapon atacaaar;
 
         List<carta> manos = new List<carta>();
         List<carta> manos2 = new List<carta>();
@@ -200,6 +200,7 @@ namespace EntregaFinalPOOO
         List<minion> cartascancha2 = new List<minion>();
         List<minion> shaman = new List<minion>();
         List<minion> shaman2 = new List<minion>();
+        List<weapon> Lrogue = new List<weapon>();
 
         List<minion> weapon1 = new List<minion>();
         List<minion> weapon2 = new List<minion>();
@@ -1704,7 +1705,7 @@ namespace EntregaFinalPOOO
         /*Fin Turno j1*/
         private void FinTurno_Click(object sender, RoutedEventArgs e)
         {
-
+            weapon1_.Background = vacio;
             j1.terminarturnomana();
             refreshmana(lala, manamana, j1);
             manatot1.Content = String.Empty;
@@ -4889,9 +4890,9 @@ namespace EntregaFinalPOOO
             } 
                 if (j1.tipo == "Rogue")
             {
-
-                minion rogue = new minion("Dagger Mastery", 2, 1, true, true, 0);
-                rogue.turno = false;
+                
+                minion rogue = new minion("Dagger Mastery", 1, 2394, true, true, 0);
+                rogue.turno = true;
                 mazos.Add(rogue);
                 j1.invocar(rogue, weapon1);
                 weapon1_.Visibility = Visibility.Visible;
@@ -7534,13 +7535,14 @@ namespace EntregaFinalPOOO
         }
         private void boton32_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (manos2[6].nombre == "wisp")
-            {
-                popo.Background = wispmano;
-            }
+            
             if (manos2[6].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaidermano;
+            }
+            if (manos2[6].nombre == "wisp")
+            {
+                popo.Background = wispmano;
             }
             if (manos2[6].nombre == "Bloodfen Raptor")
             {
@@ -8003,13 +8005,13 @@ namespace EntregaFinalPOOO
 
             }
             
-           
+          
 
         }
 
         private void weapon1__MouseEnter(object sender, MouseEventArgs e)
         {
-            popo.Content = "contador=" + contadorweapon1 + "   ";
+            popo.Content = "actividad: " + weapon1[0].actividad + " \nvisibilidad: " + weapon1[0].visibilidad + " \nactividad: " + weapon1[0].actividad;
         }
 
         private void atacarheroe2_MouseEnter(object sender, MouseEventArgs e)
