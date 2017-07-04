@@ -5526,17 +5526,32 @@ namespace EntregaFinalPOOO
             xx[cartascancha.Count()].Visibility = Visibility.Hidden;
 
             a2[cartascancha2.Count()].Visibility = Visibility.Hidden;
-            if (contadorweapon1 == 2)
+            if (j1.tipo == "Rogue" || j2.tipo == "Rogue")
             {
-                weapon1_.Background = vacio;
-                contadorweapon1 = 0;
+                if (contadorweapon1 == 2)
+                {
+                    weapon1_.Background = vacio;
+                    contadorweapon1 = 0;
+                }
+                if (contadorweapon2 == 2)
+                {
+                    weapon2_.Background = vacio;
+                    contadorweapon2 = 0;
+                }
             }
-            if (contadorweapon2 == 2)
+            if (j1.tipo == "Druid" || j2.tipo == "Druid")
             {
-                weapon2_.Background = vacio;
-                contadorweapon2 = 0;
+                if (contadorweapon1 == 1)
+                {
+                    weapon1_.Background = vacio;
+                    contadorweapon1 = 0;
+                }
+                if (contadorweapon2 == 1)
+                {
+                    weapon2_.Background = vacio;
+                    contadorweapon2 = 0;
+                }
             }
-           
             fotoescudo.Content = j1.escudo;
             fotoescudo2.Content = j2.escudo;
 
@@ -8097,6 +8112,8 @@ namespace EntregaFinalPOOO
             if (j1.tipo == "Druid") 
             {
                 atacar = weapon1[0];
+                contadorweapon1 = contadorweapon1 + 1;
+
             }
             if (atacar != null && atacado != null)
             {
@@ -8110,10 +8127,10 @@ namespace EntregaFinalPOOO
 
         }
 
-        private void weapon1__MouseEnter(object sender, MouseEventArgs e)
-        {
             //popo.Content = "actividad: " + weapon1[0].actividad + " \nvisibilidad: " + weapon1[0].visibilidad + " \nactividad: " + weapon1[0].actividad + "\n" + contadorweapon1;
 
+        private void weapon1__MouseEnter(object sender, MouseEventArgs e)
+        {
         }
 
         private void atacarheroe2_MouseEnter(object sender, MouseEventArgs e)
@@ -8146,6 +8163,8 @@ namespace EntregaFinalPOOO
             if (j2.tipo == "Druid")
             {
                 atacado = weapon2[0];
+                contadorweapon2 = contadorweapon2 + 1;
+
             }
            
             if (atacar != null && atacado != null)
