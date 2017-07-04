@@ -13,7 +13,7 @@ namespace EntregaFinalPOOO
         public int ataque { get; set; }
 
 
-        public minion(string nombre, int vida, int ataque, Boolean actividad, Boolean visibilidad, int mana)
+        public minion(string nombre, int ataque, int vida, Boolean actividad, Boolean visibilidad, int mana)
         {
             this.nombre = nombre;
             this.vida = vida;
@@ -67,7 +67,7 @@ namespace EntregaFinalPOOO
 
         public int attack(minion nombre, Heroe jugador,List<minion> cartascancha,List<minion> cartascancha2)
         {
-
+            
             if (jugador == null)
             {
                 if (this.turno == true)
@@ -95,30 +95,39 @@ namespace EntregaFinalPOOO
             }
             if (jugador != null)
             {
-                if (jugador.tipo == "Hunter" || jugador.tipo == "Shaman" || jugador.tipo == "Mage" || jugador.tipo == "Paladin" || jugador.tipo == "Priest" || jugador.tipo == "Rogue" || jugador.tipo == "Warlock")
+                if (this.turno == true)
                 {
-                    jugador.vida = jugador.vida - this.ataque;
-                    this.turno = false;
-                    return jugador.vida;
-                }
-                if (jugador.tipo == "Warrior" || jugador.tipo == "Druid")
-                {
-                    if (jugador.escudo == 0)
+                    if (jugador.tipo == "Hunter" || jugador.tipo == "Shaman" || jugador.tipo == "Mage" || jugador.tipo == "Paladin" || jugador.tipo == "Priest" || jugador.tipo == "Rogue" || jugador.tipo == "Warlock")
                     {
                         jugador.vida = jugador.vida - this.ataque;
                         this.turno = false;
                         return jugador.vida;
                     }
-                    if (jugador.escudo > 0)
+                    if (jugador.tipo == "Warrior" || jugador.tipo == "Druid")
                     {
-                        int y1 = jugador.escudo - this.ataque;
-                        jugador.vida = jugador.vida - y1;
-                        this.turno = false;
-                        return jugador.vida;
+                        if (jugador.escudo == 0)
+                        {
+                            jugador.vida = jugador.vida - this.ataque;
+                            this.turno = false;
+                            return jugador.vida;
+                        }
+                        if (jugador.escudo > 0)
+                        {
+                            jugador.escudo = jugador.escudo - this.ataque;
+                            if (jugador.escudo < 0)
+                            {
+                                jugador.vida = jugador.vida + jugador.escudo;
+                                jugador.escudo = 0;
+                            }
+                            
+                            this.turno = false;
+                                
+                            return jugador.vida;
+                        }
                     }
+
+
                 }
-
-
             }
 
 
