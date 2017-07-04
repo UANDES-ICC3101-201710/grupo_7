@@ -3412,14 +3412,14 @@ namespace EntregaFinalPOOO
         private void boton10_MouseEnter(object sender, MouseEventArgs e)
         {
 
-            if (cartascancha[6].nombre == "wisp")
-            {
-                popo.Background = wisp;
-
-            }
+          
             if (cartascancha[6].nombre == "Murloc Raider")
             {
                 popo.Background = MurlocRaider;
+            }
+            if (cartascancha[6].nombre == "wisp")
+            {
+                popo.Background = wisp;
             }
             if (cartascancha[6].nombre == "Bloodfen Raptor" && cartascancha[6].vida == 2)
             {
