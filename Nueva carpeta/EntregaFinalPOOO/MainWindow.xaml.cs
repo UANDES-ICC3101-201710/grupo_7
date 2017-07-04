@@ -5527,45 +5527,40 @@ namespace EntregaFinalPOOO
         {
             if (j1.tipo == "Mage")
             {
-
-                popo.Content = ("Resta 2 de vida a quien quieras! \nMana:2");
+                popo.Background = mageex;
             }
             if (j1.tipo == "Warrior")
             {
-
-                popo.Content = ("Sube 2 de escudo a tu Heroe! \nMana:2");
+                popo.Background = warriorex;
             }
             if (j1.tipo == "Paladin")
             {
-
-
-                popo.Content = ("Invoca A un recruit 1/1 , para que te ayude en la pelea! \nMana:2");
+                popo.Background = paladinex;
             }
             if (j1.tipo == "Hunter")
             {
-                popo.Content = ("Restale 2 de vida al heroe de tu contrincante! \n Mana:2");
+                popo.Background = hunterex;
             }
 
             if (j1.tipo == "Druid")
             {
-
-                popo.Content = ("Convierte en un Oso y ataca a tu enemigo!1/1\n Mana:2");
+                popo.Background = druidex;
             }
             if (j1.tipo == "Rogue ")
             {
-                popo.Content = ("Invoca un daga de 2/2! \nMana:2");
+                popo.Background = rogueex;
             }
             if (j1.tipo == "Shaman")
             {
-                popo.Content = habshaman;
+                popo.Background = shamanex;
             }
             if (j1.tipo == "Warlock ")
             {
-                popo.Content = ("Resta 2 a tu vida , obten una carta!\n Mana:2");
+                popo.Background = warlockex;
             }
             if (j1.tipo == "Priest")
             {
-                popo.Content = ("Sumate Dos de vida!\n Mana:2");
+                popo.Background = priestex;
             }
         }
 
@@ -5578,40 +5573,40 @@ namespace EntregaFinalPOOO
         {
             if (j2.tipo == "Mage")
             {
-                popo.Content = ("Resta 2 de vida a quien quieras! \nMana:2");
+                popo.Background = mageex;
             }
             if (j2.tipo == "Warrior")
             {
-                popo.Content = ("Sube 2 de escudo a tu Heroe! \nMana:2");
+                popo.Background = warriorex;
             }
             if (j2.tipo == "Paladin")
             {
-                popo.Content = ("Invoca A un recruit 1/1 , para que te ayude en la pelea! \nMana:2");
+                popo.Background = paladinex;
             }
             if (j2.tipo == "Hunter")
             {
-                popo.Content = ("Restale 2 de vida al heroe de tu contrincante! \n Mana:2");
+                popo.Background = hunterex;
             }
 
             if (j2.tipo == "Druid")
             {
-                popo.Content = ("Convierte en un Oso y ataca a tu enemigo!1/1\n Mana:2");
+                popo.Background = druidex;
             }
             if (j2.tipo == "Rogue ")
             {
-                popo.Content = ("Invoca un daga de 2/2! \nMana:2");
+                popo.Background = rogueex;
             }
             if (j2.tipo == "Shaman")
             {
-                popo.Content = ("Invoca un Totem!\n Mana:2");
+                popo.Background = shamanex;
             }
             if (j2.tipo == "Warlock ")
             {
-                popo.Content = ("Resta 2 a tu vida , obten una carta!\n Mana:2");
+                popo.Background = warlockex;
             }
             if (j2.tipo == "Priest")
             {
-                popo.Content = ("Sumate Dos de vida!\n Mana:2");
+                popo.Background = priestex;
             }
         }
 
