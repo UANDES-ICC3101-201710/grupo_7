@@ -699,10 +699,7 @@ namespace EntregaFinalPOOO
 
 
 
-                if (cartascancha[i].nombre == "wisp")
-                {
-                    xx[i].Background = wisp;
-                }
+              
 
 
                 if (cartascancha[i].nombre == "Murloc Raider")
@@ -1505,7 +1502,7 @@ namespace EntregaFinalPOOO
             }
             fondoinicio.Visibility = Visibility.Hidden;
             fondocambio.Visibility = Visibility.Visible;
-            refreshhmano(manos, manos, cambioss, cambioss, wisp, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
+            refreshhmano(manos, manos, cambioss, cambioss, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
             cambio1.Visibility = Visibility.Visible;
             cambiocarta1.Visibility = Visibility.Visible;
             refreshhmano(manos2, manos2, cambioss1, cambioss1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
@@ -5889,7 +5886,7 @@ namespace EntregaFinalPOOO
         {
             if (manos[0].nombre == "wisp")
             {
-                popo.Background = wisp;
+                popo.Background = wispmano;
             }
             if (manos[0].nombre == "Murloc Raider")
             {
@@ -6007,7 +6004,7 @@ namespace EntregaFinalPOOO
         {
             if (manos[1].nombre == "wisp")
             {
-                popo.Background = wisp;
+                popo.Background = wispmano;
             }
             if (manos[1].nombre == "Murloc Raider")
             {
@@ -6124,7 +6121,7 @@ namespace EntregaFinalPOOO
         {
             if (manos[2].nombre == "wisp")
             {
-                popo.Background = wisp;
+                popo.Background = wispmano;
             }
             if (manos[2].nombre == "Murloc Raider")
             {
@@ -6240,7 +6237,7 @@ namespace EntregaFinalPOOO
         {
             if (manos[3].nombre == "wisp")
             {
-                popo.Background = wisp;
+                popo.Background = wispmano;
             }
             if (manos[3].nombre == "Murloc Raider")
             {
@@ -6356,13 +6353,10 @@ namespace EntregaFinalPOOO
         {
                     if (manos[4].nombre == "wisp")
                     {
-                         popo.Background = wisp;
+                         popo.Background = wispmano;
 
                     }
-                    if (manos[4].nombre == "Murloc Raider")
-                    {
-                        popo.Background = wispmano;
-                    }
+                   
                     if (manos[4].nombre == "Murloc Raider")
                     {
                         popo.Background = MurlocRaidermano;
@@ -6467,7 +6461,7 @@ namespace EntregaFinalPOOO
                 }
                 manobot[manos.Count()].Visibility = Visibility.Hidden;
 
-                refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
+                refreshhmano(manos, manos2, manobot, manobot1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
                 refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2, RiverCrocolisk1, BloodfenRaptor1, RiverCrocolisk2, ChillwindYeti1, ChillwindYeti2, ChillwindYeti3, ChillwindYeti4, OasisSnapjaw1, OasisSnapjaw2, OasisSnapjaw3, OasisSnapjaw4, OasisSnapjaw5, OasisSnapjaw6, BoulderfistOgre1, BoulderfistOgre2, BoulderfistOgre3, BoulderfistOgre4, BoulderfistOgre5, BoulderfistOgre6, WarGolem1, WarGolem2, WarGolem3, WarGolem4, WarGolem5, WarGolem6, CoreHound1, CoreHound2, CoreHound3, CoreHound4, totem111, totem221, totem331);
 
             }
@@ -6477,7 +6471,7 @@ namespace EntregaFinalPOOO
             
                 if (manos[5].nombre == "wisp")
                 {
-                    popo.Background = wisp;
+                    popo.Background = wispmano;
                 }
                 if (manos[5].nombre == "Murloc Raider")
                 {
@@ -6595,7 +6589,7 @@ namespace EntregaFinalPOOO
         {
             if (manos[6].nombre == "wisp")
             {
-                popo.Background = wisp;
+                popo.Background = wispmano;
             }
             if (manos[6].nombre == "Murloc Raider")
             {
@@ -6751,7 +6745,7 @@ namespace EntregaFinalPOOO
             {
                 popo.Background = CoreHoundmano;
             }
-            refreshhmano(manos, manos2, manobot, manobot1, wisp, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
+            refreshhmano(manos, manos2, manobot, manobot1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
             refreshh(cartascancha, cartascancha2, xx, a2, wisp, MurlocRaider, BloodfenRaptor, RiverCrocolisk, MagmaRager, ChillwindYeti, OasisSnapjaw, BoulderfistOgre, WarGolem, CoreHound, Recruit, totem11, totem22, totem33, totem44, j1, j2, RiverCrocolisk1, BloodfenRaptor1, RiverCrocolisk2, ChillwindYeti1, ChillwindYeti2, ChillwindYeti3, ChillwindYeti4, OasisSnapjaw1, OasisSnapjaw2, OasisSnapjaw3, OasisSnapjaw4, OasisSnapjaw5, OasisSnapjaw6, BoulderfistOgre1, BoulderfistOgre2, BoulderfistOgre3, BoulderfistOgre4, BoulderfistOgre5, BoulderfistOgre6, WarGolem1, WarGolem2, WarGolem3, WarGolem4, WarGolem5, WarGolem6, CoreHound1, CoreHound2, CoreHound3, CoreHound4, totem111, totem221, totem331);
 
         }
@@ -6948,7 +6942,7 @@ namespace EntregaFinalPOOO
         {
             if (manos[9].nombre == "wisp")
             {
-                popo.Background = wisp;
+                popo.Background = wispmano;
             }
             if (manos[9].nombre == "Murloc Raider")
             {
