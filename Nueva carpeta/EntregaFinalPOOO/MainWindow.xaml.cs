@@ -171,6 +171,15 @@ namespace EntregaFinalPOOO
         ImageBrush escudo = new ImageBrush();
         ImageBrush daga = new ImageBrush();
         ImageBrush noaudio = new ImageBrush();
+        ImageBrush druidex = new ImageBrush();
+        ImageBrush warriorex = new ImageBrush();
+        ImageBrush mageex = new ImageBrush();
+         ImageBrush priestex = new ImageBrush();
+         ImageBrush warlockex = new ImageBrush();
+          ImageBrush shamanex = new ImageBrush();
+          ImageBrush hunterex = new ImageBrush();
+           ImageBrush paladinex = new ImageBrush();
+            ImageBrush rogueex = new ImageBrush();
 
 
 
@@ -376,7 +385,24 @@ namespace EntregaFinalPOOO
 
 
 
-
+            BitmapImage fotito = new BitmapImage(new Uri("../../druidex.png", UriKind.Relative));
+            druidex.ImageSource = fotito;
+            BitmapImage fotito1 = new BitmapImage(new Uri("../../rogueex.png", UriKind.Relative));
+            rogueex.ImageSource = fotito1;
+            BitmapImage fotito2 = new BitmapImage(new Uri("../../priestex.png", UriKind.Relative));
+            priestex.ImageSource = fotito2;
+            BitmapImage fotito3 = new BitmapImage(new Uri("../../hunterex.png", UriKind.Relative));
+            hunterex.ImageSource = fotito3;
+            BitmapImage fotito4 = new BitmapImage(new Uri("../../paladinex.png", UriKind.Relative));
+            paladinex.ImageSource = fotito4;
+            BitmapImage fotito5 = new BitmapImage(new Uri("../../shamanex.png", UriKind.Relative));
+            shamanex.ImageSource = fotito5;
+            BitmapImage fotito6 = new BitmapImage(new Uri("../../mageex.png", UriKind.Relative));
+            mageex.ImageSource = fotito6;
+            BitmapImage fotito7 = new BitmapImage(new Uri("../../warriorex.png", UriKind.Relative));
+            warriorex.ImageSource = fotito7;
+            BitmapImage fotito8 = new BitmapImage(new Uri("../../warlockex.png", UriKind.Relative));
+            warlockex.ImageSource = fotito8;
 
 
 
@@ -5544,7 +5570,7 @@ namespace EntregaFinalPOOO
 
         private void habilidad_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = vacio;
+            popo.Background = vacio;
         }
 
         private void habilidad2_MouseEnter(object sender, MouseEventArgs e)
@@ -5590,7 +5616,7 @@ namespace EntregaFinalPOOO
 
         private void habilidad2_MouseLeave(object sender, MouseEventArgs e)
         {
-            popo.Content = "";
+            popo.Background = vacio;
         }
 
         private void boton18_Click(object sender, RoutedEventArgs e)
