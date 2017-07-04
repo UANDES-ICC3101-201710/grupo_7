@@ -2713,21 +2713,33 @@ namespace EntregaFinalPOOO
             {
                 popo.Background = Recruit;
             }
-            if (cartascancha[2].nombre == "Heilin Totem")
+            if (cartascancha[2].nombre == "Stoneclaw Totem")
             {
                 popo.Background = totem11;
             }
-            if (cartascancha[2].nombre == "Seiring Totem")
+            if (cartascancha[2].nombre == "Heilin Totem")
             {
                 popo.Background = totem22;
             }
-            if (cartascancha[2].nombre == "Stoneclaw Totem")
+            if (cartascancha[2].nombre == "Warth of air Totem")
             {
                 popo.Background = totem33;
             }
-            if (cartascancha[2].nombre == "Warth of air Totem")
+            if (cartascancha[2].nombre == "Seiring Totem")
             {
                 popo.Background = totem44;
+            }
+            if (cartascancha[2].nombre == "Stoneclaw Totem" && cartascancha[2].vida == 1)
+            {
+                popo.Background = totem111;
+            }
+            if (cartascancha[2].nombre == "Heilin Totem" && cartascancha[2].vida == 1)
+            {
+                popo.Background = totem221;
+            }
+            if (cartascancha[2].nombre == "Warth of air Totem" && cartascancha[2].vida == 1)
+            {
+                popo.Background = totem331;
             }
 
             popo.Visibility = Visibility.Visible;
@@ -2908,21 +2920,33 @@ namespace EntregaFinalPOOO
             {
                 popo.Background = Recruit;
             }
-            if (cartascancha[3].nombre == "Heilin Totem")
+            if (cartascancha[3].nombre == "Stoneclaw Totem")
             {
                 popo.Background = totem11;
             }
-            if (cartascancha[3].nombre == "Seiring Totem")
+            if (cartascancha[3].nombre == "Heilin Totem")
             {
                 popo.Background = totem22;
             }
-            if (cartascancha[3].nombre == "Stoneclaw Totem")
+            if (cartascancha[3].nombre == "Warth of air Totem")
             {
                 popo.Background = totem33;
             }
-            if (cartascancha[3].nombre == "Warth of air Totem")
+            if (cartascancha[3].nombre == "Seiring Totem")
             {
                 popo.Background = totem44;
+            }
+            if (cartascancha[3].nombre == "Stoneclaw Totem" && cartascancha[3].vida == 1)
+            {
+                popo.Background = totem111;
+            }
+            if (cartascancha[3].nombre == "Heilin Totem" && cartascancha[3].vida == 1)
+            {
+                popo.Background = totem221;
+            }
+            if (cartascancha[3].nombre == "Warth of air Totem" && cartascancha[3].vida == 1)
+            {
+                popo.Background = totem331;
             }
 
             popo.Visibility = Visibility.Visible;
@@ -3131,6 +3155,34 @@ namespace EntregaFinalPOOO
             {
                 popo.Background = totem44;
             }
+            if (cartascancha[4].nombre == "Stoneclaw Totem")
+            {
+                popo.Background = totem11;
+            }
+            if (cartascancha[4].nombre == "Heilin Totem")
+            {
+                popo.Background = totem22;
+            }
+            if (cartascancha[4].nombre == "Warth of air Totem")
+            {
+                popo.Background = totem33;
+            }
+            if (cartascancha[4].nombre == "Seiring Totem")
+            {
+                popo.Background = totem44;
+            }
+            if (cartascancha[4].nombre == "Stoneclaw Totem" && cartascancha[4].vida == 1)
+            {
+                popo.Background = totem111;
+            }
+            if (cartascancha[4].nombre == "Heilin Totem" && cartascancha[4].vida == 1)
+            {
+                popo.Background = totem221;
+            }
+            if (cartascancha[4].nombre == "Warth of air Totem" && cartascancha[4].vida == 1)
+            {
+                popo.Background = totem331;
+            }
 
             popo.Visibility = Visibility.Visible;
 
@@ -3310,21 +3362,33 @@ namespace EntregaFinalPOOO
             {
                 popo.Background = Recruit;
             }
-            if (cartascancha[5].nombre == "Heilin Totem")
+            if (cartascancha[5].nombre == "Stoneclaw Totem")
             {
                 popo.Background = totem11;
             }
-            if (cartascancha[5].nombre == "Seiring Totem")
+            if (cartascancha[5].nombre == "Heilin Totem")
             {
                 popo.Background = totem22;
             }
-            if (cartascancha[5].nombre == "Stoneclaw Totem")
+            if (cartascancha[5].nombre == "Warth of air Totem")
             {
                 popo.Background = totem33;
             }
-            if (cartascancha[5].nombre == "Warth of air Totem")
+            if (cartascancha[5].nombre == "Seiring Totem")
             {
                 popo.Background = totem44;
+            }
+            if (cartascancha[5].nombre == "Stoneclaw Totem" && cartascancha[5].vida == 1)
+            {
+                popo.Background = totem111;
+            }
+            if (cartascancha[5].nombre == "Heilin Totem" && cartascancha[5].vida == 1)
+            {
+                popo.Background = totem221;
+            }
+            if (cartascancha[5].nombre == "Warth of air Totem" && cartascancha[5].vida == 1)
+            {
+                popo.Background = totem331;
             }
 
             popo.Visibility = Visibility.Visible;
@@ -3533,7 +3597,34 @@ namespace EntregaFinalPOOO
             {
                 popo.Background = totem44;
             }
-
+            if (cartascancha[6].nombre == "Stoneclaw Totem")
+            {
+                popo.Background = totem11;
+            }
+            if (cartascancha[6].nombre == "Heilin Totem")
+            {
+                popo.Background = totem22;
+            }
+            if (cartascancha[6].nombre == "Warth of air Totem")
+            {
+                popo.Background = totem33;
+            }
+            if (cartascancha[6].nombre == "Seiring Totem")
+            {
+                popo.Background = totem44;
+            }
+            if (cartascancha[6].nombre == "Stoneclaw Totem" && cartascancha[6].vida == 1)
+            {
+                popo.Background = totem111;
+            }
+            if (cartascancha[6].nombre == "Heilin Totem" && cartascancha[6].vida == 1)
+            {
+                popo.Background = totem221;
+            }
+            if (cartascancha[6].nombre == "Warth of air Totem" && cartascancha[6].vida == 1)
+            {
+                popo.Background = totem331;
+            }
             popo.Visibility = Visibility.Visible;
         }
 
