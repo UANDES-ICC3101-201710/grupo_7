@@ -28,6 +28,8 @@ namespace EntregaFinalPOOO
 
         System.Media.SoundPlayer player = new System.Media.SoundPlayer();
         System.Media.SoundPlayer player1 = new System.Media.SoundPlayer();
+        System.Media.SoundPlayer  babypoo = new System.Media.SoundPlayer();
+
 
         string a;
         string a1;
@@ -239,7 +241,7 @@ namespace EntregaFinalPOOO
         public MainWindow()
         {
             InitializeComponent();
-           
+            babypoo.SoundLocation = "../../Danny Ocean -  Me Rehúso (Official Audio).wav";
             player.SoundLocation = "../../All Star - Smash Mouth [Lyrics].wav";
             player1.SoundLocation = "../../Game of Thrones   Main Theme Official Soundtrack Version.wav";
             player1.PlayLooping();
@@ -632,6 +634,7 @@ namespace EntregaFinalPOOO
             weapon1_.Visibility = Visibility.Hidden;
             fotoescudo.Visibility = Visibility.Hidden;
             fotoescudo2.Visibility = Visibility.Hidden;
+            Again.Visibility = Visibility.Hidden;
 
 
             vida1.Content = j1.vida.ToString();
@@ -1532,7 +1535,7 @@ namespace EntregaFinalPOOO
             audio.Background = noaudio;
             audio.Content = "";
             Again.Background = Bax;
-            Again.Visibility = Visibility.Visible;
+            
             audio.Visibility = Visibility.Visible;
             fondocambio.Visibility = Visibility.Hidden;
             cambio1.Visibility = Visibility.Hidden;
@@ -8442,11 +8445,13 @@ namespace EntregaFinalPOOO
             refreshhmano(manos2, manos2, cambioss1, cambioss1, wispmano, MurlocRaidermano, BloodfenRaptormano, RiverCrocoliskmano, MagmaRagermano, ChillwindYetimano, OasisSnapjawmano, BoulderfistOgremano, WarGolemmano, CoreHoundmano, Recruit, j1, j2);
 
         }
-
+        int contadormusica = 0;
         private void audio_Click(object sender, RoutedEventArgs e)
         {
+            contadormusica = contadormusica + 1;
             player.Stop();
             audio.Visibility = Visibility.Hidden;
+            Again.Visibility = Visibility.Visible;
 
         }
 
@@ -8538,7 +8543,20 @@ namespace EntregaFinalPOOO
 
         private void Again_Click(object sender, RoutedEventArgs e)
         {
+            if (contadormusica == 1)
+            {
+                babypoo.Play();
+                audio.Visibility = Visibility.Visible;
+                Again.Visibility = Visibility.Hidden;
 
+            }
+            if (contadormusica == 2)
+            {
+                player.Play();
+                audio.Visibility = Visibility.Visible;
+                contadormusica = 0;
+                Again.Visibility = Visibility.Hidden;
+            }
         }
     }
 }
