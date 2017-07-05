@@ -147,6 +147,9 @@ namespace EntregaFinalPOOO
         ImageBrush CoreHound3 = new ImageBrush();
         ImageBrush CoreHound4 = new ImageBrush();
 
+        ImageBrush Bax = new ImageBrush();
+
+
         ImageBrush playb = new ImageBrush();
 
         ImageBrush vacio = new ImageBrush();
@@ -242,7 +245,7 @@ namespace EntregaFinalPOOO
             player1.PlayLooping();
 
 
-            BitmapImage imageplay = new BitmapImage(new Uri("../../bax.png", UriKind.Relative));
+            BitmapImage imageplay = new BitmapImage(new Uri("../../play.png", UriKind.Relative));
             playb.ImageSource = imageplay;
 
             BitmapImage image = new BitmapImage(new Uri("http://media-hearth.cursecdn.com/avatars/147/699/273.png"));
@@ -418,6 +421,9 @@ namespace EntregaFinalPOOO
             BitmapImage fotito9 = new BitmapImage(new Uri("../../bear.png", UriKind.Relative));
             oso.ImageSource = fotito9;
 
+            BitmapImage fotito10 = new BitmapImage(new Uri("../../bax.png", UriKind.Relative));
+            Bax.ImageSource = fotito10;
+
 
 
 
@@ -592,6 +598,7 @@ namespace EntregaFinalPOOO
             boton9.Visibility = Visibility.Hidden;
             boton10.Visibility = Visibility.Hidden;
             audio.Visibility = Visibility.Hidden;
+            Again.Visibility = Visibility.Hidden;
 
             FinTurno.Visibility = Visibility.Hidden;
             boton11.Visibility = Visibility.Hidden;
@@ -1524,6 +1531,8 @@ namespace EntregaFinalPOOO
             player.PlayLooping();
             audio.Background = noaudio;
             audio.Content = "";
+            Again.Background = Bax;
+            Again.Visibility = Visibility.Visible;
             audio.Visibility = Visibility.Visible;
             fondocambio.Visibility = Visibility.Hidden;
             cambio1.Visibility = Visibility.Hidden;
@@ -3422,7 +3431,7 @@ namespace EntregaFinalPOOO
 
         private void boton10_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            
           
             if (cartascancha[6].nombre == "Murloc Raider")
             {
@@ -5649,17 +5658,23 @@ namespace EntregaFinalPOOO
         {
             if (heroeatacado != null && atacado != null && j2.activo == true)
             {
-                atacado.attack(null, heroeatacado, cartascancha2, cartascancha);
+                if (heroeatacado == j1)
+                {
+                    atacado.attack(null, heroeatacado, cartascancha2, cartascancha);
 
-                heroeatacado = null;
+                    heroeatacado = null;
+                }
                 
             }
 
             if (heroeatacado != null && atacar != null && j1.activo == true)
             {
-                atacar.attack(null, heroeatacado, cartascancha, cartascancha2);
+                if (heroeatacado == j2)
+                {
+                    atacar.attack(null, heroeatacado, cartascancha, cartascancha2);
 
-                heroeatacado = null;
+                    heroeatacado = null;
+                }
 
 
             }
@@ -8431,6 +8446,7 @@ namespace EntregaFinalPOOO
         private void audio_Click(object sender, RoutedEventArgs e)
         {
             player.Stop();
+            audio.Visibility = Visibility.Hidden;
 
         }
 
@@ -8516,6 +8532,11 @@ namespace EntregaFinalPOOO
         }
 
         private void boton24_Copy2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Again_Click(object sender, RoutedEventArgs e)
         {
 
         }

@@ -164,7 +164,7 @@
             <Button x:Name="boton8" Margin="0 0 10 0 " Content="" Width="50" Click="boton8_Click" MouseEnter="boton8_MouseEnter" MouseLeave="boton8_MouseLeave" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton9" Margin="0 0 10 0 " Content="" Width="50" MouseEnter="boton9_MouseEnter" MouseLeave="boton9_MouseLeave" Click="boton9_Click" Style="{StaticResource MyButton}"/>
             <Button x:Name="boton10"  Content="" Width="50" Click="boton10_Click" MouseEnter="boton10_MouseEnter" MouseLeave="boton10_MouseLeave" Style="{StaticResource MyButton}"/>
-            <Button x:Name="boton10_Copy"  Content="" Width="50" Click="boton10_Click" MouseEnter="boton10_MouseEnter" MouseLeave="boton10_MouseLeave" Style="{StaticResource MyButton}"/>
+            <Button x:Name="boton10_Copy"  Content="" Width="50"   Style="{StaticResource MyButton}"/>
         </StackPanel>
         <Label x:Name="cambio2" Content="Jugador 2! Elige las cartas que deseas cambiar!" Width="274" Margin="492,27,425,700" Foreground="White" FontWeight="Bold"/>
         <Label x:Name="cambio1" Content="Jugador 1! Elige las cartas que deseas cambiar!" Width="274" Margin="478,514,442,212.8" Foreground="White" FontWeight="Bold" Background="{x:Null}"/>
@@ -223,6 +223,7 @@
 
         </StackPanel>
         <Button x:Name="weapon2_" Content="" HorizontalAlignment="Left" Margin="444,129,0,0" VerticalAlignment="Top" Width="86" Height="71" Style="{StaticResource MyButton}" Click="weapon2__Click" MouseEnter="weapon2__MouseEnter"/>
+        <Button x:Name="Again" Content="" HorizontalAlignment="Left" Margin="59,593,0,0" VerticalAlignment="Top" Width="75" Height="51" Click="Again_Click" Style="{StaticResource MyButton}" />
 
 
     </Grid>
