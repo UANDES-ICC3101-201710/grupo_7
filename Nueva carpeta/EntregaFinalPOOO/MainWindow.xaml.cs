@@ -1318,6 +1318,7 @@ namespace EntregaFinalPOOO
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
                 j1.ingresartipo("Warrior");
+               
                 fotoescudo.Background = escudo;
                 fotoescudo.Content = j1.escudo;
                 
@@ -1376,6 +1377,7 @@ namespace EntregaFinalPOOO
                 text2.Visibility = Visibility.Visible;
                 boton2.Visibility = Visibility.Visible;
                 j1.ingresartipo("Druid");
+                
                 fotoescudo.Background = escudo;
                 fotoescudo.Content = j1.escudo;
 
@@ -1529,8 +1531,15 @@ namespace EntregaFinalPOOO
             cambio2.Visibility = Visibility.Hidden;
             cambiocartas2.Visibility = Visibility.Hidden;
             cambiocarta1.Visibility = Visibility.Hidden;
-            fotoescudo2.Visibility = Visibility.Visible;
-            fotoescudo.Visibility = Visibility.Visible;
+            if (j1.tipo == "Druid" || j1.tipo == "Warrior")
+            {
+                fotoescudo.Visibility = Visibility.Visible;
+            }
+            if (j2.tipo == "Druid" || j2.tipo == "Warrior")
+            {
+                fotoescudo2.Visibility = Visibility.Visible;
+            }
+            
             for (int i = 0; i < 3; i++)
             {
                 if (manos.Count() <= 3)
