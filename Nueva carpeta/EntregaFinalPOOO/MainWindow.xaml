@@ -65,7 +65,7 @@
         </GroupBox>
         <TextBlock x:Name="Datosj1" HorizontalAlignment="Left" Margin="895,420,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="77" Width="128" Text="Mana Total :&#xA;Mana Disponible:" FontWeight="Bold" FontSize="14" Foreground="White"/>
         <TextBlock x:Name="datosj2" HorizontalAlignment="Left" Margin="929,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="71" Width="120" FontSize="14" FontWeight="Bold" Foreground="#FFFDFBFB"><Run Text=""/><LineBreak/><Run Text="Mana Total:"/><LineBreak/><Run Text="Mana Disponible:"/></TextBlock>
-        <Label x:Name="manadisponible2" Content="Label" HorizontalAlignment="Left" Margin="1049,160,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Background="{x:Null}" Foreground="#FFFBF8F8"/>
+        <Label x:Name="manadisponible2" Content="Label" HorizontalAlignment="Left" Margin="772,39,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Background="{x:Null}" Foreground="#FFFBF8F8"/>
         <Label x:Name="manatot1" Content="Label" HorizontalAlignment="Left" Margin="835,695,0,0" VerticalAlignment="Top" Height="34" Width="47" FontSize="14" FontWeight="Bold" Foreground="#FFF9F4F4" RenderTransformOrigin="0.285,3.556"/>
         <Label x:Name="manadisp" Content="Label" HorizontalAlignment="Left" Margin="810,696,0,0" VerticalAlignment="Top" Height="34" RenderTransformOrigin="0.5,0.5" Width="47" FontSize="14" FontWeight="Bold" Foreground="#FFF7F4F4">
 
@@ -80,7 +80,7 @@
         </Label>
 
 
-        <Label x:Name="manatott" Content="Label" HorizontalAlignment="Left" Margin="1011,137,0,0" VerticalAlignment="Top" Width="106" FontSize="14" FontWeight="Bold" Height="58" Foreground="#FFFBF6F6"/>
+        <Label x:Name="manatott" Content="Label" HorizontalAlignment="Left" Margin="812,39,0,0" VerticalAlignment="Top" Width="106" FontSize="14" FontWeight="Bold" Height="58" Foreground="#FFFBF6F6"/>
         <Button x:Name="rendirse1" Content="Rendirse" HorizontalAlignment="Left" Margin="1092,609,0,0" VerticalAlignment="Top" Width="74" Background="Red" Click="rendirse1_Click"/>
         <Button x:Name="rendirse2" Content="Rendirse" HorizontalAlignment="Left" Margin="1074,10,0,0" VerticalAlignment="Top" Width="74" Background="#FFE61010" Click="rendirse2_Click" IsEnabled="False"/>
 
