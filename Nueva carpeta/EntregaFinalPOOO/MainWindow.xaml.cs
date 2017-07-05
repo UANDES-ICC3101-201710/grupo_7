@@ -242,7 +242,7 @@ namespace EntregaFinalPOOO
             player1.PlayLooping();
 
 
-            BitmapImage imageplay = new BitmapImage(new Uri("../../play.png", UriKind.Relative));
+            BitmapImage imageplay = new BitmapImage(new Uri("../../bax.png", UriKind.Relative));
             playb.ImageSource = imageplay;
 
             BitmapImage image = new BitmapImage(new Uri("http://media-hearth.cursecdn.com/avatars/147/699/273.png"));
