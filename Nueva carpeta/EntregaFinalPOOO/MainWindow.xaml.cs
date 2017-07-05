@@ -604,8 +604,7 @@ namespace EntregaFinalPOOO
             FinTurno_Copy.Visibility = Visibility.Hidden;
             //Listbox_Copy.Visibility = Visibility.Hidden;
             combobox3.Visibility = Visibility.Hidden;
-            Datosj1.Visibility = Visibility.Hidden;
-            datosj2.Visibility = Visibility.Hidden;
+            
             vida1.Visibility = Visibility.Hidden;
             Vida2.Visibility = Visibility.Hidden;
             manatot1.Visibility = Visibility.Hidden;
@@ -1767,8 +1766,7 @@ namespace EntregaFinalPOOO
             habilidad2.Visibility = Visibility.Visible;
             atacarheroe1.Visibility = Visibility.Visible;
             atacarheroe2.Visibility = Visibility.Visible;
-            Datosj1.Visibility = Visibility.Visible;
-            datosj2.Visibility = Visibility.Visible;
+         
             decir1.Visibility = Visibility.Visible;
             decir2.Visibility = Visibility.Visible;
 
